@@ -138,6 +138,7 @@ with torch.no_grad():
 print(f'Test Loss: {test_loss / len(test_loader):.4f}, Accuracy: {100. * correct / total:.2f}%')
 
 # Adversarial Training ----------------------------------------------------------------------------
+# Get a single image and label
 for images, labels in test_loader:  # snag the first batch
     batch_image = images
     batch_label = labels
@@ -146,9 +147,21 @@ for images, labels in test_loader:  # snag the first batch
 single_image = batch_image[0]  # snag first image in batch
 single_label = batch_label[0]  # snag first label in batch
 
-input_image = torch.cat((single_image, single_label), dim=1) # concatenates image and label
+# Reshape single_image if necessary
+if single_image.dim() == 2:
+    single_image = single_image.unsqueeze(0)  # Add batch dimension
 
-# Pass this image through autoencoder
+# Create a one-hot encoded label tensor
+one_hot_label = torch.zeros(10)  # Assuming 10 classes for MNIST
+one_hot_label[single_label] = 1
+
+# Reshape one_hot_label to match single_image dimensions
+one_hot_label = one_hot_label.view(1, -1)  # Add batch dimension
+
+# Concatenate image and label
+input_image = torch.cat((single_image.view(1, -1), one_hot_label), dim=1)
+
+# Now input_image can be used with the autoencoder
 output_image = autoencoder(input_image)
 
 target_classification = np.array([0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1])
