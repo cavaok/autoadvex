@@ -111,7 +111,7 @@ for epoch in range(num_epochs):
             print(f"Epoch [{epoch + 1}/{num_epochs}], Batch [{batch_idx}/{len(train_loader)}], Loss: {loss.item():.4f}")
 
     print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss / len(train_loader):.4f}')
-    visualize_input_output(inputs, outputs, epoch)
+    visualize_input_output(inputs, outputs)
 
 # Evaluate the model
 encoder.eval()
