@@ -1,0 +1,14 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+myenv/
+
+# Debian package files
+*.deb
+
+# SLURM scripts
+gpu_slurm.sh
+cpu_slurm.sh
