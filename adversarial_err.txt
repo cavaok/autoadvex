@@ -1,4 +1,14 @@
 Traceback (most recent call last):
-  File "main.py", line 149, in <module>
-    input_image = torch.cat((single_image, single_label), dim=1) # concatenates image and label
-RuntimeError: zero-dimensional tensor (at position 1) cannot be concatenated
+  File "main.py", line 168, in <module>
+    optimizer = optim.Adam([output_image], lr=0.001)
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/optim/adam.py", line 45, in __init__
+    super().__init__(params, defaults)
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/optim/optimizer.py", line 278, in __init__
+    self.add_param_group(cast(dict, param_group))
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/_dynamo/eval_frame.py", line 489, in _fn
+    return fn(*args, **kwargs)
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/optim/optimizer.py", line 886, in add_param_group
+    raise ValueError("can't optimize a non-leaf Tensor")
+ValueError: can't optimize a non-leaf Tensor
