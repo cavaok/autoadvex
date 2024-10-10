@@ -111,7 +111,7 @@ for epoch in range(num_epochs):
             print(f"Epoch [{epoch + 1}/{num_epochs}], Batch [{batch_idx}/{len(train_loader)}], Loss: {loss.item():.4f}")
 
     print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss / len(train_loader):.4f}')
-    visualize_input_output(inputs, outputs)
+    visualize_input_output(inputs, outputs, epoch)
 
 # Evaluate the model
 encoder.eval()
@@ -136,3 +136,61 @@ with torch.no_grad():
         correct += predicted.eq(labels.to(device)).sum().item()
 
 print(f'Test Loss: {test_loss / len(test_loader):.4f}, Accuracy: {100. * correct / total:.2f}%')
+
+# Adversarial Training ----------------------------------------------------------------------------
+for images, labels in test_loader:  # snag the first batch
+    batch_image = images
+    batch_label = labels
+    break
+
+single_image = batch_image[0]  # snag first image in batch
+single_label = batch_label[0]  # snag first label in batch
+
+input_image = torch.cat((single_image, single_label), dim=1) # concatenates image and label
+
+# Pass this image through autoencoder
+output_image = autoencoder(input_image)
+
+target_classification = np.array([0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1])
+optimizer = optim.Adam([output_image], lr=0.001)
+iterations = 100
+criterion = nn.MSELoss
+
+for iteration in range(iterations):
+    optimizer.zero_grad()
+
+    # Forward pass through the autoencoder
+    reconstructed = autoencoder(output_image)
+
+    # Split the reconstructed output into image and classification
+    reconstructed_image = reconstructed[:, :image_dim]
+    reconstructed_class = reconstructed[:, image_dim:]
+
+    # Calculate reconstruction loss (to minimize perturbations)
+    recon_loss = criterion(reconstructed_image, input_image[:, :image_dim])
+
+    # Calculate classification loss (to approach target classification)
+    class_loss = criterion(reconstructed_class, torch.tensor(target_classification, dtype=torch.float32).to(device))
+
+    # Combine losses
+    total_loss = recon_loss + class_loss
+
+    # Backward pass
+    total_loss.backward()
+
+    # Update the output_image
+    optimizer.step()
+
+    # Optional: Print progress
+    if (iteration + 1) % 10 == 0:
+        print(f"Iteration [{iteration + 1}/{iterations}], "
+              f"Recon Loss: {recon_loss.item():.4f}, "
+              f"Class Loss: {class_loss.item():.4f}")
+
+# The adversarial example is now stored in output_image
+adversarial_example = output_image.detach()
+
+# Visualize the result
+visualize_input_output(input_image, adversarial_example, save_dir='adversarial_figures')
+
+
