@@ -1,6 +1,4 @@
 Traceback (most recent call last):
-  File "main.py", line 114, in <module>
-    visualize_input_output(inputs, outputs, epoch)
-  File "main.py", line 60, in visualize_input_output
-    input_image = inputs[index, :image_dim].view(28, 28).cpu().numpy()
-IndexError: index 10 is out of bounds for dimension 0 with size 10
+  File "main.py", line 149, in <module>
+    input_image = torch.cat((single_image, single_label), dim=1) # concatenates image and label
+RuntimeError: zero-dimensional tensor (at position 1) cannot be concatenated
