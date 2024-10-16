@@ -137,53 +137,53 @@ with torch.no_grad():
 
 print(f'Test Loss: {test_loss / len(test_loader):.4f}, Accuracy: {100. * correct / total:.2f}%')
 
-# Adversarial Training ----------------------------------------------------------------------------
+# Adversarial Example Generation
+encoder.eval()
+decoder.eval()
+
 # Get a single image and label
-for images, labels in test_loader:  # snag the first batch
-    batch_image = images
-    batch_label = labels
+for images, labels in test_loader:
+    single_image = images[0].unsqueeze(0)  # Add batch dimension
+    single_label = labels[0]
     break
 
-single_image = batch_image[0]  # snag first image in batch
-single_label = batch_label[0]  # snag first label in batch
-
-# Reshape single_image if necessary
-if single_image.dim() == 2:
-    single_image = single_image.unsqueeze(0)  # Add batch dimension
-
 # Create a one-hot encoded label tensor
-one_hot_label = torch.zeros(10)  # Assuming 10 classes for MNIST
+one_hot_label = torch.zeros(10)
 one_hot_label[single_label] = 1
-
-# Reshape one_hot_label to match single_image dimensions
-one_hot_label = one_hot_label.view(1, -1)  # Add batch dimension
+one_hot_label = one_hot_label.view(1, -1)
 
 # Concatenate image and label
-input_image = torch.cat((single_image.view(1, -1), one_hot_label), dim=1)
+input_tensor = torch.cat((single_image.view(1, -1), one_hot_label), dim=1).to(device)
 
-# Now input_image can be used with the autoencoder
-output_image = autoencoder(input_image)
+# Create a perturbation tensor to optimize
+perturbation = torch.zeros_like(input_tensor, requires_grad=True)
 
-target_classification = np.array([0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1])
-optimizer = optim.Adam([output_image], lr=0.001)
-iterations = 100
-criterion = nn.MSELoss
+# Define target classification
+target_classification = torch.full((1, 10), 0.1).to(device)
+
+optimizer = optim.Adam([perturbation], lr=0.001)
+criterion = nn.MSELoss()
+
+iterations = 50
 
 for iteration in range(iterations):
     optimizer.zero_grad()
 
+    # Apply perturbation to input
+    perturbed_input = input_tensor + perturbation
+
     # Forward pass through the autoencoder
-    reconstructed = autoencoder(output_image)
+    reconstructed = autoencoder(perturbed_input)
 
     # Split the reconstructed output into image and classification
     reconstructed_image = reconstructed[:, :image_dim]
     reconstructed_class = reconstructed[:, image_dim:]
 
     # Calculate reconstruction loss (to minimize perturbations)
-    recon_loss = criterion(reconstructed_image, input_image[:, :image_dim])
+    recon_loss = criterion(reconstructed_image, input_tensor[:, :image_dim])
 
     # Calculate classification loss (to approach target classification)
-    class_loss = criterion(reconstructed_class, torch.tensor(target_classification, dtype=torch.float32).to(device))
+    class_loss = criterion(reconstructed_class, target_classification)
 
     # Combine losses
     total_loss = recon_loss + class_loss
@@ -191,7 +191,7 @@ for iteration in range(iterations):
     # Backward pass
     total_loss.backward()
 
-    # Update the output_image
+    # Update the perturbation
     optimizer.step()
 
     # Optional: Print progress
@@ -200,10 +200,8 @@ for iteration in range(iterations):
               f"Recon Loss: {recon_loss.item():.4f}, "
               f"Class Loss: {class_loss.item():.4f}")
 
-# The adversarial example is now stored in output_image
-adversarial_example = output_image.detach()
+# The adversarial example is now the perturbed input
+adversarial_example = (input_tensor + perturbation).detach()
 
 # Visualize the result
-visualize_input_output(input_image, adversarial_example, save_dir='adversarial_figures')
-
-
+visualize_input_output(input_tensor, adversarial_example, save_dir='adversarial_figures')
