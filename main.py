@@ -186,7 +186,7 @@ for iteration in range(iterations):
     class_loss = criterion(reconstructed_class, target_classification)
 
     # Combine losses
-    total_loss = recon_loss + class_loss
+    total_loss = recon_loss + 10 * class_loss
 
     # Backward pass
     total_loss.backward()
