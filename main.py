@@ -141,67 +141,72 @@ print(f'Test Loss: {test_loss / len(test_loader):.4f}, Accuracy: {100. * correct
 encoder.eval()
 decoder.eval()
 
+# Creating this loader so I can go grab 1 image
+adversarial_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
+
+# Ensure model parameters are not updated during adversarial training
+for param in encoder.parameters():
+    param.requires_grad = False
+for param in decoder.parameters():
+    param.requires_grad = False
+
+# to make it less angry
+image = None
+diffuse_label = None
+original_label = None
+single_input = None
+single_label = None
+
 # Get a single image and label
-for images, labels in test_loader:
-    single_image = images[0].unsqueeze(0)  # Add batch dimension
-    single_label = labels[0]
+for images, labels in adversarial_loader:
+    image = images.view(images.size(0), -1).to(device)
+    diffuse_label = create_diffuse_one_hot(labels).to(device)
+    single_input = torch.cat((image, diffuse_label), dim=1)
+    single_label = labels.item()  # save for later
     break
 
-# Create a one-hot encoded label tensor
-one_hot_label = torch.zeros(10)
-one_hot_label[single_label] = 1
-one_hot_label = one_hot_label.view(1, -1)
+# Getting reconstruction of single image and label
+reconstructed = autoencoder(single_input)
 
-# Concatenate image and label
-input_tensor = torch.cat((single_image.view(1, -1), one_hot_label), dim=1).to(device)
+# Saving reconstruction label and image
+original = reconstructed.clone().detach()
+original_label = original[:, image_dim:]
+original_image = original[:, :image_dim]
 
-# Create a perturbation tensor to optimize
-perturbation = torch.zeros_like(input_tensor, requires_grad=True)
+# Setting target label
+true_class = single_label
+classes = list(range(10))
+classes.remove(true_class)
+random_class = np.random.choice(classes)
+target_label = torch.zeros(1, num_classes, device=device)  # Initialize with zeros
+target_label[0, true_class] = 0.5
+target_label[0, random_class] = 0.5
 
-# Define target classification
-target_classification = torch.full((1, 10), 0.1).to(device)
+# Preparing the first guess being reconstructed image with diffuse vector
+first_guess = original.clone().detach()
+first_guess[:, image_dim:] = diffuse_label
+first_guess.requires_grad_(True)  # making sure requires grad is TRUE
 
-optimizer = optim.Adam([perturbation], lr=0.001)
-criterion = nn.MSELoss()
+# Params
+input = first_guess
+optimizer = optim.Adam([input], lr=0.01)
+train_loops = 15
+output = None
 
-iterations = 50
+for loop in range(train_loops):
+    # Forward pass
+    output = autoencoder(input)
 
-for iteration in range(iterations):
+    # Loss calc
+    label_loss = nn.functional.kl_div(output[:, image_dim:], target_label)
+    image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
+    loss = label_loss * 5 + image_loss
+
+    # Backprop and optim step
     optimizer.zero_grad()
-
-    # Apply perturbation to input
-    perturbed_input = input_tensor + perturbation
-
-    # Forward pass through the autoencoder
-    reconstructed = autoencoder(perturbed_input)
-
-    # Split the reconstructed output into image and classification
-    reconstructed_image = reconstructed[:, :image_dim]
-    reconstructed_class = reconstructed[:, image_dim:]
-
-    # Calculate reconstruction loss (to minimize perturbations)
-    recon_loss = criterion(reconstructed_image, input_tensor[:, :image_dim])
-
-    # Calculate classification loss (to approach target classification)
-    class_loss = criterion(reconstructed_class, target_classification)
-
-    # Combine losses
-    total_loss = recon_loss + 10 * class_loss
-
-    # Backward pass
-    total_loss.backward()
-
-    # Update the perturbation
+    loss.backward()
     optimizer.step()
 
-    # Optional: Print progress
-    if (iteration + 1) % 10 == 0:
-        print(f"Iteration [{iteration + 1}/{iterations}], "
-              f"Recon Loss: {recon_loss.item():.4f}, "
-              f"Class Loss: {class_loss.item():.4f}")
-
-# The adversarial example is now the perturbed input
-adversarial_example = (input_tensor + perturbation).detach()
 
 # Visualize the result
-visualize_input_output(input_tensor, adversarial_example, save_dir='adversarial_figures')
+visualize_input_output(first_guess, output, save_dir='adversarial_figures')
