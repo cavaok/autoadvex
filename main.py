@@ -204,6 +204,12 @@ for loop in range(train_loops):
     image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
     loss = label_loss * 50 + image_loss
 
+    # Print losses
+    print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
+    print(f"  Label Loss: {label_loss.item():.4f}")
+    print(f"  Image Loss: {image_loss.item():.4f}")
+    print(f"  Total Loss: {loss.item():.4f}")
+
     # Backprop and optim step
     optimizer.zero_grad()
     loss.backward()
@@ -241,3 +247,6 @@ plt.savefig(filepath)
 plt.close(fig)  # Close the figure to free up memory
 
 print(f"Adversarial example visualization saved to {filepath}")
+
+print("Target label was:", target_label.cpu().numpy().round(3))
+
