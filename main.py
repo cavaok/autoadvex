@@ -217,8 +217,8 @@ os.makedirs('adversarial_figures', exist_ok=True)
 # Detach tensors and convert to numpy arrays
 first_guess_image = first_guess[:, :image_dim].detach().view(28, 28).cpu().numpy()
 first_guess_label = first_guess[:, image_dim:].detach().cpu().numpy()
-output_image = output[:, :image_dim].detach().view(28, 28).cpu().numpy()
-output_label = output[:, image_dim:].detach().cpu().numpy()
+adversarial_image = input_adv[:, :image_dim].detach().view(28, 28).cpu().numpy()
+adversarial_label = input_adv[:, image_dim:].detach().cpu().numpy()
 
 # Create the visualization
 fig, axes = plt.subplots(2, 2, figsize=(10, 10))
@@ -229,11 +229,11 @@ axes[0, 0].set_title('Input Image')
 axes[0, 1].bar(range(10), first_guess_label[0])
 axes[0, 1].set_title('Diffuse Prior Vector')
 
-# Output (adversarial example)
-axes[1, 0].imshow(output_image, cmap='gray')
-axes[1, 0].set_title('Output Image')
-axes[1, 1].bar(range(10), output_label[0])
-axes[1, 1].set_title('Output Label Vector')
+# Adversarial example
+axes[1, 0].imshow(adversarial_image, cmap='gray')
+axes[1, 0].set_title('Adversarial Image')
+axes[1, 1].bar(range(10), adversarial_label[0])
+axes[1, 1].set_title('Adversarial Label Vector')
 
 # Save the figure
 filepath = os.path.join('adversarial_figures', 'adversarial_example.png')
