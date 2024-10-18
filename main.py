@@ -202,7 +202,7 @@ for loop in range(train_loops):
     # Loss calc
     label_loss = nn.functional.kl_div(output[:, image_dim:], target_label)
     image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
-    loss = label_loss * 5 + image_loss
+    loss = label_loss * 50 + image_loss
 
     # Backprop and optim step
     optimizer.zero_grad()
