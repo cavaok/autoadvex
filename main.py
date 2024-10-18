@@ -190,7 +190,7 @@ first_guess.requires_grad_(True)  # making sure requires grad is TRUE
 # Params
 input = first_guess
 optimizer = optim.Adam([input], lr=0.01)
-train_loops = 15
+train_loops = 100
 output = None
 
 for loop in range(train_loops):
