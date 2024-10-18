@@ -209,4 +209,33 @@ for loop in range(train_loops):
 
 
 # Visualize the result
-visualize_input_output(first_guess, output, save_dir='adversarial_figures')
+# Create the adversarial_figures directory if it doesn't exist
+os.makedirs('adversarial_figures', exist_ok=True)
+
+# Detach tensors and convert to numpy arrays
+first_guess_image = first_guess[:, :image_dim].detach().view(28, 28).cpu().numpy()
+first_guess_label = first_guess[:, image_dim:].detach().cpu().numpy()
+output_image = output[:, :image_dim].detach().view(28, 28).cpu().numpy()
+output_label = output[:, image_dim:].detach().cpu().numpy()
+
+# Create the visualization
+fig, axes = plt.subplots(2, 2, figsize=(10, 10))
+
+# First guess (input)
+axes[0, 0].imshow(first_guess_image, cmap='gray')
+axes[0, 0].set_title('Input Image')
+axes[0, 1].bar(range(10), first_guess_label[0])
+axes[0, 1].set_title('Diffuse Prior Vector')
+
+# Output (adversarial example)
+axes[1, 0].imshow(output_image, cmap='gray')
+axes[1, 0].set_title('Output Image')
+axes[1, 1].bar(range(10), output_label[0])
+axes[1, 1].set_title('Output Label Vector')
+
+# Save the figure
+filepath = os.path.join('adversarial_figures', 'adversarial_example.png')
+plt.savefig(filepath)
+plt.close(fig)  # Close the figure to free up memory
+
+print(f"Adversarial example visualization saved to {filepath}")
