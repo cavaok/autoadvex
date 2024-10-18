@@ -1,6 +1,7 @@
 import torch
 from torch import optim
 from torch import nn
+import torch.nn.functional as F
 from torch.utils.data import DataLoader, TensorDataset
 import numpy as np
 import matplotlib.pyplot as plt
@@ -199,8 +200,11 @@ for loop in range(train_loops):
     # Forward pass
     output = autoencoder(input_adv)
 
+    # turning into probability distribution before doing kld
+    output_label_probs = F.softmax(output[:, image_dim:], dim=1)
+
     # Loss calc
-    label_loss = nn.functional.kl_div(output[:, image_dim:], target_label)
+    label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)
     image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
     loss = label_loss * 50 + image_loss
 
