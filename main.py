@@ -185,17 +185,19 @@ target_label[0, random_class] = 0.5
 # Preparing the first guess being reconstructed image with diffuse vector
 first_guess = original.clone().detach()
 first_guess[:, image_dim:] = diffuse_label
-first_guess.requires_grad_(True)  # making sure requires grad is TRUE
+
+# Setting up input for adversarial training
+input_adv = first_guess.clone().detach()
+input_adv.requires_grad_(True)  # making sure requires grad is TRUE
 
 # Params
-input = first_guess
-optimizer = optim.Adam([input], lr=0.01)
+optimizer = optim.Adam([input_adv], lr=0.01)
 train_loops = 100
 output = None
 
 for loop in range(train_loops):
     # Forward pass
-    output = autoencoder(input)
+    output = autoencoder(input_adv)
 
     # Loss calc
     label_loss = nn.functional.kl_div(output[:, image_dim:], target_label)
