@@ -1,2133 +1,2133 @@
-Epoch [1/15], Batch [0/6000], Loss: 0.2324
-Epoch [1/15], Batch [100/6000], Loss: 0.0628
-Epoch [1/15], Batch [200/6000], Loss: 0.0700
-Epoch [1/15], Batch [300/6000], Loss: 0.0559
-Epoch [1/15], Batch [400/6000], Loss: 0.0482
-Epoch [1/15], Batch [500/6000], Loss: 0.0430
-Epoch [1/15], Batch [600/6000], Loss: 0.0359
-Epoch [1/15], Batch [700/6000], Loss: 0.0385
-Epoch [1/15], Batch [800/6000], Loss: 0.0350
-Epoch [1/15], Batch [900/6000], Loss: 0.0344
-Epoch [1/15], Batch [1000/6000], Loss: 0.0379
-Epoch [1/15], Batch [1100/6000], Loss: 0.0287
-Epoch [1/15], Batch [1200/6000], Loss: 0.0247
-Epoch [1/15], Batch [1300/6000], Loss: 0.0213
-Epoch [1/15], Batch [1400/6000], Loss: 0.0232
-Epoch [1/15], Batch [1500/6000], Loss: 0.0292
-Epoch [1/15], Batch [1600/6000], Loss: 0.0265
-Epoch [1/15], Batch [1700/6000], Loss: 0.0263
-Epoch [1/15], Batch [1800/6000], Loss: 0.0282
-Epoch [1/15], Batch [1900/6000], Loss: 0.0272
-Epoch [1/15], Batch [2000/6000], Loss: 0.0300
-Epoch [1/15], Batch [2100/6000], Loss: 0.0236
-Epoch [1/15], Batch [2200/6000], Loss: 0.0241
-Epoch [1/15], Batch [2300/6000], Loss: 0.0281
-Epoch [1/15], Batch [2400/6000], Loss: 0.0251
-Epoch [1/15], Batch [2500/6000], Loss: 0.0291
-Epoch [1/15], Batch [2600/6000], Loss: 0.0184
-Epoch [1/15], Batch [2700/6000], Loss: 0.0250
-Epoch [1/15], Batch [2800/6000], Loss: 0.0258
-Epoch [1/15], Batch [2900/6000], Loss: 0.0198
-Epoch [1/15], Batch [3000/6000], Loss: 0.0227
-Epoch [1/15], Batch [3100/6000], Loss: 0.0222
-Epoch [1/15], Batch [3200/6000], Loss: 0.0196
-Epoch [1/15], Batch [3300/6000], Loss: 0.0211
-Epoch [1/15], Batch [3400/6000], Loss: 0.0191
-Epoch [1/15], Batch [3500/6000], Loss: 0.0164
-Epoch [1/15], Batch [3600/6000], Loss: 0.0181
-Epoch [1/15], Batch [3700/6000], Loss: 0.0228
-Epoch [1/15], Batch [3800/6000], Loss: 0.0166
-Epoch [1/15], Batch [3900/6000], Loss: 0.0178
-Epoch [1/15], Batch [4000/6000], Loss: 0.0230
-Epoch [1/15], Batch [4100/6000], Loss: 0.0234
-Epoch [1/15], Batch [4200/6000], Loss: 0.0160
-Epoch [1/15], Batch [4300/6000], Loss: 0.0143
-Epoch [1/15], Batch [4400/6000], Loss: 0.0220
-Epoch [1/15], Batch [4500/6000], Loss: 0.0215
-Epoch [1/15], Batch [4600/6000], Loss: 0.0179
-Epoch [1/15], Batch [4700/6000], Loss: 0.0159
-Epoch [1/15], Batch [4800/6000], Loss: 0.0190
-Epoch [1/15], Batch [4900/6000], Loss: 0.0196
-Epoch [1/15], Batch [5000/6000], Loss: 0.0180
-Epoch [1/15], Batch [5100/6000], Loss: 0.0163
-Epoch [1/15], Batch [5200/6000], Loss: 0.0210
-Epoch [1/15], Batch [5300/6000], Loss: 0.0180
-Epoch [1/15], Batch [5400/6000], Loss: 0.0197
-Epoch [1/15], Batch [5500/6000], Loss: 0.0147
+Epoch [1/15], Batch [0/6000], Loss: 0.2302
+Epoch [1/15], Batch [100/6000], Loss: 0.0571
+Epoch [1/15], Batch [200/6000], Loss: 0.0637
+Epoch [1/15], Batch [300/6000], Loss: 0.0513
+Epoch [1/15], Batch [400/6000], Loss: 0.0415
+Epoch [1/15], Batch [500/6000], Loss: 0.0399
+Epoch [1/15], Batch [600/6000], Loss: 0.0443
+Epoch [1/15], Batch [700/6000], Loss: 0.0434
+Epoch [1/15], Batch [800/6000], Loss: 0.0275
+Epoch [1/15], Batch [900/6000], Loss: 0.0325
+Epoch [1/15], Batch [1000/6000], Loss: 0.0331
+Epoch [1/15], Batch [1100/6000], Loss: 0.0262
+Epoch [1/15], Batch [1200/6000], Loss: 0.0175
+Epoch [1/15], Batch [1300/6000], Loss: 0.0269
+Epoch [1/15], Batch [1400/6000], Loss: 0.0310
+Epoch [1/15], Batch [1500/6000], Loss: 0.0302
+Epoch [1/15], Batch [1600/6000], Loss: 0.0325
+Epoch [1/15], Batch [1700/6000], Loss: 0.0273
+Epoch [1/15], Batch [1800/6000], Loss: 0.0242
+Epoch [1/15], Batch [1900/6000], Loss: 0.0246
+Epoch [1/15], Batch [2000/6000], Loss: 0.0291
+Epoch [1/15], Batch [2100/6000], Loss: 0.0295
+Epoch [1/15], Batch [2200/6000], Loss: 0.0252
+Epoch [1/15], Batch [2300/6000], Loss: 0.0261
+Epoch [1/15], Batch [2400/6000], Loss: 0.0234
+Epoch [1/15], Batch [2500/6000], Loss: 0.0245
+Epoch [1/15], Batch [2600/6000], Loss: 0.0218
+Epoch [1/15], Batch [2700/6000], Loss: 0.0245
+Epoch [1/15], Batch [2800/6000], Loss: 0.0166
+Epoch [1/15], Batch [2900/6000], Loss: 0.0218
+Epoch [1/15], Batch [3000/6000], Loss: 0.0232
+Epoch [1/15], Batch [3100/6000], Loss: 0.0215
+Epoch [1/15], Batch [3200/6000], Loss: 0.0216
+Epoch [1/15], Batch [3300/6000], Loss: 0.0175
+Epoch [1/15], Batch [3400/6000], Loss: 0.0222
+Epoch [1/15], Batch [3500/6000], Loss: 0.0240
+Epoch [1/15], Batch [3600/6000], Loss: 0.0249
+Epoch [1/15], Batch [3700/6000], Loss: 0.0174
+Epoch [1/15], Batch [3800/6000], Loss: 0.0175
+Epoch [1/15], Batch [3900/6000], Loss: 0.0231
+Epoch [1/15], Batch [4000/6000], Loss: 0.0201
+Epoch [1/15], Batch [4100/6000], Loss: 0.0216
+Epoch [1/15], Batch [4200/6000], Loss: 0.0234
+Epoch [1/15], Batch [4300/6000], Loss: 0.0147
+Epoch [1/15], Batch [4400/6000], Loss: 0.0217
+Epoch [1/15], Batch [4500/6000], Loss: 0.0174
+Epoch [1/15], Batch [4600/6000], Loss: 0.0200
+Epoch [1/15], Batch [4700/6000], Loss: 0.0202
+Epoch [1/15], Batch [4800/6000], Loss: 0.0131
+Epoch [1/15], Batch [4900/6000], Loss: 0.0168
+Epoch [1/15], Batch [5000/6000], Loss: 0.0224
+Epoch [1/15], Batch [5100/6000], Loss: 0.0194
+Epoch [1/15], Batch [5200/6000], Loss: 0.0175
+Epoch [1/15], Batch [5300/6000], Loss: 0.0173
+Epoch [1/15], Batch [5400/6000], Loss: 0.0195
+Epoch [1/15], Batch [5500/6000], Loss: 0.0173
 Epoch [1/15], Batch [5600/6000], Loss: 0.0178
-Epoch [1/15], Batch [5700/6000], Loss: 0.0170
-Epoch [1/15], Batch [5800/6000], Loss: 0.0168
-Epoch [1/15], Batch [5900/6000], Loss: 0.0190
-Epoch [1/15], Loss: 0.0259
+Epoch [1/15], Batch [5700/6000], Loss: 0.0183
+Epoch [1/15], Batch [5800/6000], Loss: 0.0134
+Epoch [1/15], Batch [5900/6000], Loss: 0.0180
+Epoch [1/15], Loss: 0.0251
 Visualization saved to figures/visualization_0.png
-Epoch [2/15], Batch [0/6000], Loss: 0.0132
-Epoch [2/15], Batch [100/6000], Loss: 0.0208
-Epoch [2/15], Batch [200/6000], Loss: 0.0180
-Epoch [2/15], Batch [300/6000], Loss: 0.0184
-Epoch [2/15], Batch [400/6000], Loss: 0.0174
-Epoch [2/15], Batch [500/6000], Loss: 0.0134
-Epoch [2/15], Batch [600/6000], Loss: 0.0150
-Epoch [2/15], Batch [700/6000], Loss: 0.0178
-Epoch [2/15], Batch [800/6000], Loss: 0.0194
-Epoch [2/15], Batch [900/6000], Loss: 0.0159
-Epoch [2/15], Batch [1000/6000], Loss: 0.0161
-Epoch [2/15], Batch [1100/6000], Loss: 0.0155
-Epoch [2/15], Batch [1200/6000], Loss: 0.0141
-Epoch [2/15], Batch [1300/6000], Loss: 0.0121
-Epoch [2/15], Batch [1400/6000], Loss: 0.0168
-Epoch [2/15], Batch [1500/6000], Loss: 0.0143
-Epoch [2/15], Batch [1600/6000], Loss: 0.0218
-Epoch [2/15], Batch [1700/6000], Loss: 0.0139
-Epoch [2/15], Batch [1800/6000], Loss: 0.0199
-Epoch [2/15], Batch [1900/6000], Loss: 0.0123
-Epoch [2/15], Batch [2000/6000], Loss: 0.0193
-Epoch [2/15], Batch [2100/6000], Loss: 0.0109
-Epoch [2/15], Batch [2200/6000], Loss: 0.0143
-Epoch [2/15], Batch [2300/6000], Loss: 0.0172
-Epoch [2/15], Batch [2400/6000], Loss: 0.0120
-Epoch [2/15], Batch [2500/6000], Loss: 0.0144
-Epoch [2/15], Batch [2600/6000], Loss: 0.0140
-Epoch [2/15], Batch [2700/6000], Loss: 0.0145
-Epoch [2/15], Batch [2800/6000], Loss: 0.0151
-Epoch [2/15], Batch [2900/6000], Loss: 0.0162
-Epoch [2/15], Batch [3000/6000], Loss: 0.0173
-Epoch [2/15], Batch [3100/6000], Loss: 0.0117
-Epoch [2/15], Batch [3200/6000], Loss: 0.0104
-Epoch [2/15], Batch [3300/6000], Loss: 0.0151
-Epoch [2/15], Batch [3400/6000], Loss: 0.0093
-Epoch [2/15], Batch [3500/6000], Loss: 0.0184
-Epoch [2/15], Batch [3600/6000], Loss: 0.0132
-Epoch [2/15], Batch [3700/6000], Loss: 0.0128
-Epoch [2/15], Batch [3800/6000], Loss: 0.0102
-Epoch [2/15], Batch [3900/6000], Loss: 0.0124
-Epoch [2/15], Batch [4000/6000], Loss: 0.0172
-Epoch [2/15], Batch [4100/6000], Loss: 0.0136
-Epoch [2/15], Batch [4200/6000], Loss: 0.0160
-Epoch [2/15], Batch [4300/6000], Loss: 0.0143
-Epoch [2/15], Batch [4400/6000], Loss: 0.0132
-Epoch [2/15], Batch [4500/6000], Loss: 0.0114
-Epoch [2/15], Batch [4600/6000], Loss: 0.0154
-Epoch [2/15], Batch [4700/6000], Loss: 0.0126
-Epoch [2/15], Batch [4800/6000], Loss: 0.0133
-Epoch [2/15], Batch [4900/6000], Loss: 0.0128
-Epoch [2/15], Batch [5000/6000], Loss: 0.0133
-Epoch [2/15], Batch [5100/6000], Loss: 0.0141
-Epoch [2/15], Batch [5200/6000], Loss: 0.0122
-Epoch [2/15], Batch [5300/6000], Loss: 0.0164
-Epoch [2/15], Batch [5400/6000], Loss: 0.0154
-Epoch [2/15], Batch [5500/6000], Loss: 0.0149
-Epoch [2/15], Batch [5600/6000], Loss: 0.0142
-Epoch [2/15], Batch [5700/6000], Loss: 0.0142
-Epoch [2/15], Batch [5800/6000], Loss: 0.0128
-Epoch [2/15], Batch [5900/6000], Loss: 0.0116
-Epoch [2/15], Loss: 0.0143
+Epoch [2/15], Batch [0/6000], Loss: 0.0155
+Epoch [2/15], Batch [100/6000], Loss: 0.0163
+Epoch [2/15], Batch [200/6000], Loss: 0.0196
+Epoch [2/15], Batch [300/6000], Loss: 0.0183
+Epoch [2/15], Batch [400/6000], Loss: 0.0184
+Epoch [2/15], Batch [500/6000], Loss: 0.0162
+Epoch [2/15], Batch [600/6000], Loss: 0.0180
+Epoch [2/15], Batch [700/6000], Loss: 0.0117
+Epoch [2/15], Batch [800/6000], Loss: 0.0168
+Epoch [2/15], Batch [900/6000], Loss: 0.0091
+Epoch [2/15], Batch [1000/6000], Loss: 0.0171
+Epoch [2/15], Batch [1100/6000], Loss: 0.0168
+Epoch [2/15], Batch [1200/6000], Loss: 0.0096
+Epoch [2/15], Batch [1300/6000], Loss: 0.0171
+Epoch [2/15], Batch [1400/6000], Loss: 0.0200
+Epoch [2/15], Batch [1500/6000], Loss: 0.0127
+Epoch [2/15], Batch [1600/6000], Loss: 0.0220
+Epoch [2/15], Batch [1700/6000], Loss: 0.0115
+Epoch [2/15], Batch [1800/6000], Loss: 0.0121
+Epoch [2/15], Batch [1900/6000], Loss: 0.0151
+Epoch [2/15], Batch [2000/6000], Loss: 0.0160
+Epoch [2/15], Batch [2100/6000], Loss: 0.0193
+Epoch [2/15], Batch [2200/6000], Loss: 0.0158
+Epoch [2/15], Batch [2300/6000], Loss: 0.0145
+Epoch [2/15], Batch [2400/6000], Loss: 0.0155
+Epoch [2/15], Batch [2500/6000], Loss: 0.0124
+Epoch [2/15], Batch [2600/6000], Loss: 0.0131
+Epoch [2/15], Batch [2700/6000], Loss: 0.0141
+Epoch [2/15], Batch [2800/6000], Loss: 0.0134
+Epoch [2/15], Batch [2900/6000], Loss: 0.0123
+Epoch [2/15], Batch [3000/6000], Loss: 0.0151
+Epoch [2/15], Batch [3100/6000], Loss: 0.0150
+Epoch [2/15], Batch [3200/6000], Loss: 0.0155
+Epoch [2/15], Batch [3300/6000], Loss: 0.0205
+Epoch [2/15], Batch [3400/6000], Loss: 0.0143
+Epoch [2/15], Batch [3500/6000], Loss: 0.0093
+Epoch [2/15], Batch [3600/6000], Loss: 0.0136
+Epoch [2/15], Batch [3700/6000], Loss: 0.0180
+Epoch [2/15], Batch [3800/6000], Loss: 0.0174
+Epoch [2/15], Batch [3900/6000], Loss: 0.0111
+Epoch [2/15], Batch [4000/6000], Loss: 0.0151
+Epoch [2/15], Batch [4100/6000], Loss: 0.0203
+Epoch [2/15], Batch [4200/6000], Loss: 0.0133
+Epoch [2/15], Batch [4300/6000], Loss: 0.0175
+Epoch [2/15], Batch [4400/6000], Loss: 0.0105
+Epoch [2/15], Batch [4500/6000], Loss: 0.0127
+Epoch [2/15], Batch [4600/6000], Loss: 0.0127
+Epoch [2/15], Batch [4700/6000], Loss: 0.0096
+Epoch [2/15], Batch [4800/6000], Loss: 0.0132
+Epoch [2/15], Batch [4900/6000], Loss: 0.0135
+Epoch [2/15], Batch [5000/6000], Loss: 0.0105
+Epoch [2/15], Batch [5100/6000], Loss: 0.0104
+Epoch [2/15], Batch [5200/6000], Loss: 0.0127
+Epoch [2/15], Batch [5300/6000], Loss: 0.0122
+Epoch [2/15], Batch [5400/6000], Loss: 0.0106
+Epoch [2/15], Batch [5500/6000], Loss: 0.0143
+Epoch [2/15], Batch [5600/6000], Loss: 0.0151
+Epoch [2/15], Batch [5700/6000], Loss: 0.0131
+Epoch [2/15], Batch [5800/6000], Loss: 0.0102
+Epoch [2/15], Batch [5900/6000], Loss: 0.0096
+Epoch [2/15], Loss: 0.0142
 Visualization saved to figures/visualization_0.png
-Epoch [3/15], Batch [0/6000], Loss: 0.0087
-Epoch [3/15], Batch [100/6000], Loss: 0.0109
-Epoch [3/15], Batch [200/6000], Loss: 0.0146
-Epoch [3/15], Batch [300/6000], Loss: 0.0119
-Epoch [3/15], Batch [400/6000], Loss: 0.0107
-Epoch [3/15], Batch [500/6000], Loss: 0.0136
-Epoch [3/15], Batch [600/6000], Loss: 0.0146
-Epoch [3/15], Batch [700/6000], Loss: 0.0143
-Epoch [3/15], Batch [800/6000], Loss: 0.0112
-Epoch [3/15], Batch [900/6000], Loss: 0.0103
-Epoch [3/15], Batch [1000/6000], Loss: 0.0127
-Epoch [3/15], Batch [1100/6000], Loss: 0.0139
-Epoch [3/15], Batch [1200/6000], Loss: 0.0126
-Epoch [3/15], Batch [1300/6000], Loss: 0.0126
-Epoch [3/15], Batch [1400/6000], Loss: 0.0103
-Epoch [3/15], Batch [1500/6000], Loss: 0.0109
-Epoch [3/15], Batch [1600/6000], Loss: 0.0095
-Epoch [3/15], Batch [1700/6000], Loss: 0.0124
-Epoch [3/15], Batch [1800/6000], Loss: 0.0122
-Epoch [3/15], Batch [1900/6000], Loss: 0.0147
-Epoch [3/15], Batch [2000/6000], Loss: 0.0222
-Epoch [3/15], Batch [2100/6000], Loss: 0.0102
-Epoch [3/15], Batch [2200/6000], Loss: 0.0132
-Epoch [3/15], Batch [2300/6000], Loss: 0.0092
+Epoch [3/15], Batch [0/6000], Loss: 0.0109
+Epoch [3/15], Batch [100/6000], Loss: 0.0112
+Epoch [3/15], Batch [200/6000], Loss: 0.0137
+Epoch [3/15], Batch [300/6000], Loss: 0.0143
+Epoch [3/15], Batch [400/6000], Loss: 0.0121
+Epoch [3/15], Batch [500/6000], Loss: 0.0105
+Epoch [3/15], Batch [600/6000], Loss: 0.0093
+Epoch [3/15], Batch [700/6000], Loss: 0.0149
+Epoch [3/15], Batch [800/6000], Loss: 0.0113
+Epoch [3/15], Batch [900/6000], Loss: 0.0124
+Epoch [3/15], Batch [1000/6000], Loss: 0.0093
+Epoch [3/15], Batch [1100/6000], Loss: 0.0135
+Epoch [3/15], Batch [1200/6000], Loss: 0.0134
+Epoch [3/15], Batch [1300/6000], Loss: 0.0096
+Epoch [3/15], Batch [1400/6000], Loss: 0.0105
+Epoch [3/15], Batch [1500/6000], Loss: 0.0104
+Epoch [3/15], Batch [1600/6000], Loss: 0.0180
+Epoch [3/15], Batch [1700/6000], Loss: 0.0082
+Epoch [3/15], Batch [1800/6000], Loss: 0.0129
+Epoch [3/15], Batch [1900/6000], Loss: 0.0117
+Epoch [3/15], Batch [2000/6000], Loss: 0.0148
+Epoch [3/15], Batch [2100/6000], Loss: 0.0137
+Epoch [3/15], Batch [2200/6000], Loss: 0.0149
+Epoch [3/15], Batch [2300/6000], Loss: 0.0100
 Epoch [3/15], Batch [2400/6000], Loss: 0.0122
-Epoch [3/15], Batch [2500/6000], Loss: 0.0111
-Epoch [3/15], Batch [2600/6000], Loss: 0.0094
-Epoch [3/15], Batch [2700/6000], Loss: 0.0122
-Epoch [3/15], Batch [2800/6000], Loss: 0.0121
-Epoch [3/15], Batch [2900/6000], Loss: 0.0149
-Epoch [3/15], Batch [3000/6000], Loss: 0.0164
-Epoch [3/15], Batch [3100/6000], Loss: 0.0111
-Epoch [3/15], Batch [3200/6000], Loss: 0.0101
-Epoch [3/15], Batch [3300/6000], Loss: 0.0095
-Epoch [3/15], Batch [3400/6000], Loss: 0.0080
-Epoch [3/15], Batch [3500/6000], Loss: 0.0121
-Epoch [3/15], Batch [3600/6000], Loss: 0.0121
-Epoch [3/15], Batch [3700/6000], Loss: 0.0099
-Epoch [3/15], Batch [3800/6000], Loss: 0.0137
-Epoch [3/15], Batch [3900/6000], Loss: 0.0101
-Epoch [3/15], Batch [4000/6000], Loss: 0.0143
-Epoch [3/15], Batch [4100/6000], Loss: 0.0095
-Epoch [3/15], Batch [4200/6000], Loss: 0.0082
-Epoch [3/15], Batch [4300/6000], Loss: 0.0099
-Epoch [3/15], Batch [4400/6000], Loss: 0.0109
-Epoch [3/15], Batch [4500/6000], Loss: 0.0114
-Epoch [3/15], Batch [4600/6000], Loss: 0.0125
+Epoch [3/15], Batch [2500/6000], Loss: 0.0134
+Epoch [3/15], Batch [2600/6000], Loss: 0.0107
+Epoch [3/15], Batch [2700/6000], Loss: 0.0149
+Epoch [3/15], Batch [2800/6000], Loss: 0.0120
+Epoch [3/15], Batch [2900/6000], Loss: 0.0109
+Epoch [3/15], Batch [3000/6000], Loss: 0.0105
+Epoch [3/15], Batch [3100/6000], Loss: 0.0109
+Epoch [3/15], Batch [3200/6000], Loss: 0.0097
+Epoch [3/15], Batch [3300/6000], Loss: 0.0123
+Epoch [3/15], Batch [3400/6000], Loss: 0.0153
+Epoch [3/15], Batch [3500/6000], Loss: 0.0101
+Epoch [3/15], Batch [3600/6000], Loss: 0.0114
+Epoch [3/15], Batch [3700/6000], Loss: 0.0136
+Epoch [3/15], Batch [3800/6000], Loss: 0.0101
+Epoch [3/15], Batch [3900/6000], Loss: 0.0094
+Epoch [3/15], Batch [4000/6000], Loss: 0.0108
+Epoch [3/15], Batch [4100/6000], Loss: 0.0138
+Epoch [3/15], Batch [4200/6000], Loss: 0.0128
+Epoch [3/15], Batch [4300/6000], Loss: 0.0125
+Epoch [3/15], Batch [4400/6000], Loss: 0.0104
+Epoch [3/15], Batch [4500/6000], Loss: 0.0132
+Epoch [3/15], Batch [4600/6000], Loss: 0.0142
 Epoch [3/15], Batch [4700/6000], Loss: 0.0097
-Epoch [3/15], Batch [4800/6000], Loss: 0.0142
-Epoch [3/15], Batch [4900/6000], Loss: 0.0115
-Epoch [3/15], Batch [5000/6000], Loss: 0.0090
-Epoch [3/15], Batch [5100/6000], Loss: 0.0101
-Epoch [3/15], Batch [5200/6000], Loss: 0.0128
-Epoch [3/15], Batch [5300/6000], Loss: 0.0143
-Epoch [3/15], Batch [5400/6000], Loss: 0.0112
-Epoch [3/15], Batch [5500/6000], Loss: 0.0147
-Epoch [3/15], Batch [5600/6000], Loss: 0.0129
-Epoch [3/15], Batch [5700/6000], Loss: 0.0096
-Epoch [3/15], Batch [5800/6000], Loss: 0.0090
-Epoch [3/15], Batch [5900/6000], Loss: 0.0115
+Epoch [3/15], Batch [4800/6000], Loss: 0.0106
+Epoch [3/15], Batch [4900/6000], Loss: 0.0081
+Epoch [3/15], Batch [5000/6000], Loss: 0.0108
+Epoch [3/15], Batch [5100/6000], Loss: 0.0111
+Epoch [3/15], Batch [5200/6000], Loss: 0.0123
+Epoch [3/15], Batch [5300/6000], Loss: 0.0096
+Epoch [3/15], Batch [5400/6000], Loss: 0.0076
+Epoch [3/15], Batch [5500/6000], Loss: 0.0103
+Epoch [3/15], Batch [5600/6000], Loss: 0.0116
+Epoch [3/15], Batch [5700/6000], Loss: 0.0100
+Epoch [3/15], Batch [5800/6000], Loss: 0.0088
+Epoch [3/15], Batch [5900/6000], Loss: 0.0095
 Epoch [3/15], Loss: 0.0118
 Visualization saved to figures/visualization_0.png
-Epoch [4/15], Batch [0/6000], Loss: 0.0131
-Epoch [4/15], Batch [100/6000], Loss: 0.0091
-Epoch [4/15], Batch [200/6000], Loss: 0.0114
-Epoch [4/15], Batch [300/6000], Loss: 0.0104
-Epoch [4/15], Batch [400/6000], Loss: 0.0090
-Epoch [4/15], Batch [500/6000], Loss: 0.0150
-Epoch [4/15], Batch [600/6000], Loss: 0.0102
+Epoch [4/15], Batch [0/6000], Loss: 0.0114
+Epoch [4/15], Batch [100/6000], Loss: 0.0094
+Epoch [4/15], Batch [200/6000], Loss: 0.0130
+Epoch [4/15], Batch [300/6000], Loss: 0.0078
+Epoch [4/15], Batch [400/6000], Loss: 0.0077
+Epoch [4/15], Batch [500/6000], Loss: 0.0088
+Epoch [4/15], Batch [600/6000], Loss: 0.0126
 Epoch [4/15], Batch [700/6000], Loss: 0.0111
-Epoch [4/15], Batch [800/6000], Loss: 0.0049
-Epoch [4/15], Batch [900/6000], Loss: 0.0093
-Epoch [4/15], Batch [1000/6000], Loss: 0.0096
-Epoch [4/15], Batch [1100/6000], Loss: 0.0112
-Epoch [4/15], Batch [1200/6000], Loss: 0.0137
-Epoch [4/15], Batch [1300/6000], Loss: 0.0112
-Epoch [4/15], Batch [1400/6000], Loss: 0.0120
-Epoch [4/15], Batch [1500/6000], Loss: 0.0087
-Epoch [4/15], Batch [1600/6000], Loss: 0.0097
-Epoch [4/15], Batch [1700/6000], Loss: 0.0131
-Epoch [4/15], Batch [1800/6000], Loss: 0.0136
-Epoch [4/15], Batch [1900/6000], Loss: 0.0086
-Epoch [4/15], Batch [2000/6000], Loss: 0.0073
-Epoch [4/15], Batch [2100/6000], Loss: 0.0092
-Epoch [4/15], Batch [2200/6000], Loss: 0.0116
-Epoch [4/15], Batch [2300/6000], Loss: 0.0133
-Epoch [4/15], Batch [2400/6000], Loss: 0.0099
-Epoch [4/15], Batch [2500/6000], Loss: 0.0088
-Epoch [4/15], Batch [2600/6000], Loss: 0.0155
-Epoch [4/15], Batch [2700/6000], Loss: 0.0077
-Epoch [4/15], Batch [2800/6000], Loss: 0.0101
-Epoch [4/15], Batch [2900/6000], Loss: 0.0104
-Epoch [4/15], Batch [3000/6000], Loss: 0.0096
-Epoch [4/15], Batch [3100/6000], Loss: 0.0089
-Epoch [4/15], Batch [3200/6000], Loss: 0.0090
-Epoch [4/15], Batch [3300/6000], Loss: 0.0114
-Epoch [4/15], Batch [3400/6000], Loss: 0.0109
-Epoch [4/15], Batch [3500/6000], Loss: 0.0135
-Epoch [4/15], Batch [3600/6000], Loss: 0.0106
-Epoch [4/15], Batch [3700/6000], Loss: 0.0106
-Epoch [4/15], Batch [3800/6000], Loss: 0.0121
-Epoch [4/15], Batch [3900/6000], Loss: 0.0107
-Epoch [4/15], Batch [4000/6000], Loss: 0.0072
-Epoch [4/15], Batch [4100/6000], Loss: 0.0088
-Epoch [4/15], Batch [4200/6000], Loss: 0.0122
-Epoch [4/15], Batch [4300/6000], Loss: 0.0097
-Epoch [4/15], Batch [4400/6000], Loss: 0.0113
-Epoch [4/15], Batch [4500/6000], Loss: 0.0161
-Epoch [4/15], Batch [4600/6000], Loss: 0.0120
-Epoch [4/15], Batch [4700/6000], Loss: 0.0118
-Epoch [4/15], Batch [4800/6000], Loss: 0.0094
-Epoch [4/15], Batch [4900/6000], Loss: 0.0064
-Epoch [4/15], Batch [5000/6000], Loss: 0.0131
-Epoch [4/15], Batch [5100/6000], Loss: 0.0097
-Epoch [4/15], Batch [5200/6000], Loss: 0.0081
-Epoch [4/15], Batch [5300/6000], Loss: 0.0071
-Epoch [4/15], Batch [5400/6000], Loss: 0.0108
-Epoch [4/15], Batch [5500/6000], Loss: 0.0088
-Epoch [4/15], Batch [5600/6000], Loss: 0.0097
-Epoch [4/15], Batch [5700/6000], Loss: 0.0087
-Epoch [4/15], Batch [5800/6000], Loss: 0.0099
-Epoch [4/15], Batch [5900/6000], Loss: 0.0118
+Epoch [4/15], Batch [800/6000], Loss: 0.0108
+Epoch [4/15], Batch [900/6000], Loss: 0.0119
+Epoch [4/15], Batch [1000/6000], Loss: 0.0124
+Epoch [4/15], Batch [1100/6000], Loss: 0.0077
+Epoch [4/15], Batch [1200/6000], Loss: 0.0065
+Epoch [4/15], Batch [1300/6000], Loss: 0.0126
+Epoch [4/15], Batch [1400/6000], Loss: 0.0125
+Epoch [4/15], Batch [1500/6000], Loss: 0.0088
+Epoch [4/15], Batch [1600/6000], Loss: 0.0092
+Epoch [4/15], Batch [1700/6000], Loss: 0.0103
+Epoch [4/15], Batch [1800/6000], Loss: 0.0103
+Epoch [4/15], Batch [1900/6000], Loss: 0.0145
+Epoch [4/15], Batch [2000/6000], Loss: 0.0140
+Epoch [4/15], Batch [2100/6000], Loss: 0.0110
+Epoch [4/15], Batch [2200/6000], Loss: 0.0126
+Epoch [4/15], Batch [2300/6000], Loss: 0.0110
+Epoch [4/15], Batch [2400/6000], Loss: 0.0079
+Epoch [4/15], Batch [2500/6000], Loss: 0.0080
+Epoch [4/15], Batch [2600/6000], Loss: 0.0119
+Epoch [4/15], Batch [2700/6000], Loss: 0.0114
+Epoch [4/15], Batch [2800/6000], Loss: 0.0094
+Epoch [4/15], Batch [2900/6000], Loss: 0.0090
+Epoch [4/15], Batch [3000/6000], Loss: 0.0138
+Epoch [4/15], Batch [3100/6000], Loss: 0.0134
+Epoch [4/15], Batch [3200/6000], Loss: 0.0100
+Epoch [4/15], Batch [3300/6000], Loss: 0.0117
+Epoch [4/15], Batch [3400/6000], Loss: 0.0106
+Epoch [4/15], Batch [3500/6000], Loss: 0.0118
+Epoch [4/15], Batch [3600/6000], Loss: 0.0092
+Epoch [4/15], Batch [3700/6000], Loss: 0.0107
+Epoch [4/15], Batch [3800/6000], Loss: 0.0063
+Epoch [4/15], Batch [3900/6000], Loss: 0.0112
+Epoch [4/15], Batch [4000/6000], Loss: 0.0067
+Epoch [4/15], Batch [4100/6000], Loss: 0.0054
+Epoch [4/15], Batch [4200/6000], Loss: 0.0112
+Epoch [4/15], Batch [4300/6000], Loss: 0.0103
+Epoch [4/15], Batch [4400/6000], Loss: 0.0127
+Epoch [4/15], Batch [4500/6000], Loss: 0.0087
+Epoch [4/15], Batch [4600/6000], Loss: 0.0104
+Epoch [4/15], Batch [4700/6000], Loss: 0.0102
+Epoch [4/15], Batch [4800/6000], Loss: 0.0089
+Epoch [4/15], Batch [4900/6000], Loss: 0.0103
+Epoch [4/15], Batch [5000/6000], Loss: 0.0097
+Epoch [4/15], Batch [5100/6000], Loss: 0.0122
+Epoch [4/15], Batch [5200/6000], Loss: 0.0100
+Epoch [4/15], Batch [5300/6000], Loss: 0.0095
+Epoch [4/15], Batch [5400/6000], Loss: 0.0105
+Epoch [4/15], Batch [5500/6000], Loss: 0.0103
+Epoch [4/15], Batch [5600/6000], Loss: 0.0095
+Epoch [4/15], Batch [5700/6000], Loss: 0.0122
+Epoch [4/15], Batch [5800/6000], Loss: 0.0087
+Epoch [4/15], Batch [5900/6000], Loss: 0.0122
 Epoch [4/15], Loss: 0.0106
 Visualization saved to figures/visualization_0.png
-Epoch [5/15], Batch [0/6000], Loss: 0.0094
-Epoch [5/15], Batch [100/6000], Loss: 0.0115
-Epoch [5/15], Batch [200/6000], Loss: 0.0104
-Epoch [5/15], Batch [300/6000], Loss: 0.0086
-Epoch [5/15], Batch [400/6000], Loss: 0.0127
-Epoch [5/15], Batch [500/6000], Loss: 0.0129
-Epoch [5/15], Batch [600/6000], Loss: 0.0086
-Epoch [5/15], Batch [700/6000], Loss: 0.0104
-Epoch [5/15], Batch [800/6000], Loss: 0.0092
-Epoch [5/15], Batch [900/6000], Loss: 0.0083
-Epoch [5/15], Batch [1000/6000], Loss: 0.0110
-Epoch [5/15], Batch [1100/6000], Loss: 0.0101
-Epoch [5/15], Batch [1200/6000], Loss: 0.0137
-Epoch [5/15], Batch [1300/6000], Loss: 0.0081
-Epoch [5/15], Batch [1400/6000], Loss: 0.0085
-Epoch [5/15], Batch [1500/6000], Loss: 0.0096
-Epoch [5/15], Batch [1600/6000], Loss: 0.0095
-Epoch [5/15], Batch [1700/6000], Loss: 0.0098
-Epoch [5/15], Batch [1800/6000], Loss: 0.0088
-Epoch [5/15], Batch [1900/6000], Loss: 0.0103
-Epoch [5/15], Batch [2000/6000], Loss: 0.0087
-Epoch [5/15], Batch [2100/6000], Loss: 0.0103
-Epoch [5/15], Batch [2200/6000], Loss: 0.0087
-Epoch [5/15], Batch [2300/6000], Loss: 0.0090
-Epoch [5/15], Batch [2400/6000], Loss: 0.0097
-Epoch [5/15], Batch [2500/6000], Loss: 0.0105
-Epoch [5/15], Batch [2600/6000], Loss: 0.0057
-Epoch [5/15], Batch [2700/6000], Loss: 0.0081
-Epoch [5/15], Batch [2800/6000], Loss: 0.0090
-Epoch [5/15], Batch [2900/6000], Loss: 0.0107
-Epoch [5/15], Batch [3000/6000], Loss: 0.0105
-Epoch [5/15], Batch [3100/6000], Loss: 0.0109
-Epoch [5/15], Batch [3200/6000], Loss: 0.0093
-Epoch [5/15], Batch [3300/6000], Loss: 0.0099
-Epoch [5/15], Batch [3400/6000], Loss: 0.0091
-Epoch [5/15], Batch [3500/6000], Loss: 0.0127
-Epoch [5/15], Batch [3600/6000], Loss: 0.0089
-Epoch [5/15], Batch [3700/6000], Loss: 0.0081
-Epoch [5/15], Batch [3800/6000], Loss: 0.0100
-Epoch [5/15], Batch [3900/6000], Loss: 0.0100
-Epoch [5/15], Batch [4000/6000], Loss: 0.0081
-Epoch [5/15], Batch [4100/6000], Loss: 0.0084
-Epoch [5/15], Batch [4200/6000], Loss: 0.0115
-Epoch [5/15], Batch [4300/6000], Loss: 0.0095
-Epoch [5/15], Batch [4400/6000], Loss: 0.0119
-Epoch [5/15], Batch [4500/6000], Loss: 0.0078
-Epoch [5/15], Batch [4600/6000], Loss: 0.0079
-Epoch [5/15], Batch [4700/6000], Loss: 0.0111
-Epoch [5/15], Batch [4800/6000], Loss: 0.0128
-Epoch [5/15], Batch [4900/6000], Loss: 0.0087
-Epoch [5/15], Batch [5000/6000], Loss: 0.0120
-Epoch [5/15], Batch [5100/6000], Loss: 0.0076
-Epoch [5/15], Batch [5200/6000], Loss: 0.0093
-Epoch [5/15], Batch [5300/6000], Loss: 0.0126
-Epoch [5/15], Batch [5400/6000], Loss: 0.0103
-Epoch [5/15], Batch [5500/6000], Loss: 0.0057
-Epoch [5/15], Batch [5600/6000], Loss: 0.0072
-Epoch [5/15], Batch [5700/6000], Loss: 0.0108
-Epoch [5/15], Batch [5800/6000], Loss: 0.0123
-Epoch [5/15], Batch [5900/6000], Loss: 0.0075
-Epoch [5/15], Loss: 0.0098
+Epoch [5/15], Batch [0/6000], Loss: 0.0103
+Epoch [5/15], Batch [100/6000], Loss: 0.0095
+Epoch [5/15], Batch [200/6000], Loss: 0.0091
+Epoch [5/15], Batch [300/6000], Loss: 0.0082
+Epoch [5/15], Batch [400/6000], Loss: 0.0120
+Epoch [5/15], Batch [500/6000], Loss: 0.0091
+Epoch [5/15], Batch [600/6000], Loss: 0.0127
+Epoch [5/15], Batch [700/6000], Loss: 0.0089
+Epoch [5/15], Batch [800/6000], Loss: 0.0137
+Epoch [5/15], Batch [900/6000], Loss: 0.0133
+Epoch [5/15], Batch [1000/6000], Loss: 0.0090
+Epoch [5/15], Batch [1100/6000], Loss: 0.0108
+Epoch [5/15], Batch [1200/6000], Loss: 0.0085
+Epoch [5/15], Batch [1300/6000], Loss: 0.0099
+Epoch [5/15], Batch [1400/6000], Loss: 0.0077
+Epoch [5/15], Batch [1500/6000], Loss: 0.0133
+Epoch [5/15], Batch [1600/6000], Loss: 0.0114
+Epoch [5/15], Batch [1700/6000], Loss: 0.0069
+Epoch [5/15], Batch [1800/6000], Loss: 0.0076
+Epoch [5/15], Batch [1900/6000], Loss: 0.0149
+Epoch [5/15], Batch [2000/6000], Loss: 0.0091
+Epoch [5/15], Batch [2100/6000], Loss: 0.0096
+Epoch [5/15], Batch [2200/6000], Loss: 0.0147
+Epoch [5/15], Batch [2300/6000], Loss: 0.0088
+Epoch [5/15], Batch [2400/6000], Loss: 0.0079
+Epoch [5/15], Batch [2500/6000], Loss: 0.0097
+Epoch [5/15], Batch [2600/6000], Loss: 0.0097
+Epoch [5/15], Batch [2700/6000], Loss: 0.0091
+Epoch [5/15], Batch [2800/6000], Loss: 0.0078
+Epoch [5/15], Batch [2900/6000], Loss: 0.0133
+Epoch [5/15], Batch [3000/6000], Loss: 0.0093
+Epoch [5/15], Batch [3100/6000], Loss: 0.0073
+Epoch [5/15], Batch [3200/6000], Loss: 0.0109
+Epoch [5/15], Batch [3300/6000], Loss: 0.0082
+Epoch [5/15], Batch [3400/6000], Loss: 0.0120
+Epoch [5/15], Batch [3500/6000], Loss: 0.0098
+Epoch [5/15], Batch [3600/6000], Loss: 0.0112
+Epoch [5/15], Batch [3700/6000], Loss: 0.0079
+Epoch [5/15], Batch [3800/6000], Loss: 0.0094
+Epoch [5/15], Batch [3900/6000], Loss: 0.0107
+Epoch [5/15], Batch [4000/6000], Loss: 0.0071
+Epoch [5/15], Batch [4100/6000], Loss: 0.0088
+Epoch [5/15], Batch [4200/6000], Loss: 0.0132
+Epoch [5/15], Batch [4300/6000], Loss: 0.0084
+Epoch [5/15], Batch [4400/6000], Loss: 0.0077
+Epoch [5/15], Batch [4500/6000], Loss: 0.0106
+Epoch [5/15], Batch [4600/6000], Loss: 0.0099
+Epoch [5/15], Batch [4700/6000], Loss: 0.0085
+Epoch [5/15], Batch [4800/6000], Loss: 0.0133
+Epoch [5/15], Batch [4900/6000], Loss: 0.0104
+Epoch [5/15], Batch [5000/6000], Loss: 0.0099
+Epoch [5/15], Batch [5100/6000], Loss: 0.0104
+Epoch [5/15], Batch [5200/6000], Loss: 0.0114
+Epoch [5/15], Batch [5300/6000], Loss: 0.0121
+Epoch [5/15], Batch [5400/6000], Loss: 0.0083
+Epoch [5/15], Batch [5500/6000], Loss: 0.0078
+Epoch [5/15], Batch [5600/6000], Loss: 0.0076
+Epoch [5/15], Batch [5700/6000], Loss: 0.0084
+Epoch [5/15], Batch [5800/6000], Loss: 0.0118
+Epoch [5/15], Batch [5900/6000], Loss: 0.0113
+Epoch [5/15], Loss: 0.0100
 Visualization saved to figures/visualization_0.png
-Epoch [6/15], Batch [0/6000], Loss: 0.0084
-Epoch [6/15], Batch [100/6000], Loss: 0.0077
-Epoch [6/15], Batch [200/6000], Loss: 0.0091
-Epoch [6/15], Batch [300/6000], Loss: 0.0082
-Epoch [6/15], Batch [400/6000], Loss: 0.0121
-Epoch [6/15], Batch [500/6000], Loss: 0.0107
-Epoch [6/15], Batch [600/6000], Loss: 0.0076
-Epoch [6/15], Batch [700/6000], Loss: 0.0079
-Epoch [6/15], Batch [800/6000], Loss: 0.0122
-Epoch [6/15], Batch [900/6000], Loss: 0.0070
-Epoch [6/15], Batch [1000/6000], Loss: 0.0094
-Epoch [6/15], Batch [1100/6000], Loss: 0.0085
-Epoch [6/15], Batch [1200/6000], Loss: 0.0075
-Epoch [6/15], Batch [1300/6000], Loss: 0.0082
-Epoch [6/15], Batch [1400/6000], Loss: 0.0077
-Epoch [6/15], Batch [1500/6000], Loss: 0.0120
-Epoch [6/15], Batch [1600/6000], Loss: 0.0105
-Epoch [6/15], Batch [1700/6000], Loss: 0.0099
-Epoch [6/15], Batch [1800/6000], Loss: 0.0088
-Epoch [6/15], Batch [1900/6000], Loss: 0.0098
-Epoch [6/15], Batch [2000/6000], Loss: 0.0076
-Epoch [6/15], Batch [2100/6000], Loss: 0.0071
-Epoch [6/15], Batch [2200/6000], Loss: 0.0113
-Epoch [6/15], Batch [2300/6000], Loss: 0.0084
-Epoch [6/15], Batch [2400/6000], Loss: 0.0065
-Epoch [6/15], Batch [2500/6000], Loss: 0.0092
-Epoch [6/15], Batch [2600/6000], Loss: 0.0107
-Epoch [6/15], Batch [2700/6000], Loss: 0.0073
-Epoch [6/15], Batch [2800/6000], Loss: 0.0119
-Epoch [6/15], Batch [2900/6000], Loss: 0.0100
-Epoch [6/15], Batch [3000/6000], Loss: 0.0094
-Epoch [6/15], Batch [3100/6000], Loss: 0.0096
-Epoch [6/15], Batch [3200/6000], Loss: 0.0077
-Epoch [6/15], Batch [3300/6000], Loss: 0.0100
-Epoch [6/15], Batch [3400/6000], Loss: 0.0116
-Epoch [6/15], Batch [3500/6000], Loss: 0.0070
-Epoch [6/15], Batch [3600/6000], Loss: 0.0074
-Epoch [6/15], Batch [3700/6000], Loss: 0.0068
-Epoch [6/15], Batch [3800/6000], Loss: 0.0095
-Epoch [6/15], Batch [3900/6000], Loss: 0.0088
-Epoch [6/15], Batch [4000/6000], Loss: 0.0090
-Epoch [6/15], Batch [4100/6000], Loss: 0.0094
-Epoch [6/15], Batch [4200/6000], Loss: 0.0083
-Epoch [6/15], Batch [4300/6000], Loss: 0.0086
-Epoch [6/15], Batch [4400/6000], Loss: 0.0089
-Epoch [6/15], Batch [4500/6000], Loss: 0.0108
-Epoch [6/15], Batch [4600/6000], Loss: 0.0088
-Epoch [6/15], Batch [4700/6000], Loss: 0.0087
-Epoch [6/15], Batch [4800/6000], Loss: 0.0072
-Epoch [6/15], Batch [4900/6000], Loss: 0.0060
-Epoch [6/15], Batch [5000/6000], Loss: 0.0087
-Epoch [6/15], Batch [5100/6000], Loss: 0.0086
-Epoch [6/15], Batch [5200/6000], Loss: 0.0076
+Epoch [6/15], Batch [0/6000], Loss: 0.0078
+Epoch [6/15], Batch [100/6000], Loss: 0.0095
+Epoch [6/15], Batch [200/6000], Loss: 0.0079
+Epoch [6/15], Batch [300/6000], Loss: 0.0089
+Epoch [6/15], Batch [400/6000], Loss: 0.0083
+Epoch [6/15], Batch [500/6000], Loss: 0.0081
+Epoch [6/15], Batch [600/6000], Loss: 0.0096
+Epoch [6/15], Batch [700/6000], Loss: 0.0084
+Epoch [6/15], Batch [800/6000], Loss: 0.0101
+Epoch [6/15], Batch [900/6000], Loss: 0.0084
+Epoch [6/15], Batch [1000/6000], Loss: 0.0091
+Epoch [6/15], Batch [1100/6000], Loss: 0.0113
+Epoch [6/15], Batch [1200/6000], Loss: 0.0111
+Epoch [6/15], Batch [1300/6000], Loss: 0.0104
+Epoch [6/15], Batch [1400/6000], Loss: 0.0115
+Epoch [6/15], Batch [1500/6000], Loss: 0.0085
+Epoch [6/15], Batch [1600/6000], Loss: 0.0092
+Epoch [6/15], Batch [1700/6000], Loss: 0.0098
+Epoch [6/15], Batch [1800/6000], Loss: 0.0111
+Epoch [6/15], Batch [1900/6000], Loss: 0.0077
+Epoch [6/15], Batch [2000/6000], Loss: 0.0084
+Epoch [6/15], Batch [2100/6000], Loss: 0.0096
+Epoch [6/15], Batch [2200/6000], Loss: 0.0112
+Epoch [6/15], Batch [2300/6000], Loss: 0.0102
+Epoch [6/15], Batch [2400/6000], Loss: 0.0072
+Epoch [6/15], Batch [2500/6000], Loss: 0.0106
+Epoch [6/15], Batch [2600/6000], Loss: 0.0098
+Epoch [6/15], Batch [2700/6000], Loss: 0.0080
+Epoch [6/15], Batch [2800/6000], Loss: 0.0079
+Epoch [6/15], Batch [2900/6000], Loss: 0.0085
+Epoch [6/15], Batch [3000/6000], Loss: 0.0105
+Epoch [6/15], Batch [3100/6000], Loss: 0.0101
+Epoch [6/15], Batch [3200/6000], Loss: 0.0091
+Epoch [6/15], Batch [3300/6000], Loss: 0.0095
+Epoch [6/15], Batch [3400/6000], Loss: 0.0106
+Epoch [6/15], Batch [3500/6000], Loss: 0.0102
+Epoch [6/15], Batch [3600/6000], Loss: 0.0064
+Epoch [6/15], Batch [3700/6000], Loss: 0.0120
+Epoch [6/15], Batch [3800/6000], Loss: 0.0102
+Epoch [6/15], Batch [3900/6000], Loss: 0.0082
+Epoch [6/15], Batch [4000/6000], Loss: 0.0094
+Epoch [6/15], Batch [4100/6000], Loss: 0.0106
+Epoch [6/15], Batch [4200/6000], Loss: 0.0085
+Epoch [6/15], Batch [4300/6000], Loss: 0.0104
+Epoch [6/15], Batch [4400/6000], Loss: 0.0116
+Epoch [6/15], Batch [4500/6000], Loss: 0.0057
+Epoch [6/15], Batch [4600/6000], Loss: 0.0072
+Epoch [6/15], Batch [4700/6000], Loss: 0.0075
+Epoch [6/15], Batch [4800/6000], Loss: 0.0102
+Epoch [6/15], Batch [4900/6000], Loss: 0.0095
+Epoch [6/15], Batch [5000/6000], Loss: 0.0072
+Epoch [6/15], Batch [5100/6000], Loss: 0.0090
+Epoch [6/15], Batch [5200/6000], Loss: 0.0100
 Epoch [6/15], Batch [5300/6000], Loss: 0.0092
-Epoch [6/15], Batch [5400/6000], Loss: 0.0079
-Epoch [6/15], Batch [5500/6000], Loss: 0.0101
-Epoch [6/15], Batch [5600/6000], Loss: 0.0057
-Epoch [6/15], Batch [5700/6000], Loss: 0.0101
-Epoch [6/15], Batch [5800/6000], Loss: 0.0083
-Epoch [6/15], Batch [5900/6000], Loss: 0.0065
-Epoch [6/15], Loss: 0.0092
+Epoch [6/15], Batch [5400/6000], Loss: 0.0089
+Epoch [6/15], Batch [5500/6000], Loss: 0.0091
+Epoch [6/15], Batch [5600/6000], Loss: 0.0091
+Epoch [6/15], Batch [5700/6000], Loss: 0.0061
+Epoch [6/15], Batch [5800/6000], Loss: 0.0072
+Epoch [6/15], Batch [5900/6000], Loss: 0.0092
+Epoch [6/15], Loss: 0.0094
 Visualization saved to figures/visualization_0.png
-Epoch [7/15], Batch [0/6000], Loss: 0.0084
-Epoch [7/15], Batch [100/6000], Loss: 0.0076
-Epoch [7/15], Batch [200/6000], Loss: 0.0101
-Epoch [7/15], Batch [300/6000], Loss: 0.0091
-Epoch [7/15], Batch [400/6000], Loss: 0.0101
-Epoch [7/15], Batch [500/6000], Loss: 0.0087
-Epoch [7/15], Batch [600/6000], Loss: 0.0089
-Epoch [7/15], Batch [700/6000], Loss: 0.0104
-Epoch [7/15], Batch [800/6000], Loss: 0.0087
-Epoch [7/15], Batch [900/6000], Loss: 0.0111
-Epoch [7/15], Batch [1000/6000], Loss: 0.0095
-Epoch [7/15], Batch [1100/6000], Loss: 0.0108
-Epoch [7/15], Batch [1200/6000], Loss: 0.0110
-Epoch [7/15], Batch [1300/6000], Loss: 0.0056
-Epoch [7/15], Batch [1400/6000], Loss: 0.0063
-Epoch [7/15], Batch [1500/6000], Loss: 0.0076
-Epoch [7/15], Batch [1600/6000], Loss: 0.0090
-Epoch [7/15], Batch [1700/6000], Loss: 0.0114
-Epoch [7/15], Batch [1800/6000], Loss: 0.0047
-Epoch [7/15], Batch [1900/6000], Loss: 0.0090
-Epoch [7/15], Batch [2000/6000], Loss: 0.0113
-Epoch [7/15], Batch [2100/6000], Loss: 0.0095
-Epoch [7/15], Batch [2200/6000], Loss: 0.0080
-Epoch [7/15], Batch [2300/6000], Loss: 0.0101
-Epoch [7/15], Batch [2400/6000], Loss: 0.0086
-Epoch [7/15], Batch [2500/6000], Loss: 0.0106
-Epoch [7/15], Batch [2600/6000], Loss: 0.0072
-Epoch [7/15], Batch [2700/6000], Loss: 0.0138
-Epoch [7/15], Batch [2800/6000], Loss: 0.0113
+Epoch [7/15], Batch [0/6000], Loss: 0.0106
+Epoch [7/15], Batch [100/6000], Loss: 0.0091
+Epoch [7/15], Batch [200/6000], Loss: 0.0064
+Epoch [7/15], Batch [300/6000], Loss: 0.0076
+Epoch [7/15], Batch [400/6000], Loss: 0.0085
+Epoch [7/15], Batch [500/6000], Loss: 0.0134
+Epoch [7/15], Batch [600/6000], Loss: 0.0078
+Epoch [7/15], Batch [700/6000], Loss: 0.0099
+Epoch [7/15], Batch [800/6000], Loss: 0.0072
+Epoch [7/15], Batch [900/6000], Loss: 0.0078
+Epoch [7/15], Batch [1000/6000], Loss: 0.0101
+Epoch [7/15], Batch [1100/6000], Loss: 0.0086
+Epoch [7/15], Batch [1200/6000], Loss: 0.0083
+Epoch [7/15], Batch [1300/6000], Loss: 0.0120
+Epoch [7/15], Batch [1400/6000], Loss: 0.0089
+Epoch [7/15], Batch [1500/6000], Loss: 0.0070
+Epoch [7/15], Batch [1600/6000], Loss: 0.0082
+Epoch [7/15], Batch [1700/6000], Loss: 0.0083
+Epoch [7/15], Batch [1800/6000], Loss: 0.0084
+Epoch [7/15], Batch [1900/6000], Loss: 0.0082
+Epoch [7/15], Batch [2000/6000], Loss: 0.0078
+Epoch [7/15], Batch [2100/6000], Loss: 0.0085
+Epoch [7/15], Batch [2200/6000], Loss: 0.0096
+Epoch [7/15], Batch [2300/6000], Loss: 0.0093
+Epoch [7/15], Batch [2400/6000], Loss: 0.0082
+Epoch [7/15], Batch [2500/6000], Loss: 0.0102
+Epoch [7/15], Batch [2600/6000], Loss: 0.0083
+Epoch [7/15], Batch [2700/6000], Loss: 0.0110
+Epoch [7/15], Batch [2800/6000], Loss: 0.0081
 Epoch [7/15], Batch [2900/6000], Loss: 0.0108
-Epoch [7/15], Batch [3000/6000], Loss: 0.0088
-Epoch [7/15], Batch [3100/6000], Loss: 0.0090
-Epoch [7/15], Batch [3200/6000], Loss: 0.0087
-Epoch [7/15], Batch [3300/6000], Loss: 0.0084
-Epoch [7/15], Batch [3400/6000], Loss: 0.0092
-Epoch [7/15], Batch [3500/6000], Loss: 0.0097
-Epoch [7/15], Batch [3600/6000], Loss: 0.0091
-Epoch [7/15], Batch [3700/6000], Loss: 0.0070
-Epoch [7/15], Batch [3800/6000], Loss: 0.0114
-Epoch [7/15], Batch [3900/6000], Loss: 0.0129
-Epoch [7/15], Batch [4000/6000], Loss: 0.0086
-Epoch [7/15], Batch [4100/6000], Loss: 0.0071
-Epoch [7/15], Batch [4200/6000], Loss: 0.0087
-Epoch [7/15], Batch [4300/6000], Loss: 0.0062
-Epoch [7/15], Batch [4400/6000], Loss: 0.0086
-Epoch [7/15], Batch [4500/6000], Loss: 0.0098
-Epoch [7/15], Batch [4600/6000], Loss: 0.0097
-Epoch [7/15], Batch [4700/6000], Loss: 0.0081
-Epoch [7/15], Batch [4800/6000], Loss: 0.0096
-Epoch [7/15], Batch [4900/6000], Loss: 0.0065
-Epoch [7/15], Batch [5000/6000], Loss: 0.0089
-Epoch [7/15], Batch [5100/6000], Loss: 0.0112
-Epoch [7/15], Batch [5200/6000], Loss: 0.0107
-Epoch [7/15], Batch [5300/6000], Loss: 0.0085
-Epoch [7/15], Batch [5400/6000], Loss: 0.0066
-Epoch [7/15], Batch [5500/6000], Loss: 0.0084
-Epoch [7/15], Batch [5600/6000], Loss: 0.0105
-Epoch [7/15], Batch [5700/6000], Loss: 0.0078
-Epoch [7/15], Batch [5800/6000], Loss: 0.0087
-Epoch [7/15], Batch [5900/6000], Loss: 0.0103
-Epoch [7/15], Loss: 0.0087
+Epoch [7/15], Batch [3000/6000], Loss: 0.0095
+Epoch [7/15], Batch [3100/6000], Loss: 0.0073
+Epoch [7/15], Batch [3200/6000], Loss: 0.0069
+Epoch [7/15], Batch [3300/6000], Loss: 0.0099
+Epoch [7/15], Batch [3400/6000], Loss: 0.0073
+Epoch [7/15], Batch [3500/6000], Loss: 0.0101
+Epoch [7/15], Batch [3600/6000], Loss: 0.0087
+Epoch [7/15], Batch [3700/6000], Loss: 0.0073
+Epoch [7/15], Batch [3800/6000], Loss: 0.0104
+Epoch [7/15], Batch [3900/6000], Loss: 0.0122
+Epoch [7/15], Batch [4000/6000], Loss: 0.0084
+Epoch [7/15], Batch [4100/6000], Loss: 0.0084
+Epoch [7/15], Batch [4200/6000], Loss: 0.0103
+Epoch [7/15], Batch [4300/6000], Loss: 0.0085
+Epoch [7/15], Batch [4400/6000], Loss: 0.0081
+Epoch [7/15], Batch [4500/6000], Loss: 0.0118
+Epoch [7/15], Batch [4600/6000], Loss: 0.0070
+Epoch [7/15], Batch [4700/6000], Loss: 0.0083
+Epoch [7/15], Batch [4800/6000], Loss: 0.0075
+Epoch [7/15], Batch [4900/6000], Loss: 0.0080
+Epoch [7/15], Batch [5000/6000], Loss: 0.0071
+Epoch [7/15], Batch [5100/6000], Loss: 0.0085
+Epoch [7/15], Batch [5200/6000], Loss: 0.0085
+Epoch [7/15], Batch [5300/6000], Loss: 0.0119
+Epoch [7/15], Batch [5400/6000], Loss: 0.0090
+Epoch [7/15], Batch [5500/6000], Loss: 0.0066
+Epoch [7/15], Batch [5600/6000], Loss: 0.0095
+Epoch [7/15], Batch [5700/6000], Loss: 0.0085
+Epoch [7/15], Batch [5800/6000], Loss: 0.0115
+Epoch [7/15], Batch [5900/6000], Loss: 0.0081
+Epoch [7/15], Loss: 0.0090
 Visualization saved to figures/visualization_0.png
-Epoch [8/15], Batch [0/6000], Loss: 0.0085
-Epoch [8/15], Batch [100/6000], Loss: 0.0070
-Epoch [8/15], Batch [200/6000], Loss: 0.0059
+Epoch [8/15], Batch [0/6000], Loss: 0.0086
+Epoch [8/15], Batch [100/6000], Loss: 0.0078
+Epoch [8/15], Batch [200/6000], Loss: 0.0084
 Epoch [8/15], Batch [300/6000], Loss: 0.0095
-Epoch [8/15], Batch [400/6000], Loss: 0.0077
-Epoch [8/15], Batch [500/6000], Loss: 0.0075
-Epoch [8/15], Batch [600/6000], Loss: 0.0084
-Epoch [8/15], Batch [700/6000], Loss: 0.0078
-Epoch [8/15], Batch [800/6000], Loss: 0.0093
-Epoch [8/15], Batch [900/6000], Loss: 0.0088
-Epoch [8/15], Batch [1000/6000], Loss: 0.0096
-Epoch [8/15], Batch [1100/6000], Loss: 0.0096
-Epoch [8/15], Batch [1200/6000], Loss: 0.0098
-Epoch [8/15], Batch [1300/6000], Loss: 0.0067
-Epoch [8/15], Batch [1400/6000], Loss: 0.0110
-Epoch [8/15], Batch [1500/6000], Loss: 0.0068
-Epoch [8/15], Batch [1600/6000], Loss: 0.0066
-Epoch [8/15], Batch [1700/6000], Loss: 0.0094
-Epoch [8/15], Batch [1800/6000], Loss: 0.0080
-Epoch [8/15], Batch [1900/6000], Loss: 0.0087
-Epoch [8/15], Batch [2000/6000], Loss: 0.0104
-Epoch [8/15], Batch [2100/6000], Loss: 0.0107
-Epoch [8/15], Batch [2200/6000], Loss: 0.0086
-Epoch [8/15], Batch [2300/6000], Loss: 0.0058
-Epoch [8/15], Batch [2400/6000], Loss: 0.0091
-Epoch [8/15], Batch [2500/6000], Loss: 0.0088
-Epoch [8/15], Batch [2600/6000], Loss: 0.0084
-Epoch [8/15], Batch [2700/6000], Loss: 0.0112
-Epoch [8/15], Batch [2800/6000], Loss: 0.0096
-Epoch [8/15], Batch [2900/6000], Loss: 0.0075
-Epoch [8/15], Batch [3000/6000], Loss: 0.0072
-Epoch [8/15], Batch [3100/6000], Loss: 0.0082
-Epoch [8/15], Batch [3200/6000], Loss: 0.0090
-Epoch [8/15], Batch [3300/6000], Loss: 0.0081
-Epoch [8/15], Batch [3400/6000], Loss: 0.0095
-Epoch [8/15], Batch [3500/6000], Loss: 0.0086
-Epoch [8/15], Batch [3600/6000], Loss: 0.0091
-Epoch [8/15], Batch [3700/6000], Loss: 0.0082
-Epoch [8/15], Batch [3800/6000], Loss: 0.0067
-Epoch [8/15], Batch [3900/6000], Loss: 0.0111
-Epoch [8/15], Batch [4000/6000], Loss: 0.0093
-Epoch [8/15], Batch [4100/6000], Loss: 0.0103
-Epoch [8/15], Batch [4200/6000], Loss: 0.0082
-Epoch [8/15], Batch [4300/6000], Loss: 0.0049
-Epoch [8/15], Batch [4400/6000], Loss: 0.0091
-Epoch [8/15], Batch [4500/6000], Loss: 0.0098
-Epoch [8/15], Batch [4600/6000], Loss: 0.0076
-Epoch [8/15], Batch [4700/6000], Loss: 0.0074
-Epoch [8/15], Batch [4800/6000], Loss: 0.0074
-Epoch [8/15], Batch [4900/6000], Loss: 0.0084
-Epoch [8/15], Batch [5000/6000], Loss: 0.0128
-Epoch [8/15], Batch [5100/6000], Loss: 0.0088
-Epoch [8/15], Batch [5200/6000], Loss: 0.0090
-Epoch [8/15], Batch [5300/6000], Loss: 0.0088
-Epoch [8/15], Batch [5400/6000], Loss: 0.0087
-Epoch [8/15], Batch [5500/6000], Loss: 0.0085
-Epoch [8/15], Batch [5600/6000], Loss: 0.0087
-Epoch [8/15], Batch [5700/6000], Loss: 0.0074
-Epoch [8/15], Batch [5800/6000], Loss: 0.0086
-Epoch [8/15], Batch [5900/6000], Loss: 0.0091
-Epoch [8/15], Loss: 0.0083
+Epoch [8/15], Batch [400/6000], Loss: 0.0064
+Epoch [8/15], Batch [500/6000], Loss: 0.0090
+Epoch [8/15], Batch [600/6000], Loss: 0.0077
+Epoch [8/15], Batch [700/6000], Loss: 0.0086
+Epoch [8/15], Batch [800/6000], Loss: 0.0110
+Epoch [8/15], Batch [900/6000], Loss: 0.0075
+Epoch [8/15], Batch [1000/6000], Loss: 0.0099
+Epoch [8/15], Batch [1100/6000], Loss: 0.0105
+Epoch [8/15], Batch [1200/6000], Loss: 0.0086
+Epoch [8/15], Batch [1300/6000], Loss: 0.0126
+Epoch [8/15], Batch [1400/6000], Loss: 0.0108
+Epoch [8/15], Batch [1500/6000], Loss: 0.0092
+Epoch [8/15], Batch [1600/6000], Loss: 0.0075
+Epoch [8/15], Batch [1700/6000], Loss: 0.0064
+Epoch [8/15], Batch [1800/6000], Loss: 0.0070
+Epoch [8/15], Batch [1900/6000], Loss: 0.0103
+Epoch [8/15], Batch [2000/6000], Loss: 0.0065
+Epoch [8/15], Batch [2100/6000], Loss: 0.0079
+Epoch [8/15], Batch [2200/6000], Loss: 0.0075
+Epoch [8/15], Batch [2300/6000], Loss: 0.0088
+Epoch [8/15], Batch [2400/6000], Loss: 0.0068
+Epoch [8/15], Batch [2500/6000], Loss: 0.0072
+Epoch [8/15], Batch [2600/6000], Loss: 0.0072
+Epoch [8/15], Batch [2700/6000], Loss: 0.0085
+Epoch [8/15], Batch [2800/6000], Loss: 0.0063
+Epoch [8/15], Batch [2900/6000], Loss: 0.0074
+Epoch [8/15], Batch [3000/6000], Loss: 0.0108
+Epoch [8/15], Batch [3100/6000], Loss: 0.0068
+Epoch [8/15], Batch [3200/6000], Loss: 0.0104
+Epoch [8/15], Batch [3300/6000], Loss: 0.0083
+Epoch [8/15], Batch [3400/6000], Loss: 0.0083
+Epoch [8/15], Batch [3500/6000], Loss: 0.0057
+Epoch [8/15], Batch [3600/6000], Loss: 0.0074
+Epoch [8/15], Batch [3700/6000], Loss: 0.0095
+Epoch [8/15], Batch [3800/6000], Loss: 0.0089
+Epoch [8/15], Batch [3900/6000], Loss: 0.0096
+Epoch [8/15], Batch [4000/6000], Loss: 0.0089
+Epoch [8/15], Batch [4100/6000], Loss: 0.0095
+Epoch [8/15], Batch [4200/6000], Loss: 0.0090
+Epoch [8/15], Batch [4300/6000], Loss: 0.0069
+Epoch [8/15], Batch [4400/6000], Loss: 0.0064
+Epoch [8/15], Batch [4500/6000], Loss: 0.0064
+Epoch [8/15], Batch [4600/6000], Loss: 0.0077
+Epoch [8/15], Batch [4700/6000], Loss: 0.0081
+Epoch [8/15], Batch [4800/6000], Loss: 0.0086
+Epoch [8/15], Batch [4900/6000], Loss: 0.0096
+Epoch [8/15], Batch [5000/6000], Loss: 0.0081
+Epoch [8/15], Batch [5100/6000], Loss: 0.0102
+Epoch [8/15], Batch [5200/6000], Loss: 0.0144
+Epoch [8/15], Batch [5300/6000], Loss: 0.0082
+Epoch [8/15], Batch [5400/6000], Loss: 0.0080
+Epoch [8/15], Batch [5500/6000], Loss: 0.0054
+Epoch [8/15], Batch [5600/6000], Loss: 0.0099
+Epoch [8/15], Batch [5700/6000], Loss: 0.0089
+Epoch [8/15], Batch [5800/6000], Loss: 0.0095
+Epoch [8/15], Batch [5900/6000], Loss: 0.0066
+Epoch [8/15], Loss: 0.0086
 Visualization saved to figures/visualization_0.png
-Epoch [9/15], Batch [0/6000], Loss: 0.0055
-Epoch [9/15], Batch [100/6000], Loss: 0.0066
-Epoch [9/15], Batch [200/6000], Loss: 0.0073
-Epoch [9/15], Batch [300/6000], Loss: 0.0064
-Epoch [9/15], Batch [400/6000], Loss: 0.0101
-Epoch [9/15], Batch [500/6000], Loss: 0.0096
-Epoch [9/15], Batch [600/6000], Loss: 0.0070
-Epoch [9/15], Batch [700/6000], Loss: 0.0076
-Epoch [9/15], Batch [800/6000], Loss: 0.0078
-Epoch [9/15], Batch [900/6000], Loss: 0.0071
-Epoch [9/15], Batch [1000/6000], Loss: 0.0100
-Epoch [9/15], Batch [1100/6000], Loss: 0.0102
-Epoch [9/15], Batch [1200/6000], Loss: 0.0087
-Epoch [9/15], Batch [1300/6000], Loss: 0.0077
-Epoch [9/15], Batch [1400/6000], Loss: 0.0054
-Epoch [9/15], Batch [1500/6000], Loss: 0.0080
-Epoch [9/15], Batch [1600/6000], Loss: 0.0082
-Epoch [9/15], Batch [1700/6000], Loss: 0.0075
-Epoch [9/15], Batch [1800/6000], Loss: 0.0088
-Epoch [9/15], Batch [1900/6000], Loss: 0.0086
-Epoch [9/15], Batch [2000/6000], Loss: 0.0105
-Epoch [9/15], Batch [2100/6000], Loss: 0.0071
-Epoch [9/15], Batch [2200/6000], Loss: 0.0073
-Epoch [9/15], Batch [2300/6000], Loss: 0.0100
-Epoch [9/15], Batch [2400/6000], Loss: 0.0095
-Epoch [9/15], Batch [2500/6000], Loss: 0.0083
-Epoch [9/15], Batch [2600/6000], Loss: 0.0087
-Epoch [9/15], Batch [2700/6000], Loss: 0.0078
-Epoch [9/15], Batch [2800/6000], Loss: 0.0070
-Epoch [9/15], Batch [2900/6000], Loss: 0.0079
-Epoch [9/15], Batch [3000/6000], Loss: 0.0085
-Epoch [9/15], Batch [3100/6000], Loss: 0.0074
-Epoch [9/15], Batch [3200/6000], Loss: 0.0076
-Epoch [9/15], Batch [3300/6000], Loss: 0.0074
-Epoch [9/15], Batch [3400/6000], Loss: 0.0081
-Epoch [9/15], Batch [3500/6000], Loss: 0.0075
-Epoch [9/15], Batch [3600/6000], Loss: 0.0070
-Epoch [9/15], Batch [3700/6000], Loss: 0.0085
-Epoch [9/15], Batch [3800/6000], Loss: 0.0073
-Epoch [9/15], Batch [3900/6000], Loss: 0.0067
-Epoch [9/15], Batch [4000/6000], Loss: 0.0072
-Epoch [9/15], Batch [4100/6000], Loss: 0.0108
-Epoch [9/15], Batch [4200/6000], Loss: 0.0085
-Epoch [9/15], Batch [4300/6000], Loss: 0.0057
-Epoch [9/15], Batch [4400/6000], Loss: 0.0078
-Epoch [9/15], Batch [4500/6000], Loss: 0.0084
-Epoch [9/15], Batch [4600/6000], Loss: 0.0060
-Epoch [9/15], Batch [4700/6000], Loss: 0.0083
-Epoch [9/15], Batch [4800/6000], Loss: 0.0061
-Epoch [9/15], Batch [4900/6000], Loss: 0.0064
-Epoch [9/15], Batch [5000/6000], Loss: 0.0067
-Epoch [9/15], Batch [5100/6000], Loss: 0.0085
-Epoch [9/15], Batch [5200/6000], Loss: 0.0072
-Epoch [9/15], Batch [5300/6000], Loss: 0.0098
-Epoch [9/15], Batch [5400/6000], Loss: 0.0072
-Epoch [9/15], Batch [5500/6000], Loss: 0.0100
-Epoch [9/15], Batch [5600/6000], Loss: 0.0091
-Epoch [9/15], Batch [5700/6000], Loss: 0.0083
-Epoch [9/15], Batch [5800/6000], Loss: 0.0086
-Epoch [9/15], Batch [5900/6000], Loss: 0.0065
-Epoch [9/15], Loss: 0.0080
+Epoch [9/15], Batch [0/6000], Loss: 0.0057
+Epoch [9/15], Batch [100/6000], Loss: 0.0054
+Epoch [9/15], Batch [200/6000], Loss: 0.0072
+Epoch [9/15], Batch [300/6000], Loss: 0.0072
+Epoch [9/15], Batch [400/6000], Loss: 0.0063
+Epoch [9/15], Batch [500/6000], Loss: 0.0054
+Epoch [9/15], Batch [600/6000], Loss: 0.0073
+Epoch [9/15], Batch [700/6000], Loss: 0.0075
+Epoch [9/15], Batch [800/6000], Loss: 0.0061
+Epoch [9/15], Batch [900/6000], Loss: 0.0086
+Epoch [9/15], Batch [1000/6000], Loss: 0.0073
+Epoch [9/15], Batch [1100/6000], Loss: 0.0079
+Epoch [9/15], Batch [1200/6000], Loss: 0.0073
+Epoch [9/15], Batch [1300/6000], Loss: 0.0079
+Epoch [9/15], Batch [1400/6000], Loss: 0.0101
+Epoch [9/15], Batch [1500/6000], Loss: 0.0087
+Epoch [9/15], Batch [1600/6000], Loss: 0.0064
+Epoch [9/15], Batch [1700/6000], Loss: 0.0069
+Epoch [9/15], Batch [1800/6000], Loss: 0.0070
+Epoch [9/15], Batch [1900/6000], Loss: 0.0093
+Epoch [9/15], Batch [2000/6000], Loss: 0.0094
+Epoch [9/15], Batch [2100/6000], Loss: 0.0081
+Epoch [9/15], Batch [2200/6000], Loss: 0.0069
+Epoch [9/15], Batch [2300/6000], Loss: 0.0111
+Epoch [9/15], Batch [2400/6000], Loss: 0.0091
+Epoch [9/15], Batch [2500/6000], Loss: 0.0049
+Epoch [9/15], Batch [2600/6000], Loss: 0.0052
+Epoch [9/15], Batch [2700/6000], Loss: 0.0062
+Epoch [9/15], Batch [2800/6000], Loss: 0.0098
+Epoch [9/15], Batch [2900/6000], Loss: 0.0098
+Epoch [9/15], Batch [3000/6000], Loss: 0.0108
+Epoch [9/15], Batch [3100/6000], Loss: 0.0079
+Epoch [9/15], Batch [3200/6000], Loss: 0.0095
+Epoch [9/15], Batch [3300/6000], Loss: 0.0096
+Epoch [9/15], Batch [3400/6000], Loss: 0.0106
+Epoch [9/15], Batch [3500/6000], Loss: 0.0074
+Epoch [9/15], Batch [3600/6000], Loss: 0.0117
+Epoch [9/15], Batch [3700/6000], Loss: 0.0083
+Epoch [9/15], Batch [3800/6000], Loss: 0.0072
+Epoch [9/15], Batch [3900/6000], Loss: 0.0081
+Epoch [9/15], Batch [4000/6000], Loss: 0.0058
+Epoch [9/15], Batch [4100/6000], Loss: 0.0068
+Epoch [9/15], Batch [4200/6000], Loss: 0.0096
+Epoch [9/15], Batch [4300/6000], Loss: 0.0080
+Epoch [9/15], Batch [4400/6000], Loss: 0.0079
+Epoch [9/15], Batch [4500/6000], Loss: 0.0090
+Epoch [9/15], Batch [4600/6000], Loss: 0.0075
+Epoch [9/15], Batch [4700/6000], Loss: 0.0081
+Epoch [9/15], Batch [4800/6000], Loss: 0.0078
+Epoch [9/15], Batch [4900/6000], Loss: 0.0089
+Epoch [9/15], Batch [5000/6000], Loss: 0.0072
+Epoch [9/15], Batch [5100/6000], Loss: 0.0082
+Epoch [9/15], Batch [5200/6000], Loss: 0.0061
+Epoch [9/15], Batch [5300/6000], Loss: 0.0108
+Epoch [9/15], Batch [5400/6000], Loss: 0.0092
+Epoch [9/15], Batch [5500/6000], Loss: 0.0096
+Epoch [9/15], Batch [5600/6000], Loss: 0.0086
+Epoch [9/15], Batch [5700/6000], Loss: 0.0072
+Epoch [9/15], Batch [5800/6000], Loss: 0.0098
+Epoch [9/15], Batch [5900/6000], Loss: 0.0054
+Epoch [9/15], Loss: 0.0083
 Visualization saved to figures/visualization_0.png
-Epoch [10/15], Batch [0/6000], Loss: 0.0092
-Epoch [10/15], Batch [100/6000], Loss: 0.0072
-Epoch [10/15], Batch [200/6000], Loss: 0.0071
-Epoch [10/15], Batch [300/6000], Loss: 0.0064
-Epoch [10/15], Batch [400/6000], Loss: 0.0083
-Epoch [10/15], Batch [500/6000], Loss: 0.0073
-Epoch [10/15], Batch [600/6000], Loss: 0.0058
-Epoch [10/15], Batch [700/6000], Loss: 0.0072
-Epoch [10/15], Batch [800/6000], Loss: 0.0079
-Epoch [10/15], Batch [900/6000], Loss: 0.0072
-Epoch [10/15], Batch [1000/6000], Loss: 0.0063
-Epoch [10/15], Batch [1100/6000], Loss: 0.0056
-Epoch [10/15], Batch [1200/6000], Loss: 0.0073
-Epoch [10/15], Batch [1300/6000], Loss: 0.0070
-Epoch [10/15], Batch [1400/6000], Loss: 0.0088
-Epoch [10/15], Batch [1500/6000], Loss: 0.0066
-Epoch [10/15], Batch [1600/6000], Loss: 0.0083
-Epoch [10/15], Batch [1700/6000], Loss: 0.0066
-Epoch [10/15], Batch [1800/6000], Loss: 0.0084
-Epoch [10/15], Batch [1900/6000], Loss: 0.0056
-Epoch [10/15], Batch [2000/6000], Loss: 0.0058
-Epoch [10/15], Batch [2100/6000], Loss: 0.0077
-Epoch [10/15], Batch [2200/6000], Loss: 0.0093
-Epoch [10/15], Batch [2300/6000], Loss: 0.0080
-Epoch [10/15], Batch [2400/6000], Loss: 0.0113
+Epoch [10/15], Batch [0/6000], Loss: 0.0064
+Epoch [10/15], Batch [100/6000], Loss: 0.0067
+Epoch [10/15], Batch [200/6000], Loss: 0.0095
+Epoch [10/15], Batch [300/6000], Loss: 0.0104
+Epoch [10/15], Batch [400/6000], Loss: 0.0059
+Epoch [10/15], Batch [500/6000], Loss: 0.0094
+Epoch [10/15], Batch [600/6000], Loss: 0.0095
+Epoch [10/15], Batch [700/6000], Loss: 0.0078
+Epoch [10/15], Batch [800/6000], Loss: 0.0090
+Epoch [10/15], Batch [900/6000], Loss: 0.0063
+Epoch [10/15], Batch [1000/6000], Loss: 0.0080
+Epoch [10/15], Batch [1100/6000], Loss: 0.0088
+Epoch [10/15], Batch [1200/6000], Loss: 0.0087
+Epoch [10/15], Batch [1300/6000], Loss: 0.0077
+Epoch [10/15], Batch [1400/6000], Loss: 0.0102
+Epoch [10/15], Batch [1500/6000], Loss: 0.0103
+Epoch [10/15], Batch [1600/6000], Loss: 0.0068
+Epoch [10/15], Batch [1700/6000], Loss: 0.0101
+Epoch [10/15], Batch [1800/6000], Loss: 0.0116
+Epoch [10/15], Batch [1900/6000], Loss: 0.0097
+Epoch [10/15], Batch [2000/6000], Loss: 0.0052
+Epoch [10/15], Batch [2100/6000], Loss: 0.0072
+Epoch [10/15], Batch [2200/6000], Loss: 0.0070
+Epoch [10/15], Batch [2300/6000], Loss: 0.0093
+Epoch [10/15], Batch [2400/6000], Loss: 0.0056
 Epoch [10/15], Batch [2500/6000], Loss: 0.0080
-Epoch [10/15], Batch [2600/6000], Loss: 0.0066
-Epoch [10/15], Batch [2700/6000], Loss: 0.0085
-Epoch [10/15], Batch [2800/6000], Loss: 0.0098
-Epoch [10/15], Batch [2900/6000], Loss: 0.0068
-Epoch [10/15], Batch [3000/6000], Loss: 0.0064
-Epoch [10/15], Batch [3100/6000], Loss: 0.0057
-Epoch [10/15], Batch [3200/6000], Loss: 0.0078
-Epoch [10/15], Batch [3300/6000], Loss: 0.0070
-Epoch [10/15], Batch [3400/6000], Loss: 0.0072
-Epoch [10/15], Batch [3500/6000], Loss: 0.0109
-Epoch [10/15], Batch [3600/6000], Loss: 0.0066
-Epoch [10/15], Batch [3700/6000], Loss: 0.0075
-Epoch [10/15], Batch [3800/6000], Loss: 0.0089
-Epoch [10/15], Batch [3900/6000], Loss: 0.0079
-Epoch [10/15], Batch [4000/6000], Loss: 0.0074
-Epoch [10/15], Batch [4100/6000], Loss: 0.0071
-Epoch [10/15], Batch [4200/6000], Loss: 0.0066
-Epoch [10/15], Batch [4300/6000], Loss: 0.0071
-Epoch [10/15], Batch [4400/6000], Loss: 0.0074
-Epoch [10/15], Batch [4500/6000], Loss: 0.0077
-Epoch [10/15], Batch [4600/6000], Loss: 0.0077
-Epoch [10/15], Batch [4700/6000], Loss: 0.0065
-Epoch [10/15], Batch [4800/6000], Loss: 0.0088
-Epoch [10/15], Batch [4900/6000], Loss: 0.0090
-Epoch [10/15], Batch [5000/6000], Loss: 0.0087
-Epoch [10/15], Batch [5100/6000], Loss: 0.0073
-Epoch [10/15], Batch [5200/6000], Loss: 0.0058
-Epoch [10/15], Batch [5300/6000], Loss: 0.0068
-Epoch [10/15], Batch [5400/6000], Loss: 0.0080
-Epoch [10/15], Batch [5500/6000], Loss: 0.0077
-Epoch [10/15], Batch [5600/6000], Loss: 0.0072
-Epoch [10/15], Batch [5700/6000], Loss: 0.0060
-Epoch [10/15], Batch [5800/6000], Loss: 0.0082
-Epoch [10/15], Batch [5900/6000], Loss: 0.0076
-Epoch [10/15], Loss: 0.0077
+Epoch [10/15], Batch [2600/6000], Loss: 0.0077
+Epoch [10/15], Batch [2700/6000], Loss: 0.0088
+Epoch [10/15], Batch [2800/6000], Loss: 0.0083
+Epoch [10/15], Batch [2900/6000], Loss: 0.0103
+Epoch [10/15], Batch [3000/6000], Loss: 0.0085
+Epoch [10/15], Batch [3100/6000], Loss: 0.0073
+Epoch [10/15], Batch [3200/6000], Loss: 0.0056
+Epoch [10/15], Batch [3300/6000], Loss: 0.0068
+Epoch [10/15], Batch [3400/6000], Loss: 0.0082
+Epoch [10/15], Batch [3500/6000], Loss: 0.0078
+Epoch [10/15], Batch [3600/6000], Loss: 0.0094
+Epoch [10/15], Batch [3700/6000], Loss: 0.0098
+Epoch [10/15], Batch [3800/6000], Loss: 0.0099
+Epoch [10/15], Batch [3900/6000], Loss: 0.0070
+Epoch [10/15], Batch [4000/6000], Loss: 0.0073
+Epoch [10/15], Batch [4100/6000], Loss: 0.0101
+Epoch [10/15], Batch [4200/6000], Loss: 0.0056
+Epoch [10/15], Batch [4300/6000], Loss: 0.0102
+Epoch [10/15], Batch [4400/6000], Loss: 0.0085
+Epoch [10/15], Batch [4500/6000], Loss: 0.0096
+Epoch [10/15], Batch [4600/6000], Loss: 0.0082
+Epoch [10/15], Batch [4700/6000], Loss: 0.0073
+Epoch [10/15], Batch [4800/6000], Loss: 0.0117
+Epoch [10/15], Batch [4900/6000], Loss: 0.0079
+Epoch [10/15], Batch [5000/6000], Loss: 0.0064
+Epoch [10/15], Batch [5100/6000], Loss: 0.0069
+Epoch [10/15], Batch [5200/6000], Loss: 0.0110
+Epoch [10/15], Batch [5300/6000], Loss: 0.0078
+Epoch [10/15], Batch [5400/6000], Loss: 0.0066
+Epoch [10/15], Batch [5500/6000], Loss: 0.0104
+Epoch [10/15], Batch [5600/6000], Loss: 0.0092
+Epoch [10/15], Batch [5700/6000], Loss: 0.0070
+Epoch [10/15], Batch [5800/6000], Loss: 0.0069
+Epoch [10/15], Batch [5900/6000], Loss: 0.0075
+Epoch [10/15], Loss: 0.0080
 Visualization saved to figures/visualization_0.png
-Epoch [11/15], Batch [0/6000], Loss: 0.0067
-Epoch [11/15], Batch [100/6000], Loss: 0.0084
-Epoch [11/15], Batch [200/6000], Loss: 0.0107
-Epoch [11/15], Batch [300/6000], Loss: 0.0091
-Epoch [11/15], Batch [400/6000], Loss: 0.0056
-Epoch [11/15], Batch [500/6000], Loss: 0.0069
-Epoch [11/15], Batch [600/6000], Loss: 0.0071
-Epoch [11/15], Batch [700/6000], Loss: 0.0059
-Epoch [11/15], Batch [800/6000], Loss: 0.0079
+Epoch [11/15], Batch [0/6000], Loss: 0.0076
+Epoch [11/15], Batch [100/6000], Loss: 0.0068
+Epoch [11/15], Batch [200/6000], Loss: 0.0076
+Epoch [11/15], Batch [300/6000], Loss: 0.0096
+Epoch [11/15], Batch [400/6000], Loss: 0.0065
+Epoch [11/15], Batch [500/6000], Loss: 0.0088
+Epoch [11/15], Batch [600/6000], Loss: 0.0082
+Epoch [11/15], Batch [700/6000], Loss: 0.0107
+Epoch [11/15], Batch [800/6000], Loss: 0.0090
 Epoch [11/15], Batch [900/6000], Loss: 0.0088
-Epoch [11/15], Batch [1000/6000], Loss: 0.0077
-Epoch [11/15], Batch [1100/6000], Loss: 0.0090
-Epoch [11/15], Batch [1200/6000], Loss: 0.0090
-Epoch [11/15], Batch [1300/6000], Loss: 0.0088
-Epoch [11/15], Batch [1400/6000], Loss: 0.0067
-Epoch [11/15], Batch [1500/6000], Loss: 0.0089
-Epoch [11/15], Batch [1600/6000], Loss: 0.0080
-Epoch [11/15], Batch [1700/6000], Loss: 0.0085
-Epoch [11/15], Batch [1800/6000], Loss: 0.0055
-Epoch [11/15], Batch [1900/6000], Loss: 0.0078
-Epoch [11/15], Batch [2000/6000], Loss: 0.0066
-Epoch [11/15], Batch [2100/6000], Loss: 0.0059
-Epoch [11/15], Batch [2200/6000], Loss: 0.0056
-Epoch [11/15], Batch [2300/6000], Loss: 0.0076
-Epoch [11/15], Batch [2400/6000], Loss: 0.0068
-Epoch [11/15], Batch [2500/6000], Loss: 0.0076
-Epoch [11/15], Batch [2600/6000], Loss: 0.0076
-Epoch [11/15], Batch [2700/6000], Loss: 0.0094
-Epoch [11/15], Batch [2800/6000], Loss: 0.0109
+Epoch [11/15], Batch [1000/6000], Loss: 0.0052
+Epoch [11/15], Batch [1100/6000], Loss: 0.0076
+Epoch [11/15], Batch [1200/6000], Loss: 0.0064
+Epoch [11/15], Batch [1300/6000], Loss: 0.0083
+Epoch [11/15], Batch [1400/6000], Loss: 0.0064
+Epoch [11/15], Batch [1500/6000], Loss: 0.0082
+Epoch [11/15], Batch [1600/6000], Loss: 0.0076
+Epoch [11/15], Batch [1700/6000], Loss: 0.0100
+Epoch [11/15], Batch [1800/6000], Loss: 0.0074
+Epoch [11/15], Batch [1900/6000], Loss: 0.0085
+Epoch [11/15], Batch [2000/6000], Loss: 0.0072
+Epoch [11/15], Batch [2100/6000], Loss: 0.0094
+Epoch [11/15], Batch [2200/6000], Loss: 0.0066
+Epoch [11/15], Batch [2300/6000], Loss: 0.0099
+Epoch [11/15], Batch [2400/6000], Loss: 0.0074
+Epoch [11/15], Batch [2500/6000], Loss: 0.0074
+Epoch [11/15], Batch [2600/6000], Loss: 0.0069
+Epoch [11/15], Batch [2700/6000], Loss: 0.0073
+Epoch [11/15], Batch [2800/6000], Loss: 0.0078
 Epoch [11/15], Batch [2900/6000], Loss: 0.0060
-Epoch [11/15], Batch [3000/6000], Loss: 0.0076
-Epoch [11/15], Batch [3100/6000], Loss: 0.0054
-Epoch [11/15], Batch [3200/6000], Loss: 0.0070
-Epoch [11/15], Batch [3300/6000], Loss: 0.0070
-Epoch [11/15], Batch [3400/6000], Loss: 0.0069
-Epoch [11/15], Batch [3500/6000], Loss: 0.0076
-Epoch [11/15], Batch [3600/6000], Loss: 0.0063
-Epoch [11/15], Batch [3700/6000], Loss: 0.0087
-Epoch [11/15], Batch [3800/6000], Loss: 0.0083
-Epoch [11/15], Batch [3900/6000], Loss: 0.0064
-Epoch [11/15], Batch [4000/6000], Loss: 0.0094
-Epoch [11/15], Batch [4100/6000], Loss: 0.0088
-Epoch [11/15], Batch [4200/6000], Loss: 0.0078
-Epoch [11/15], Batch [4300/6000], Loss: 0.0079
-Epoch [11/15], Batch [4400/6000], Loss: 0.0085
-Epoch [11/15], Batch [4500/6000], Loss: 0.0072
-Epoch [11/15], Batch [4600/6000], Loss: 0.0072
-Epoch [11/15], Batch [4700/6000], Loss: 0.0072
-Epoch [11/15], Batch [4800/6000], Loss: 0.0064
-Epoch [11/15], Batch [4900/6000], Loss: 0.0060
-Epoch [11/15], Batch [5000/6000], Loss: 0.0077
-Epoch [11/15], Batch [5100/6000], Loss: 0.0075
-Epoch [11/15], Batch [5200/6000], Loss: 0.0095
-Epoch [11/15], Batch [5300/6000], Loss: 0.0067
-Epoch [11/15], Batch [5400/6000], Loss: 0.0059
-Epoch [11/15], Batch [5500/6000], Loss: 0.0081
-Epoch [11/15], Batch [5600/6000], Loss: 0.0073
-Epoch [11/15], Batch [5700/6000], Loss: 0.0104
-Epoch [11/15], Batch [5800/6000], Loss: 0.0105
-Epoch [11/15], Batch [5900/6000], Loss: 0.0054
-Epoch [11/15], Loss: 0.0075
+Epoch [11/15], Batch [3000/6000], Loss: 0.0063
+Epoch [11/15], Batch [3100/6000], Loss: 0.0069
+Epoch [11/15], Batch [3200/6000], Loss: 0.0067
+Epoch [11/15], Batch [3300/6000], Loss: 0.0083
+Epoch [11/15], Batch [3400/6000], Loss: 0.0086
+Epoch [11/15], Batch [3500/6000], Loss: 0.0053
+Epoch [11/15], Batch [3600/6000], Loss: 0.0120
+Epoch [11/15], Batch [3700/6000], Loss: 0.0083
+Epoch [11/15], Batch [3800/6000], Loss: 0.0086
+Epoch [11/15], Batch [3900/6000], Loss: 0.0067
+Epoch [11/15], Batch [4000/6000], Loss: 0.0080
+Epoch [11/15], Batch [4100/6000], Loss: 0.0071
+Epoch [11/15], Batch [4200/6000], Loss: 0.0072
+Epoch [11/15], Batch [4300/6000], Loss: 0.0082
+Epoch [11/15], Batch [4400/6000], Loss: 0.0091
+Epoch [11/15], Batch [4500/6000], Loss: 0.0047
+Epoch [11/15], Batch [4600/6000], Loss: 0.0087
+Epoch [11/15], Batch [4700/6000], Loss: 0.0075
+Epoch [11/15], Batch [4800/6000], Loss: 0.0083
+Epoch [11/15], Batch [4900/6000], Loss: 0.0095
+Epoch [11/15], Batch [5000/6000], Loss: 0.0089
+Epoch [11/15], Batch [5100/6000], Loss: 0.0079
+Epoch [11/15], Batch [5200/6000], Loss: 0.0106
+Epoch [11/15], Batch [5300/6000], Loss: 0.0075
+Epoch [11/15], Batch [5400/6000], Loss: 0.0083
+Epoch [11/15], Batch [5500/6000], Loss: 0.0072
+Epoch [11/15], Batch [5600/6000], Loss: 0.0075
+Epoch [11/15], Batch [5700/6000], Loss: 0.0089
+Epoch [11/15], Batch [5800/6000], Loss: 0.0055
+Epoch [11/15], Batch [5900/6000], Loss: 0.0066
+Epoch [11/15], Loss: 0.0077
 Visualization saved to figures/visualization_0.png
-Epoch [12/15], Batch [0/6000], Loss: 0.0061
-Epoch [12/15], Batch [100/6000], Loss: 0.0064
-Epoch [12/15], Batch [200/6000], Loss: 0.0071
-Epoch [12/15], Batch [300/6000], Loss: 0.0067
-Epoch [12/15], Batch [400/6000], Loss: 0.0063
-Epoch [12/15], Batch [500/6000], Loss: 0.0074
-Epoch [12/15], Batch [600/6000], Loss: 0.0075
-Epoch [12/15], Batch [700/6000], Loss: 0.0085
-Epoch [12/15], Batch [800/6000], Loss: 0.0090
-Epoch [12/15], Batch [900/6000], Loss: 0.0054
-Epoch [12/15], Batch [1000/6000], Loss: 0.0094
-Epoch [12/15], Batch [1100/6000], Loss: 0.0072
-Epoch [12/15], Batch [1200/6000], Loss: 0.0096
-Epoch [12/15], Batch [1300/6000], Loss: 0.0116
-Epoch [12/15], Batch [1400/6000], Loss: 0.0096
-Epoch [12/15], Batch [1500/6000], Loss: 0.0074
-Epoch [12/15], Batch [1600/6000], Loss: 0.0086
-Epoch [12/15], Batch [1700/6000], Loss: 0.0063
-Epoch [12/15], Batch [1800/6000], Loss: 0.0072
-Epoch [12/15], Batch [1900/6000], Loss: 0.0073
-Epoch [12/15], Batch [2000/6000], Loss: 0.0045
-Epoch [12/15], Batch [2100/6000], Loss: 0.0044
-Epoch [12/15], Batch [2200/6000], Loss: 0.0079
-Epoch [12/15], Batch [2300/6000], Loss: 0.0080
-Epoch [12/15], Batch [2400/6000], Loss: 0.0069
-Epoch [12/15], Batch [2500/6000], Loss: 0.0084
-Epoch [12/15], Batch [2600/6000], Loss: 0.0065
-Epoch [12/15], Batch [2700/6000], Loss: 0.0066
-Epoch [12/15], Batch [2800/6000], Loss: 0.0074
-Epoch [12/15], Batch [2900/6000], Loss: 0.0088
-Epoch [12/15], Batch [3000/6000], Loss: 0.0065
-Epoch [12/15], Batch [3100/6000], Loss: 0.0083
-Epoch [12/15], Batch [3200/6000], Loss: 0.0069
-Epoch [12/15], Batch [3300/6000], Loss: 0.0075
-Epoch [12/15], Batch [3400/6000], Loss: 0.0089
-Epoch [12/15], Batch [3500/6000], Loss: 0.0059
-Epoch [12/15], Batch [3600/6000], Loss: 0.0120
-Epoch [12/15], Batch [3700/6000], Loss: 0.0071
-Epoch [12/15], Batch [3800/6000], Loss: 0.0083
-Epoch [12/15], Batch [3900/6000], Loss: 0.0073
-Epoch [12/15], Batch [4000/6000], Loss: 0.0088
-Epoch [12/15], Batch [4100/6000], Loss: 0.0122
-Epoch [12/15], Batch [4200/6000], Loss: 0.0070
-Epoch [12/15], Batch [4300/6000], Loss: 0.0081
-Epoch [12/15], Batch [4400/6000], Loss: 0.0062
-Epoch [12/15], Batch [4500/6000], Loss: 0.0078
-Epoch [12/15], Batch [4600/6000], Loss: 0.0069
-Epoch [12/15], Batch [4700/6000], Loss: 0.0077
-Epoch [12/15], Batch [4800/6000], Loss: 0.0060
-Epoch [12/15], Batch [4900/6000], Loss: 0.0084
-Epoch [12/15], Batch [5000/6000], Loss: 0.0096
-Epoch [12/15], Batch [5100/6000], Loss: 0.0073
-Epoch [12/15], Batch [5200/6000], Loss: 0.0073
-Epoch [12/15], Batch [5300/6000], Loss: 0.0084
-Epoch [12/15], Batch [5400/6000], Loss: 0.0059
-Epoch [12/15], Batch [5500/6000], Loss: 0.0066
-Epoch [12/15], Batch [5600/6000], Loss: 0.0056
-Epoch [12/15], Batch [5700/6000], Loss: 0.0065
-Epoch [12/15], Batch [5800/6000], Loss: 0.0061
-Epoch [12/15], Batch [5900/6000], Loss: 0.0094
-Epoch [12/15], Loss: 0.0072
+Epoch [12/15], Batch [0/6000], Loss: 0.0064
+Epoch [12/15], Batch [100/6000], Loss: 0.0049
+Epoch [12/15], Batch [200/6000], Loss: 0.0066
+Epoch [12/15], Batch [300/6000], Loss: 0.0077
+Epoch [12/15], Batch [400/6000], Loss: 0.0086
+Epoch [12/15], Batch [500/6000], Loss: 0.0079
+Epoch [12/15], Batch [600/6000], Loss: 0.0114
+Epoch [12/15], Batch [700/6000], Loss: 0.0063
+Epoch [12/15], Batch [800/6000], Loss: 0.0129
+Epoch [12/15], Batch [900/6000], Loss: 0.0065
+Epoch [12/15], Batch [1000/6000], Loss: 0.0076
+Epoch [12/15], Batch [1100/6000], Loss: 0.0064
+Epoch [12/15], Batch [1200/6000], Loss: 0.0080
+Epoch [12/15], Batch [1300/6000], Loss: 0.0066
+Epoch [12/15], Batch [1400/6000], Loss: 0.0059
+Epoch [12/15], Batch [1500/6000], Loss: 0.0067
+Epoch [12/15], Batch [1600/6000], Loss: 0.0062
+Epoch [12/15], Batch [1700/6000], Loss: 0.0080
+Epoch [12/15], Batch [1800/6000], Loss: 0.0087
+Epoch [12/15], Batch [1900/6000], Loss: 0.0059
+Epoch [12/15], Batch [2000/6000], Loss: 0.0064
+Epoch [12/15], Batch [2100/6000], Loss: 0.0081
+Epoch [12/15], Batch [2200/6000], Loss: 0.0068
+Epoch [12/15], Batch [2300/6000], Loss: 0.0067
+Epoch [12/15], Batch [2400/6000], Loss: 0.0061
+Epoch [12/15], Batch [2500/6000], Loss: 0.0069
+Epoch [12/15], Batch [2600/6000], Loss: 0.0087
+Epoch [12/15], Batch [2700/6000], Loss: 0.0065
+Epoch [12/15], Batch [2800/6000], Loss: 0.0088
+Epoch [12/15], Batch [2900/6000], Loss: 0.0060
+Epoch [12/15], Batch [3000/6000], Loss: 0.0057
+Epoch [12/15], Batch [3100/6000], Loss: 0.0077
+Epoch [12/15], Batch [3200/6000], Loss: 0.0071
+Epoch [12/15], Batch [3300/6000], Loss: 0.0064
+Epoch [12/15], Batch [3400/6000], Loss: 0.0069
+Epoch [12/15], Batch [3500/6000], Loss: 0.0055
+Epoch [12/15], Batch [3600/6000], Loss: 0.0088
+Epoch [12/15], Batch [3700/6000], Loss: 0.0085
+Epoch [12/15], Batch [3800/6000], Loss: 0.0095
+Epoch [12/15], Batch [3900/6000], Loss: 0.0058
+Epoch [12/15], Batch [4000/6000], Loss: 0.0056
+Epoch [12/15], Batch [4100/6000], Loss: 0.0086
+Epoch [12/15], Batch [4200/6000], Loss: 0.0071
+Epoch [12/15], Batch [4300/6000], Loss: 0.0105
+Epoch [12/15], Batch [4400/6000], Loss: 0.0078
+Epoch [12/15], Batch [4500/6000], Loss: 0.0051
+Epoch [12/15], Batch [4600/6000], Loss: 0.0051
+Epoch [12/15], Batch [4700/6000], Loss: 0.0094
+Epoch [12/15], Batch [4800/6000], Loss: 0.0066
+Epoch [12/15], Batch [4900/6000], Loss: 0.0072
+Epoch [12/15], Batch [5000/6000], Loss: 0.0073
+Epoch [12/15], Batch [5100/6000], Loss: 0.0072
+Epoch [12/15], Batch [5200/6000], Loss: 0.0076
+Epoch [12/15], Batch [5300/6000], Loss: 0.0070
+Epoch [12/15], Batch [5400/6000], Loss: 0.0056
+Epoch [12/15], Batch [5500/6000], Loss: 0.0046
+Epoch [12/15], Batch [5600/6000], Loss: 0.0091
+Epoch [12/15], Batch [5700/6000], Loss: 0.0062
+Epoch [12/15], Batch [5800/6000], Loss: 0.0077
+Epoch [12/15], Batch [5900/6000], Loss: 0.0076
+Epoch [12/15], Loss: 0.0074
 Visualization saved to figures/visualization_0.png
-Epoch [13/15], Batch [0/6000], Loss: 0.0069
-Epoch [13/15], Batch [100/6000], Loss: 0.0068
-Epoch [13/15], Batch [200/6000], Loss: 0.0050
-Epoch [13/15], Batch [300/6000], Loss: 0.0047
-Epoch [13/15], Batch [400/6000], Loss: 0.0080
-Epoch [13/15], Batch [500/6000], Loss: 0.0089
-Epoch [13/15], Batch [600/6000], Loss: 0.0065
-Epoch [13/15], Batch [700/6000], Loss: 0.0063
-Epoch [13/15], Batch [800/6000], Loss: 0.0077
-Epoch [13/15], Batch [900/6000], Loss: 0.0073
-Epoch [13/15], Batch [1000/6000], Loss: 0.0056
-Epoch [13/15], Batch [1100/6000], Loss: 0.0058
-Epoch [13/15], Batch [1200/6000], Loss: 0.0081
-Epoch [13/15], Batch [1300/6000], Loss: 0.0074
-Epoch [13/15], Batch [1400/6000], Loss: 0.0079
-Epoch [13/15], Batch [1500/6000], Loss: 0.0112
-Epoch [13/15], Batch [1600/6000], Loss: 0.0088
-Epoch [13/15], Batch [1700/6000], Loss: 0.0080
-Epoch [13/15], Batch [1800/6000], Loss: 0.0071
-Epoch [13/15], Batch [1900/6000], Loss: 0.0082
-Epoch [13/15], Batch [2000/6000], Loss: 0.0075
-Epoch [13/15], Batch [2100/6000], Loss: 0.0069
-Epoch [13/15], Batch [2200/6000], Loss: 0.0074
+Epoch [13/15], Batch [0/6000], Loss: 0.0047
+Epoch [13/15], Batch [100/6000], Loss: 0.0057
+Epoch [13/15], Batch [200/6000], Loss: 0.0059
+Epoch [13/15], Batch [300/6000], Loss: 0.0084
+Epoch [13/15], Batch [400/6000], Loss: 0.0073
+Epoch [13/15], Batch [500/6000], Loss: 0.0068
+Epoch [13/15], Batch [600/6000], Loss: 0.0056
+Epoch [13/15], Batch [700/6000], Loss: 0.0068
+Epoch [13/15], Batch [800/6000], Loss: 0.0070
+Epoch [13/15], Batch [900/6000], Loss: 0.0075
+Epoch [13/15], Batch [1000/6000], Loss: 0.0064
+Epoch [13/15], Batch [1100/6000], Loss: 0.0069
+Epoch [13/15], Batch [1200/6000], Loss: 0.0078
+Epoch [13/15], Batch [1300/6000], Loss: 0.0047
+Epoch [13/15], Batch [1400/6000], Loss: 0.0057
+Epoch [13/15], Batch [1500/6000], Loss: 0.0062
+Epoch [13/15], Batch [1600/6000], Loss: 0.0074
+Epoch [13/15], Batch [1700/6000], Loss: 0.0082
+Epoch [13/15], Batch [1800/6000], Loss: 0.0078
+Epoch [13/15], Batch [1900/6000], Loss: 0.0067
+Epoch [13/15], Batch [2000/6000], Loss: 0.0068
+Epoch [13/15], Batch [2100/6000], Loss: 0.0089
+Epoch [13/15], Batch [2200/6000], Loss: 0.0075
 Epoch [13/15], Batch [2300/6000], Loss: 0.0079
-Epoch [13/15], Batch [2400/6000], Loss: 0.0084
-Epoch [13/15], Batch [2500/6000], Loss: 0.0059
-Epoch [13/15], Batch [2600/6000], Loss: 0.0063
-Epoch [13/15], Batch [2700/6000], Loss: 0.0060
-Epoch [13/15], Batch [2800/6000], Loss: 0.0068
-Epoch [13/15], Batch [2900/6000], Loss: 0.0075
+Epoch [13/15], Batch [2400/6000], Loss: 0.0083
+Epoch [13/15], Batch [2500/6000], Loss: 0.0084
+Epoch [13/15], Batch [2600/6000], Loss: 0.0059
+Epoch [13/15], Batch [2700/6000], Loss: 0.0071
+Epoch [13/15], Batch [2800/6000], Loss: 0.0066
+Epoch [13/15], Batch [2900/6000], Loss: 0.0062
 Epoch [13/15], Batch [3000/6000], Loss: 0.0072
-Epoch [13/15], Batch [3100/6000], Loss: 0.0073
-Epoch [13/15], Batch [3200/6000], Loss: 0.0059
-Epoch [13/15], Batch [3300/6000], Loss: 0.0065
-Epoch [13/15], Batch [3400/6000], Loss: 0.0057
-Epoch [13/15], Batch [3500/6000], Loss: 0.0063
-Epoch [13/15], Batch [3600/6000], Loss: 0.0080
-Epoch [13/15], Batch [3700/6000], Loss: 0.0050
-Epoch [13/15], Batch [3800/6000], Loss: 0.0065
-Epoch [13/15], Batch [3900/6000], Loss: 0.0058
-Epoch [13/15], Batch [4000/6000], Loss: 0.0081
-Epoch [13/15], Batch [4100/6000], Loss: 0.0106
-Epoch [13/15], Batch [4200/6000], Loss: 0.0062
-Epoch [13/15], Batch [4300/6000], Loss: 0.0080
-Epoch [13/15], Batch [4400/6000], Loss: 0.0071
-Epoch [13/15], Batch [4500/6000], Loss: 0.0054
-Epoch [13/15], Batch [4600/6000], Loss: 0.0059
-Epoch [13/15], Batch [4700/6000], Loss: 0.0069
-Epoch [13/15], Batch [4800/6000], Loss: 0.0055
-Epoch [13/15], Batch [4900/6000], Loss: 0.0096
-Epoch [13/15], Batch [5000/6000], Loss: 0.0060
-Epoch [13/15], Batch [5100/6000], Loss: 0.0070
-Epoch [13/15], Batch [5200/6000], Loss: 0.0052
-Epoch [13/15], Batch [5300/6000], Loss: 0.0066
-Epoch [13/15], Batch [5400/6000], Loss: 0.0063
-Epoch [13/15], Batch [5500/6000], Loss: 0.0050
-Epoch [13/15], Batch [5600/6000], Loss: 0.0070
-Epoch [13/15], Batch [5700/6000], Loss: 0.0074
-Epoch [13/15], Batch [5800/6000], Loss: 0.0052
-Epoch [13/15], Batch [5900/6000], Loss: 0.0067
-Epoch [13/15], Loss: 0.0071
+Epoch [13/15], Batch [3100/6000], Loss: 0.0078
+Epoch [13/15], Batch [3200/6000], Loss: 0.0088
+Epoch [13/15], Batch [3300/6000], Loss: 0.0093
+Epoch [13/15], Batch [3400/6000], Loss: 0.0082
+Epoch [13/15], Batch [3500/6000], Loss: 0.0085
+Epoch [13/15], Batch [3600/6000], Loss: 0.0063
+Epoch [13/15], Batch [3700/6000], Loss: 0.0065
+Epoch [13/15], Batch [3800/6000], Loss: 0.0084
+Epoch [13/15], Batch [3900/6000], Loss: 0.0091
+Epoch [13/15], Batch [4000/6000], Loss: 0.0071
+Epoch [13/15], Batch [4100/6000], Loss: 0.0073
+Epoch [13/15], Batch [4200/6000], Loss: 0.0056
+Epoch [13/15], Batch [4300/6000], Loss: 0.0077
+Epoch [13/15], Batch [4400/6000], Loss: 0.0093
+Epoch [13/15], Batch [4500/6000], Loss: 0.0087
+Epoch [13/15], Batch [4600/6000], Loss: 0.0073
+Epoch [13/15], Batch [4700/6000], Loss: 0.0061
+Epoch [13/15], Batch [4800/6000], Loss: 0.0089
+Epoch [13/15], Batch [4900/6000], Loss: 0.0056
+Epoch [13/15], Batch [5000/6000], Loss: 0.0062
+Epoch [13/15], Batch [5100/6000], Loss: 0.0061
+Epoch [13/15], Batch [5200/6000], Loss: 0.0066
+Epoch [13/15], Batch [5300/6000], Loss: 0.0075
+Epoch [13/15], Batch [5400/6000], Loss: 0.0089
+Epoch [13/15], Batch [5500/6000], Loss: 0.0098
+Epoch [13/15], Batch [5600/6000], Loss: 0.0094
+Epoch [13/15], Batch [5700/6000], Loss: 0.0079
+Epoch [13/15], Batch [5800/6000], Loss: 0.0082
+Epoch [13/15], Batch [5900/6000], Loss: 0.0071
+Epoch [13/15], Loss: 0.0072
 Visualization saved to figures/visualization_0.png
-Epoch [14/15], Batch [0/6000], Loss: 0.0056
-Epoch [14/15], Batch [100/6000], Loss: 0.0076
-Epoch [14/15], Batch [200/6000], Loss: 0.0091
-Epoch [14/15], Batch [300/6000], Loss: 0.0076
-Epoch [14/15], Batch [400/6000], Loss: 0.0077
-Epoch [14/15], Batch [500/6000], Loss: 0.0053
-Epoch [14/15], Batch [600/6000], Loss: 0.0051
-Epoch [14/15], Batch [700/6000], Loss: 0.0073
-Epoch [14/15], Batch [800/6000], Loss: 0.0064
-Epoch [14/15], Batch [900/6000], Loss: 0.0072
-Epoch [14/15], Batch [1000/6000], Loss: 0.0055
-Epoch [14/15], Batch [1100/6000], Loss: 0.0061
-Epoch [14/15], Batch [1200/6000], Loss: 0.0078
-Epoch [14/15], Batch [1300/6000], Loss: 0.0075
-Epoch [14/15], Batch [1400/6000], Loss: 0.0051
-Epoch [14/15], Batch [1500/6000], Loss: 0.0059
-Epoch [14/15], Batch [1600/6000], Loss: 0.0048
-Epoch [14/15], Batch [1700/6000], Loss: 0.0061
-Epoch [14/15], Batch [1800/6000], Loss: 0.0071
-Epoch [14/15], Batch [1900/6000], Loss: 0.0076
-Epoch [14/15], Batch [2000/6000], Loss: 0.0066
-Epoch [14/15], Batch [2100/6000], Loss: 0.0088
-Epoch [14/15], Batch [2200/6000], Loss: 0.0065
-Epoch [14/15], Batch [2300/6000], Loss: 0.0067
-Epoch [14/15], Batch [2400/6000], Loss: 0.0079
-Epoch [14/15], Batch [2500/6000], Loss: 0.0069
-Epoch [14/15], Batch [2600/6000], Loss: 0.0058
-Epoch [14/15], Batch [2700/6000], Loss: 0.0096
-Epoch [14/15], Batch [2800/6000], Loss: 0.0087
-Epoch [14/15], Batch [2900/6000], Loss: 0.0044
-Epoch [14/15], Batch [3000/6000], Loss: 0.0064
-Epoch [14/15], Batch [3100/6000], Loss: 0.0066
-Epoch [14/15], Batch [3200/6000], Loss: 0.0062
-Epoch [14/15], Batch [3300/6000], Loss: 0.0057
-Epoch [14/15], Batch [3400/6000], Loss: 0.0069
-Epoch [14/15], Batch [3500/6000], Loss: 0.0071
-Epoch [14/15], Batch [3600/6000], Loss: 0.0069
-Epoch [14/15], Batch [3700/6000], Loss: 0.0078
-Epoch [14/15], Batch [3800/6000], Loss: 0.0060
-Epoch [14/15], Batch [3900/6000], Loss: 0.0062
-Epoch [14/15], Batch [4000/6000], Loss: 0.0089
-Epoch [14/15], Batch [4100/6000], Loss: 0.0071
-Epoch [14/15], Batch [4200/6000], Loss: 0.0076
-Epoch [14/15], Batch [4300/6000], Loss: 0.0061
-Epoch [14/15], Batch [4400/6000], Loss: 0.0073
-Epoch [14/15], Batch [4500/6000], Loss: 0.0068
-Epoch [14/15], Batch [4600/6000], Loss: 0.0081
-Epoch [14/15], Batch [4700/6000], Loss: 0.0066
-Epoch [14/15], Batch [4800/6000], Loss: 0.0071
-Epoch [14/15], Batch [4900/6000], Loss: 0.0055
-Epoch [14/15], Batch [5000/6000], Loss: 0.0048
-Epoch [14/15], Batch [5100/6000], Loss: 0.0080
-Epoch [14/15], Batch [5200/6000], Loss: 0.0056
-Epoch [14/15], Batch [5300/6000], Loss: 0.0080
-Epoch [14/15], Batch [5400/6000], Loss: 0.0068
-Epoch [14/15], Batch [5500/6000], Loss: 0.0075
-Epoch [14/15], Batch [5600/6000], Loss: 0.0072
-Epoch [14/15], Batch [5700/6000], Loss: 0.0072
-Epoch [14/15], Batch [5800/6000], Loss: 0.0055
-Epoch [14/15], Batch [5900/6000], Loss: 0.0076
-Epoch [14/15], Loss: 0.0069
+Epoch [14/15], Batch [0/6000], Loss: 0.0078
+Epoch [14/15], Batch [100/6000], Loss: 0.0077
+Epoch [14/15], Batch [200/6000], Loss: 0.0088
+Epoch [14/15], Batch [300/6000], Loss: 0.0060
+Epoch [14/15], Batch [400/6000], Loss: 0.0083
+Epoch [14/15], Batch [500/6000], Loss: 0.0074
+Epoch [14/15], Batch [600/6000], Loss: 0.0080
+Epoch [14/15], Batch [700/6000], Loss: 0.0047
+Epoch [14/15], Batch [800/6000], Loss: 0.0075
+Epoch [14/15], Batch [900/6000], Loss: 0.0064
+Epoch [14/15], Batch [1000/6000], Loss: 0.0082
+Epoch [14/15], Batch [1100/6000], Loss: 0.0073
+Epoch [14/15], Batch [1200/6000], Loss: 0.0055
+Epoch [14/15], Batch [1300/6000], Loss: 0.0065
+Epoch [14/15], Batch [1400/6000], Loss: 0.0059
+Epoch [14/15], Batch [1500/6000], Loss: 0.0063
+Epoch [14/15], Batch [1600/6000], Loss: 0.0061
+Epoch [14/15], Batch [1700/6000], Loss: 0.0065
+Epoch [14/15], Batch [1800/6000], Loss: 0.0078
+Epoch [14/15], Batch [1900/6000], Loss: 0.0059
+Epoch [14/15], Batch [2000/6000], Loss: 0.0048
+Epoch [14/15], Batch [2100/6000], Loss: 0.0080
+Epoch [14/15], Batch [2200/6000], Loss: 0.0072
+Epoch [14/15], Batch [2300/6000], Loss: 0.0076
+Epoch [14/15], Batch [2400/6000], Loss: 0.0065
+Epoch [14/15], Batch [2500/6000], Loss: 0.0057
+Epoch [14/15], Batch [2600/6000], Loss: 0.0084
+Epoch [14/15], Batch [2700/6000], Loss: 0.0086
+Epoch [14/15], Batch [2800/6000], Loss: 0.0062
+Epoch [14/15], Batch [2900/6000], Loss: 0.0078
+Epoch [14/15], Batch [3000/6000], Loss: 0.0075
+Epoch [14/15], Batch [3100/6000], Loss: 0.0062
+Epoch [14/15], Batch [3200/6000], Loss: 0.0068
+Epoch [14/15], Batch [3300/6000], Loss: 0.0082
+Epoch [14/15], Batch [3400/6000], Loss: 0.0071
+Epoch [14/15], Batch [3500/6000], Loss: 0.0061
+Epoch [14/15], Batch [3600/6000], Loss: 0.0071
+Epoch [14/15], Batch [3700/6000], Loss: 0.0055
+Epoch [14/15], Batch [3800/6000], Loss: 0.0081
+Epoch [14/15], Batch [3900/6000], Loss: 0.0079
+Epoch [14/15], Batch [4000/6000], Loss: 0.0076
+Epoch [14/15], Batch [4100/6000], Loss: 0.0076
+Epoch [14/15], Batch [4200/6000], Loss: 0.0055
+Epoch [14/15], Batch [4300/6000], Loss: 0.0055
+Epoch [14/15], Batch [4400/6000], Loss: 0.0047
+Epoch [14/15], Batch [4500/6000], Loss: 0.0069
+Epoch [14/15], Batch [4600/6000], Loss: 0.0080
+Epoch [14/15], Batch [4700/6000], Loss: 0.0080
+Epoch [14/15], Batch [4800/6000], Loss: 0.0073
+Epoch [14/15], Batch [4900/6000], Loss: 0.0079
+Epoch [14/15], Batch [5000/6000], Loss: 0.0065
+Epoch [14/15], Batch [5100/6000], Loss: 0.0074
+Epoch [14/15], Batch [5200/6000], Loss: 0.0071
+Epoch [14/15], Batch [5300/6000], Loss: 0.0069
+Epoch [14/15], Batch [5400/6000], Loss: 0.0093
+Epoch [14/15], Batch [5500/6000], Loss: 0.0052
+Epoch [14/15], Batch [5600/6000], Loss: 0.0086
+Epoch [14/15], Batch [5700/6000], Loss: 0.0062
+Epoch [14/15], Batch [5800/6000], Loss: 0.0052
+Epoch [14/15], Batch [5900/6000], Loss: 0.0068
+Epoch [14/15], Loss: 0.0070
 Visualization saved to figures/visualization_0.png
-Epoch [15/15], Batch [0/6000], Loss: 0.0087
-Epoch [15/15], Batch [100/6000], Loss: 0.0080
-Epoch [15/15], Batch [200/6000], Loss: 0.0070
-Epoch [15/15], Batch [300/6000], Loss: 0.0044
-Epoch [15/15], Batch [400/6000], Loss: 0.0070
-Epoch [15/15], Batch [500/6000], Loss: 0.0070
-Epoch [15/15], Batch [600/6000], Loss: 0.0071
-Epoch [15/15], Batch [700/6000], Loss: 0.0056
-Epoch [15/15], Batch [800/6000], Loss: 0.0066
-Epoch [15/15], Batch [900/6000], Loss: 0.0080
-Epoch [15/15], Batch [1000/6000], Loss: 0.0050
-Epoch [15/15], Batch [1100/6000], Loss: 0.0050
-Epoch [15/15], Batch [1200/6000], Loss: 0.0064
+Epoch [15/15], Batch [0/6000], Loss: 0.0059
+Epoch [15/15], Batch [100/6000], Loss: 0.0057
+Epoch [15/15], Batch [200/6000], Loss: 0.0081
+Epoch [15/15], Batch [300/6000], Loss: 0.0068
+Epoch [15/15], Batch [400/6000], Loss: 0.0076
+Epoch [15/15], Batch [500/6000], Loss: 0.0088
+Epoch [15/15], Batch [600/6000], Loss: 0.0065
+Epoch [15/15], Batch [700/6000], Loss: 0.0051
+Epoch [15/15], Batch [800/6000], Loss: 0.0058
+Epoch [15/15], Batch [900/6000], Loss: 0.0061
+Epoch [15/15], Batch [1000/6000], Loss: 0.0070
+Epoch [15/15], Batch [1100/6000], Loss: 0.0059
+Epoch [15/15], Batch [1200/6000], Loss: 0.0091
 Epoch [15/15], Batch [1300/6000], Loss: 0.0078
-Epoch [15/15], Batch [1400/6000], Loss: 0.0057
-Epoch [15/15], Batch [1500/6000], Loss: 0.0081
-Epoch [15/15], Batch [1600/6000], Loss: 0.0065
-Epoch [15/15], Batch [1700/6000], Loss: 0.0064
-Epoch [15/15], Batch [1800/6000], Loss: 0.0055
-Epoch [15/15], Batch [1900/6000], Loss: 0.0072
-Epoch [15/15], Batch [2000/6000], Loss: 0.0062
-Epoch [15/15], Batch [2100/6000], Loss: 0.0062
-Epoch [15/15], Batch [2200/6000], Loss: 0.0061
-Epoch [15/15], Batch [2300/6000], Loss: 0.0083
-Epoch [15/15], Batch [2400/6000], Loss: 0.0054
-Epoch [15/15], Batch [2500/6000], Loss: 0.0047
-Epoch [15/15], Batch [2600/6000], Loss: 0.0064
-Epoch [15/15], Batch [2700/6000], Loss: 0.0045
-Epoch [15/15], Batch [2800/6000], Loss: 0.0093
-Epoch [15/15], Batch [2900/6000], Loss: 0.0069
-Epoch [15/15], Batch [3000/6000], Loss: 0.0065
-Epoch [15/15], Batch [3100/6000], Loss: 0.0067
-Epoch [15/15], Batch [3200/6000], Loss: 0.0078
-Epoch [15/15], Batch [3300/6000], Loss: 0.0053
-Epoch [15/15], Batch [3400/6000], Loss: 0.0086
-Epoch [15/15], Batch [3500/6000], Loss: 0.0073
-Epoch [15/15], Batch [3600/6000], Loss: 0.0078
-Epoch [15/15], Batch [3700/6000], Loss: 0.0055
-Epoch [15/15], Batch [3800/6000], Loss: 0.0065
-Epoch [15/15], Batch [3900/6000], Loss: 0.0060
+Epoch [15/15], Batch [1400/6000], Loss: 0.0062
+Epoch [15/15], Batch [1500/6000], Loss: 0.0063
+Epoch [15/15], Batch [1600/6000], Loss: 0.0068
+Epoch [15/15], Batch [1700/6000], Loss: 0.0067
+Epoch [15/15], Batch [1800/6000], Loss: 0.0072
+Epoch [15/15], Batch [1900/6000], Loss: 0.0054
+Epoch [15/15], Batch [2000/6000], Loss: 0.0072
+Epoch [15/15], Batch [2100/6000], Loss: 0.0073
+Epoch [15/15], Batch [2200/6000], Loss: 0.0086
+Epoch [15/15], Batch [2300/6000], Loss: 0.0090
+Epoch [15/15], Batch [2400/6000], Loss: 0.0061
+Epoch [15/15], Batch [2500/6000], Loss: 0.0074
+Epoch [15/15], Batch [2600/6000], Loss: 0.0061
+Epoch [15/15], Batch [2700/6000], Loss: 0.0071
+Epoch [15/15], Batch [2800/6000], Loss: 0.0076
+Epoch [15/15], Batch [2900/6000], Loss: 0.0078
+Epoch [15/15], Batch [3000/6000], Loss: 0.0084
+Epoch [15/15], Batch [3100/6000], Loss: 0.0089
+Epoch [15/15], Batch [3200/6000], Loss: 0.0069
+Epoch [15/15], Batch [3300/6000], Loss: 0.0077
+Epoch [15/15], Batch [3400/6000], Loss: 0.0069
+Epoch [15/15], Batch [3500/6000], Loss: 0.0064
+Epoch [15/15], Batch [3600/6000], Loss: 0.0059
+Epoch [15/15], Batch [3700/6000], Loss: 0.0058
+Epoch [15/15], Batch [3800/6000], Loss: 0.0093
+Epoch [15/15], Batch [3900/6000], Loss: 0.0067
 Epoch [15/15], Batch [4000/6000], Loss: 0.0081
-Epoch [15/15], Batch [4100/6000], Loss: 0.0089
-Epoch [15/15], Batch [4200/6000], Loss: 0.0064
-Epoch [15/15], Batch [4300/6000], Loss: 0.0086
-Epoch [15/15], Batch [4400/6000], Loss: 0.0054
-Epoch [15/15], Batch [4500/6000], Loss: 0.0041
-Epoch [15/15], Batch [4600/6000], Loss: 0.0061
-Epoch [15/15], Batch [4700/6000], Loss: 0.0068
-Epoch [15/15], Batch [4800/6000], Loss: 0.0057
-Epoch [15/15], Batch [4900/6000], Loss: 0.0076
-Epoch [15/15], Batch [5000/6000], Loss: 0.0059
-Epoch [15/15], Batch [5100/6000], Loss: 0.0065
-Epoch [15/15], Batch [5200/6000], Loss: 0.0066
-Epoch [15/15], Batch [5300/6000], Loss: 0.0072
-Epoch [15/15], Batch [5400/6000], Loss: 0.0071
-Epoch [15/15], Batch [5500/6000], Loss: 0.0083
+Epoch [15/15], Batch [4100/6000], Loss: 0.0088
+Epoch [15/15], Batch [4200/6000], Loss: 0.0057
+Epoch [15/15], Batch [4300/6000], Loss: 0.0059
+Epoch [15/15], Batch [4400/6000], Loss: 0.0066
+Epoch [15/15], Batch [4500/6000], Loss: 0.0065
+Epoch [15/15], Batch [4600/6000], Loss: 0.0072
+Epoch [15/15], Batch [4700/6000], Loss: 0.0050
+Epoch [15/15], Batch [4800/6000], Loss: 0.0055
+Epoch [15/15], Batch [4900/6000], Loss: 0.0082
+Epoch [15/15], Batch [5000/6000], Loss: 0.0061
+Epoch [15/15], Batch [5100/6000], Loss: 0.0088
+Epoch [15/15], Batch [5200/6000], Loss: 0.0055
+Epoch [15/15], Batch [5300/6000], Loss: 0.0057
+Epoch [15/15], Batch [5400/6000], Loss: 0.0080
+Epoch [15/15], Batch [5500/6000], Loss: 0.0055
 Epoch [15/15], Batch [5600/6000], Loss: 0.0072
-Epoch [15/15], Batch [5700/6000], Loss: 0.0079
-Epoch [15/15], Batch [5800/6000], Loss: 0.0063
-Epoch [15/15], Batch [5900/6000], Loss: 0.0061
-Epoch [15/15], Loss: 0.0067
+Epoch [15/15], Batch [5700/6000], Loss: 0.0065
+Epoch [15/15], Batch [5800/6000], Loss: 0.0078
+Epoch [15/15], Batch [5900/6000], Loss: 0.0063
+Epoch [15/15], Loss: 0.0068
 Visualization saved to figures/visualization_0.png
-Test Loss: 0.0069, Accuracy: 97.88%
+Test Loss: 0.0070, Accuracy: 97.86%
 Adversarial Training Loop 1/300:
   Label Loss: 0.1268
-  Image Loss: 0.0004
-  Total Loss: 6.3410
+  Image Loss: 0.0006
+  Total Loss: 6.3409
 Adversarial Training Loop 2/300:
   Label Loss: 0.1268
-  Image Loss: 0.0135
-  Total Loss: 6.3535
+  Image Loss: 0.0002
+  Total Loss: 6.3403
 Adversarial Training Loop 3/300:
   Label Loss: 0.1268
-  Image Loss: 0.0101
-  Total Loss: 6.3501
+  Image Loss: 0.0003
+  Total Loss: 6.3403
 Adversarial Training Loop 4/300:
   Label Loss: 0.1268
-  Image Loss: 0.0064
-  Total Loss: 6.3464
+  Image Loss: 0.0003
+  Total Loss: 6.3403
 Adversarial Training Loop 5/300:
   Label Loss: 0.1268
-  Image Loss: 0.0036
-  Total Loss: 6.3436
+  Image Loss: 0.0003
+  Total Loss: 6.3403
 Adversarial Training Loop 6/300:
   Label Loss: 0.1268
-  Image Loss: 0.0048
-  Total Loss: 6.3448
+  Image Loss: 0.0003
+  Total Loss: 6.3403
 Adversarial Training Loop 7/300:
   Label Loss: 0.1268
-  Image Loss: 0.0053
-  Total Loss: 6.3453
+  Image Loss: 0.0003
+  Total Loss: 6.3403
 Adversarial Training Loop 8/300:
   Label Loss: 0.1268
-  Image Loss: 0.0047
-  Total Loss: 6.3447
+  Image Loss: 0.0002
+  Total Loss: 6.3403
 Adversarial Training Loop 9/300:
   Label Loss: 0.1268
-  Image Loss: 0.0042
-  Total Loss: 6.3442
+  Image Loss: 0.0002
+  Total Loss: 6.3402
 Adversarial Training Loop 10/300:
   Label Loss: 0.1268
-  Image Loss: 0.0041
-  Total Loss: 6.3441
+  Image Loss: 0.0002
+  Total Loss: 6.3402
 Adversarial Training Loop 11/300:
   Label Loss: 0.1268
-  Image Loss: 0.0036
-  Total Loss: 6.3436
+  Image Loss: 0.0001
+  Total Loss: 6.3402
 Adversarial Training Loop 12/300:
   Label Loss: 0.1268
-  Image Loss: 0.0033
-  Total Loss: 6.3433
+  Image Loss: 0.0001
+  Total Loss: 6.3402
 Adversarial Training Loop 13/300:
   Label Loss: 0.1268
-  Image Loss: 0.0035
-  Total Loss: 6.3435
+  Image Loss: 0.0001
+  Total Loss: 6.3402
 Adversarial Training Loop 14/300:
   Label Loss: 0.1268
-  Image Loss: 0.0030
-  Total Loss: 6.3430
+  Image Loss: 0.0001
+  Total Loss: 6.3401
 Adversarial Training Loop 15/300:
   Label Loss: 0.1268
-  Image Loss: 0.0027
-  Total Loss: 6.3427
+  Image Loss: 0.0001
+  Total Loss: 6.3401
 Adversarial Training Loop 16/300:
   Label Loss: 0.1268
-  Image Loss: 0.0025
-  Total Loss: 6.3425
+  Image Loss: 0.0001
+  Total Loss: 6.3401
 Adversarial Training Loop 17/300:
   Label Loss: 0.1268
-  Image Loss: 0.0025
-  Total Loss: 6.3425
+  Image Loss: 0.0001
+  Total Loss: 6.3401
 Adversarial Training Loop 18/300:
   Label Loss: 0.1268
-  Image Loss: 0.0025
-  Total Loss: 6.3425
+  Image Loss: 0.0001
+  Total Loss: 6.3401
 Adversarial Training Loop 19/300:
   Label Loss: 0.1268
-  Image Loss: 0.0025
-  Total Loss: 6.3425
+  Image Loss: 0.0001
+  Total Loss: 6.3401
 Adversarial Training Loop 20/300:
   Label Loss: 0.1268
-  Image Loss: 0.0024
-  Total Loss: 6.3424
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 21/300:
   Label Loss: 0.1268
-  Image Loss: 0.0023
-  Total Loss: 6.3423
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 22/300:
   Label Loss: 0.1268
-  Image Loss: 0.0022
-  Total Loss: 6.3422
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 23/300:
   Label Loss: 0.1268
-  Image Loss: 0.0023
-  Total Loss: 6.3423
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 24/300:
   Label Loss: 0.1268
-  Image Loss: 0.0021
-  Total Loss: 6.3421
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 25/300:
   Label Loss: 0.1268
-  Image Loss: 0.0021
-  Total Loss: 6.3421
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 26/300:
   Label Loss: 0.1268
-  Image Loss: 0.0021
-  Total Loss: 6.3421
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 27/300:
   Label Loss: 0.1268
-  Image Loss: 0.0021
-  Total Loss: 6.3421
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 28/300:
   Label Loss: 0.1268
-  Image Loss: 0.0020
-  Total Loss: 6.3420
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 29/300:
   Label Loss: 0.1268
-  Image Loss: 0.0020
-  Total Loss: 6.3421
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 30/300:
   Label Loss: 0.1268
-  Image Loss: 0.0020
-  Total Loss: 6.3420
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 31/300:
   Label Loss: 0.1268
-  Image Loss: 0.0019
-  Total Loss: 6.3420
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 32/300:
   Label Loss: 0.1268
-  Image Loss: 0.0019
-  Total Loss: 6.3419
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 33/300:
   Label Loss: 0.1268
-  Image Loss: 0.0019
-  Total Loss: 6.3419
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 34/300:
   Label Loss: 0.1268
-  Image Loss: 0.0018
-  Total Loss: 6.3418
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 35/300:
   Label Loss: 0.1268
-  Image Loss: 0.0018
-  Total Loss: 6.3418
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 36/300:
   Label Loss: 0.1268
-  Image Loss: 0.0017
-  Total Loss: 6.3417
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 37/300:
   Label Loss: 0.1268
-  Image Loss: 0.0017
-  Total Loss: 6.3417
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 38/300:
   Label Loss: 0.1268
-  Image Loss: 0.0016
-  Total Loss: 6.3416
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 39/300:
   Label Loss: 0.1268
-  Image Loss: 0.0016
-  Total Loss: 6.3416
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 40/300:
   Label Loss: 0.1268
-  Image Loss: 0.0015
-  Total Loss: 6.3415
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 41/300:
   Label Loss: 0.1268
-  Image Loss: 0.0014
-  Total Loss: 6.3414
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 42/300:
   Label Loss: 0.1268
-  Image Loss: 0.0013
-  Total Loss: 6.3413
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 43/300:
   Label Loss: 0.1268
-  Image Loss: 0.0013
-  Total Loss: 6.3413
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 44/300:
   Label Loss: 0.1268
-  Image Loss: 0.0012
-  Total Loss: 6.3412
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 45/300:
   Label Loss: 0.1268
-  Image Loss: 0.0012
-  Total Loss: 6.3412
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 46/300:
   Label Loss: 0.1268
-  Image Loss: 0.0012
-  Total Loss: 6.3412
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 47/300:
   Label Loss: 0.1268
-  Image Loss: 0.0011
-  Total Loss: 6.3412
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 48/300:
   Label Loss: 0.1268
-  Image Loss: 0.0011
-  Total Loss: 6.3411
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 49/300:
   Label Loss: 0.1268
-  Image Loss: 0.0010
-  Total Loss: 6.3411
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 50/300:
   Label Loss: 0.1268
-  Image Loss: 0.0011
-  Total Loss: 6.3411
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 51/300:
   Label Loss: 0.1268
-  Image Loss: 0.0010
-  Total Loss: 6.3410
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 52/300:
   Label Loss: 0.1268
-  Image Loss: 0.0010
-  Total Loss: 6.3410
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 53/300:
   Label Loss: 0.1268
-  Image Loss: 0.0010
-  Total Loss: 6.3410
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 54/300:
   Label Loss: 0.1268
-  Image Loss: 0.0009
-  Total Loss: 6.3410
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 55/300:
   Label Loss: 0.1268
-  Image Loss: 0.0009
-  Total Loss: 6.3409
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 56/300:
   Label Loss: 0.1268
-  Image Loss: 0.0009
-  Total Loss: 6.3409
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 57/300:
   Label Loss: 0.1268
-  Image Loss: 0.0008
-  Total Loss: 6.3409
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 58/300:
   Label Loss: 0.1268
-  Image Loss: 0.0008
-  Total Loss: 6.3408
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 59/300:
   Label Loss: 0.1268
-  Image Loss: 0.0008
-  Total Loss: 6.3408
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 60/300:
   Label Loss: 0.1268
-  Image Loss: 0.0008
-  Total Loss: 6.3408
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 61/300:
   Label Loss: 0.1268
-  Image Loss: 0.0008
-  Total Loss: 6.3408
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 62/300:
   Label Loss: 0.1268
-  Image Loss: 0.0007
-  Total Loss: 6.3408
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 63/300:
   Label Loss: 0.1268
-  Image Loss: 0.0007
-  Total Loss: 6.3407
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 64/300:
   Label Loss: 0.1268
-  Image Loss: 0.0007
-  Total Loss: 6.3407
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 65/300:
   Label Loss: 0.1268
-  Image Loss: 0.0007
-  Total Loss: 6.3407
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 66/300:
   Label Loss: 0.1268
-  Image Loss: 0.0007
-  Total Loss: 6.3407
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 67/300:
   Label Loss: 0.1268
-  Image Loss: 0.0006
-  Total Loss: 6.3407
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 68/300:
   Label Loss: 0.1268
-  Image Loss: 0.0006
-  Total Loss: 6.3406
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 69/300:
   Label Loss: 0.1268
-  Image Loss: 0.0006
-  Total Loss: 6.3406
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 70/300:
   Label Loss: 0.1268
-  Image Loss: 0.0007
-  Total Loss: 6.3407
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 71/300:
   Label Loss: 0.1268
-  Image Loss: 0.0008
-  Total Loss: 6.3408
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 72/300:
   Label Loss: 0.1268
-  Image Loss: 0.0007
-  Total Loss: 6.3407
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 73/300:
   Label Loss: 0.1268
-  Image Loss: 0.0006
-  Total Loss: 6.3407
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 74/300:
   Label Loss: 0.1268
-  Image Loss: 0.0006
-  Total Loss: 6.3406
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 75/300:
   Label Loss: 0.1268
-  Image Loss: 0.0005
-  Total Loss: 6.3406
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 76/300:
   Label Loss: 0.1268
-  Image Loss: 0.0006
-  Total Loss: 6.3406
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 77/300:
   Label Loss: 0.1268
-  Image Loss: 0.0007
-  Total Loss: 6.3407
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 78/300:
   Label Loss: 0.1268
-  Image Loss: 0.0004
-  Total Loss: 6.3405
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 79/300:
   Label Loss: 0.1268
-  Image Loss: 0.0005
-  Total Loss: 6.3405
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 80/300:
   Label Loss: 0.1268
-  Image Loss: 0.0006
-  Total Loss: 6.3407
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 81/300:
   Label Loss: 0.1268
-  Image Loss: 0.0004
-  Total Loss: 6.3405
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 82/300:
   Label Loss: 0.1268
-  Image Loss: 0.0004
-  Total Loss: 6.3404
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 83/300:
   Label Loss: 0.1268
-  Image Loss: 0.0005
-  Total Loss: 6.3405
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 84/300:
   Label Loss: 0.1268
-  Image Loss: 0.0004
-  Total Loss: 6.3404
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 85/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3404
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 86/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3404
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 87/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3404
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 88/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 89/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 90/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 91/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 92/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 93/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 94/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 95/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 96/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 97/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 98/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 99/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 100/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 101/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 102/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 103/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 104/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 105/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 106/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 107/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 108/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 109/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 110/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 111/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 112/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 113/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 114/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 115/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 116/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 117/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 118/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 119/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 120/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 121/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 122/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 123/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 124/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 125/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 126/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 127/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 128/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 129/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 130/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 131/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 132/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 133/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 134/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 135/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 136/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 137/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 138/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 139/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 140/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 141/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 142/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 143/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 144/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 145/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 146/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 147/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 148/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 149/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 150/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 151/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 152/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 153/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 154/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 155/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 156/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 157/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 158/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 159/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 160/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 161/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 162/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 163/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 164/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 165/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 166/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 167/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 168/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 169/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 170/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 171/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 172/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 173/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 174/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 175/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 176/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 177/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 178/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 179/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 180/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 181/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 182/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 183/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 184/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 185/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 186/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 187/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 188/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 189/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 190/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 191/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 192/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 193/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 194/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 195/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 196/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 197/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 198/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 199/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 200/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 201/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 202/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 203/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 204/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3404
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 205/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 206/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 207/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3404
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 208/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 209/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 210/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3404
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 211/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 212/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 213/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 214/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 215/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 216/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 217/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 218/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 219/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 220/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 221/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3404
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 222/300:
   Label Loss: 0.1268
-  Image Loss: 0.0003
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 223/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 224/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 225/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 226/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 227/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 228/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 229/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 230/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 231/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 232/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 233/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 234/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 235/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 236/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 237/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 238/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 239/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 240/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 241/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 242/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 243/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 244/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 245/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 246/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 247/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 248/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 249/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 250/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 251/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 252/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 253/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 254/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 255/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 256/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 257/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 258/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 259/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 260/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 261/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 262/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 263/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 264/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 265/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 266/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 267/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 268/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 269/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 270/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 271/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 272/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 273/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 274/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 275/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 276/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 277/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 278/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 279/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 280/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 281/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 282/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 283/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 284/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 285/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 286/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 287/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 288/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 289/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 290/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 291/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 292/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 293/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 294/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 295/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 296/300:
   Label Loss: 0.1268
-  Image Loss: 0.0001
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 297/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 298/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3403
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial Training Loop 299/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3400
 Adversarial Training Loop 300/300:
   Label Loss: 0.1268
-  Image Loss: 0.0002
-  Total Loss: 6.3402
+  Image Loss: 0.0000
+  Total Loss: 6.3401
 Adversarial example visualization saved to adversarial_figures/adversarial_example.png
-Target label was: [[0.  0.  0.  0.  0.  0.  0.  0.5 0.5 0. ]]
+Target label was: [[0.5 0.  0.  0.  0.  0.  0.  0.5 0.  0. ]]
