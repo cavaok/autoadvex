@@ -86,9 +86,10 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 encoder = encoder.to(device)
 decoder = decoder.to(device)
 criterion = nn.MSELoss()
-optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.001)
+optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.0001)
 
-num_epochs = 15
+num_epochs = 50
+
 for epoch in range(num_epochs):
     encoder.train()
     decoder.train()
@@ -106,7 +107,7 @@ for epoch in range(num_epochs):
         image_loss = nn.functional.mse_loss(outputs[:, :image_dim], targets[:, :image_dim])
         label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
 
-        loss = image_loss + 50 * label_loss
+        loss = image_loss + 10 * label_loss
 
         optimizer.zero_grad()
         loss.backward()
