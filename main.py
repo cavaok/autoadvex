@@ -194,8 +194,8 @@ input_adv = first_guess.clone().detach()
 input_adv.requires_grad_(True)  # making sure requires grad is TRUE
 
 # Params
-optimizer = optim.Adam([input_adv], lr=0.01)
-train_loops = 300
+optimizer = optim.Adam([input_adv], lr=0.001)
+train_loops = 500
 output = None  # will use this later
 
 for loop in range(train_loops):
@@ -221,8 +221,7 @@ for loop in range(train_loops):
     loss.backward()
     optimizer.step()
 
-
-# Visualize the result - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Visualize the training results - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Create the adversarial_figures directory if it doesn't exist
 os.makedirs('adversarial_figures', exist_ok=True)
 
@@ -250,11 +249,46 @@ axes[1, 1].bar(range(10), adversarial_label[0])
 axes[1, 1].set_title('Adversarial Label Vector')
 
 # Save the figure
-filepath = os.path.join('adversarial_figures', 'adversarial_example.png')
+filepath = os.path.join('adversarial_figures', 'adversarial_training.png')
 plt.savefig(filepath)
 plt.close(fig)  # Close the figure to free up memory
 
-print(f"Adversarial example visualization saved to {filepath}")
+print(f"Adversarial example training visualization saved to {filepath}")
+
+
+# Visualization of final adversarial testing - - - - - - - - - - - - - - - - - - - - - -
+
+# Gathering the "final" output of autoencoder with adversarial example
+
+final_output = autoencoder(input_adv)
+final_label_probs = F.softmax(final_output[:, image_dim:], dim=1)
+
+# Converting to numpy arrays
+adversarial_trained_image = input_adv[:, :image_dim].detach().view(28, 28).cpu().numpy()  # same image as before
+adversarial_trained_label = input_adv[:, image_dim:].detach().cpu().numpy()               # same label as before
+final_output_image = final_output[:, :image_dim].detach().view(28, 28).cpu().numpy()      # final autoencoder output
+final_output_label = final_label_probs.detach().cpu().numpy()                             # final autoencoder output
+
+# Create the visualization
+fig, axes = plt.subplots(2, 2, figsize=(10, 10))
+
+# FGI -> Adversarial output (input_adv)
+axes[0, 0].imshow(adversarial_trained_image, cmap='gray')
+axes[0, 0].set_title('Adversarial Trained Image')
+axes[0, 1].bar(range(10), adversarial_trained_label[0])
+axes[0, 1].set_title('Adversarial Trained Label')
+
+# AE -> autoencoder output
+axes[1, 0].imshow(final_output_image, cmap='gray')
+axes[1, 0].set_title('Final Output Image')
+axes[1, 1].bar(range(10), final_output_label[0])
+axes[1, 1].set_title('Final Output Label (w/ Softmax)')
+
+# Save the figure
+filepath = os.path.join('adversarial_figures', 'adversarial_testing.png')
+plt.savefig(filepath)
+plt.close(fig)  # Close the figure to free up memory
+
+print(f"Adversarial example training visualization saved to {filepath}")
 
 print("Target label was:", target_label.cpu().numpy().round(3))
-
