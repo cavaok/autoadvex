@@ -86,9 +86,10 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 encoder = encoder.to(device)
 decoder = decoder.to(device)
 criterion = nn.MSELoss()
-optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.001)
+optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.0001)
 
-num_epochs = 15
+num_epochs = 50
+
 for epoch in range(num_epochs):
     encoder.train()
     decoder.train()
@@ -100,7 +101,13 @@ for epoch in range(num_epochs):
         targets = torch.cat((images, torch.eye(num_classes)[labels].to(device)), dim=1)
 
         outputs = autoencoder(inputs)
-        loss = criterion(outputs, targets)
+
+        # turning into probability distribution before doing kld
+        outputs_label_probs = F.softmax(outputs[:, image_dim:], dim=1)
+        image_loss = nn.functional.mse_loss(outputs[:, :image_dim], targets[:, :image_dim])
+        label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
+
+        loss = image_loss + 10 * label_loss
 
         optimizer.zero_grad()
         loss.backward()
@@ -112,6 +119,7 @@ for epoch in range(num_epochs):
             print(f"Epoch [{epoch + 1}/{num_epochs}], Batch [{batch_idx}/{len(train_loader)}], Loss: {loss.item():.4f}")
 
     print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss / len(train_loader):.4f}')
+
     visualize_input_output(inputs, outputs)
 
 # Evaluate the model
@@ -129,7 +137,12 @@ with torch.no_grad():
         targets = torch.cat((images, torch.eye(num_classes)[labels].to(device)), dim=1)
 
         outputs = autoencoder(inputs)
-        loss = criterion(outputs, targets)
+        # turning into probability distribution before doing kld
+        outputs_label_probs = F.softmax(outputs[:, image_dim:], dim=1)
+        image_loss = nn.functional.mse_loss(outputs[:, :image_dim], targets[:, :image_dim])
+        label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
+
+        loss = image_loss + 10 * label_loss
         test_loss += loss.item()
 
         _, predicted = outputs[:, -10:].max(1)
@@ -255,7 +268,6 @@ plt.close(fig)  # Close the figure to free up memory
 
 print(f"Adversarial example training visualization saved to {filepath}")
 
-'''
 # Visualization of final adversarial testing - - - - - - - - - - - - - - - - - - - - - -
 
 # Gathering the "final" output of autoencoder with adversarial example
@@ -292,4 +304,3 @@ plt.close(fig)  # Close the figure to free up memory
 print(f"Adversarial example training visualization saved to {filepath}")
 
 print("Target label was:", target_label.cpu().numpy().round(3))
-'''
