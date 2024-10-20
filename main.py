@@ -195,7 +195,7 @@ input_adv.requires_grad_(True)  # making sure requires grad is TRUE
 
 # Params
 optimizer = optim.Adam([input_adv], lr=0.01)
-train_loops = 100
+train_loops = 500
 output = None  # will use this later
 
 for loop in range(train_loops):
@@ -208,7 +208,7 @@ for loop in range(train_loops):
     # Loss calc
     label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)
     image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
-    loss = label_loss * 500 + image_loss
+    loss = label_loss * 50 + image_loss
 
     # Prints the losses
     print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
