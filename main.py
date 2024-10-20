@@ -194,7 +194,7 @@ input_adv = first_guess.clone().detach()
 input_adv.requires_grad_(True)  # making sure requires grad is TRUE
 
 # Params
-optimizer = optim.Adam([input_adv], lr=0.1)
+optimizer = optim.Adam([input_adv], lr=0.01)
 train_loops = 300
 output = None  # will use this later
 
