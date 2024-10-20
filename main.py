@@ -255,7 +255,7 @@ plt.close(fig)  # Close the figure to free up memory
 
 print(f"Adversarial example training visualization saved to {filepath}")
 
-
+'''
 # Visualization of final adversarial testing - - - - - - - - - - - - - - - - - - - - - -
 
 # Gathering the "final" output of autoencoder with adversarial example
@@ -292,3 +292,4 @@ plt.close(fig)  # Close the figure to free up memory
 print(f"Adversarial example training visualization saved to {filepath}")
 
 print("Target label was:", target_label.cpu().numpy().round(3))
+'''
