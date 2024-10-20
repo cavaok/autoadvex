@@ -122,4 +122,32 @@ for epoch in range(num_epochs):
 
     visualize_input_output(inputs, outputs)
 
+# Evaluate the model
+encoder.eval()
+decoder.eval()
+test_loss = 0
+correct = 0
+total = 0
+
+with torch.no_grad():
+    for images, labels in test_loader:
+        images = images.view(images.size(0), -1).to(device)
+        diffuse_labels = create_diffuse_one_hot(labels).to(device)
+        inputs = torch.cat((images, diffuse_labels), dim=1)
+        targets = torch.cat((images, torch.eye(num_classes)[labels].to(device)), dim=1)
+
+        outputs = autoencoder(inputs)
+        # turning into probability distribution before doing kld
+        outputs_label_probs = F.softmax(outputs[:, image_dim:], dim=1)
+        image_loss = nn.functional.mse_loss(outputs[:, :image_dim], targets[:, :image_dim])
+        label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
+
+        loss = image_loss + 10 * label_loss
+        test_loss += loss.item()
+
+        _, predicted = outputs[:, -10:].max(1)
+        total += labels.size(0)
+        correct += predicted.eq(labels.to(device)).sum().item()
+
+print(f'Test Loss: {test_loss / len(test_loader):.4f}, Accuracy: {100. * correct / total:.2f}%')
 
