@@ -8,3 +8,11 @@ Loading python/3.8.13/slu6jvw
     util-linux-uuid/2.37.4/nlecwm6
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
+Traceback (most recent call last):
+  File "main.py", line 233, in <module>
+    loss.backward()
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: element 0 of tensors does not require grad and does not have a grad_fn
