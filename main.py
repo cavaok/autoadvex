@@ -221,7 +221,7 @@ for loop in range(train_loops):
 
     image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
 
-    loss = image_loss + 20 * label_loss
+    loss = image_loss + 500 * label_loss
 
     # Prints the losses
     print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
