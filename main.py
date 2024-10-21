@@ -208,7 +208,7 @@ input_adv.requires_grad_(True)  # making sure requires grad is TRUE
 
 # Params
 optimizer = optim.Adam([input_adv], lr=0.001)
-train_loops = 500
+train_loops = 300
 output = None  # will use this later
 
 for loop in range(train_loops):
@@ -221,7 +221,7 @@ for loop in range(train_loops):
     # Loss calc
     label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)
     image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
-    loss = label_loss * 50 + image_loss
+    loss = label_loss * 10 + image_loss
 
     # Prints the losses
     print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
@@ -268,6 +268,7 @@ plt.close(fig)  # Close the figure to free up memory
 
 print(f"Adversarial example training visualization saved to {filepath}")
 
+'''
 # Visualization of final adversarial testing - - - - - - - - - - - - - - - - - - - - - -
 
 # Gathering the "final" output of autoencoder with adversarial example
@@ -304,3 +305,4 @@ plt.close(fig)  # Close the figure to free up memory
 print(f"Adversarial example training visualization saved to {filepath}")
 
 print("Target label was:", target_label.cpu().numpy().round(3))
+'''
