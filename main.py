@@ -204,11 +204,11 @@ first_guess[:, image_dim:] = diffuse_label
 
 # Cloning first_guess as the input to be modified for adversarial training
 input_adv = first_guess.clone().detach()
-input_adv.requires_grad_(True)  # making sure requires grad is TRUE
+input_adv[:, :image_dim].requires_grad_(True)  # making sure requires grad is TRUE
 
 # Params
-optimizer = optim.Adam([input_adv], lr=0.001)
-train_loops = 300
+optimizer = optim.Adam([input_adv[:, :image_dim]], lr=0.001)
+train_loops = 100
 output = None  # will use this later
 
 for loop in range(train_loops):
@@ -218,10 +218,9 @@ for loop in range(train_loops):
     # turning into probability distribution before doing kld
     output_label_probs = F.softmax(output[:, image_dim:], dim=1)
 
-    # Loss calc
-    label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)
     image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
-    loss = label_loss * 10 + image_loss
+    label_loss = nn.functional.kl_div(output_label_probs.log(), target_label, reduction='sum')
+    loss = image_loss + 10 * label_loss
 
     # Prints the losses
     print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
@@ -233,6 +232,8 @@ for loop in range(train_loops):
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
+
+    input_adv.data[:, :image_dim].clamp_(0, 1) # clamp after each loop
 
 # Visualize the training results - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Create the adversarial_figures directory if it doesn't exist
