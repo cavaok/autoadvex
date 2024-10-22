@@ -194,7 +194,7 @@ target_label[0, true_class] = 0.5
 target_label[0, random_class] = 0.5
 
 # Params
-optimizer = optim.Adam([image_part], lr=0.01)
+optimizer = optim.Adam([image_part], lr=1.0)
 train_loops = 300
 
 for loop in range(train_loops):
@@ -205,11 +205,11 @@ for loop in range(train_loops):
     # turning into probability distribution before doing kld
     output_label_probs = F.softmax(output[:, image_dim:], dim=1)
     print(f"  Output probs: {output_label_probs.detach().cpu().numpy().round(3)}")
-    label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
-
+    # label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
+    label_loss = F.mse_loss(output_label_probs, target_label)
     image_loss = nn.functional.mse_loss(image_part, original_image)
 
-    loss = image_loss + 50 * label_loss
+    loss = image_loss + 1000 * label_loss
 
     # Prints the losses
     print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
