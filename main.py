@@ -206,7 +206,7 @@ for loop in range(train_loops):
     output_label_probs = F.softmax(output[:, image_dim:], dim=1)
     label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
 
-    image_loss = nn.functional.mse_loss(image_part, original_image)
+    image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
 
     loss = image_loss + 50 * label_loss
 
