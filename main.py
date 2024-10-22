@@ -213,7 +213,7 @@ output = None  # will use this later
 
 for loop in range(train_loops):
     # Forward pass
-    input_adv[:, image_dim:] = diffuse_label  # re-append diffuse prior
+    input_adv.data[:, image_dim:] = diffuse_label  # re-append diffuse prior
     output = autoencoder(input_adv)
 
     # turning into probability distribution before doing kld
