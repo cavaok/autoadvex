@@ -194,7 +194,7 @@ target_label[0, true_class] = 0.5
 target_label[0, random_class] = 0.5
 
 # Params
-optimizer = optim.Adam([image_part], lr=1.0)
+optimizer = optim.Adam([image_part], lr=0.1)
 train_loops = 300
 
 for loop in range(train_loops):
@@ -208,7 +208,7 @@ for loop in range(train_loops):
     label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
     image_loss = nn.functional.mse_loss(image_part, original_image)
 
-    loss = image_loss + 1000 * label_loss
+    loss = image_loss + 100 * label_loss
 
     # Prints the losses
     print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
