@@ -43,8 +43,8 @@ decoder = nn.Sequential(
     nn.ELU(),
     nn.Linear(256, 512),
     nn.ELU(),
-    nn.Linear(512, input_dim),
-    nn.Sigmoid()
+    nn.Linear(512, input_dim)  # ,
+    # nn.Sigmoid()
 )
 
 
