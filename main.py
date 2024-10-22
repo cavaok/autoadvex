@@ -88,7 +88,7 @@ decoder = decoder.to(device)
 criterion = nn.MSELoss()
 optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.0001)
 
-num_epochs = 50
+num_epochs = 30
 
 for epoch in range(num_epochs):
     encoder.train()
@@ -207,12 +207,13 @@ input_adv = first_guess.clone().detach()
 input_adv.requires_grad_(True)  # making sure requires grad is TRUE
 
 # Params
-optimizer = optim.Adam([input_adv], lr=0.001)
+optimizer = optim.Adam([input_adv], lr=0.01)
 train_loops = 300
 output = None  # will use this later
 
 for loop in range(train_loops):
     # Forward pass
+    input_adv[:, image_dim:] = diffuse_label  # re-append diffuse prior
     output = autoencoder(input_adv)
 
     # turning into probability distribution before doing kld
@@ -235,9 +236,7 @@ for loop in range(train_loops):
     optimizer.step()
 
     input_adv.data[:, :image_dim].clamp_(0, 1)  # clamp after each loop
-    input_adv.data[:, image_dim:] = diffuse_label  # re-append diffuse prior
 
-#input_adv = autoencoder(input_adv)
 
 # Visualize the training results - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Create the adversarial_figures directory if it doesn't exist
@@ -273,19 +272,20 @@ plt.close(fig)  # Close the figure to free up memory
 
 print(f"Adversarial example training visualization saved to {filepath}")
 
-'''
+
 # Visualization of final adversarial testing - - - - - - - - - - - - - - - - - - - - - -
 
 # Gathering the "final" output of autoencoder with adversarial example
-
+input_adv[:, image_dim:] = diffuse_label  # re-append diffuse prior
 final_output = autoencoder(input_adv)
-final_label_probs = F.softmax(final_output[:, image_dim:], dim=1)
+# final_label_probs = F.softmax(final_output[:, image_dim:], dim=1) might not need this
 
 # Converting to numpy arrays
 adversarial_trained_image = input_adv[:, :image_dim].detach().view(28, 28).cpu().numpy()  # same image as before
 adversarial_trained_label = input_adv[:, image_dim:].detach().cpu().numpy()               # same label as before
 final_output_image = final_output[:, :image_dim].detach().view(28, 28).cpu().numpy()      # final autoencoder output
-final_output_label = final_label_probs.detach().cpu().numpy()                             # final autoencoder output
+final_output_label = final_output[:, image_dim:].detach().cpu().numpy()                   # final autoencoder output
+# final_output_label = final_label_probs.detach().cpu().numpy()
 
 # Create the visualization
 fig, axes = plt.subplots(2, 2, figsize=(10, 10))
@@ -310,4 +310,3 @@ plt.close(fig)  # Close the figure to free up memory
 print(f"Adversarial example training visualization saved to {filepath}")
 
 print("Target label was:", target_label.cpu().numpy().round(3))
-'''
