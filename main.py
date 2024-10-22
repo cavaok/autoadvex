@@ -262,13 +262,13 @@ print(f"Adversarial example training visualization saved to {filepath}")
 
 # Gathering the "final" output of autoencoder with adversarial example
 # input_adv.data[:, image_dim:] = diffuse_label  # re-append diffuse prior
-concat_final = torch.cat((final_image, final_label), dim=1)
+concat_final = torch.cat((image_part, label_part), dim=1)
 final_output = autoencoder(concat_final)
 # final_label_probs = F.softmax(final_output[:, image_dim:], dim=1) might not need this
 
 # Converting to numpy arrays
-adversarial_trained_image = final_image.detach().view(28, 28).cpu().numpy()  # same image as before
-adversarial_trained_label = final_label.detach().cpu().numpy()               # same label as before
+# adversarial_trained_image = final_image.detach().view(28, 28).cpu().numpy()  # same image as before
+# adversarial_trained_label = final_label.detach().cpu().numpy()               # same label as before
 final_output_image = final_output[:, :image_dim].detach().view(28, 28).cpu().numpy()      # final autoencoder output
 final_output_label = final_output[:, image_dim:].detach().cpu().numpy()                   # final autoencoder output
 
@@ -276,9 +276,9 @@ final_output_label = final_output[:, image_dim:].detach().cpu().numpy()         
 fig, axes = plt.subplots(2, 2, figsize=(10, 10))
 
 # FGI -> Adversarial output (input_adv)
-axes[0, 0].imshow(adversarial_trained_image, cmap='gray')
+axes[0, 0].imshow(final_image, cmap='gray')
 axes[0, 0].set_title('Adversarial Trained Image')
-axes[0, 1].bar(range(10), adversarial_trained_label[0])
+axes[0, 1].bar(range(10), final_label[0])
 axes[0, 1].set_title('Adversarial Trained Label')
 
 # AE -> autoencoder output
