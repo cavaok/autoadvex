@@ -204,9 +204,10 @@ for loop in range(train_loops):
 
     # turning into probability distribution before doing kld
     output_label_probs = F.softmax(output[:, image_dim:], dim=1)
+    print(f"  Output probs: {output_label_probs.detach().cpu().numpy().round(3)}")
     label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
 
-    image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
+    image_loss = nn.functional.mse_loss(image_part, original_image)
 
     loss = image_loss + 50 * label_loss
 
@@ -219,6 +220,8 @@ for loop in range(train_loops):
     # Backprop and optim step
     optimizer.zero_grad()
     loss.backward()
+    print(f"  Image grad max: {image_part.grad.abs().max().item() if image_part.grad is not None else 'None'}")
+
     optimizer.step()
 
     with torch.no_grad():
