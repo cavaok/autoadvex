@@ -164,28 +164,25 @@ for param in encoder.parameters():
 for param in decoder.parameters():
     param.requires_grad = False
 
-# to make it less angry
-image = None
-diffuse_label = None
-original_label = None
-single_input = None
-single_label = None
-
-# Grab a single image and label
 for images, labels in adversarial_loader:
-    image = images.view(images.size(0), -1).to(device)
-    diffuse_label = create_diffuse_one_hot(labels).to(device)
-    single_input = torch.cat((image, diffuse_label), dim=1)
-    single_label = labels.item()  # save for later
-    break
+    # Keep original image separate and make it require gradients
+    image_part = images.view(images.size(0), -1).to(device).clone().detach()
+    image_part.requires_grad_(True)
+    label_part = create_diffuse_one_hot(labels).to(device)
+    single_label = labels.item()
+    break  # only grab one
 
 # Pass single image and label through autoencoder
-reconstructed = autoencoder(single_input)
+concat_input = torch.cat((image_part, label_part), dim=1)
+reconstructed = autoencoder(concat_input)
 
 # Saving a clone in variable called original
 original = reconstructed.clone().detach()
-original_label = original[:, image_dim:]
 original_image = original[:, :image_dim]
+
+# Save for visualization later
+initial_image = original_image.clone().detach().view(28, 28).cpu().numpy()
+initial_label = label_part.clone().detach().cpu().numpy()
 
 # Setting target label
 true_class = single_label
@@ -196,32 +193,22 @@ target_label = torch.zeros(1, num_classes, device=device)  # Initialize with zer
 target_label[0, true_class] = 0.5
 target_label[0, random_class] = 0.5
 
-# Preparing the "first guess" which consists of
-#   original        -> Reconstruction of the single image and label we grabbed
-#   diffuse_label   -> Diffuse Vector label from calling create_diffuse_one_hot() earlier
-first_guess = original.clone().detach()
-first_guess[:, image_dim:] = diffuse_label
-
-# Cloning first_guess as the input to be modified for adversarial training
-input_adv = first_guess.clone().detach()
-input_adv.requires_grad_(True)  # making sure requires grad is TRUE
-
 # Params
-optimizer = optim.Adam([input_adv], lr=0.01)
+optimizer = optim.Adam([image_part], lr=0.01)
 train_loops = 300
-output = None  # will use this later
 
 for loop in range(train_loops):
+    current_input = torch.cat((image_part, label_part), dim=1)
     # Forward pass
-    output = autoencoder(input_adv)
+    output = autoencoder(current_input)
 
     # turning into probability distribution before doing kld
     output_label_probs = F.softmax(output[:, image_dim:], dim=1)
     label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
 
-    image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
+    image_loss = nn.functional.mse_loss(image_part, original_image)
 
-    loss = image_loss + 100 * label_loss
+    loss = image_loss + 50 * label_loss
 
     # Prints the losses
     print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
@@ -234,35 +221,31 @@ for loop in range(train_loops):
     loss.backward()
     optimizer.step()
 
-    input_adv.data[:, :image_dim].clamp_(0, 1)  # clamp after each loop
-    input_adv.data[:, image_dim:] = diffuse_label  # re-append diffuse prior
+    with torch.no_grad():
+        image_part.data.clamp_(0, 1)
 
 
 # Visualize the training results - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Create the adversarial_figures directory if it doesn't exist
 os.makedirs('adversarial_figures', exist_ok=True)
 
-# Converting to numpy arrays
-#   first_guess_image -> using the first_guess that was cloned, saved, and unmodified to show the input
-#   adversarial_image -> using input_adv as that is what was modified iteratively and results in our adv ex
-first_guess_image = first_guess[:, :image_dim].detach().view(28, 28).cpu().numpy()
-first_guess_label = first_guess[:, image_dim:].detach().cpu().numpy()
-adversarial_image = input_adv[:, :image_dim].detach().view(28, 28).cpu().numpy()
-adversarial_label = input_adv[:, image_dim:].detach().cpu().numpy()
+# Saving final state and converting to numpy arrays
+final_image = image_part.clone().detach().view(28, 28).cpu().numpy()
+final_label = label_part.clone().detach().cpu().numpy()
 
 # Create the visualization
 fig, axes = plt.subplots(2, 2, figsize=(10, 10))
 
 # First guess (input)
-axes[0, 0].imshow(first_guess_image, cmap='gray')
+axes[0, 0].imshow(initial_image, cmap='gray')
 axes[0, 0].set_title('Input Image')
-axes[0, 1].bar(range(10), first_guess_label[0])
+axes[0, 1].bar(range(10), initial_label[0])
 axes[0, 1].set_title('Diffuse Prior Vector')
 
 # Adversarial example
-axes[1, 0].imshow(adversarial_image, cmap='gray')
+axes[1, 0].imshow(final_image, cmap='gray')
 axes[1, 0].set_title('Adversarial Image')
-axes[1, 1].bar(range(10), adversarial_label[0])
+axes[1, 1].bar(range(10), final_label[0])
 axes[1, 1].set_title('Adversarial Label Vector')
 
 # Save the figure
@@ -274,7 +257,7 @@ print(f"Adversarial example training visualization saved to {filepath}")
 
 
 # Visualization of final adversarial testing - - - - - - - - - - - - - - - - - - - - - -
-
+'''
 # Gathering the "final" output of autoencoder with adversarial example
 input_adv.data[:, image_dim:] = diffuse_label  # re-append diffuse prior
 final_output = autoencoder(input_adv)
@@ -310,3 +293,4 @@ plt.close(fig)  # Close the figure to free up memory
 print(f"Adversarial example training visualization saved to {filepath}")
 
 print("Target label was:", target_label.cpu().numpy().round(3))
+'''
