@@ -31,18 +31,18 @@ input_dim = image_dim + num_classes
 
 encoder = nn.Sequential(
     nn.Linear(input_dim, 512),
-    nn.ReLU(),
+    nn.ELU(),
     nn.Linear(512, 256),
-    nn.ReLU(),
+    nn.ELU(),
     nn.Linear(256, 128),
-    nn.ReLU()
+    nn.ELU(),
 )
 
 decoder = nn.Sequential(
     nn.Linear(128, 256),
-    nn.ReLU(),
+    nn.ELU(),
     nn.Linear(256, 512),
-    nn.ReLU(),
+    nn.ELU(),
     nn.Linear(512, input_dim),
     nn.Sigmoid()
 )
@@ -205,8 +205,7 @@ for loop in range(train_loops):
     # turning into probability distribution before doing kld
     output_label_probs = F.softmax(output[:, image_dim:], dim=1)
     print(f"  Output probs: {output_label_probs.detach().cpu().numpy().round(3)}")
-    # label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
-    label_loss = F.mse_loss(output_label_probs, target_label)
+    label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
     image_loss = nn.functional.mse_loss(image_part, original_image)
 
     loss = image_loss + 1000 * label_loss
