@@ -156,7 +156,7 @@ encoder.eval()
 decoder.eval()
 
 # Creating this loader so I can go grab 1 image
-adversarial_loader = DataLoader(test_dataset, batch_size=1, shuffle=False)
+adversarial_loader = DataLoader(test_dataset, batch_size=1, shuffle=True)
 
 # Ensure model parameters are not updated during adversarial training
 for param in encoder.parameters():
@@ -221,7 +221,7 @@ for loop in range(train_loops):
 
     image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
 
-    loss = image_loss + 500 * label_loss
+    loss = image_loss + 50 * label_loss
 
     # Prints the losses
     print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
@@ -237,7 +237,7 @@ for loop in range(train_loops):
     input_adv.data[:, :image_dim].clamp_(0, 1)  # clamp after each loop
     input_adv.data[:, image_dim:] = diffuse_label  # re-append diffuse prior
 
-input_adv = autoencoder(input_adv)
+#input_adv = autoencoder(input_adv)
 
 # Visualize the training results - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Create the adversarial_figures directory if it doesn't exist
