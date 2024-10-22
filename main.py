@@ -213,7 +213,6 @@ output = None  # will use this later
 
 for loop in range(train_loops):
     # Forward pass
-    input_adv.data[:, image_dim:] = diffuse_label  # re-append diffuse prior
     output = autoencoder(input_adv)
 
     # turning into probability distribution before doing kld
@@ -222,7 +221,7 @@ for loop in range(train_loops):
 
     image_loss = nn.functional.mse_loss(output[:, :image_dim], original_image)
 
-    loss = image_loss + 50 * label_loss
+    loss = image_loss + 100 * label_loss
 
     # Prints the losses
     print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
@@ -236,6 +235,7 @@ for loop in range(train_loops):
     optimizer.step()
 
     input_adv.data[:, :image_dim].clamp_(0, 1)  # clamp after each loop
+    input_adv.data[:, image_dim:] = diffuse_label  # re-append diffuse prior
 
 
 # Visualize the training results - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -276,7 +276,7 @@ print(f"Adversarial example training visualization saved to {filepath}")
 # Visualization of final adversarial testing - - - - - - - - - - - - - - - - - - - - - -
 
 # Gathering the "final" output of autoencoder with adversarial example
-input_adv[:, image_dim:] = diffuse_label  # re-append diffuse prior
+input_adv.data[:, image_dim:] = diffuse_label  # re-append diffuse prior
 final_output = autoencoder(input_adv)
 # final_label_probs = F.softmax(final_output[:, image_dim:], dim=1) might not need this
 
