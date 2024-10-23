@@ -8,3 +8,17 @@ Loading python/3.8.13/slu6jvw
     util-linux-uuid/2.37.4/nlecwm6
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
+Traceback (most recent call last):
+  File "main.py", line 188, in <module>
+    axes[0, 0].imshow(image_part, cmap='gray')
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/__init__.py", line 1446, in inner
+    return func(ax, *map(sanitize_sequence, args), **kwargs)
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/axes/_axes.py", line 5663, in imshow
+    im.set_data(X)
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/image.py", line 697, in set_data
+    self._A = cbook.safe_masked_invalid(A, copy=True)
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/cbook/__init__.py", line 719, in safe_masked_invalid
+    x = np.array(x, subok=True, copy=copy)
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/_tensor.py", line 1062, in __array__
+    return self.numpy()
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
