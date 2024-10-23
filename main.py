@@ -176,6 +176,33 @@ for images, labels in adversarial_loader:
 concat_input = torch.cat((image_part, label_part), dim=1)
 reconstructed = autoencoder(concat_input)
 
+# VISUALIZE RECONSTRUCTED - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+reconstructed_image_part = reconstructed[:, :image_dim].detach().view(28, 28).cpu().numpy()
+reconstructed_label_part = reconstructed[:, image_dim:].detach().cpu().numpy()
+
+# Create the visualization
+fig, axes = plt.subplots(2, 2, figsize=(10, 10))
+
+# original image
+axes[0, 0].imshow(image_part, cmap='gray')
+axes[0, 0].set_title('Original Selected Image')
+axes[0, 1].bar(range(10), label_part[0])
+axes[0, 1].set_title('Diffuse Label')
+
+# autoencoder output
+axes[1, 0].imshow(reconstructed_image_part, cmap='gray')
+axes[1, 0].set_title('Reconstructed Output Image')
+axes[1, 1].bar(range(10), reconstructed_label_part[0])
+axes[1, 1].set_title('Reconstructed Output Label')
+
+# Save the figure
+filepath = os.path.join('adversarial_figures', 'reconstruction.png')
+plt.savefig(filepath)
+plt.close(fig)  # Close the figure to free up memory
+
+print(f"Reconstruction visualization saved to {filepath}")
+
 # Saving a clone in variable called original
 original = reconstructed.clone().detach()
 original_image = original[:, :image_dim]
