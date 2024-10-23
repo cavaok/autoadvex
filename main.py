@@ -9,6 +9,7 @@ import os
 from helper import create_diffuse_one_hot, visualize_input_output, visualize_adversarial, fifty_percent_two
 from data import get_mnist_loaders
 
+print('running main.py')
 
 train_loader, test_loader, adversarial_loader = get_mnist_loaders()
 
