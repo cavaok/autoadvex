@@ -177,7 +177,8 @@ concat_input = torch.cat((image_part, label_part), dim=1)
 reconstructed = autoencoder(concat_input)
 
 # VISUALIZE RECONSTRUCTED - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
+first_image = image_part.clone().detach().view(28, 28).cpu().numpy()
+first_label = label_part.clone().detach().cpu().numpy()
 reconstructed_image_part = reconstructed[:, :image_dim].detach().view(28, 28).cpu().numpy()
 reconstructed_label_part = reconstructed[:, image_dim:].detach().cpu().numpy()
 
@@ -185,9 +186,9 @@ reconstructed_label_part = reconstructed[:, image_dim:].detach().cpu().numpy()
 fig, axes = plt.subplots(2, 2, figsize=(10, 10))
 
 # original image
-axes[0, 0].imshow(image_part, cmap='gray')
+axes[0, 0].imshow(first_image, cmap='gray')
 axes[0, 0].set_title('Original Selected Image')
-axes[0, 1].bar(range(10), label_part[0])
+axes[0, 1].bar(range(10), first_label[0])
 axes[0, 1].set_title('Diffuse Label')
 
 # autoencoder output
