@@ -44,6 +44,7 @@ def autoencoder(x):
     decoded = decoder(encoded)
     return decoded
 
+lambda_ = 0.5
 
 # AUTOENCODER TRAINING - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -53,7 +54,7 @@ criterion = nn.MSELoss()
 optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.0001)
 
 num_epochs = 30
-num_iterations = 3
+num_iterations = 1
 
 for epoch in range(num_epochs):
     encoder.train()
@@ -81,7 +82,7 @@ for epoch in range(num_epochs):
             label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
 
             # Add loss from this iteration to total
-            iteration_loss = image_loss + 10 * label_loss
+            iteration_loss = image_loss + lambda_ * label_loss
             total_batch_loss += iteration_loss
 
             # Save final state for visualization
@@ -122,7 +123,7 @@ with torch.no_grad():
         image_loss = nn.functional.mse_loss(outputs[:, :image_dim], targets[:, :image_dim])
         label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
 
-        loss = image_loss + 10 * label_loss
+        loss = image_loss + lambda_ * label_loss
         test_loss += loss.item()
 
         _, predicted = outputs[:, -10:].max(1)
@@ -153,13 +154,13 @@ for images, labels in adversarial_loader:
 concat_input = torch.cat((image_part, label_part), dim=1)
 reconstructed = autoencoder(concat_input)
 reconstructed_label_probs = F.softmax(reconstructed[:, image_dim:], dim=1)
-reconstructed_label_probs_log = reconstructed_label_probs.log()
+# reconstructed_label_probs_log = reconstructed_label_probs.log()
 
 # Prepping reconstruction for visualization
 first_image = image_part.clone().detach().view(28, 28).cpu().numpy()
 first_label = label_part.clone().detach().cpu().numpy()
 reconstructed_image_part = reconstructed[:, :image_dim].detach().view(28, 28).cpu().numpy()
-reconstructed_label_part = reconstructed_label_probs_log.detach().cpu().numpy()
+reconstructed_label_part = reconstructed_label_probs.detach().cpu().numpy()
 
 # Visualize reconstruction
 os.makedirs('adversarial_figures', exist_ok=True)
@@ -198,7 +199,7 @@ for loop in range(train_loops):
     label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
     image_loss = nn.functional.mse_loss(image_part, original_image)
 
-    loss = image_loss + 10 * label_loss
+    loss = image_loss + lambda_ * label_loss
 
     # Prints the losses
     print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
@@ -234,11 +235,11 @@ visualize_adversarial(initial_image, 'First Guess Image',
 concat_final = torch.cat((image_part, label_part), dim=1)
 final_output = autoencoder(concat_final)
 final_label_probs = F.softmax(final_output[:, image_dim:], dim=1)
-final_label_probs_log = final_label_probs.log()
+# final_label_probs_log = final_label_probs.log()
 
 # Converting to numpy arrays
 final_output_image = final_output[:, :image_dim].detach().view(28, 28).cpu().numpy()
-final_output_label = final_label_probs_log.detach().cpu().numpy()
+final_output_label = final_label_probs.detach().cpu().numpy()
 
 
 # Visualize adversarial training results
