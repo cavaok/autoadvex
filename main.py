@@ -2,14 +2,11 @@ import torch
 from torch import optim
 from torch import nn
 import torch.nn.functional as F
-from torch.utils.data import DataLoader, TensorDataset
-import numpy as np
-import matplotlib.pyplot as plt
 import os
 from helper import create_diffuse_one_hot, visualize_input_output, visualize_adversarial, fifty_percent_two
 from data import get_mnist_loaders
 
-print('running main.py')
+print('running dynamical.py')
 
 train_loader, test_loader, adversarial_loader = get_mnist_loaders()
 
@@ -24,15 +21,21 @@ encoder = nn.Sequential(
     nn.ELU(),
     nn.Linear(256, 128),
     nn.ELU(),
+    nn.Linear(128, 64),
+    nn.ELU(),
+    nn.Linear(64, 32)
 )
 
 decoder = nn.Sequential(
+    nn.Linear(32, 64),
+    nn.ELU(),
+    nn.Linear(64, 128),
+    nn.ELU(),
     nn.Linear(128, 256),
     nn.ELU(),
     nn.Linear(256, 512),
     nn.ELU(),
-    nn.Linear(512, input_dim)  # ,
-    # nn.Sigmoid()
+    nn.Linear(512, input_dim)
 )
 
 
@@ -50,6 +53,7 @@ criterion = nn.MSELoss()
 optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.0001)
 
 num_epochs = 30
+num_iterations = 3
 
 for epoch in range(num_epochs):
     encoder.train()
@@ -58,30 +62,46 @@ for epoch in range(num_epochs):
     for batch_idx, (images, labels) in enumerate(train_loader):
         images = images.view(images.size(0), -1).to(device)
         diffuse_labels = create_diffuse_one_hot(labels).to(device)
-        inputs = torch.cat((images, diffuse_labels), dim=1)
+
+        # Initial state
+        initial_state = torch.cat((images, diffuse_labels), dim=1)  # save for visualization
+        current_state = initial_state  # gets updated in the loop
         targets = torch.cat((images, torch.eye(num_classes)[labels].to(device)), dim=1)
 
-        outputs = autoencoder(inputs)
+        total_batch_loss = 0
 
-        # turning into probability distribution before doing kld
-        outputs_label_probs = F.softmax(outputs[:, image_dim:], dim=1)
-        image_loss = nn.functional.mse_loss(outputs[:, :image_dim], targets[:, :image_dim])
-        label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
+        # Iterations loop
+        for iteration in range(num_iterations):
+            # Get next state
+            current_state = autoencoder(current_state)
 
-        loss = image_loss + 10 * label_loss
+            # Loss calc
+            outputs_label_probs = F.softmax(current_state[:, image_dim:], dim=1)
+            image_loss = nn.functional.mse_loss(current_state[:, :image_dim], targets[:, :image_dim])
+            label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
 
+            # Add loss from this iteration to total
+            iteration_loss = image_loss + 10 * label_loss
+            total_batch_loss += iteration_loss
+
+            # Save final state for visualization
+            if iteration == (num_iterations - 1):
+                final_outputs = current_state
+
+        # Backprop & optimization step
         optimizer.zero_grad()
-        loss.backward()
+        total_batch_loss.backward()
         optimizer.step()
 
-        train_loss += loss.item()
+        train_loss += total_batch_loss.item()
 
         if batch_idx % 100 == 0:
-            print(f"Epoch [{epoch + 1}/{num_epochs}], Batch [{batch_idx}/{len(train_loader)}], Loss: {loss.item():.4f}")
+            print(f"Epoch [{epoch + 1}/{num_epochs}], Batch [{batch_idx}/{len(train_loader)}], "
+                  f"Loss: {total_batch_loss.item():.4f}")
 
     print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss / len(train_loader):.4f}')
 
-    visualize_input_output(inputs, outputs)
+    # visualize_input_output(initial_state, final_outputs)
 
 # AUTOENCODER EVALUATION - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 encoder.eval()
@@ -132,12 +152,14 @@ for images, labels in adversarial_loader:
 # Pass image and label through autoencoder
 concat_input = torch.cat((image_part, label_part), dim=1)
 reconstructed = autoencoder(concat_input)
+reconstructed_label_probs = F.softmax(reconstructed[:, image_dim:], dim=1)
+reconstructed_label_probs_log = reconstructed_label_probs.log()
 
 # Prepping reconstruction for visualization
 first_image = image_part.clone().detach().view(28, 28).cpu().numpy()
 first_label = label_part.clone().detach().cpu().numpy()
 reconstructed_image_part = reconstructed[:, :image_dim].detach().view(28, 28).cpu().numpy()
-reconstructed_label_part = reconstructed[:, image_dim:].detach().cpu().numpy()
+reconstructed_label_part = reconstructed_label_probs_log.detach().cpu().numpy()
 
 # Visualize reconstruction
 os.makedirs('adversarial_figures', exist_ok=True)
@@ -151,9 +173,11 @@ visualize_adversarial(first_image, 'Original Selected Image',
 original = reconstructed.clone().detach()
 original_image = original[:, :image_dim]
 
+'''
 # Save for visualizing later
 initial_image = original_image.clone().detach().view(28, 28).cpu().numpy()
 initial_label = label_part.clone().detach().cpu().numpy()
+'''
 
 # Setting up target label
 target_label = fifty_percent_two(single_label, num_classes, device)
@@ -197,20 +221,24 @@ for loop in range(train_loops):
 final_image = image_part.clone().detach().view(28, 28).cpu().numpy()
 final_label = label_part.clone().detach().cpu().numpy()
 
+'''
 # Visualize adversarial training results
 visualize_adversarial(initial_image, 'First Guess Image',
                       initial_label, 'Diffuse Label',
                       final_image, 'Adversarial Image',
                       final_label, 'Diffuse Label',
                       'adversarial_training.png', 'adversarial_figures')
+'''
 
 # Get final "test" by passing final state through autoencoder
 concat_final = torch.cat((image_part, label_part), dim=1)
 final_output = autoencoder(concat_final)
+final_label_probs = F.softmax(final_output[:, image_dim:], dim=1)
+final_label_probs_log = final_label_probs.log()
 
 # Converting to numpy arrays
 final_output_image = final_output[:, :image_dim].detach().view(28, 28).cpu().numpy()
-final_output_label = final_output[:, image_dim:].detach().cpu().numpy()
+final_output_label = final_label_probs_log.detach().cpu().numpy()
 
 
 # Visualize adversarial training results
@@ -219,5 +247,4 @@ visualize_adversarial(final_image, 'Adversarial Trained Image',
                       final_output_image, 'Reconstructed Image',
                       final_output_label, 'Reconstructed Label Prediction',
                       'adversarial_testing.png', 'adversarial_figures')
-
 
