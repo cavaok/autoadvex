@@ -63,25 +63,25 @@ for epoch in range(num_epochs):
 
         total_batch_loss = 0
 
-        # Iteration loop
+        # Iterations loop
         for iteration in range(3):
             # Get next state
             current_state = autoencoder(current_state)
 
-            # Calculate losses exactly as before
+            # Loss calc
             outputs_label_probs = F.softmax(current_state[:, image_dim:], dim=1)
             image_loss = nn.functional.mse_loss(current_state[:, :image_dim], targets[:, :image_dim])
             label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
 
-            # Add this iterations loss to total
+            # Add loss from this iteration to total
             iteration_loss = image_loss + 10 * label_loss
             total_batch_loss += iteration_loss
 
             # Save final state for visualization
-            if iteration == 2:  # Last iteration
+            if iteration == 2:
                 final_outputs = current_state
 
-        # Do optimization with combined loss
+        # Backprop & optimization step
         optimizer.zero_grad()
         total_batch_loss.backward()
         optimizer.step()
@@ -94,7 +94,6 @@ for epoch in range(num_epochs):
 
     print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss / len(train_loader):.4f}')
 
-    # Use initial_state instead of inputs for visualization
     visualize_input_output(initial_state, final_outputs)
 
 # AUTOENCODER EVALUATION - - - - - - - - - - - - - - - - - - - - - - - - - - - -
