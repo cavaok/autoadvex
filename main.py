@@ -3,7 +3,7 @@ from torch import optim
 from torch import nn
 import torch.nn.functional as F
 import os
-from helper import create_diffuse_one_hot, visualize_input_output, visualize_adversarial, fifty_percent_two
+from helper import create_diffuse_one_hot, visualize_adversarial, fifty_percent_two
 from data import get_mnist_loaders
 
 print('running dynamical.py')
