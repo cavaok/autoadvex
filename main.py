@@ -54,7 +54,7 @@ criterion = nn.MSELoss()
 optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.0001)
 
 num_epochs = 30
-num_iterations = 1
+num_iterations = 2
 
 for epoch in range(num_epochs):
     encoder.train()
