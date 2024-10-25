@@ -54,7 +54,7 @@ criterion = nn.MSELoss()
 optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.0001)
 
 num_epochs = 30
-num_iterations = 2
+num_iterations = 4
 
 for epoch in range(num_epochs):
     encoder.train()
@@ -102,7 +102,6 @@ for epoch in range(num_epochs):
 
     print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss / len(train_loader):.4f}')
 
-    # visualize_input_output(initial_state, final_outputs)
 
 # AUTOENCODER EVALUATION - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 encoder.eval()

@@ -9,34 +9,6 @@ def create_diffuse_one_hot(labels, num_classes=10, diffuse_value=0.1):
     return torch.tensor(diffuse_one_hot, dtype=torch.float32)
 
 
-def visualize_input_output(inputs, outputs, index=0, save_dir='figures', image_dim=28*28):
-    # Create the figures directory if it doesn't exist
-    os.makedirs(save_dir, exist_ok=True)
-
-    input_image = inputs[index, :image_dim].view(28, 28).cpu().numpy()
-    input_label = inputs[index, image_dim:].cpu().numpy()
-    output_image = outputs[index, :image_dim].view(28, 28).cpu().detach().numpy()
-    output_label = outputs[index, image_dim:].cpu().detach().numpy()
-
-    fig, axes = plt.subplots(2, 2, figsize=(10, 10))
-    axes[0, 0].imshow(input_image, cmap='gray')
-    axes[0, 0].set_title(f'Input Image')
-    axes[0, 1].bar(range(10), input_label)
-    axes[0, 1].set_title('Diffuse Prior Vector')
-    axes[1, 0].imshow(output_image, cmap='gray')
-    axes[1, 0].set_title(f'Output Image')
-    axes[1, 1].bar(range(10), output_label)
-    axes[1, 1].set_title('Output Label Vector')
-
-    # Save the figure instead of showing it
-    filename = f'visualization_{index}.png'
-    filepath = os.path.join(save_dir, filename)
-    plt.savefig(filepath)
-    plt.close(fig)  # Close the figure to free up memory
-
-    print(f"Visualization saved to {filepath}")
-
-
 def visualize_adversarial(top_image, string1, top_label, string2, bottom_image, string3, bottom_label, string4,
                           title, foldername):
     # Create the visualization
