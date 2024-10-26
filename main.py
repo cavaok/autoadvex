@@ -6,7 +6,7 @@ import os
 from helper import create_diffuse_one_hot, visualize_adversarial, fifty_percent_two
 from data import get_mnist_loaders
 
-print('running dynamical.py')
+print('running main.py')
 
 train_loader, test_loader, adversarial_loader = get_mnist_loaders()
 
@@ -54,7 +54,7 @@ criterion = nn.MSELoss()
 optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.0001)
 
 num_epochs = 30
-num_iterations = 4
+num_iterations = 5
 
 for epoch in range(num_epochs):
     encoder.train()
