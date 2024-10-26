@@ -44,7 +44,7 @@ def autoencoder(x):
     decoded = decoder(encoded)
     return decoded
 
-lambda_ = 0.5
+lambda_ = 0.2
 
 # AUTOENCODER TRAINING - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
