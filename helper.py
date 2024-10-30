@@ -10,7 +10,7 @@ def create_diffuse_one_hot(labels, num_classes=10, diffuse_value=0.1):
 
 
 def visualize_adversarial(top_image, string1, top_label, string2, bottom_image, string3, bottom_label, string4,
-                          title, foldername):
+                          title, folder_name):
     # Create the visualization
     fig, axes = plt.subplots(2, 2, figsize=(10, 10))
 
@@ -27,20 +27,28 @@ def visualize_adversarial(top_image, string1, top_label, string2, bottom_image, 
     axes[1, 1].set_title(string4)
 
     # Save the figure
-    filepath = os.path.join(foldername, title)
+    filepath = os.path.join(folder_name, title)
     plt.savefig(filepath)
     plt.close(fig)  # Close the figure to free up memory
 
     print(f"Visualization saved to {filepath}")
 
 
-def fifty_percent_two(single_label, num_classes, device):
+def set_equal_confusion(single_label, num_classes, num_confused, device, includes_true=True):
     true_class = single_label
     classes = list(range(10))
     classes.remove(true_class)
-    random_class = np.random.choice(classes)
     target_label = torch.zeros(1, num_classes, device=device)  # Initialize with zeros
-    target_label[0, true_class] = 0.5
-    target_label[0, random_class] = 0.5
+    if includes_true:
+        target_label[0, true_class] = 1 / num_confused
+        for i in (num_confused - 1):
+            random_class = np.random.choice(classes)
+            classes.remove(random_class)
+            target_label[0, random_class] = 1 / num_confused
+    else:
+        for i in num_confused:
+            random_class = np.random.choice(classes)
+            classes.remove(random_class)
+            target_label[0, random_class] = 1 / num_confused
     return target_label
 

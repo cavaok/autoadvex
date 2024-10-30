@@ -3,8 +3,18 @@ from torch import optim
 from torch import nn
 import torch.nn.functional as F
 import os
-from helper import create_diffuse_one_hot, visualize_adversarial, fifty_percent_two
+from helper import create_diffuse_one_hot, visualize_adversarial, set_equal_confusion
 from data import get_mnist_loaders
+import argparse
+
+# Set up argument parsing at the top of the script
+parser = argparse.ArgumentParser(description='Process some arguments')
+parser.add_argument('--num_confused', type=int, default=2, help='Number of classes with equal confusion')
+parser.add_argument('--includes_true', type=bool, default=True, help='Whether or not classes includes true class')
+parser.add_argument('--num_adversarial_examples', type=int, default=1, help='How many adv exs it will save')
+
+# Parse args immediately - these will be available throughout the script
+args = parser.parse_args()
 
 print('running main.py')
 
@@ -44,7 +54,8 @@ def autoencoder(x):
     decoded = decoder(encoded)
     return decoded
 
-lambda_ = 0.2
+
+lambda_ = 0.5
 
 # AUTOENCODER TRAINING - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -54,7 +65,7 @@ criterion = nn.MSELoss()
 optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.0001)
 
 num_epochs = 30
-num_iterations = 5
+num_iterations = 4
 
 for epoch in range(num_epochs):
     encoder.train()
@@ -141,110 +152,106 @@ for param in encoder.parameters():
 for param in decoder.parameters():
     param.requires_grad = False
 
-# Grab information for only ONE image/label pair
-for images, labels in adversarial_loader:
-    image_part = images.view(images.size(0), -1).to(device).clone().detach()
+all_data = list(adversarial_loader)
+
+for i in range(50):
+    # Grab information for only ONE image/label pair
+    ''' 
+    for images, labels in adversarial_loader:
+        image_part = images.view(images.size(0), -1).to(device).clone().detach()
+        image_part.requires_grad_(True)
+        label_part = create_diffuse_one_hot(labels).to(device)
+        single_label = labels.item()
+        break
+    '''
+    # Get the i-th image, wrapping around if needed
+    image_batch, label_batch = all_data[i % len(all_data)]
+
+    # Select just the first image/label from this batch
+    image_part = image_batch[0].view(-1).to(device).clone().detach()  # reshape single image
     image_part.requires_grad_(True)
-    label_part = create_diffuse_one_hot(labels).to(device)
-    single_label = labels.item()
-    break
+    label_part = create_diffuse_one_hot(label_batch[0:1]).to(device)  # keep as size-1 batch
+    single_label = label_batch[0].item()
 
-# Pass image and label through autoencoder
-concat_input = torch.cat((image_part, label_part), dim=1)
-reconstructed = autoencoder(concat_input)
-reconstructed_label_probs = F.softmax(reconstructed[:, image_dim:], dim=1)
-# reconstructed_label_probs_log = reconstructed_label_probs.log()
+    # Pass image and label through autoencoder
+    concat_input = torch.cat((image_part, label_part), dim=1)
+    reconstructed = autoencoder(concat_input)
+    reconstructed_label_probs = F.softmax(reconstructed[:, image_dim:], dim=1)
 
-# Prepping reconstruction for visualization
-first_image = image_part.clone().detach().view(28, 28).cpu().numpy()
-first_label = label_part.clone().detach().cpu().numpy()
-reconstructed_image_part = reconstructed[:, :image_dim].detach().view(28, 28).cpu().numpy()
-reconstructed_label_part = reconstructed_label_probs.detach().cpu().numpy()
+    # Prepping reconstruction for visualization
+    first_image = image_part.clone().detach().view(28, 28).cpu().numpy()
+    first_label = label_part.clone().detach().cpu().numpy()
+    reconstructed_image_part = reconstructed[:, :image_dim].detach().view(28, 28).cpu().numpy()
+    reconstructed_label_part = reconstructed_label_probs.detach().cpu().numpy()
 
-# Visualize reconstruction
-os.makedirs('adversarial_figures', exist_ok=True)
-visualize_adversarial(first_image, 'Original Selected Image',
-                      first_label, 'Diffuse Label',
-                      reconstructed_image_part, 'Reconstructed Output Image',
-                      reconstructed_label_part, 'Reconstructed Output Label',
-                      'reconstruction.png', 'adversarial_figures')
+    folder_name = f'adversarial_figures_{args.num_confused}_{args.includes_true}'
+    # Visualize reconstruction
+    os.makedirs(folder_name, exist_ok=True)
+    visualize_adversarial(first_image, 'Original Selected Image',
+                          first_label, 'Diffuse Label',
+                          reconstructed_image_part, 'Reconstructed Output Image',
+                          reconstructed_label_part, 'Reconstructed Output Label',
+                          f'reconstruction_{i}.png', folder_name)
 
-# Saving a clone for training loop later
-original = reconstructed.clone().detach()
-original_image = original[:, :image_dim]
+    # Saving a clone for training loop later
+    original = reconstructed.clone().detach()
+    original_image = original[:, :image_dim]
 
-'''
-# Save for visualizing later
-initial_image = original_image.clone().detach().view(28, 28).cpu().numpy()
-initial_label = label_part.clone().detach().cpu().numpy()
-'''
+    # Setting up target label
+    target_label = set_equal_confusion(single_label, num_classes, args.num_confused, device, args.includes_true)
 
-# Setting up target label
-target_label = fifty_percent_two(single_label, num_classes, device)
+    # Params
+    optimizer = optim.Adam([image_part], lr=0.01)
+    train_loops = 300
 
-# Params
-optimizer = optim.Adam([image_part], lr=0.01)
-train_loops = 300
+    # Training loops
+    for loop in range(train_loops):
+        current_input = torch.cat((image_part, label_part), dim=1)
+        # Forward pass
+        output = autoencoder(current_input)
 
-# Training loops
-for loop in range(train_loops):
-    current_input = torch.cat((image_part, label_part), dim=1)
-    # Forward pass
-    output = autoencoder(current_input)
+        # turning into probability distribution before doing kld
+        output_label_probs = F.softmax(output[:, image_dim:], dim=1)
+        print(f"  Output probs: {output_label_probs.detach().cpu().numpy().round(3)}")
+        label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
+        image_loss = nn.functional.mse_loss(image_part, original_image)
 
-    # turning into probability distribution before doing kld
-    output_label_probs = F.softmax(output[:, image_dim:], dim=1)
-    print(f"  Output probs: {output_label_probs.detach().cpu().numpy().round(3)}")
-    label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
-    image_loss = nn.functional.mse_loss(image_part, original_image)
+        loss = image_loss + lambda_ * label_loss
 
-    loss = image_loss + lambda_ * label_loss
+        # Prints the losses
+        print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
+        print(f"  Label Loss: {label_loss.item():.4f}")
+        print(f"  Image Loss: {image_loss.item():.4f}")
+        print(f"  Total Loss: {loss.item():.4f}")
 
-    # Prints the losses
-    print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
-    print(f"  Label Loss: {label_loss.item():.4f}")
-    print(f"  Image Loss: {image_loss.item():.4f}")
-    print(f"  Total Loss: {loss.item():.4f}")
+        # Backprop and optim step
+        optimizer.zero_grad()
+        loss.backward()
+        print(f"  Image grad max: {image_part.grad.abs().max().item() if image_part.grad is not None else 'None'}")
 
-    # Backprop and optim step
-    optimizer.zero_grad()
-    loss.backward()
-    print(f"  Image grad max: {image_part.grad.abs().max().item() if image_part.grad is not None else 'None'}")
+        optimizer.step()
 
-    optimizer.step()
-
-    with torch.no_grad():
-        image_part.data.clamp_(0, 1)
+        with torch.no_grad():
+            image_part.data.clamp_(0, 1)
 
 
-# Prepping final state for visualization
-final_image = image_part.clone().detach().view(28, 28).cpu().numpy()
-final_label = label_part.clone().detach().cpu().numpy()
+    # Prepping final state for visualization
+    final_image = image_part.clone().detach().view(28, 28).cpu().numpy()
+    final_label = label_part.clone().detach().cpu().numpy()
 
-'''
-# Visualize adversarial training results
-visualize_adversarial(initial_image, 'First Guess Image',
-                      initial_label, 'Diffuse Label',
-                      final_image, 'Adversarial Image',
-                      final_label, 'Diffuse Label',
-                      'adversarial_training.png', 'adversarial_figures')
-'''
+    # Get final "test" by passing final state through autoencoder
+    concat_final = torch.cat((image_part, label_part), dim=1)
+    final_output = autoencoder(concat_final)
+    final_label_probs = F.softmax(final_output[:, image_dim:], dim=1)
 
-# Get final "test" by passing final state through autoencoder
-concat_final = torch.cat((image_part, label_part), dim=1)
-final_output = autoencoder(concat_final)
-final_label_probs = F.softmax(final_output[:, image_dim:], dim=1)
-# final_label_probs_log = final_label_probs.log()
+    # Converting to numpy arrays
+    final_output_image = final_output[:, :image_dim].detach().view(28, 28).cpu().numpy()
+    final_output_label = final_label_probs.detach().cpu().numpy()
 
-# Converting to numpy arrays
-final_output_image = final_output[:, :image_dim].detach().view(28, 28).cpu().numpy()
-final_output_label = final_label_probs.detach().cpu().numpy()
-
-
-# Visualize adversarial training results
-visualize_adversarial(final_image, 'Adversarial Trained Image',
-                      final_label, 'Diffuse Label',
-                      final_output_image, 'Reconstructed Image',
-                      final_output_label, 'Reconstructed Label Prediction',
-                      'adversarial_testing.png', 'adversarial_figures')
+    # Visualize adversarial training results
+    visualize_adversarial(final_image, 'Adversarial Trained Image',
+                          final_label, 'Diffuse Label',
+                          final_output_image, 'Reconstructed Image',
+                          final_output_label, 'Reconstructed Label Prediction',
+                          f'adversarial_{i}.png', folder_name)
 
