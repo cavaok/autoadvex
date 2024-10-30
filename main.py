@@ -154,7 +154,7 @@ for param in decoder.parameters():
 
 all_data = list(adversarial_loader)
 
-for i in range(args.num_adversarial.examples):
+for i in range(args.num_adversarial_examples):
     # Grab information for only ONE image/label pair
     ''' 
     for images, labels in adversarial_loader:
