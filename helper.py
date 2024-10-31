@@ -41,12 +41,12 @@ def set_equal_confusion(single_label, num_classes, num_confused, device, include
     target_label = torch.zeros(1, num_classes, device=device)  # Initialize with zeros
     if includes_true:
         target_label[0, true_class] = 1 / num_confused
-        for i in (num_confused - 1):
+        for i in range(num_confused - 1):
             random_class = np.random.choice(classes)
             classes.remove(random_class)
             target_label[0, random_class] = 1 / num_confused
     else:
-        for i in num_confused:
+        for i in range(num_confused):
             random_class = np.random.choice(classes)
             classes.remove(random_class)
             target_label[0, random_class] = 1 / num_confused

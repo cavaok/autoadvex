@@ -155,26 +155,17 @@ for param in decoder.parameters():
 all_data = list(adversarial_loader)
 
 for i in range(args.num_adversarial_examples):
-    # Grab information for only ONE image/label pair
-    ''' 
-    for images, labels in adversarial_loader:
-        image_part = images.view(images.size(0), -1).to(device).clone().detach()
-        image_part.requires_grad_(True)
-        label_part = create_diffuse_one_hot(labels).to(device)
-        single_label = labels.item()
-        break
-    '''
     # Get the i-th image, wrapping around if needed
     image_batch, label_batch = all_data[i % len(all_data)]
 
     # Select just the first image/label from this batch
-    image_part = image_batch[0].view(-1).to(device).clone().detach()  # reshape single image
+    image_part = image_batch[0].view(1, -1).to(device).clone().detach()  # Add batch dimension with view(1, -1)
     image_part.requires_grad_(True)
-    label_part = create_diffuse_one_hot(label_batch[0:1]).to(device)  # keep as size-1 batch
+    label_part = create_diffuse_one_hot(label_batch[0:1]).to(device)  # Already has batch dimension
     single_label = label_batch[0].item()
 
     # Pass image and label through autoencoder
-    concat_input = torch.cat((image_part, label_part), dim=1)
+    concat_input = torch.cat((image_part, label_part), dim=1)  # Now both tensors are 2D
     reconstructed = autoencoder(concat_input)
     reconstructed_label_probs = F.softmax(reconstructed[:, image_dim:], dim=1)
 
@@ -185,13 +176,13 @@ for i in range(args.num_adversarial_examples):
     reconstructed_label_part = reconstructed_label_probs.detach().cpu().numpy()
 
     folder_name = f'adversarial_figures_{args.num_confused}_{args.includes_true}'
-    # Visualize reconstruction
     os.makedirs(folder_name, exist_ok=True)
     visualize_adversarial(first_image, 'Original Selected Image',
                           first_label, 'Diffuse Label',
                           reconstructed_image_part, 'Reconstructed Output Image',
                           reconstructed_label_part, 'Reconstructed Output Label',
                           f'reconstruction_{i}.png', folder_name)
+    print(f'reconstruction_{i}.png saved to ' + folder_name)
 
     # Saving a clone for training loop later
     original = reconstructed.clone().detach()
@@ -206,15 +197,16 @@ for i in range(args.num_adversarial_examples):
 
     # Training loops
     for loop in range(train_loops):
-        current_input = torch.cat((image_part, label_part), dim=1)
+        # Ensure image_part maintains batch dimension throughout the loop
+        current_input = torch.cat((image_part.view(1, -1), label_part), dim=1)  # Add view(1, -1) here too
         # Forward pass
         output = autoencoder(current_input)
 
         # turning into probability distribution before doing kld
         output_label_probs = F.softmax(output[:, image_dim:], dim=1)
         print(f"  Output probs: {output_label_probs.detach().cpu().numpy().round(3)}")
-        label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)  # reduction='sum')
-        image_loss = nn.functional.mse_loss(image_part, original_image)
+        label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)
+        image_loss = nn.functional.mse_loss(image_part.view(1, -1), original_image)  # Add view(1, -1) here
 
         loss = image_loss + lambda_ * label_loss
 
@@ -234,13 +226,12 @@ for i in range(args.num_adversarial_examples):
         with torch.no_grad():
             image_part.data.clamp_(0, 1)
 
-
     # Prepping final state for visualization
     final_image = image_part.clone().detach().view(28, 28).cpu().numpy()
     final_label = label_part.clone().detach().cpu().numpy()
 
     # Get final "test" by passing final state through autoencoder
-    concat_final = torch.cat((image_part, label_part), dim=1)
+    concat_final = torch.cat((image_part.view(1, -1), label_part), dim=1)  # Add view(1, -1) here
     final_output = autoencoder(concat_final)
     final_label_probs = F.softmax(final_output[:, image_dim:], dim=1)
 
@@ -254,4 +245,5 @@ for i in range(args.num_adversarial_examples):
                           final_output_image, 'Reconstructed Image',
                           final_output_label, 'Reconstructed Label Prediction',
                           f'adversarial_{i}.png', folder_name)
+    print(f'adversarial_{i}.png saved to ' + folder_name)
 
