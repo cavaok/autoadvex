@@ -34,7 +34,7 @@ def visualize_adversarial(top_image, string1, top_label, string2, bottom_image, 
     print(f"Visualization saved to {filepath}")
 
 
-def set_equal_confusion(single_label, num_classes, num_confused, device, includes_true=True):
+def set_equal_confusion(single_label, num_classes, num_confused, device, includes_true):
     true_class = single_label
     classes = list(range(10))
     classes.remove(true_class)

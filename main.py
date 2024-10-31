@@ -6,17 +6,18 @@ import os
 from helper import create_diffuse_one_hot, visualize_adversarial, set_equal_confusion
 from data import get_mnist_loaders
 import argparse
+print('running main.py')
 
 # Set up argument parsing at the top of the script
 parser = argparse.ArgumentParser(description='Process some arguments')
 parser.add_argument('--num_confused', type=int, default=2, help='Number of classes with equal confusion')
-parser.add_argument('--includes_true', type=bool, default=True, help='Whether or not classes includes true class')
+parser.add_argument('--includes_true', type=str, default='True', help='Whether or not classes includes true class')
 parser.add_argument('--num_adversarial_examples', type=int, default=1, help='How many adv exs it will save')
 
 # Parse args immediately - these will be available throughout the script
 args = parser.parse_args()
+includes_true = args.includes_true == "True"
 
-print('running main.py')
 
 train_loader, test_loader, adversarial_loader = get_mnist_loaders()
 
@@ -175,7 +176,7 @@ for i in range(args.num_adversarial_examples):
     reconstructed_image_part = reconstructed[:, :image_dim].detach().view(28, 28).cpu().numpy()
     reconstructed_label_part = reconstructed_label_probs.detach().cpu().numpy()
 
-    folder_name = f'adversarial_figures_{args.num_confused}_{args.includes_true}'
+    folder_name = f'adversarial_figures_{args.num_confused}_{str(includes_true)}'
     os.makedirs(folder_name, exist_ok=True)
     visualize_adversarial(first_image, 'Original Selected Image',
                           first_label, 'Diffuse Label',
@@ -189,7 +190,7 @@ for i in range(args.num_adversarial_examples):
     original_image = original[:, :image_dim]
 
     # Setting up target label
-    target_label = set_equal_confusion(single_label, num_classes, args.num_confused, device, args.includes_true)
+    target_label = set_equal_confusion(single_label, num_classes, args.num_confused, device, includes_true)
 
     # Params
     optimizer = optim.Adam([image_part], lr=0.01)
