@@ -18,13 +18,16 @@ parser.add_argument('--num_adversarial_examples', type=int, default=1, help='How
 args = parser.parse_args()
 includes_true = args.includes_true == "True"
 
+# Get the adversarial loader (we only need this one now)
+_, _, adversarial_loader = get_mnist_loaders()
 
-train_loader, test_loader, adversarial_loader = get_mnist_loaders()
-
+# Constants (must match training exactly)
 image_dim = 28 * 28
 num_classes = 10
 input_dim = image_dim + num_classes
+lambda_ = 0.5
 
+# Model definitions (must match training exactly)
 encoder = nn.Sequential(
     nn.Linear(input_dim, 512),
     nn.ELU(),
@@ -56,94 +59,18 @@ def autoencoder(x):
     return decoded
 
 
-lambda_ = 0.5
-
-# AUTOENCODER TRAINING - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Device setup
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+# Load the trained models
+encoder.load_state_dict(torch.load('models/encoder.pth'))
+decoder.load_state_dict(torch.load('models/decoder.pth'))
+
+# Move models to device
 encoder = encoder.to(device)
 decoder = decoder.to(device)
-criterion = nn.MSELoss()
-optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), lr=0.0001)
 
-num_epochs = 30
-num_iterations = 4
-
-for epoch in range(num_epochs):
-    encoder.train()
-    decoder.train()
-    train_loss = 0
-    for batch_idx, (images, labels) in enumerate(train_loader):
-        images = images.view(images.size(0), -1).to(device)
-        diffuse_labels = create_diffuse_one_hot(labels).to(device)
-
-        # Initial state
-        initial_state = torch.cat((images, diffuse_labels), dim=1)  # save for visualization
-        current_state = initial_state  # gets updated in the loop
-        targets = torch.cat((images, torch.eye(num_classes)[labels].to(device)), dim=1)
-
-        total_batch_loss = 0
-
-        # Iterations loop
-        for iteration in range(num_iterations):
-            # Get next state
-            current_state = autoencoder(current_state)
-
-            # Loss calc
-            outputs_label_probs = F.softmax(current_state[:, image_dim:], dim=1)
-            image_loss = nn.functional.mse_loss(current_state[:, :image_dim], targets[:, :image_dim])
-            label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
-
-            # Add loss from this iteration to total
-            iteration_loss = image_loss + lambda_ * label_loss
-            total_batch_loss += iteration_loss
-
-            # Save final state for visualization
-            if iteration == (num_iterations - 1):
-                final_outputs = current_state
-
-        # Backprop & optimization step
-        optimizer.zero_grad()
-        total_batch_loss.backward()
-        optimizer.step()
-
-        train_loss += total_batch_loss.item()
-
-        if batch_idx % 100 == 0:
-            print(f"Epoch [{epoch + 1}/{num_epochs}], Batch [{batch_idx}/{len(train_loader)}], "
-                  f"Loss: {total_batch_loss.item():.4f}")
-
-    print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {train_loss / len(train_loader):.4f}')
-
-
-# AUTOENCODER EVALUATION - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-encoder.eval()
-decoder.eval()
-test_loss = 0
-correct = 0
-total = 0
-
-with torch.no_grad():
-    for images, labels in test_loader:
-        images = images.view(images.size(0), -1).to(device)
-        diffuse_labels = create_diffuse_one_hot(labels).to(device)
-        inputs = torch.cat((images, diffuse_labels), dim=1)
-        targets = torch.cat((images, torch.eye(num_classes)[labels].to(device)), dim=1)
-
-        outputs = autoencoder(inputs)
-        outputs_label_probs = F.softmax(outputs[:, image_dim:], dim=1)
-        image_loss = nn.functional.mse_loss(outputs[:, :image_dim], targets[:, :image_dim])
-        label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
-
-        loss = image_loss + lambda_ * label_loss
-        test_loss += loss.item()
-
-        _, predicted = outputs[:, -10:].max(1)
-        total += labels.size(0)
-        correct += predicted.eq(labels.to(device)).sum().item()
-
-print(f'Test Loss: {test_loss / len(test_loader):.4f}, Accuracy: {100. * correct / total:.2f}%')
-
-# ADVERSARIAL EXAMPLE TRAINING - - - - - - - - - - - - - - - - - - - - - - - -
+# Set models to eval mode
 encoder.eval()
 decoder.eval()
 
@@ -153,6 +80,7 @@ for param in encoder.parameters():
 for param in decoder.parameters():
     param.requires_grad = False
 
+# The rest of your adversarial example generation code remains exactly the same
 all_data = list(adversarial_loader)
 
 for i in range(args.num_adversarial_examples):
