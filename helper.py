@@ -1,37 +1,13 @@
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
 import os
 
 
 def create_diffuse_one_hot(labels, num_classes=10, diffuse_value=0.1):
     diffuse_one_hot = np.full((labels.size(0), num_classes), diffuse_value)
     return torch.tensor(diffuse_one_hot, dtype=torch.float32)
-
-
-def visualize_adversarial(top_image, string1, top_label, string2, bottom_image, string3, bottom_label, string4,
-                          title, folder_name):
-    # Create the visualization
-    fig, axes = plt.subplots(2, 2, figsize=(10, 10))
-
-    # original image
-    axes[0, 0].imshow(top_image, cmap='gray')
-    axes[0, 0].set_title(string1)
-    axes[0, 1].bar(range(10), top_label[0])
-    axes[0, 1].set_title(string2)
-
-    # autoencoder output
-    axes[1, 0].imshow(bottom_image, cmap='gray')
-    axes[1, 0].set_title(string3)
-    axes[1, 1].bar(range(10), bottom_label[0])
-    axes[1, 1].set_title(string4)
-
-    # Save the figure
-    filepath = os.path.join(folder_name, title)
-    plt.savefig(filepath)
-    plt.close(fig)  # Close the figure to free up memory
-
-    print(f"Visualization saved to {filepath}")
 
 
 def set_equal_confusion(single_label, num_classes, num_confused, device, includes_true):
@@ -49,3 +25,112 @@ def set_equal_confusion(single_label, num_classes, num_confused, device, include
         target_label[0, random_class] = 1 / num_confused
 
     return target_label
+
+
+def visualize_adversarial_comparison(images, probabilities, distances, save_path=None):
+    """
+    Create a visualization comparing original and adversarial MNIST images.
+
+    Parameters:
+    -----------
+    images : dict
+        Dictionary containing numpy arrays for images:
+        {'A': array, 'C': array, 'D': array, 'F': array}
+    probabilities : dict
+        Dictionary containing numpy arrays for probability distributions:
+        {'a': array, 'c': array, 'd': array, 'f': array}
+    distances : dict
+        Dictionary containing distance metrics:
+        {
+            'auto': {'Euclidean': float, 'MSE': float},
+            'mlp': {'Euclidean': float, 'MSE': float}
+        }
+    save_path : str, optional
+        Path to save the figure
+    """
+    # Create figure with portrait orientation (3:4 ratio)
+    fig = plt.figure(figsize=(10, 13.33))
+
+    # Create grid layout
+    gs = gridspec.GridSpec(4, 3, height_ratios=[2, 1, 2, 1], hspace=0.3, wspace=0.3)
+
+    # Helper function for MNIST images
+    def plot_mnist(ax, image):
+        ax.imshow(image, cmap='gray')
+        ax.set_xticks([])
+        ax.set_yticks([])
+
+    # Helper function for probability distributions
+    def plot_probs(ax, probs):
+        ax.bar(range(10), probs[0])  # [0] because probs are 2D arrays with shape (1, 10)
+        ax.set_ylim(0, 1)
+        ax.set_xticks(range(10))
+
+    # Helper function for distance table (placeholder)
+    def plot_distance_table(ax, distances):
+        metrics = list(distances.keys())  # ['Euclidean', 'MSE']
+        values = [f"{distances[m]:.4f}" for m in metrics]  # Format to 4 decimal places
+        table = ax.table(
+            cellText=[[v] for v in values],
+            rowLabels=metrics,
+            loc='center',
+            cellLoc='center'
+        )
+        table.auto_set_font_size(False)
+        table.set_fontsize(9)
+        table.scale(1.2, 1.5)
+        ax.axis('off')
+
+    # Top row - Autoencoder
+    # Original image (A)
+    ax1 = plt.subplot(gs[0, 0])
+    plot_mnist(ax1, images['A'])
+
+    # Update the autoencoder distance table call
+    ax2 = plt.subplot(gs[0, 1])
+    plot_distance_table(ax2, distances['auto'])
+
+    # Perturbed image (C)
+    ax3 = plt.subplot(gs[0, 2])
+    plot_mnist(ax3, images['C'])
+
+    # Probability distributions for autoencoder
+    ax4 = plt.subplot(gs[1, 0])
+    plot_probs(ax4, probabilities['a'])
+    ax5 = plt.subplot(gs[1, 2])
+    plot_probs(ax5, probabilities['c'])
+
+    # Bottom row - MLP
+    # Original image (D)
+    ax6 = plt.subplot(gs[2, 0])
+    plot_mnist(ax6, images['D'])
+
+    # Update the MLP distance table call
+    ax7 = plt.subplot(gs[2, 1])
+    plot_distance_table(ax7, distances['mlp'])
+
+    # Perturbed image (F)
+    ax8 = plt.subplot(gs[2, 2])
+    plot_mnist(ax8, images['F'])
+
+    # Probability distributions for MLP
+    ax9 = plt.subplot(gs[3, 0])
+    plot_probs(ax9, probabilities['d'])
+    ax10 = plt.subplot(gs[3, 2])
+    plot_probs(ax10, probabilities['f'])
+
+    # Add titles
+    plt.suptitle("ITERATIVE DENOISING AUTOENCODER", y=0.95)
+    fig.text(0.5, 0.5, "MULTILAYER PERCEPTRON", ha='center')
+
+    # Adjust layout
+    plt.tight_layout()
+
+    if save_path:
+        plt.savefig(save_path, bbox_inches='tight', dpi=300)
+        plt.close()
+    else:
+        plt.show()
+
+
+

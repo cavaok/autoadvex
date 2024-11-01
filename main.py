@@ -3,9 +3,12 @@ from torch import optim
 from torch import nn
 import torch.nn.functional as F
 import os
-from helper import create_diffuse_one_hot, visualize_adversarial, set_equal_confusion
+from helper import create_diffuse_one_hot, visualize_adversarial_comparison, set_equal_confusion
 from data import get_mnist_loaders
 import argparse
+if not os.path.exists('figures'):
+    os.makedirs('figures')
+
 print('running main.py')
 
 # Set up argument parsing at the top of the script
@@ -18,7 +21,7 @@ parser.add_argument('--num_adversarial_examples', type=int, default=1, help='How
 args = parser.parse_args()
 includes_true = args.includes_true == "True"
 
-# Get the adversarial loader (we only need this one now)
+# Get the adversarial loader
 _, _, adversarial_loader = get_mnist_loaders()
 
 # Constants (must match training exactly)
@@ -27,7 +30,7 @@ num_classes = 10
 input_dim = image_dim + num_classes
 lambda_ = 0.5
 
-# Model definitions (must match training exactly)
+# Autoencoder Model definitions (must match training exactly)
 encoder = nn.Sequential(
     nn.Linear(input_dim, 512),
     nn.ELU(),
@@ -59,120 +62,217 @@ def autoencoder(x):
     return decoded
 
 
+# MLP Model definition (must match training exactly)
+class MLP(nn.Module):
+    def __init__(self):
+        super(MLP, self).__init__()
+        self.flatten = nn.Flatten()
+        self.layers = nn.Sequential(
+            nn.Linear(image_dim, 512),
+            nn.ELU(),
+            nn.Linear(512, 256),
+            nn.ELU(),
+            nn.Linear(256, 10)
+        )
+
+    def forward(self, x):
+        x = self.flatten(x)
+        return self.layers(x)
+
+
 # Device setup
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-# Load the trained models
+# Load the trained autoencoder
 encoder.load_state_dict(torch.load('models/encoder.pth'))
 decoder.load_state_dict(torch.load('models/decoder.pth'))
+
+# Load the trained MLP
+mlp = MLP().to(device)
+mlp.load_state_dict(torch.load('models/mlp.pth'))
 
 # Move models to device
 encoder = encoder.to(device)
 decoder = decoder.to(device)
 
-# Set models to eval mode
+# Set all models to eval mode
 encoder.eval()
 decoder.eval()
+mlp.eval()
 
 # Ensure no update in model params
 for param in encoder.parameters():
     param.requires_grad = False
 for param in decoder.parameters():
     param.requires_grad = False
+for param in mlp.parameters():
+    param.requires_grad = False
 
-# The rest of your adversarial example generation code remains exactly the same
+
 all_data = list(adversarial_loader)
 
-for i in range(args.num_adversarial_examples):
-    # Get the i-th image, wrapping around if needed
-    image_batch, label_batch = all_data[i % len(all_data)]
 
-    # Select just the first image/label from this batch
-    image_part = image_batch[0].view(1, -1).to(device).clone().detach()  # Add batch dimension with view(1, -1)
+# ADVERSARIAL TRAINING =================================================================================
+for i in range(args.num_adversarial_examples):
+    # MUTUAL SET UP FOR AUTOENCODER AND MLP - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    image_batch, label_batch = all_data[i % len(all_data)]  # get ith image
+
+    # AUTOENCODER: image & label set up
+    image_part = image_batch[0].view(1, -1).to(device).clone().detach()
     image_part.requires_grad_(True)
-    label_part = create_diffuse_one_hot(label_batch[0:1]).to(device)  # Already has batch dimension
+    label_part = create_diffuse_one_hot(label_batch[0:1]).to(device)
     single_label = label_batch[0].item()
 
-    # Pass image and label through autoencoder
-    concat_input = torch.cat((image_part, label_part), dim=1)  # Now both tensors are 2D
-    reconstructed = autoencoder(concat_input)
-    reconstructed_label_probs = F.softmax(reconstructed[:, image_dim:], dim=1)
+    # MLP: image set up & grab label prediction for visualization later
+    mlp_image = image_part.clone().detach().requires_grad_(True)
+    mlp_IMAGE_D = image_part.clone().detach().view(28, 28).cpu().numpy()  # NEED (IMAGE D)
+    mlp_label_d = mlp(mlp_image)
+    mlp_label_d_probs = F.softmax(mlp_label_d, dim=1)
+    mlp_label_d = mlp_label_d_probs.detach().cpu().numpy()  # NEED (BAR CHART d)
 
-    # Prepping reconstruction for visualization
-    first_image = image_part.clone().detach().view(28, 28).cpu().numpy()
-    first_label = label_part.clone().detach().cpu().numpy()
-    reconstructed_image_part = reconstructed[:, :image_dim].detach().view(28, 28).cpu().numpy()
-    reconstructed_label_part = reconstructed_label_probs.detach().cpu().numpy()
+    # AUTOENCODER: grab label prediction for visualization later
+    auto_concat_input = torch.cat((image_part, label_part), dim=1)
+    auto_IMAGE_A_label_a = autoencoder(auto_concat_input)
+    auto_label_a_probs = F.softmax(auto_IMAGE_A_label_a[:, image_dim:], dim=1)
+    first_image = image_part.clone().detach().view(28, 28).cpu().numpy()  # NEED (IMAGE A)
+    # first_label = label_part.clone().detach().cpu().numpy()
+    # reconstructed_image_part = auto_IMAGE_A_label_a[:, :image_dim].detach().view(28, 28).cpu().numpy()
+    auto_label_a = auto_label_a_probs.detach().cpu().numpy()  # NEED (BAR CHART a)
 
-    folder_name = f'adversarial_figures_{args.num_confused}_{str(includes_true)}'
-    os.makedirs(folder_name, exist_ok=True)
-    visualize_adversarial(first_image, 'Original Selected Image',
-                          first_label, 'Diffuse Label',
-                          reconstructed_image_part, 'Reconstructed Output Image',
-                          reconstructed_label_part, 'Reconstructed Output Label',
-                          f'reconstruction_{i}.png', folder_name)
-    print(f'reconstruction_{i}.png saved to ' + folder_name)
-
-    # Saving a clone for training loop later
-    original = reconstructed.clone().detach()
+    # AUTOENCODER: save a clone of output for training loop later
+    original = auto_IMAGE_A_label_a.clone().detach()
     original_image = original[:, :image_dim]
 
-    # Setting up target label
+    # MLP & AUTOENCODER: set up same target label
     target_label = set_equal_confusion(single_label, num_classes, args.num_confused, device, includes_true)
+    mlp_target_label = target_label
 
-    # Params
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # AUTOENCODER ADVERSARIAL TRAINING LOOP - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     optimizer = optim.Adam([image_part], lr=0.01)
     train_loops = 300
 
-    # Training loops
     for loop in range(train_loops):
-        # Ensure image_part maintains batch dimension throughout the loop
-        current_input = torch.cat((image_part.view(1, -1), label_part), dim=1)  # Add view(1, -1) here too
-        # Forward pass
+        current_input = torch.cat((image_part.view(1, -1), label_part), dim=1)
+
         output = autoencoder(current_input)
 
-        # turning into probability distribution before doing kld
         output_label_probs = F.softmax(output[:, image_dim:], dim=1)
         print(f"  Output probs: {output_label_probs.detach().cpu().numpy().round(3)}")
+
         label_loss = nn.functional.kl_div(output_label_probs.log(), target_label)
-        image_loss = nn.functional.mse_loss(image_part.view(1, -1), original_image)  # Add view(1, -1) here
+        image_loss = nn.functional.mse_loss(image_part.view(1, -1), original_image)
 
         loss = image_loss + lambda_ * label_loss
 
-        # Prints the losses
         print(f"Adversarial Training Loop {loop + 1}/{train_loops}:")
         print(f"  Label Loss: {label_loss.item():.4f}")
         print(f"  Image Loss: {image_loss.item():.4f}")
         print(f"  Total Loss: {loss.item():.4f}")
 
-        # Backprop and optim step
         optimizer.zero_grad()
         loss.backward()
         print(f"  Image grad max: {image_part.grad.abs().max().item() if image_part.grad is not None else 'None'}")
-
         optimizer.step()
 
         with torch.no_grad():
             image_part.data.clamp_(0, 1)
 
-    # Prepping final state for visualization
-    final_image = image_part.clone().detach().view(28, 28).cpu().numpy()
-    final_label = label_part.clone().detach().cpu().numpy()
-
-    # Get final "test" by passing final state through autoencoder
+    # Grab final image & label for visualization
+    final_image = image_part.clone().detach().view(28, 28).cpu().numpy()  # NEED (IMAGE C)
+    # final_label = label_part.clone().detach().cpu().numpy()
+    # Grab final label by passing through autoencoder
     concat_final = torch.cat((image_part.view(1, -1), label_part), dim=1)  # Add view(1, -1) here
     final_output = autoencoder(concat_final)
     final_label_probs = F.softmax(final_output[:, image_dim:], dim=1)
+    # final_output_image = final_output[:, :image_dim].detach().view(28, 28).cpu().numpy()
+    final_output_label = final_label_probs.detach().cpu().numpy()  # NEED (BAR CHART c)
 
-    # Converting to numpy arrays
-    final_output_image = final_output[:, :image_dim].detach().view(28, 28).cpu().numpy()
-    final_output_label = final_label_probs.detach().cpu().numpy()
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # MLP ADVERSARIAL TRAINING LOOP - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    mlp_optimizer = optim.Adam([mlp_image], lr=0.01)
 
-    # Visualize adversarial training results
-    visualize_adversarial(final_image, 'Adversarial Trained Image',
-                          final_label, 'Diffuse Label',
-                          final_output_image, 'Reconstructed Image',
-                          final_output_label, 'Reconstructed Label Prediction',
-                          f'adversarial_{i}.png', folder_name)
-    print(f'adversarial_{i}.png saved to ' + folder_name)
+    train_loops = 300
+    for loop in range(train_loops):
+        output = mlp(mlp_image)
+        probs = F.softmax(output, dim=1)
 
+        mlp_label_loss = F.kl_div(probs.log(), mlp_target_label, reduction='batchmean')
+        mlp_image_loss = F.mse_loss(mlp_image, image_part)
+        mlp_loss = mlp_image_loss + lambda_ * mlp_label_loss
+
+        mlp_optimizer.zero_grad()
+        mlp_loss.backward()
+
+        if loop % 50 == 0:
+            print(f"\nMLP Step {loop + 1}/{train_loops}:")
+            print(f"  Current probs: {probs.detach().cpu().numpy().round(3)}")
+            print(f"  Target probs: {mlp_target_label.cpu().numpy().round(3)}")
+            print(f"  Label Loss: {mlp_label_loss.item():.4f}")
+            print(f"  Image Loss: {mlp_image_loss.item():.4f}")
+            print(f"  Total Loss: {mlp_loss.item():.4f}")
+            print(f"  Image grad max: {mlp_image.grad.abs().max().item()}")
+
+        mlp_optimizer.step()
+
+        with torch.no_grad():
+            mlp_image.data.clamp_(0, 1)
+
+    # Get final MLP predictions
+    with torch.no_grad():
+        # original_mlp_output = mlp(image_part)
+        mlp_label_f = mlp(mlp_image)
+        mlp_IMAGE_F = mlp_image.clone().detach().view(28, 28).cpu().numpy()  # NEED (IMAGE F)
+        # original_mlp_probs = F.softmax(original_mlp_output, dim=1)
+        mlp_label_f_probs = F.softmax(mlp_label_f, dim=1)
+        mlp_label_f = mlp_label_f_probs.detach().cpu().numpy()  # NEED (BAR CHART F)
+
+        '''
+        print("\nFinal MLP Results:")
+        print(f"Original predictions: {original_mlp_probs.cpu().numpy().round(3)}")
+        print(f"Target distribution: {mlp_target_label.cpu().numpy().round(3)}")
+        print(f"Adversarial predictions: {adversarial_mlp_probs.cpu().numpy().round(3)}")
+        '''
+
+    # Calculate distances for autoencoder (between A and C)
+    auto_orig = torch.tensor(first_image).flatten()  # A
+    auto_pert = torch.tensor(final_image).flatten()  # C
+    auto_distances = {
+        'Euclidean': float(torch.norm(auto_orig - auto_pert).cpu()),
+        'MSE': float(F.mse_loss(auto_orig, auto_pert).cpu()),
+    }
+
+    # Calculate distances for MLP (between D and F)
+    mlp_orig = torch.tensor(mlp_IMAGE_D).flatten()  # D
+    mlp_pert = torch.tensor(mlp_IMAGE_F).flatten()  # F
+    mlp_distances = {
+        'Euclidean': float(torch.norm(mlp_orig - mlp_pert).cpu()),
+        'MSE': float(F.mse_loss(mlp_orig, mlp_pert).cpu()),
+    }
+
+    # Collect data after adversarial training
+    visualization_data = {
+        'images': {
+            'A': first_image,
+            'C': final_image,
+            'D': mlp_IMAGE_D,
+            'F': mlp_IMAGE_F
+        },
+        'probabilities': {
+            'a': auto_label_a,
+            'c': final_output_label,
+            'd': mlp_label_d,
+            'f': mlp_label_f
+        },
+        'distances': {
+            'auto': auto_distances,
+            'mlp': mlp_distances
+        }
+    }
+
+    visualize_adversarial_comparison(
+        images=visualization_data['images'],
+        probabilities=visualization_data['probabilities'],
+        distances=visualization_data['distances'],
+        save_path=f'figures/adversarial_comparison_{i}_{args.num_confused}_{args.includes_true}.png'
+    )

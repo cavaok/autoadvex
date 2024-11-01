@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import os
 from helper import create_diffuse_one_hot
 from data import get_mnist_loaders
-
+print('running train_auto.py')
 # Get data loaders
 train_loader, test_loader, _ = get_mnist_loaders()
 
@@ -39,10 +39,12 @@ decoder = nn.Sequential(
     nn.Linear(512, input_dim)
 )
 
+
 def autoencoder(x):
     encoded = encoder(x)
     decoded = decoder(encoded)
     return decoded
+
 
 # Training setup
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
