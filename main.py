@@ -2,7 +2,7 @@ import torch
 from torch import optim
 from torch import nn
 import torch.nn.functional as F
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import os
 from helper import create_diffuse_one_hot, visualize_adversarial_comparison, set_equal_confusion
 from data import get_mnist_loaders
@@ -283,6 +283,6 @@ for i in range(args.num_adversarial_examples):
     )
     fig_name = f"confused_{args.num_confused}_{'with' if includes_true else 'without'}_true_example_{i}"
     wandb.log({fig_name: wandb.Image(fig)})
-    plt.close(fig)
+    plt.pyplot.close(fig)
 
 wandb.finish()
