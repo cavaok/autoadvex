@@ -1,0 +1,16 @@
+{"time":"2024-11-07T12:13:05.282943017-05:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T12:13:05.282959468-05:00","level":"INFO","msg":"created symlink","path":"/home/okcava/projects/autoadvex/wandb/run-20241107_121305-zf1318h5/logs/debug-core.log"}
+{"time":"2024-11-07T12:13:05.654858488-05:00","level":"INFO","msg":"created new stream","id":"zf1318h5"}
+{"time":"2024-11-07T12:13:05.654897081-05:00","level":"INFO","msg":"stream: started","id":"zf1318h5"}
+{"time":"2024-11-07T12:13:05.658277159-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"zf1318h5"}}
+{"time":"2024-11-07T12:13:05.658345047-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"zf1318h5"}}
+{"time":"2024-11-07T12:13:05.658471784-05:00","level":"INFO","msg":"sender: started","stream_id":"zf1318h5"}
+{"time":"2024-11-07T12:13:06.252454677-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T12:13:11.213098858-05:00","level":"INFO","msg":"stream: closing","id":"zf1318h5"}
+{"time":"2024-11-07T12:13:11.213224524-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T12:13:11.214586859-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T12:13:13.065477551-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T12:13:14.260896003-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"zf1318h5"}}
+{"time":"2024-11-07T12:13:14.260939835-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"zf1318h5"}}
+{"time":"2024-11-07T12:13:14.261105606-05:00","level":"INFO","msg":"sender: closed","stream_id":"zf1318h5"}
+{"time":"2024-11-07T12:13:14.283692085-05:00","level":"INFO","msg":"stream: closed","id":"zf1318h5"}

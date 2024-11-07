@@ -1,0 +1,16 @@
+{"time":"2024-11-07T12:13:57.466186212-05:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T12:13:57.466199087-05:00","level":"INFO","msg":"created symlink","path":"/home/okcava/projects/autoadvex/wandb/run-20241107_121357-nzpdgrh8/logs/debug-core.log"}
+{"time":"2024-11-07T12:13:57.601078453-05:00","level":"INFO","msg":"created new stream","id":"nzpdgrh8"}
+{"time":"2024-11-07T12:13:57.601117005-05:00","level":"INFO","msg":"stream: started","id":"nzpdgrh8"}
+{"time":"2024-11-07T12:13:57.602271521-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"nzpdgrh8"}}
+{"time":"2024-11-07T12:13:57.602323638-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"nzpdgrh8"}}
+{"time":"2024-11-07T12:13:57.602497154-05:00","level":"INFO","msg":"sender: started","stream_id":"nzpdgrh8"}
+{"time":"2024-11-07T12:13:58.447572913-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T12:14:02.152470272-05:00","level":"INFO","msg":"stream: closing","id":"nzpdgrh8"}
+{"time":"2024-11-07T12:14:02.152651792-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T12:14:02.154230132-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T12:14:04.120032003-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T12:14:05.245841087-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"nzpdgrh8"}}
+{"time":"2024-11-07T12:14:05.245883597-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"nzpdgrh8"}}
+{"time":"2024-11-07T12:14:05.246079264-05:00","level":"INFO","msg":"sender: closed","stream_id":"nzpdgrh8"}
+{"time":"2024-11-07T12:14:05.254071763-05:00","level":"INFO","msg":"stream: closed","id":"nzpdgrh8"}

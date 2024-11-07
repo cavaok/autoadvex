@@ -1,0 +1,1858 @@
+  Output probs: [[0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+Adversarial Training Loop 1/300:
+  Label Loss: 1.0906
+  Image Loss: 0.0166
+  Total Loss: 0.5619
+  Image grad max: 0.02241910807788372
+  Output probs: [[0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+Adversarial Training Loop 2/300:
+  Label Loss: 1.0278
+  Image Loss: 0.0167
+  Total Loss: 0.5305
+  Image grad max: 0.028013087809085846
+  Output probs: [[0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+Adversarial Training Loop 3/300:
+  Label Loss: 0.9586
+  Image Loss: 0.0168
+  Total Loss: 0.4961
+  Image grad max: 0.03342916816473007
+  Output probs: [[0.    0.    0.    0.    0.    0.    0.    0.999 0.    0.   ]]
+Adversarial Training Loop 4/300:
+  Label Loss: 0.8817
+  Image Loss: 0.0171
+  Total Loss: 0.4579
+  Image grad max: 0.039033617824316025
+  Output probs: [[0.    0.    0.    0.002 0.    0.    0.    0.998 0.    0.   ]]
+Adversarial Training Loop 5/300:
+  Label Loss: 0.7964
+  Image Loss: 0.0174
+  Total Loss: 0.4157
+  Image grad max: 0.042753562331199646
+  Output probs: [[0.    0.    0.    0.005 0.    0.    0.    0.994 0.001 0.   ]]
+Adversarial Training Loop 6/300:
+  Label Loss: 0.7072
+  Image Loss: 0.0179
+  Total Loss: 0.3715
+  Image grad max: 0.043075017631053925
+  Output probs: [[0.    0.    0.    0.016 0.    0.    0.    0.981 0.002 0.   ]]
+Adversarial Training Loop 7/300:
+  Label Loss: 0.6176
+  Image Loss: 0.0185
+  Total Loss: 0.3273
+  Image grad max: 0.04213342443108559
+  Output probs: [[0.    0.001 0.    0.047 0.    0.    0.    0.945 0.007 0.   ]]
+Adversarial Training Loop 8/300:
+  Label Loss: 0.5343
+  Image Loss: 0.0192
+  Total Loss: 0.2863
+  Image grad max: 0.03889153525233269
+  Output probs: [[0.    0.001 0.    0.116 0.    0.001 0.    0.861 0.02  0.001]]
+Adversarial Training Loop 9/300:
+  Label Loss: 0.4621
+  Image Loss: 0.0200
+  Total Loss: 0.2510
+  Image grad max: 0.030980296432971954
+  Output probs: [[0.    0.001 0.001 0.233 0.    0.002 0.    0.716 0.046 0.001]]
+Adversarial Training Loop 10/300:
+  Label Loss: 0.4055
+  Image Loss: 0.0208
+  Total Loss: 0.2236
+  Image grad max: 0.020361168310046196
+  Output probs: [[0.    0.001 0.001 0.365 0.    0.002 0.    0.539 0.091 0.001]]
+Adversarial Training Loop 11/300:
+  Label Loss: 0.3675
+  Image Loss: 0.0217
+  Total Loss: 0.2055
+  Image grad max: 0.011388671584427357
+  Output probs: [[0.    0.001 0.001 0.464 0.    0.003 0.    0.381 0.149 0.001]]
+Adversarial Training Loop 12/300:
+  Label Loss: 0.3445
+  Image Loss: 0.0227
+  Total Loss: 0.1949
+  Image grad max: 0.008570180274546146
+  Output probs: [[0.    0.001 0.001 0.511 0.    0.004 0.    0.265 0.217 0.001]]
+Adversarial Training Loop 13/300:
+  Label Loss: 0.3308
+  Image Loss: 0.0236
+  Total Loss: 0.1890
+  Image grad max: 0.008391430601477623
+  Output probs: [[0.    0.001 0.001 0.513 0.    0.004 0.    0.187 0.292 0.001]]
+Adversarial Training Loop 14/300:
+  Label Loss: 0.3223
+  Image Loss: 0.0244
+  Total Loss: 0.1856
+  Image grad max: 0.00987327191978693
+  Output probs: [[0.    0.001 0.001 0.487 0.    0.005 0.    0.136 0.369 0.001]]
+Adversarial Training Loop 15/300:
+  Label Loss: 0.3170
+  Image Loss: 0.0253
+  Total Loss: 0.1837
+  Image grad max: 0.012025360949337482
+  Output probs: [[0.    0.001 0.001 0.451 0.    0.005 0.    0.103 0.439 0.001]]
+Adversarial Training Loop 16/300:
+  Label Loss: 0.3134
+  Image Loss: 0.0260
+  Total Loss: 0.1827
+  Image grad max: 0.014426383189857006
+  Output probs: [[0.    0.001 0.001 0.416 0.    0.005 0.    0.082 0.493 0.001]]
+Adversarial Training Loop 17/300:
+  Label Loss: 0.3103
+  Image Loss: 0.0266
+  Total Loss: 0.1817
+  Image grad max: 0.016316711902618408
+  Output probs: [[0.    0.001 0.001 0.391 0.    0.006 0.    0.069 0.532 0.001]]
+Adversarial Training Loop 18/300:
+  Label Loss: 0.3068
+  Image Loss: 0.0271
+  Total Loss: 0.1805
+  Image grad max: 0.01766098663210869
+  Output probs: [[0.    0.001 0.001 0.375 0.    0.006 0.    0.062 0.555 0.001]]
+Adversarial Training Loop 19/300:
+  Label Loss: 0.3019
+  Image Loss: 0.0275
+  Total Loss: 0.1785
+  Image grad max: 0.018487105146050453
+  Output probs: [[0.    0.001 0.001 0.37  0.    0.007 0.    0.058 0.563 0.001]]
+Adversarial Training Loop 20/300:
+  Label Loss: 0.2954
+  Image Loss: 0.0279
+  Total Loss: 0.1756
+  Image grad max: 0.01889759860932827
+  Output probs: [[0.    0.001 0.001 0.373 0.    0.008 0.    0.057 0.559 0.001]]
+Adversarial Training Loop 21/300:
+  Label Loss: 0.2874
+  Image Loss: 0.0282
+  Total Loss: 0.1719
+  Image grad max: 0.018913887441158295
+  Output probs: [[0.    0.001 0.001 0.383 0.    0.009 0.    0.058 0.546 0.001]]
+Adversarial Training Loop 22/300:
+  Label Loss: 0.2781
+  Image Loss: 0.0284
+  Total Loss: 0.1675
+  Image grad max: 0.018636303022503853
+  Output probs: [[0.    0.001 0.002 0.4   0.    0.01  0.    0.062 0.525 0.001]]
+Adversarial Training Loop 23/300:
+  Label Loss: 0.2678
+  Image Loss: 0.0286
+  Total Loss: 0.1625
+  Image grad max: 0.018155300989747047
+  Output probs: [[0.    0.001 0.002 0.419 0.    0.012 0.    0.067 0.497 0.001]]
+Adversarial Training Loop 24/300:
+  Label Loss: 0.2567
+  Image Loss: 0.0288
+  Total Loss: 0.1571
+  Image grad max: 0.017532631754875183
+  Output probs: [[0.    0.001 0.002 0.441 0.    0.014 0.    0.074 0.466 0.001]]
+Adversarial Training Loop 25/300:
+  Label Loss: 0.2451
+  Image Loss: 0.0289
+  Total Loss: 0.1515
+  Image grad max: 0.016775522381067276
+  Output probs: [[0.    0.002 0.003 0.462 0.    0.017 0.    0.084 0.432 0.001]]
+Adversarial Training Loop 26/300:
+  Label Loss: 0.2333
+  Image Loss: 0.0290
+  Total Loss: 0.1456
+  Image grad max: 0.015910975635051727
+  Output probs: [[0.    0.002 0.004 0.479 0.    0.019 0.    0.096 0.399 0.001]]
+Adversarial Training Loop 27/300:
+  Label Loss: 0.2215
+  Image Loss: 0.0291
+  Total Loss: 0.1399
+  Image grad max: 0.015035212971270084
+  Output probs: [[0.    0.002 0.005 0.489 0.    0.023 0.    0.111 0.369 0.001]]
+Adversarial Training Loop 28/300:
+  Label Loss: 0.2099
+  Image Loss: 0.0292
+  Total Loss: 0.1342
+  Image grad max: 0.014152496121823788
+  Output probs: [[0.001 0.002 0.007 0.494 0.    0.026 0.    0.128 0.341 0.001]]
+Adversarial Training Loop 29/300:
+  Label Loss: 0.1985
+  Image Loss: 0.0293
+  Total Loss: 0.1286
+  Image grad max: 0.013185467571020126
+  Output probs: [[0.001 0.002 0.008 0.491 0.    0.03  0.    0.149 0.317 0.001]]
+Adversarial Training Loop 30/300:
+  Label Loss: 0.1876
+  Image Loss: 0.0295
+  Total Loss: 0.1232
+  Image grad max: 0.011710397899150848
+  Output probs: [[0.001 0.003 0.011 0.482 0.    0.035 0.    0.172 0.296 0.001]]
+Adversarial Training Loop 31/300:
+  Label Loss: 0.1772
+  Image Loss: 0.0296
+  Total Loss: 0.1182
+  Image grad max: 0.009994150139391422
+  Output probs: [[0.001 0.003 0.013 0.467 0.    0.04  0.    0.197 0.279 0.001]]
+Adversarial Training Loop 32/300:
+  Label Loss: 0.1674
+  Image Loss: 0.0298
+  Total Loss: 0.1135
+  Image grad max: 0.008297800086438656
+  Output probs: [[0.001 0.003 0.016 0.447 0.    0.045 0.    0.223 0.263 0.001]]
+Adversarial Training Loop 33/300:
+  Label Loss: 0.1584
+  Image Loss: 0.0300
+  Total Loss: 0.1092
+  Image grad max: 0.007271690294146538
+  Output probs: [[0.002 0.003 0.019 0.423 0.    0.05  0.    0.251 0.25  0.001]]
+Adversarial Training Loop 34/300:
+  Label Loss: 0.1501
+  Image Loss: 0.0302
+  Total Loss: 0.1052
+  Image grad max: 0.006496927235275507
+  Output probs: [[0.002 0.003 0.023 0.398 0.    0.055 0.    0.278 0.239 0.001]]
+Adversarial Training Loop 35/300:
+  Label Loss: 0.1427
+  Image Loss: 0.0304
+  Total Loss: 0.1017
+  Image grad max: 0.006025552283972502
+  Output probs: [[0.003 0.004 0.027 0.371 0.    0.06  0.    0.304 0.229 0.001]]
+Adversarial Training Loop 36/300:
+  Label Loss: 0.1359
+  Image Loss: 0.0306
+  Total Loss: 0.0986
+  Image grad max: 0.0055554453283548355
+  Output probs: [[0.003 0.004 0.031 0.346 0.    0.066 0.    0.328 0.221 0.001]]
+Adversarial Training Loop 37/300:
+  Label Loss: 0.1298
+  Image Loss: 0.0309
+  Total Loss: 0.0958
+  Image grad max: 0.005130710080265999
+  Output probs: [[0.004 0.004 0.035 0.322 0.    0.071 0.    0.348 0.214 0.001]]
+Adversarial Training Loop 38/300:
+  Label Loss: 0.1241
+  Image Loss: 0.0312
+  Total Loss: 0.0933
+  Image grad max: 0.004735207185149193
+  Output probs: [[0.004 0.004 0.04  0.3   0.    0.076 0.    0.365 0.209 0.001]]
+Adversarial Training Loop 39/300:
+  Label Loss: 0.1189
+  Image Loss: 0.0315
+  Total Loss: 0.0909
+  Image grad max: 0.004661268554627895
+  Output probs: [[0.005 0.004 0.044 0.281 0.    0.081 0.    0.378 0.205 0.001]]
+Adversarial Training Loop 40/300:
+  Label Loss: 0.1138
+  Image Loss: 0.0318
+  Total Loss: 0.0887
+  Image grad max: 0.004836487118154764
+  Output probs: [[0.006 0.004 0.049 0.264 0.    0.086 0.    0.387 0.202 0.001]]
+Adversarial Training Loop 41/300:
+  Label Loss: 0.1089
+  Image Loss: 0.0321
+  Total Loss: 0.0866
+  Image grad max: 0.0049961465410888195
+  Output probs: [[0.007 0.004 0.054 0.25  0.    0.091 0.    0.391 0.201 0.002]]
+Adversarial Training Loop 42/300:
+  Label Loss: 0.1041
+  Image Loss: 0.0324
+  Total Loss: 0.0845
+  Image grad max: 0.005172980483621359
+  Output probs: [[0.008 0.004 0.059 0.238 0.    0.096 0.    0.392 0.201 0.002]]
+Adversarial Training Loop 43/300:
+  Label Loss: 0.0992
+  Image Loss: 0.0328
+  Total Loss: 0.0824
+  Image grad max: 0.005273616872727871
+  Output probs: [[0.01  0.004 0.065 0.228 0.    0.101 0.    0.389 0.202 0.002]]
+Adversarial Training Loop 44/300:
+  Label Loss: 0.0944
+  Image Loss: 0.0331
+  Total Loss: 0.0803
+  Image grad max: 0.005306421313434839
+  Output probs: [[0.011 0.004 0.07  0.22  0.    0.105 0.001 0.383 0.205 0.002]]
+Adversarial Training Loop 45/300:
+  Label Loss: 0.0895
+  Image Loss: 0.0334
+  Total Loss: 0.0782
+  Image grad max: 0.005272888112813234
+  Output probs: [[0.013 0.004 0.077 0.214 0.    0.109 0.001 0.374 0.208 0.002]]
+Adversarial Training Loop 46/300:
+  Label Loss: 0.0846
+  Image Loss: 0.0338
+  Total Loss: 0.0761
+  Image grad max: 0.005184804555028677
+  Output probs: [[0.014 0.004 0.083 0.208 0.    0.113 0.001 0.362 0.212 0.002]]
+Adversarial Training Loop 47/300:
+  Label Loss: 0.0796
+  Image Loss: 0.0341
+  Total Loss: 0.0739
+  Image grad max: 0.00504827406257391
+  Output probs: [[0.016 0.003 0.091 0.204 0.    0.117 0.001 0.348 0.218 0.002]]
+Adversarial Training Loop 48/300:
+  Label Loss: 0.0747
+  Image Loss: 0.0345
+  Total Loss: 0.0718
+  Image grad max: 0.004870978649705648
+  Output probs: [[0.018 0.003 0.098 0.201 0.    0.12  0.001 0.332 0.224 0.002]]
+Adversarial Training Loop 49/300:
+  Label Loss: 0.0698
+  Image Loss: 0.0348
+  Total Loss: 0.0697
+  Image grad max: 0.004644957836717367
+  Output probs: [[0.021 0.003 0.106 0.198 0.    0.123 0.001 0.315 0.231 0.002]]
+Adversarial Training Loop 50/300:
+  Label Loss: 0.0650
+  Image Loss: 0.0352
+  Total Loss: 0.0677
+  Image grad max: 0.004380801692605019
+  Output probs: [[0.023 0.003 0.114 0.196 0.    0.125 0.001 0.296 0.239 0.002]]
+Adversarial Training Loop 51/300:
+  Label Loss: 0.0604
+  Image Loss: 0.0356
+  Total Loss: 0.0657
+  Image grad max: 0.004202175419777632
+  Output probs: [[0.026 0.003 0.123 0.194 0.    0.127 0.001 0.278 0.246 0.002]]
+Adversarial Training Loop 52/300:
+  Label Loss: 0.0559
+  Image Loss: 0.0359
+  Total Loss: 0.0639
+  Image grad max: 0.004082952626049519
+  Output probs: [[0.03  0.003 0.131 0.191 0.    0.128 0.001 0.259 0.254 0.002]]
+Adversarial Training Loop 53/300:
+  Label Loss: 0.0517
+  Image Loss: 0.0362
+  Total Loss: 0.0621
+  Image grad max: 0.003924899268895388
+  Output probs: [[0.033 0.003 0.14  0.189 0.    0.129 0.001 0.241 0.262 0.002]]
+Adversarial Training Loop 54/300:
+  Label Loss: 0.0477
+  Image Loss: 0.0366
+  Total Loss: 0.0605
+  Image grad max: 0.0037507035303860903
+  Output probs: [[0.037 0.003 0.148 0.187 0.    0.129 0.001 0.224 0.268 0.002]]
+Adversarial Training Loop 55/300:
+  Label Loss: 0.0440
+  Image Loss: 0.0369
+  Total Loss: 0.0589
+  Image grad max: 0.0035891523584723473
+  Output probs: [[0.041 0.003 0.156 0.185 0.    0.129 0.001 0.208 0.274 0.002]]
+Adversarial Training Loop 56/300:
+  Label Loss: 0.0406
+  Image Loss: 0.0372
+  Total Loss: 0.0575
+  Image grad max: 0.003580002347007394
+  Output probs: [[0.046 0.002 0.163 0.182 0.    0.129 0.001 0.194 0.28  0.002]]
+Adversarial Training Loop 57/300:
+  Label Loss: 0.0373
+  Image Loss: 0.0376
+  Total Loss: 0.0562
+  Image grad max: 0.003561114426702261
+  Output probs: [[0.052 0.002 0.169 0.179 0.    0.129 0.001 0.18  0.284 0.002]]
+Adversarial Training Loop 58/300:
+  Label Loss: 0.0343
+  Image Loss: 0.0378
+  Total Loss: 0.0550
+  Image grad max: 0.0035252044908702374
+  Output probs: [[0.058 0.002 0.175 0.177 0.    0.13  0.001 0.168 0.287 0.003]]
+Adversarial Training Loop 59/300:
+  Label Loss: 0.0315
+  Image Loss: 0.0381
+  Total Loss: 0.0539
+  Image grad max: 0.003556622192263603
+  Output probs: [[0.064 0.002 0.18  0.174 0.    0.13  0.001 0.157 0.288 0.003]]
+Adversarial Training Loop 60/300:
+  Label Loss: 0.0289
+  Image Loss: 0.0384
+  Total Loss: 0.0528
+  Image grad max: 0.0035840205382555723
+  Output probs: [[0.072 0.002 0.183 0.172 0.    0.131 0.001 0.147 0.288 0.003]]
+Adversarial Training Loop 61/300:
+  Label Loss: 0.0264
+  Image Loss: 0.0386
+  Total Loss: 0.0518
+  Image grad max: 0.003571739885956049
+  Output probs: [[0.08  0.002 0.186 0.17  0.    0.132 0.002 0.138 0.287 0.003]]
+Adversarial Training Loop 62/300:
+  Label Loss: 0.0241
+  Image Loss: 0.0388
+  Total Loss: 0.0509
+  Image grad max: 0.0035131070762872696
+  Output probs: [[0.089 0.002 0.188 0.168 0.    0.134 0.002 0.131 0.284 0.003]]
+Adversarial Training Loop 63/300:
+  Label Loss: 0.0220
+  Image Loss: 0.0390
+  Total Loss: 0.0500
+  Image grad max: 0.003405551193282008
+  Output probs: [[0.099 0.002 0.189 0.166 0.    0.136 0.002 0.124 0.28  0.003]]
+Adversarial Training Loop 64/300:
+  Label Loss: 0.0200
+  Image Loss: 0.0391
+  Total Loss: 0.0492
+  Image grad max: 0.0032462216913700104
+  Output probs: [[0.109 0.002 0.188 0.164 0.    0.138 0.002 0.118 0.275 0.003]]
+Adversarial Training Loop 65/300:
+  Label Loss: 0.0183
+  Image Loss: 0.0393
+  Total Loss: 0.0484
+  Image grad max: 0.003043911885470152
+  Output probs: [[0.12  0.002 0.187 0.163 0.    0.141 0.002 0.113 0.269 0.003]]
+Adversarial Training Loop 66/300:
+  Label Loss: 0.0167
+  Image Loss: 0.0394
+  Total Loss: 0.0477
+  Image grad max: 0.002808457938954234
+  Output probs: [[0.132 0.002 0.185 0.162 0.    0.143 0.002 0.108 0.262 0.003]]
+Adversarial Training Loop 67/300:
+  Label Loss: 0.0153
+  Image Loss: 0.0394
+  Total Loss: 0.0471
+  Image grad max: 0.002547931857407093
+  Output probs: [[0.143 0.002 0.183 0.162 0.    0.146 0.002 0.104 0.255 0.004]]
+Adversarial Training Loop 68/300:
+  Label Loss: 0.0141
+  Image Loss: 0.0395
+  Total Loss: 0.0465
+  Image grad max: 0.0022706822492182255
+  Output probs: [[0.154 0.002 0.18  0.162 0.    0.149 0.002 0.1   0.248 0.004]]
+Adversarial Training Loop 69/300:
+  Label Loss: 0.0132
+  Image Loss: 0.0395
+  Total Loss: 0.0461
+  Image grad max: 0.0020904946140944958
+  Output probs: [[0.165 0.002 0.177 0.162 0.    0.151 0.002 0.096 0.241 0.004]]
+Adversarial Training Loop 70/300:
+  Label Loss: 0.0124
+  Image Loss: 0.0395
+  Total Loss: 0.0456
+  Image grad max: 0.002012070035561919
+  Output probs: [[0.174 0.001 0.174 0.163 0.    0.153 0.002 0.093 0.235 0.004]]
+Adversarial Training Loop 71/300:
+  Label Loss: 0.0117
+  Image Loss: 0.0394
+  Total Loss: 0.0453
+  Image grad max: 0.00211141724139452
+  Output probs: [[0.182 0.001 0.171 0.165 0.    0.155 0.002 0.09  0.229 0.004]]
+Adversarial Training Loop 72/300:
+  Label Loss: 0.0112
+  Image Loss: 0.0393
+  Total Loss: 0.0449
+  Image grad max: 0.0021880334243178368
+  Output probs: [[0.189 0.001 0.169 0.167 0.    0.156 0.002 0.087 0.224 0.004]]
+Adversarial Training Loop 73/300:
+  Label Loss: 0.0108
+  Image Loss: 0.0392
+  Total Loss: 0.0446
+  Image grad max: 0.002238032640889287
+  Output probs: [[0.194 0.001 0.167 0.17  0.    0.158 0.002 0.085 0.22  0.004]]
+Adversarial Training Loop 74/300:
+  Label Loss: 0.0105
+  Image Loss: 0.0390
+  Total Loss: 0.0443
+  Image grad max: 0.0022577615454792976
+  Output probs: [[0.197 0.001 0.165 0.174 0.    0.158 0.001 0.083 0.216 0.004]]
+Adversarial Training Loop 75/300:
+  Label Loss: 0.0102
+  Image Loss: 0.0388
+  Total Loss: 0.0439
+  Image grad max: 0.002245006151497364
+  Output probs: [[0.198 0.001 0.163 0.178 0.    0.159 0.001 0.081 0.213 0.005]]
+Adversarial Training Loop 76/300:
+  Label Loss: 0.0099
+  Image Loss: 0.0386
+  Total Loss: 0.0436
+  Image grad max: 0.0021994372364133596
+  Output probs: [[0.198 0.001 0.162 0.184 0.    0.159 0.001 0.079 0.211 0.005]]
+Adversarial Training Loop 77/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0384
+  Total Loss: 0.0432
+  Image grad max: 0.0021233181469142437
+  Output probs: [[0.196 0.001 0.161 0.189 0.    0.159 0.001 0.077 0.209 0.005]]
+Adversarial Training Loop 78/300:
+  Label Loss: 0.0095
+  Image Loss: 0.0381
+  Total Loss: 0.0429
+  Image grad max: 0.0020200281869620085
+  Output probs: [[0.193 0.001 0.161 0.196 0.    0.159 0.001 0.076 0.208 0.005]]
+Adversarial Training Loop 79/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0379
+  Total Loss: 0.0425
+  Image grad max: 0.0018951690290123224
+  Output probs: [[0.189 0.001 0.161 0.202 0.    0.158 0.001 0.074 0.207 0.005]]
+Adversarial Training Loop 80/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0376
+  Total Loss: 0.0422
+  Image grad max: 0.00175458041485399
+  Output probs: [[0.185 0.001 0.16  0.209 0.    0.157 0.001 0.073 0.207 0.005]]
+Adversarial Training Loop 81/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0373
+  Total Loss: 0.0419
+  Image grad max: 0.001622073701582849
+  Output probs: [[0.181 0.001 0.16  0.216 0.    0.156 0.001 0.072 0.207 0.005]]
+Adversarial Training Loop 82/300:
+  Label Loss: 0.0091
+  Image Loss: 0.0370
+  Total Loss: 0.0416
+  Image grad max: 0.0016246250597760081
+  Output probs: [[0.176 0.001 0.16  0.222 0.    0.155 0.001 0.071 0.208 0.005]]
+Adversarial Training Loop 83/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0367
+  Total Loss: 0.0413
+  Image grad max: 0.0016263346187770367
+  Output probs: [[0.172 0.001 0.16  0.229 0.    0.154 0.001 0.07  0.208 0.005]]
+Adversarial Training Loop 84/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0364
+  Total Loss: 0.0411
+  Image grad max: 0.001627512276172638
+  Output probs: [[0.168 0.001 0.16  0.234 0.    0.153 0.001 0.069 0.209 0.005]]
+Adversarial Training Loop 85/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0362
+  Total Loss: 0.0408
+  Image grad max: 0.0016287238104268909
+  Output probs: [[0.164 0.001 0.16  0.239 0.    0.152 0.001 0.068 0.209 0.005]]
+Adversarial Training Loop 86/300:
+  Label Loss: 0.0095
+  Image Loss: 0.0359
+  Total Loss: 0.0406
+  Image grad max: 0.0016294516390189528
+  Output probs: [[0.161 0.001 0.16  0.243 0.    0.151 0.001 0.068 0.21  0.005]]
+Adversarial Training Loop 87/300:
+  Label Loss: 0.0096
+  Image Loss: 0.0356
+  Total Loss: 0.0404
+  Image grad max: 0.001629810081794858
+  Output probs: [[0.159 0.001 0.16  0.246 0.    0.15  0.001 0.067 0.211 0.005]]
+Adversarial Training Loop 88/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0354
+  Total Loss: 0.0402
+  Image grad max: 0.0016900147311389446
+  Output probs: [[0.157 0.001 0.16  0.249 0.    0.149 0.001 0.067 0.212 0.005]]
+Adversarial Training Loop 89/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0351
+  Total Loss: 0.0400
+  Image grad max: 0.0017375916941091418
+  Output probs: [[0.156 0.001 0.16  0.25  0.    0.149 0.001 0.066 0.212 0.005]]
+Adversarial Training Loop 90/300:
+  Label Loss: 0.0098
+  Image Loss: 0.0349
+  Total Loss: 0.0398
+  Image grad max: 0.0017694905400276184
+  Output probs: [[0.155 0.001 0.159 0.25  0.    0.148 0.001 0.066 0.213 0.005]]
+Adversarial Training Loop 91/300:
+  Label Loss: 0.0098
+  Image Loss: 0.0347
+  Total Loss: 0.0396
+  Image grad max: 0.0017856443300843239
+  Output probs: [[0.155 0.001 0.159 0.25  0.    0.148 0.001 0.066 0.214 0.005]]
+Adversarial Training Loop 92/300:
+  Label Loss: 0.0098
+  Image Loss: 0.0345
+  Total Loss: 0.0394
+  Image grad max: 0.0017865326954051852
+  Output probs: [[0.156 0.001 0.159 0.249 0.    0.148 0.001 0.066 0.215 0.005]]
+Adversarial Training Loop 93/300:
+  Label Loss: 0.0098
+  Image Loss: 0.0343
+  Total Loss: 0.0392
+  Image grad max: 0.001774714794009924
+  Output probs: [[0.158 0.001 0.159 0.247 0.    0.148 0.001 0.066 0.215 0.005]]
+Adversarial Training Loop 94/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0341
+  Total Loss: 0.0389
+  Image grad max: 0.0017508398741483688
+  Output probs: [[0.159 0.001 0.158 0.245 0.    0.149 0.001 0.066 0.216 0.005]]
+Adversarial Training Loop 95/300:
+  Label Loss: 0.0096
+  Image Loss: 0.0339
+  Total Loss: 0.0387
+  Image grad max: 0.0017165119061246514
+  Output probs: [[0.161 0.001 0.158 0.242 0.    0.149 0.001 0.066 0.216 0.005]]
+Adversarial Training Loop 96/300:
+  Label Loss: 0.0096
+  Image Loss: 0.0337
+  Total Loss: 0.0385
+  Image grad max: 0.0016732430085539818
+  Output probs: [[0.164 0.001 0.157 0.239 0.    0.15  0.001 0.067 0.217 0.005]]
+Adversarial Training Loop 97/300:
+  Label Loss: 0.0095
+  Image Loss: 0.0336
+  Total Loss: 0.0383
+  Image grad max: 0.0016235447255894542
+  Output probs: [[0.166 0.001 0.157 0.236 0.    0.15  0.001 0.067 0.217 0.005]]
+Adversarial Training Loop 98/300:
+  Label Loss: 0.0094
+  Image Loss: 0.0334
+  Total Loss: 0.0381
+  Image grad max: 0.0015891850925981998
+  Output probs: [[0.168 0.001 0.157 0.233 0.    0.151 0.001 0.067 0.217 0.005]]
+Adversarial Training Loop 99/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0332
+  Total Loss: 0.0379
+  Image grad max: 0.0015805065631866455
+  Output probs: [[0.171 0.001 0.156 0.229 0.    0.151 0.001 0.068 0.217 0.005]]
+Adversarial Training Loop 100/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0331
+  Total Loss: 0.0377
+  Image grad max: 0.0015704696998000145
+  Output probs: [[0.173 0.001 0.156 0.227 0.    0.152 0.001 0.068 0.217 0.005]]
+Adversarial Training Loop 101/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0329
+  Total Loss: 0.0376
+  Image grad max: 0.0015592899871990085
+  Output probs: [[0.175 0.001 0.156 0.224 0.    0.152 0.001 0.068 0.217 0.005]]
+Adversarial Training Loop 102/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0328
+  Total Loss: 0.0374
+  Image grad max: 0.0015468202764168382
+  Output probs: [[0.176 0.001 0.156 0.222 0.    0.153 0.001 0.069 0.217 0.005]]
+Adversarial Training Loop 103/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0326
+  Total Loss: 0.0372
+  Image grad max: 0.0015329583548009396
+  Output probs: [[0.177 0.001 0.156 0.22  0.    0.153 0.001 0.069 0.217 0.005]]
+Adversarial Training Loop 104/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0325
+  Total Loss: 0.0371
+  Image grad max: 0.0015178577741608024
+  Output probs: [[0.178 0.001 0.156 0.218 0.    0.153 0.001 0.07  0.217 0.005]]
+Adversarial Training Loop 105/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0323
+  Total Loss: 0.0369
+  Image grad max: 0.0015018947888165712
+  Output probs: [[0.178 0.001 0.157 0.217 0.    0.153 0.001 0.07  0.218 0.005]]
+Adversarial Training Loop 106/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0321
+  Total Loss: 0.0368
+  Image grad max: 0.0014858937356621027
+  Output probs: [[0.178 0.001 0.157 0.216 0.    0.153 0.001 0.07  0.218 0.004]]
+Adversarial Training Loop 107/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0320
+  Total Loss: 0.0366
+  Image grad max: 0.001469390350393951
+  Output probs: [[0.178 0.001 0.158 0.216 0.    0.153 0.001 0.071 0.218 0.004]]
+Adversarial Training Loop 108/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0318
+  Total Loss: 0.0365
+  Image grad max: 0.0014524003490805626
+  Output probs: [[0.177 0.001 0.158 0.216 0.    0.153 0.001 0.071 0.218 0.004]]
+Adversarial Training Loop 109/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0317
+  Total Loss: 0.0363
+  Image grad max: 0.001434911391697824
+  Output probs: [[0.176 0.001 0.159 0.216 0.    0.152 0.001 0.071 0.218 0.004]]
+Adversarial Training Loop 110/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0315
+  Total Loss: 0.0362
+  Image grad max: 0.001417083665728569
+  Output probs: [[0.175 0.001 0.16  0.216 0.    0.152 0.001 0.072 0.218 0.004]]
+Adversarial Training Loop 111/300:
+  Label Loss: 0.0094
+  Image Loss: 0.0313
+  Total Loss: 0.0360
+  Image grad max: 0.001399243250489235
+  Output probs: [[0.173 0.001 0.16  0.217 0.    0.152 0.001 0.072 0.218 0.004]]
+Adversarial Training Loop 112/300:
+  Label Loss: 0.0094
+  Image Loss: 0.0312
+  Total Loss: 0.0359
+  Image grad max: 0.0013814426492899656
+  Output probs: [[0.172 0.001 0.161 0.218 0.    0.151 0.001 0.072 0.219 0.004]]
+Adversarial Training Loop 113/300:
+  Label Loss: 0.0095
+  Image Loss: 0.0310
+  Total Loss: 0.0358
+  Image grad max: 0.0013638152740895748
+  Output probs: [[0.171 0.001 0.162 0.218 0.    0.151 0.001 0.073 0.219 0.004]]
+Adversarial Training Loop 114/300:
+  Label Loss: 0.0095
+  Image Loss: 0.0309
+  Total Loss: 0.0356
+  Image grad max: 0.001346869976259768
+  Output probs: [[0.169 0.001 0.162 0.219 0.    0.151 0.001 0.073 0.219 0.004]]
+Adversarial Training Loop 115/300:
+  Label Loss: 0.0096
+  Image Loss: 0.0307
+  Total Loss: 0.0355
+  Image grad max: 0.0013306624023243785
+  Output probs: [[0.168 0.001 0.162 0.22  0.    0.151 0.001 0.073 0.219 0.004]]
+Adversarial Training Loop 116/300:
+  Label Loss: 0.0096
+  Image Loss: 0.0306
+  Total Loss: 0.0354
+  Image grad max: 0.001315272063948214
+  Output probs: [[0.167 0.001 0.163 0.22  0.    0.151 0.001 0.073 0.219 0.004]]
+Adversarial Training Loop 117/300:
+  Label Loss: 0.0096
+  Image Loss: 0.0305
+  Total Loss: 0.0353
+  Image grad max: 0.0013008903479203582
+  Output probs: [[0.167 0.001 0.163 0.221 0.    0.151 0.001 0.073 0.218 0.004]]
+Adversarial Training Loop 118/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0303
+  Total Loss: 0.0352
+  Image grad max: 0.0012875015381723642
+  Output probs: [[0.166 0.001 0.163 0.221 0.    0.15  0.001 0.074 0.218 0.004]]
+Adversarial Training Loop 119/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0302
+  Total Loss: 0.0350
+  Image grad max: 0.0012922128662467003
+  Output probs: [[0.166 0.001 0.163 0.221 0.    0.151 0.001 0.074 0.218 0.004]]
+Adversarial Training Loop 120/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0301
+  Total Loss: 0.0349
+  Image grad max: 0.0013001881306990981
+  Output probs: [[0.166 0.001 0.163 0.221 0.    0.151 0.001 0.074 0.218 0.004]]
+Adversarial Training Loop 121/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0300
+  Total Loss: 0.0348
+  Image grad max: 0.0013034793082624674
+  Output probs: [[0.166 0.001 0.163 0.221 0.    0.151 0.001 0.074 0.218 0.004]]
+Adversarial Training Loop 122/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0299
+  Total Loss: 0.0347
+  Image grad max: 0.0013023612555116415
+  Output probs: [[0.166 0.001 0.163 0.221 0.    0.151 0.001 0.074 0.218 0.004]]
+Adversarial Training Loop 123/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0298
+  Total Loss: 0.0346
+  Image grad max: 0.0012973705306649208
+  Output probs: [[0.167 0.001 0.163 0.221 0.    0.151 0.001 0.074 0.218 0.004]]
+Adversarial Training Loop 124/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0297
+  Total Loss: 0.0345
+  Image grad max: 0.0012890304205939174
+  Output probs: [[0.167 0.001 0.163 0.221 0.    0.151 0.001 0.074 0.218 0.004]]
+Adversarial Training Loop 125/300:
+  Label Loss: 0.0097
+  Image Loss: 0.0296
+  Total Loss: 0.0344
+  Image grad max: 0.0012780388351529837
+  Output probs: [[0.168 0.001 0.162 0.22  0.    0.151 0.001 0.074 0.217 0.004]]
+Adversarial Training Loop 126/300:
+  Label Loss: 0.0096
+  Image Loss: 0.0295
+  Total Loss: 0.0343
+  Image grad max: 0.001265165163204074
+  Output probs: [[0.169 0.001 0.162 0.22  0.    0.151 0.001 0.073 0.217 0.004]]
+Adversarial Training Loop 127/300:
+  Label Loss: 0.0096
+  Image Loss: 0.0294
+  Total Loss: 0.0342
+  Image grad max: 0.0012513520196080208
+  Output probs: [[0.17  0.001 0.162 0.219 0.    0.151 0.001 0.073 0.217 0.004]]
+Adversarial Training Loop 128/300:
+  Label Loss: 0.0096
+  Image Loss: 0.0293
+  Total Loss: 0.0341
+  Image grad max: 0.0012372268829494715
+  Output probs: [[0.171 0.001 0.162 0.219 0.    0.151 0.001 0.073 0.217 0.004]]
+Adversarial Training Loop 129/300:
+  Label Loss: 0.0095
+  Image Loss: 0.0293
+  Total Loss: 0.0340
+  Image grad max: 0.0012234888272359967
+  Output probs: [[0.171 0.001 0.162 0.218 0.    0.151 0.001 0.073 0.217 0.004]]
+Adversarial Training Loop 130/300:
+  Label Loss: 0.0095
+  Image Loss: 0.0292
+  Total Loss: 0.0339
+  Image grad max: 0.0012108436785638332
+  Output probs: [[0.172 0.001 0.162 0.218 0.    0.151 0.001 0.073 0.217 0.004]]
+Adversarial Training Loop 131/300:
+  Label Loss: 0.0095
+  Image Loss: 0.0291
+  Total Loss: 0.0339
+  Image grad max: 0.0012000376591458917
+  Output probs: [[0.173 0.001 0.162 0.218 0.    0.151 0.001 0.072 0.217 0.004]]
+Adversarial Training Loop 132/300:
+  Label Loss: 0.0094
+  Image Loss: 0.0291
+  Total Loss: 0.0338
+  Image grad max: 0.0011911358451470733
+  Output probs: [[0.173 0.001 0.162 0.218 0.    0.151 0.001 0.072 0.217 0.004]]
+Adversarial Training Loop 133/300:
+  Label Loss: 0.0094
+  Image Loss: 0.0290
+  Total Loss: 0.0337
+  Image grad max: 0.0011843085521832108
+  Output probs: [[0.174 0.001 0.162 0.217 0.    0.151 0.001 0.072 0.217 0.004]]
+Adversarial Training Loop 134/300:
+  Label Loss: 0.0094
+  Image Loss: 0.0289
+  Total Loss: 0.0336
+  Image grad max: 0.0011797089828178287
+  Output probs: [[0.174 0.001 0.162 0.217 0.    0.151 0.001 0.072 0.217 0.004]]
+Adversarial Training Loop 135/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0289
+  Total Loss: 0.0335
+  Image grad max: 0.0011773055884987116
+  Output probs: [[0.174 0.001 0.162 0.218 0.    0.151 0.001 0.071 0.217 0.004]]
+Adversarial Training Loop 136/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0288
+  Total Loss: 0.0334
+  Image grad max: 0.0011769519187510014
+  Output probs: [[0.175 0.001 0.162 0.218 0.    0.15  0.001 0.071 0.217 0.004]]
+Adversarial Training Loop 137/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0287
+  Total Loss: 0.0334
+  Image grad max: 0.0011783987283706665
+  Output probs: [[0.175 0.001 0.162 0.218 0.    0.15  0.001 0.071 0.217 0.004]]
+Adversarial Training Loop 138/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0287
+  Total Loss: 0.0333
+  Image grad max: 0.0011808393755927682
+  Output probs: [[0.175 0.001 0.162 0.218 0.    0.15  0.001 0.071 0.217 0.004]]
+Adversarial Training Loop 139/300:
+  Label Loss: 0.0093
+  Image Loss: 0.0286
+  Total Loss: 0.0332
+  Image grad max: 0.0011843428947031498
+  Output probs: [[0.175 0.001 0.162 0.219 0.    0.15  0.001 0.07  0.217 0.004]]
+Adversarial Training Loop 140/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0285
+  Total Loss: 0.0331
+  Image grad max: 0.0011888069566339254
+  Output probs: [[0.174 0.001 0.162 0.219 0.    0.15  0.001 0.07  0.217 0.004]]
+Adversarial Training Loop 141/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0285
+  Total Loss: 0.0331
+  Image grad max: 0.0011938372626900673
+  Output probs: [[0.174 0.001 0.162 0.219 0.    0.15  0.001 0.07  0.217 0.004]]
+Adversarial Training Loop 142/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0284
+  Total Loss: 0.0330
+  Image grad max: 0.0011994012165814638
+  Output probs: [[0.174 0.001 0.162 0.22  0.    0.15  0.001 0.07  0.217 0.004]]
+Adversarial Training Loop 143/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0283
+  Total Loss: 0.0329
+  Image grad max: 0.0012047510826960206
+  Output probs: [[0.174 0.001 0.162 0.22  0.    0.15  0.001 0.07  0.217 0.004]]
+Adversarial Training Loop 144/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0283
+  Total Loss: 0.0329
+  Image grad max: 0.0012101461179554462
+  Output probs: [[0.174 0.001 0.162 0.22  0.    0.15  0.001 0.07  0.217 0.004]]
+Adversarial Training Loop 145/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0282
+  Total Loss: 0.0328
+  Image grad max: 0.001214651856571436
+  Output probs: [[0.174 0.001 0.162 0.221 0.    0.15  0.001 0.07  0.217 0.004]]
+Adversarial Training Loop 146/300:
+  Label Loss: 0.0092
+  Image Loss: 0.0282
+  Total Loss: 0.0327
+  Image grad max: 0.0012180806370452046
+  Output probs: [[0.174 0.001 0.162 0.221 0.    0.15  0.001 0.069 0.217 0.004]]
+Adversarial Training Loop 147/300:
+  Label Loss: 0.0091
+  Image Loss: 0.0281
+  Total Loss: 0.0327
+  Image grad max: 0.0012201115023344755
+  Output probs: [[0.174 0.001 0.162 0.221 0.    0.15  0.001 0.069 0.216 0.004]]
+Adversarial Training Loop 148/300:
+  Label Loss: 0.0091
+  Image Loss: 0.0281
+  Total Loss: 0.0326
+  Image grad max: 0.001220716629177332
+  Output probs: [[0.174 0.001 0.162 0.221 0.    0.151 0.001 0.069 0.216 0.004]]
+Adversarial Training Loop 149/300:
+  Label Loss: 0.0091
+  Image Loss: 0.0280
+  Total Loss: 0.0326
+  Image grad max: 0.0012199124321341515
+  Output probs: [[0.174 0.001 0.162 0.221 0.    0.151 0.001 0.069 0.216 0.004]]
+Adversarial Training Loop 150/300:
+  Label Loss: 0.0091
+  Image Loss: 0.0280
+  Total Loss: 0.0325
+  Image grad max: 0.0012178468750789762
+  Output probs: [[0.174 0.001 0.162 0.221 0.    0.151 0.001 0.069 0.216 0.004]]
+Adversarial Training Loop 151/300:
+  Label Loss: 0.0091
+  Image Loss: 0.0279
+  Total Loss: 0.0324
+  Image grad max: 0.0012146447552368045
+  Output probs: [[0.174 0.001 0.162 0.221 0.    0.151 0.001 0.069 0.216 0.004]]
+Adversarial Training Loop 152/300:
+  Label Loss: 0.0091
+  Image Loss: 0.0279
+  Total Loss: 0.0324
+  Image grad max: 0.0012105806963518262
+  Output probs: [[0.175 0.001 0.162 0.221 0.    0.151 0.001 0.069 0.216 0.004]]
+Adversarial Training Loop 153/300:
+  Label Loss: 0.0090
+  Image Loss: 0.0278
+  Total Loss: 0.0323
+  Image grad max: 0.0012059370055794716
+  Output probs: [[0.175 0.001 0.162 0.221 0.    0.151 0.001 0.069 0.216 0.004]]
+Adversarial Training Loop 154/300:
+  Label Loss: 0.0090
+  Image Loss: 0.0278
+  Total Loss: 0.0323
+  Image grad max: 0.0012009324273094535
+  Output probs: [[0.175 0.001 0.162 0.22  0.    0.151 0.001 0.069 0.216 0.004]]
+Adversarial Training Loop 155/300:
+  Label Loss: 0.0090
+  Image Loss: 0.0277
+  Total Loss: 0.0322
+  Image grad max: 0.0011958959512412548
+  Output probs: [[0.175 0.001 0.162 0.22  0.    0.151 0.001 0.068 0.216 0.004]]
+Adversarial Training Loop 156/300:
+  Label Loss: 0.0090
+  Image Loss: 0.0277
+  Total Loss: 0.0322
+  Image grad max: 0.0011910746106877923
+  Output probs: [[0.176 0.001 0.162 0.22  0.    0.151 0.001 0.068 0.216 0.004]]
+Adversarial Training Loop 157/300:
+  Label Loss: 0.0090
+  Image Loss: 0.0276
+  Total Loss: 0.0321
+  Image grad max: 0.0011866933200508356
+  Output probs: [[0.176 0.001 0.162 0.22  0.    0.151 0.001 0.068 0.216 0.004]]
+Adversarial Training Loop 158/300:
+  Label Loss: 0.0089
+  Image Loss: 0.0276
+  Total Loss: 0.0321
+  Image grad max: 0.0011828726856037974
+  Output probs: [[0.176 0.001 0.162 0.22  0.    0.151 0.001 0.068 0.216 0.004]]
+Adversarial Training Loop 159/300:
+  Label Loss: 0.0089
+  Image Loss: 0.0276
+  Total Loss: 0.0320
+  Image grad max: 0.0011796182952821255
+  Output probs: [[0.176 0.001 0.162 0.219 0.    0.152 0.001 0.068 0.216 0.004]]
+Adversarial Training Loop 160/300:
+  Label Loss: 0.0089
+  Image Loss: 0.0275
+  Total Loss: 0.0320
+  Image grad max: 0.0011770512210205197
+  Output probs: [[0.176 0.001 0.162 0.219 0.    0.152 0.001 0.068 0.216 0.004]]
+Adversarial Training Loop 161/300:
+  Label Loss: 0.0089
+  Image Loss: 0.0275
+  Total Loss: 0.0319
+  Image grad max: 0.0011753210565075278
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.152 0.001 0.068 0.216 0.004]]
+Adversarial Training Loop 162/300:
+  Label Loss: 0.0089
+  Image Loss: 0.0274
+  Total Loss: 0.0319
+  Image grad max: 0.0011743782088160515
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.152 0.001 0.068 0.216 0.004]]
+Adversarial Training Loop 163/300:
+  Label Loss: 0.0089
+  Image Loss: 0.0274
+  Total Loss: 0.0318
+  Image grad max: 0.0011743204668164253
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.151 0.001 0.068 0.216 0.004]]
+Adversarial Training Loop 164/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0274
+  Total Loss: 0.0318
+  Image grad max: 0.0011748693650588393
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.151 0.001 0.068 0.216 0.004]]
+Adversarial Training Loop 165/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0273
+  Total Loss: 0.0317
+  Image grad max: 0.0011759190820157528
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.151 0.001 0.067 0.216 0.004]]
+Adversarial Training Loop 166/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0273
+  Total Loss: 0.0317
+  Image grad max: 0.0011772391153499484
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.151 0.001 0.067 0.216 0.004]]
+Adversarial Training Loop 167/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0273
+  Total Loss: 0.0317
+  Image grad max: 0.001178680919110775
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.216 0.004]]
+Adversarial Training Loop 168/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0272
+  Total Loss: 0.0316
+  Image grad max: 0.001180065330117941
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.216 0.004]]
+Adversarial Training Loop 169/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0272
+  Total Loss: 0.0316
+  Image grad max: 0.0011812481097877026
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 170/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0271
+  Total Loss: 0.0315
+  Image grad max: 0.0011821174994111061
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 171/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0271
+  Total Loss: 0.0315
+  Image grad max: 0.001182609237730503
+  Output probs: [[0.176 0.001 0.163 0.22  0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 172/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0271
+  Total Loss: 0.0315
+  Image grad max: 0.0011827470734715462
+  Output probs: [[0.176 0.001 0.163 0.22  0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 173/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0270
+  Total Loss: 0.0314
+  Image grad max: 0.0011825248366221786
+  Output probs: [[0.176 0.001 0.163 0.22  0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 174/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0270
+  Total Loss: 0.0314
+  Image grad max: 0.0011819422943517566
+  Output probs: [[0.176 0.001 0.163 0.22  0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 175/300:
+  Label Loss: 0.0088
+  Image Loss: 0.0270
+  Total Loss: 0.0313
+  Image grad max: 0.0011810566065832973
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 176/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0269
+  Total Loss: 0.0313
+  Image grad max: 0.0011799309868365526
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 177/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0269
+  Total Loss: 0.0313
+  Image grad max: 0.0011786409886553884
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 178/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0269
+  Total Loss: 0.0312
+  Image grad max: 0.0011772530851885676
+  Output probs: [[0.176 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 179/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0269
+  Total Loss: 0.0312
+  Image grad max: 0.0011758990585803986
+  Output probs: [[0.177 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 180/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0268
+  Total Loss: 0.0312
+  Image grad max: 0.0011746915988624096
+  Output probs: [[0.177 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 181/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0268
+  Total Loss: 0.0311
+  Image grad max: 0.0011735698208212852
+  Output probs: [[0.177 0.001 0.163 0.219 0.    0.152 0.001 0.067 0.215 0.004]]
+Adversarial Training Loop 182/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0268
+  Total Loss: 0.0311
+  Image grad max: 0.001172558986581862
+  Output probs: [[0.177 0.001 0.163 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 183/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0267
+  Total Loss: 0.0311
+  Image grad max: 0.0011716842418536544
+  Output probs: [[0.177 0.001 0.163 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 184/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0267
+  Total Loss: 0.0310
+  Image grad max: 0.001170947216451168
+  Output probs: [[0.177 0.001 0.163 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 185/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0267
+  Total Loss: 0.0310
+  Image grad max: 0.0011703480267897248
+  Output probs: [[0.177 0.001 0.163 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 186/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0267
+  Total Loss: 0.0310
+  Image grad max: 0.0011698574526235461
+  Output probs: [[0.177 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 187/300:
+  Label Loss: 0.0087
+  Image Loss: 0.0266
+  Total Loss: 0.0310
+  Image grad max: 0.0011694816639646888
+  Output probs: [[0.177 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 188/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0266
+  Total Loss: 0.0309
+  Image grad max: 0.001169222523458302
+  Output probs: [[0.177 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 189/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0266
+  Total Loss: 0.0309
+  Image grad max: 0.0011690390529111028
+  Output probs: [[0.177 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 190/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0266
+  Total Loss: 0.0309
+  Image grad max: 0.0011689229868352413
+  Output probs: [[0.177 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 191/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0265
+  Total Loss: 0.0308
+  Image grad max: 0.0011688286904245615
+  Output probs: [[0.177 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 192/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0265
+  Total Loss: 0.0308
+  Image grad max: 0.0011687615187838674
+  Output probs: [[0.177 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 193/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0265
+  Total Loss: 0.0308
+  Image grad max: 0.0011686546495184302
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 194/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0265
+  Total Loss: 0.0308
+  Image grad max: 0.0011684115743264556
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 195/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0264
+  Total Loss: 0.0307
+  Image grad max: 0.0011681410251185298
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 196/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0264
+  Total Loss: 0.0307
+  Image grad max: 0.0011678301962092519
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 197/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0264
+  Total Loss: 0.0307
+  Image grad max: 0.0011674967827275395
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 198/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0264
+  Total Loss: 0.0307
+  Image grad max: 0.0011671421816572547
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 199/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0264
+  Total Loss: 0.0306
+  Image grad max: 0.0011667582439258695
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.215 0.004]]
+Adversarial Training Loop 200/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0263
+  Total Loss: 0.0306
+  Image grad max: 0.001166363712400198
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.066 0.214 0.004]]
+Adversarial Training Loop 201/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0263
+  Total Loss: 0.0306
+  Image grad max: 0.001165956724435091
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 202/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0263
+  Total Loss: 0.0306
+  Image grad max: 0.001165543682873249
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 203/300:
+  Label Loss: 0.0086
+  Image Loss: 0.0263
+  Total Loss: 0.0306
+  Image grad max: 0.0011651446111500263
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 204/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0263
+  Total Loss: 0.0305
+  Image grad max: 0.0011647514766082168
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 205/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0262
+  Total Loss: 0.0305
+  Image grad max: 0.0011643816251307726
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 206/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0262
+  Total Loss: 0.0305
+  Image grad max: 0.0011640375014394522
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 207/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0262
+  Total Loss: 0.0305
+  Image grad max: 0.001163722830824554
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 208/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0262
+  Total Loss: 0.0305
+  Image grad max: 0.0011634286493062973
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 209/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0262
+  Total Loss: 0.0304
+  Image grad max: 0.001163160428404808
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 210/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0262
+  Total Loss: 0.0304
+  Image grad max: 0.0011629244545474648
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 211/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0261
+  Total Loss: 0.0304
+  Image grad max: 0.001162696979008615
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 212/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0261
+  Total Loss: 0.0304
+  Image grad max: 0.0011625024490058422
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 213/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0261
+  Total Loss: 0.0304
+  Image grad max: 0.0011623188620433211
+  Output probs: [[0.178 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 214/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0261
+  Total Loss: 0.0303
+  Image grad max: 0.0011621436569839716
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 215/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0261
+  Total Loss: 0.0303
+  Image grad max: 0.0011619748547673225
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 216/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0261
+  Total Loss: 0.0303
+  Image grad max: 0.0011618093121796846
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 217/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0261
+  Total Loss: 0.0303
+  Image grad max: 0.00116164016071707
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 218/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0260
+  Total Loss: 0.0303
+  Image grad max: 0.0011614738032221794
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 219/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0260
+  Total Loss: 0.0303
+  Image grad max: 0.0011612990638241172
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 220/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0260
+  Total Loss: 0.0302
+  Image grad max: 0.0011611090740188956
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 221/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0260
+  Total Loss: 0.0302
+  Image grad max: 0.0011609012726694345
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 222/300:
+  Label Loss: 0.0085
+  Image Loss: 0.0260
+  Total Loss: 0.0302
+  Image grad max: 0.001160662155598402
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 223/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0260
+  Total Loss: 0.0302
+  Image grad max: 0.001160421292297542
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 224/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0260
+  Total Loss: 0.0302
+  Image grad max: 0.0011601769365370274
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.065 0.214 0.004]]
+Adversarial Training Loop 225/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0259
+  Total Loss: 0.0302
+  Image grad max: 0.0011599401477724314
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 226/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0259
+  Total Loss: 0.0301
+  Image grad max: 0.0011597140692174435
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 227/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0259
+  Total Loss: 0.0301
+  Image grad max: 0.0011595007963478565
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 228/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0259
+  Total Loss: 0.0301
+  Image grad max: 0.0011593016097322106
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 229/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0259
+  Total Loss: 0.0301
+  Image grad max: 0.001159104984253645
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 230/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0259
+  Total Loss: 0.0301
+  Image grad max: 0.0011589203495532274
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 231/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0259
+  Total Loss: 0.0301
+  Image grad max: 0.0011588709894567728
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 232/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0259
+  Total Loss: 0.0301
+  Image grad max: 0.0011588659835979342
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 233/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0259
+  Total Loss: 0.0301
+  Image grad max: 0.0011588471243157983
+  Output probs: [[0.179 0.001 0.164 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 234/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0300
+  Image grad max: 0.0011587893823161721
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 235/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0300
+  Image grad max: 0.0011586963664740324
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 236/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0300
+  Image grad max: 0.0011585623724386096
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 237/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0300
+  Image grad max: 0.001158389844931662
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 238/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0300
+  Image grad max: 0.0011581892613321543
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 239/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0300
+  Image grad max: 0.001157959341071546
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 240/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0300
+  Image grad max: 0.0011577249970287085
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 241/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0300
+  Image grad max: 0.0011574826203286648
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 242/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0299
+  Image grad max: 0.0011572489747777581
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 243/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0299
+  Image grad max: 0.0011570312781259418
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 244/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0258
+  Total Loss: 0.0299
+  Image grad max: 0.0011568317422643304
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 245/300:
+  Label Loss: 0.0084
+  Image Loss: 0.0257
+  Total Loss: 0.0299
+  Image grad max: 0.0011566695757210255
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 246/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0299
+  Image grad max: 0.0011565383756533265
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 247/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0299
+  Image grad max: 0.0011564323212951422
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 248/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0299
+  Image grad max: 0.0011563601437956095
+  Output probs: [[0.179 0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 249/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0299
+  Image grad max: 0.0011563075240701437
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 250/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0299
+  Image grad max: 0.0011562691070139408
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 251/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0299
+  Image grad max: 0.0011562450090423226
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 252/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0299
+  Image grad max: 0.0011562204454094172
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 253/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0298
+  Image grad max: 0.0011561925057321787
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 254/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0298
+  Image grad max: 0.0011561547871679068
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 255/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0298
+  Image grad max: 0.0011561037972569466
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.064 0.214 0.004]]
+Adversarial Training Loop 256/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0298
+  Image grad max: 0.0011561316205188632
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 257/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0257
+  Total Loss: 0.0298
+  Image grad max: 0.0011562446597963572
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 258/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0298
+  Image grad max: 0.0011563264997676015
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 259/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0298
+  Image grad max: 0.0011563837761059403
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 260/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0298
+  Image grad max: 0.0011564140440896153
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 261/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0298
+  Image grad max: 0.0011564209125936031
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 262/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0298
+  Image grad max: 0.0011564031010493636
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 263/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0298
+  Image grad max: 0.0011563630541786551
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 264/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0298
+  Image grad max: 0.0011563114821910858
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 265/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0297
+  Image grad max: 0.0011562569998204708
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 266/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0297
+  Image grad max: 0.001156195648945868
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 267/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0297
+  Image grad max: 0.0011561345309019089
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 268/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0297
+  Image grad max: 0.0011560773709788918
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 269/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0297
+  Image grad max: 0.0011560299899429083
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 270/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0297
+  Image grad max: 0.001155995181761682
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 271/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0297
+  Image grad max: 0.0011559691047295928
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 272/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0297
+  Image grad max: 0.0011559455888345838
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 273/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0297
+  Image grad max: 0.001155935344286263
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 274/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0256
+  Total Loss: 0.0297
+  Image grad max: 0.0011559337144717574
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 275/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0255
+  Total Loss: 0.0297
+  Image grad max: 0.0011559398844838142
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 276/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0255
+  Total Loss: 0.0297
+  Image grad max: 0.0011559462873265147
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 277/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0255
+  Total Loss: 0.0297
+  Image grad max: 0.0011559567647054791
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 278/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0255
+  Total Loss: 0.0297
+  Image grad max: 0.0011559637496247888
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 279/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0255
+  Total Loss: 0.0297
+  Image grad max: 0.0011559710837900639
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 280/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0255
+  Total Loss: 0.0297
+  Image grad max: 0.001155975041911006
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 281/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0255
+  Total Loss: 0.0297
+  Image grad max: 0.0011559752747416496
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 282/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011559718986973166
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 283/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011559599079191685
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 284/300:
+  Label Loss: 0.0083
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011559469858184457
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 285/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011559284757822752
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 286/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.001155901001766324
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 287/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011558746919035912
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 288/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011558432597666979
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.214 0.004]]
+Adversarial Training Loop 289/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.00115581089630723
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 290/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011557835387066007
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 291/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011557595571503043
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 292/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.001155732898041606
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 293/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011557165998965502
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 294/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011557090329006314
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 295/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.001155704609118402
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 296/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011556994868442416
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 297/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011557047255337238
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 298/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.001155716716311872
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 299/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.0011557277757674456
+  Output probs: [[0.18  0.001 0.165 0.219 0.    0.152 0.001 0.063 0.213 0.004]]
+Adversarial Training Loop 300/300:
+  Label Loss: 0.0082
+  Image Loss: 0.0255
+  Total Loss: 0.0296
+  Image grad max: 0.001155743608251214
+
+MLP Step 1/300:
+  Current probs: [[0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+  Target probs: [[0.2 0.  0.2 0.2 0.  0.2 0.  0.  0.2 0. ]]
+  Label Loss: nan
+  Image Loss: 0.0386
+  Total Loss: nan
+  Image grad max: nan
+
+MLP Step 51/300:
+  Current probs: [[nan nan nan nan nan nan nan nan nan nan]]
+  Target probs: [[0.2 0.  0.2 0.2 0.  0.2 0.  0.  0.2 0. ]]
+  Label Loss: nan
+  Image Loss: nan
+  Total Loss: nan
+  Image grad max: nan
+
+MLP Step 101/300:
+  Current probs: [[nan nan nan nan nan nan nan nan nan nan]]
+  Target probs: [[0.2 0.  0.2 0.2 0.  0.2 0.  0.  0.2 0. ]]
+  Label Loss: nan
+  Image Loss: nan
+  Total Loss: nan
+  Image grad max: nan
+
+MLP Step 151/300:
+  Current probs: [[nan nan nan nan nan nan nan nan nan nan]]
+  Target probs: [[0.2 0.  0.2 0.2 0.  0.2 0.  0.  0.2 0. ]]
+  Label Loss: nan
+  Image Loss: nan
+  Total Loss: nan
+  Image grad max: nan
+
+MLP Step 201/300:
+  Current probs: [[nan nan nan nan nan nan nan nan nan nan]]
+  Target probs: [[0.2 0.  0.2 0.2 0.  0.2 0.  0.  0.2 0. ]]
+  Label Loss: nan
+  Image Loss: nan
+  Total Loss: nan
+  Image grad max: nan
+
+MLP Step 251/300:
+  Current probs: [[nan nan nan nan nan nan nan nan nan nan]]
+  Target probs: [[0.2 0.  0.2 0.2 0.  0.2 0.  0.  0.2 0. ]]
+  Label Loss: nan
+  Image Loss: nan
+  Total Loss: nan
+  Image grad max: nan
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+Traceback (most recent call last):
+  File "main.py", line 286, in <module>
+    plt.close(fig)
+  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
+    raise AttributeError(
+AttributeError: module 'matplotlib' has no attribute 'close'
