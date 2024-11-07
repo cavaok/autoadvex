@@ -28,7 +28,7 @@ def set_equal_confusion(single_label, num_classes, num_confused, device, include
     return target_label
 
 
-def visualize_adversarial_comparison(images, probabilities, distances, save_path=None, use_wandb=True):
+def visualize_adversarial_comparison(images, probabilities, distances, save_path=None, return_fig=False):
     """
     Create a visualization comparing original and adversarial MNIST images.
 
@@ -127,24 +127,14 @@ def visualize_adversarial_comparison(images, probabilities, distances, save_path
     # Adjust layout
     plt.tight_layout()
 
-    if save_path:
+    if return_fig:
+        return fig
+    elif save_path:
         plt.savefig(save_path, bbox_inches='tight', dpi=300)
-
-    if use_wandb:
-        # Create a unique name for this comparison
-        image_name = f"comparison_{wandb.run.step}"
-        wandb.log({
-            image_name: wandb.Image(plt),
-            f"{image_name}/auto_euclidean": distances['auto']['Euclidean'],
-            f"{image_name}/auto_mse": distances['auto']['MSE'],
-            f"{image_name}/mlp_euclidean": distances['mlp']['Euclidean'],
-            f"{image_name}/mlp_mse": distances['mlp']['MSE']
-        })
-
-    if not save_path and not use_wandb:
+        plt.close()
+    else:
         plt.show()
-
-    plt.close()
+        plt.close()
 
 
 

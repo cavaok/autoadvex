@@ -2,6 +2,7 @@ import torch
 from torch import optim
 from torch import nn
 import torch.nn.functional as F
+import matplotlib as plt
 import os
 from helper import create_diffuse_one_hot, visualize_adversarial_comparison, set_equal_confusion
 from data import get_mnist_loaders
@@ -15,24 +16,15 @@ parser = argparse.ArgumentParser(description='Process some arguments')
 parser.add_argument('--num_confused', type=int, default=2, help='Number of classes with equal confusion')
 parser.add_argument('--includes_true', type=str, default='True', help='Whether or not classes includes true class')
 parser.add_argument('--num_adversarial_examples', type=int, default=1, help='How many adv exs it will save')
-parser.add_argument('--wandb_project', type=str, default='adversarial-mnist', help='WandB project name')
-parser.add_argument('--wandb_entity', type=str, default=None, help='WandB entity/username')
-args = parser.parse_args()
+parser.add_argument('--wandb_project', type=str, default='autoadvex', help='WandB project name')
+parser.add_argument('--wandb_entity', type=str, default='cavaokcava', help='WandB entity/username')
+
 
 # Parse args immediately so available throughout script
 args = parser.parse_args()
 includes_true = args.includes_true == "True"
 
-# Initialize wandb
-wandb.init(
-    project=args.wandb_project,
-    entity=args.wandb_entity,
-    config={
-        "num_confused": args.num_confused,
-        "includes_true": includes_true,
-        "num_adversarial_examples": args.num_adversarial_examples
-    }
-)
+wandb.init(project=args.wandb_project, entity=args.wandb_entity)
 
 # Get the adversarial loader
 _, _, adversarial_loader = get_mnist_loaders()
@@ -283,12 +275,14 @@ for i in range(args.num_adversarial_examples):
         }
     }
 
-    visualize_adversarial_comparison(
+    fig = visualize_adversarial_comparison(
         images=visualization_data['images'],
         probabilities=visualization_data['probabilities'],
         distances=visualization_data['distances'],
-        save_path=f'figures/adversarial_comparison_{i}_{args.num_confused}_{args.includes_true}.png' if not args.wandb_only else None,
-        use_wandb=True
+        return_fig=True
     )
+    fig_name = f"confused_{args.num_confused}_{'with' if includes_true else 'without'}_true_example_{i}"
+    wandb.log({fig_name: wandb.Image(fig)})
+    plt.close(fig)
 
 wandb.finish()
