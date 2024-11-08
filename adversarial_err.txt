@@ -9,306 +9,306 @@ Loading python/3.8.13/slu6jvw
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130405-pplkizbf
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122452-l23u4dpt
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run royal-wind-26
+wandb: Syncing run vital-hill-44
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/pplkizbf
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/l23u4dpt
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.315 MB of 0.318 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.320 MB of 0.320 MB uploadedwandb: / 0.320 MB of 0.320 MB uploadedwandb: - 0.320 MB of 0.320 MB uploadedwandb:                                                                                
-wandb: 🚀 View run royal-wind-26 at: https://wandb.ai/cavaokcava/autoadvex/runs/pplkizbf
+wandb: - 0.319 MB of 0.319 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.320 MB of 0.320 MB uploadedwandb: / 0.320 MB of 0.320 MB uploadedwandb: - 0.320 MB of 0.320 MB uploadedwandb:                                                                                
+wandb: 🚀 View run vital-hill-44 at: https://wandb.ai/cavaokcava/autoadvex/runs/l23u4dpt
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130405-pplkizbf/logs
+wandb: Find logs at: ./wandb/run-20241108_122452-l23u4dpt/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130429-c2dd2oyd
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122514-6n9ja0rg
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run hardy-star-27
+wandb: Syncing run jumping-moon-45
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/c2dd2oyd
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/6n9ja0rg
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.328 MB of 0.328 MB uploadedwandb: \ 0.328 MB of 0.328 MB uploadedwandb: | 0.329 MB of 0.329 MB uploadedwandb: / 0.329 MB of 0.329 MB uploadedwandb: - 0.329 MB of 0.329 MB uploadedwandb: \ 0.329 MB of 0.329 MB uploadedwandb:                                                                                
-wandb: 🚀 View run hardy-star-27 at: https://wandb.ai/cavaokcava/autoadvex/runs/c2dd2oyd
+wandb: - 0.321 MB of 0.321 MB uploadedwandb: \ 0.323 MB of 0.323 MB uploadedwandb: | 0.323 MB of 0.323 MB uploadedwandb: / 0.323 MB of 0.323 MB uploadedwandb: - 0.323 MB of 0.323 MB uploadedwandb:                                                                                
+wandb: 🚀 View run jumping-moon-45 at: https://wandb.ai/cavaokcava/autoadvex/runs/6n9ja0rg
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130429-c2dd2oyd/logs
+wandb: Find logs at: ./wandb/run-20241108_122514-6n9ja0rg/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130453-ybwq9gad
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122536-35wzq1rp
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run polished-armadillo-28
+wandb: Syncing run pleasant-cosmos-46
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ybwq9gad
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/35wzq1rp
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.322 MB of 0.322 MB uploadedwandb: \ 0.323 MB of 0.323 MB uploadedwandb: | 0.324 MB of 0.324 MB uploadedwandb: / 0.324 MB of 0.324 MB uploadedwandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb:                                                                                
-wandb: 🚀 View run polished-armadillo-28 at: https://wandb.ai/cavaokcava/autoadvex/runs/ybwq9gad
+wandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.325 MB of 0.325 MB uploadedwandb: / 0.325 MB of 0.325 MB uploadedwandb: - 0.325 MB of 0.325 MB uploadedwandb:                                                                                
+wandb: 🚀 View run pleasant-cosmos-46 at: https://wandb.ai/cavaokcava/autoadvex/runs/35wzq1rp
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130453-ybwq9gad/logs
+wandb: Find logs at: ./wandb/run-20241108_122536-35wzq1rp/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130521-k0ef4l1m
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122601-0s6vh08a
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run honest-frost-29
+wandb: Syncing run sage-star-47
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/k0ef4l1m
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/0s6vh08a
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.324 MB of 0.324 MB uploadedwandb: / 0.324 MB of 0.324 MB uploadedwandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb:                                                                                
-wandb: 🚀 View run honest-frost-29 at: https://wandb.ai/cavaokcava/autoadvex/runs/k0ef4l1m
+wandb: - 0.318 MB of 0.321 MB uploadedwandb: \ 0.322 MB of 0.322 MB uploadedwandb: | 0.323 MB of 0.323 MB uploadedwandb: / 0.323 MB of 0.323 MB uploadedwandb: - 0.323 MB of 0.323 MB uploadedwandb: \ 0.323 MB of 0.323 MB uploadedwandb:                                                                                
+wandb: 🚀 View run sage-star-47 at: https://wandb.ai/cavaokcava/autoadvex/runs/0s6vh08a
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130521-k0ef4l1m/logs
+wandb: Find logs at: ./wandb/run-20241108_122601-0s6vh08a/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
-wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130544-dbybuv59
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122624-zsmxan23
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run fine-shadow-30
+wandb: Syncing run fanciful-breeze-48
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/dbybuv59
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/zsmxan23
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
 wandb: - 0.319 MB of 0.319 MB uploadedwandb: \ 0.319 MB of 0.319 MB uploadedwandb: | 0.319 MB of 0.319 MB uploadedwandb: / 0.319 MB of 0.319 MB uploadedwandb: - 0.319 MB of 0.319 MB uploadedwandb:                                                                                
-wandb: 🚀 View run fine-shadow-30 at: https://wandb.ai/cavaokcava/autoadvex/runs/dbybuv59
+wandb: 🚀 View run fanciful-breeze-48 at: https://wandb.ai/cavaokcava/autoadvex/runs/zsmxan23
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130544-dbybuv59/logs
+wandb: Find logs at: ./wandb/run-20241108_122624-zsmxan23/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130607-2g8gd3s2
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122646-56esahsa
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run silvery-snow-31
+wandb: Syncing run sleek-snow-49
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/2g8gd3s2
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/56esahsa
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.268 MB of 0.319 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.321 MB of 0.321 MB uploadedwandb: / 0.321 MB of 0.321 MB uploadedwandb: - 0.321 MB of 0.321 MB uploadedwandb: \ 0.321 MB of 0.321 MB uploadedwandb:                                                                                
-wandb: 🚀 View run silvery-snow-31 at: https://wandb.ai/cavaokcava/autoadvex/runs/2g8gd3s2
+wandb: - 0.326 MB of 0.326 MB uploadedwandb: \ 0.327 MB of 0.327 MB uploadedwandb: | 0.327 MB of 0.327 MB uploadedwandb: / 0.327 MB of 0.327 MB uploadedwandb: - 0.327 MB of 0.327 MB uploadedwandb:                                                                                
+wandb: 🚀 View run sleek-snow-49 at: https://wandb.ai/cavaokcava/autoadvex/runs/56esahsa
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130607-2g8gd3s2/logs
+wandb: Find logs at: ./wandb/run-20241108_122646-56esahsa/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130633-hzy2v6cj
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122710-8rnnum0q
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run dazzling-oath-32
+wandb: Syncing run wobbly-sunset-50
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/hzy2v6cj
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/8rnnum0q
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.252 MB of 0.318 MB uploadedwandb: \ 0.319 MB of 0.319 MB uploadedwandb: | 0.320 MB of 0.320 MB uploadedwandb: / 0.320 MB of 0.320 MB uploadedwandb: - 0.320 MB of 0.320 MB uploadedwandb:                                                                                
-wandb: 🚀 View run dazzling-oath-32 at: https://wandb.ai/cavaokcava/autoadvex/runs/hzy2v6cj
+wandb: - 0.321 MB of 0.321 MB uploadedwandb: \ 0.322 MB of 0.322 MB uploadedwandb: | 0.323 MB of 0.323 MB uploadedwandb: / 0.323 MB of 0.323 MB uploadedwandb: - 0.323 MB of 0.323 MB uploadedwandb: \ 0.323 MB of 0.323 MB uploadedwandb: | 0.323 MB of 0.323 MB uploadedwandb:                                                                                
+wandb: 🚀 View run wobbly-sunset-50 at: https://wandb.ai/cavaokcava/autoadvex/runs/8rnnum0q
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130633-hzy2v6cj/logs
+wandb: Find logs at: ./wandb/run-20241108_122710-8rnnum0q/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130656-urh3zh8w
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122733-vd6uvloj
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run visionary-sun-33
+wandb: Syncing run lively-armadillo-51
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/urh3zh8w
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/vd6uvloj
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.256 MB of 0.323 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.325 MB of 0.325 MB uploadedwandb: / 0.325 MB of 0.325 MB uploadedwandb: - 0.325 MB of 0.325 MB uploadedwandb:                                                                                
-wandb: 🚀 View run visionary-sun-33 at: https://wandb.ai/cavaokcava/autoadvex/runs/urh3zh8w
+wandb: - 0.264 MB of 0.314 MB uploadedwandb: \ 0.316 MB of 0.316 MB uploadedwandb: | 0.316 MB of 0.316 MB uploadedwandb: / 0.316 MB of 0.316 MB uploadedwandb: - 0.316 MB of 0.316 MB uploadedwandb:                                                                                
+wandb: 🚀 View run lively-armadillo-51 at: https://wandb.ai/cavaokcava/autoadvex/runs/vd6uvloj
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130656-urh3zh8w/logs
+wandb: Find logs at: ./wandb/run-20241108_122733-vd6uvloj/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130719-hwwu6b7o
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122755-qr4jph0z
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run rare-bee-34
+wandb: Syncing run misty-frost-52
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/hwwu6b7o
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/qr4jph0z
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.298 MB of 0.317 MB uploadedwandb: \ 0.319 MB of 0.319 MB uploadedwandb: | 0.319 MB of 0.319 MB uploadedwandb: / 0.319 MB of 0.319 MB uploadedwandb: - 0.319 MB of 0.319 MB uploadedwandb:                                                                                
-wandb: 🚀 View run rare-bee-34 at: https://wandb.ai/cavaokcava/autoadvex/runs/hwwu6b7o
+wandb: - 0.257 MB of 0.323 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.325 MB of 0.325 MB uploadedwandb: / 0.325 MB of 0.325 MB uploadedwandb: - 0.325 MB of 0.325 MB uploadedwandb: \ 0.325 MB of 0.325 MB uploadedwandb:                                                                                
+wandb: 🚀 View run misty-frost-52 at: https://wandb.ai/cavaokcava/autoadvex/runs/qr4jph0z
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130719-hwwu6b7o/logs
+wandb: Find logs at: ./wandb/run-20241108_122755-qr4jph0z/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130748-dycknbn7
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122821-h6mzwv9r
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run denim-deluge-35
+wandb: Syncing run eager-dust-53
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/dycknbn7
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/h6mzwv9r
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.320 MB of 0.320 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.321 MB of 0.321 MB uploadedwandb: / 0.321 MB of 0.321 MB uploadedwandb: - 0.321 MB of 0.321 MB uploadedwandb:                                                                                
-wandb: 🚀 View run denim-deluge-35 at: https://wandb.ai/cavaokcava/autoadvex/runs/dycknbn7
+wandb: - 0.319 MB of 0.319 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.320 MB of 0.320 MB uploadedwandb: / 0.320 MB of 0.320 MB uploadedwandb: - 0.320 MB of 0.320 MB uploadedwandb:                                                                                
+wandb: 🚀 View run eager-dust-53 at: https://wandb.ai/cavaokcava/autoadvex/runs/h6mzwv9r
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130748-dycknbn7/logs
+wandb: Find logs at: ./wandb/run-20241108_122821-h6mzwv9r/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130810-1mfnv4qg
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122842-ea2ez78h
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run clear-night-36
+wandb: Syncing run exalted-darkness-54
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/1mfnv4qg
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ea2ez78h
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.318 MB of 0.318 MB uploadedwandb: \ 0.318 MB of 0.318 MB uploadedwandb: | 0.318 MB of 0.318 MB uploadedwandb: / 0.318 MB of 0.318 MB uploadedwandb: - 0.318 MB of 0.318 MB uploadedwandb:                                                                                
-wandb: 🚀 View run clear-night-36 at: https://wandb.ai/cavaokcava/autoadvex/runs/1mfnv4qg
+wandb: - 0.323 MB of 0.323 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.324 MB of 0.324 MB uploadedwandb: / 0.324 MB of 0.324 MB uploadedwandb: - 0.324 MB of 0.324 MB uploadedwandb:                                                                                
+wandb: 🚀 View run exalted-darkness-54 at: https://wandb.ai/cavaokcava/autoadvex/runs/ea2ez78h
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130810-1mfnv4qg/logs
+wandb: Find logs at: ./wandb/run-20241108_122842-ea2ez78h/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130833-ckdu44n0
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122903-3okcjak8
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run glamorous-salad-37
+wandb: Syncing run cool-tree-55
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ckdu44n0
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/3okcjak8
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.260 MB of 0.326 MB uploadedwandb: \ 0.328 MB of 0.328 MB uploadedwandb: | 0.328 MB of 0.328 MB uploadedwandb: / 0.328 MB of 0.328 MB uploadedwandb: - 0.328 MB of 0.328 MB uploadedwandb:                                                                                
-wandb: 🚀 View run glamorous-salad-37 at: https://wandb.ai/cavaokcava/autoadvex/runs/ckdu44n0
+wandb: - 0.267 MB of 0.318 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.320 MB of 0.320 MB uploadedwandb: / 0.320 MB of 0.320 MB uploadedwandb: - 0.320 MB of 0.320 MB uploadedwandb:                                                                                
+wandb: 🚀 View run cool-tree-55 at: https://wandb.ai/cavaokcava/autoadvex/runs/3okcjak8
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130833-ckdu44n0/logs
+wandb: Find logs at: ./wandb/run-20241108_122903-3okcjak8/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130858-bpvpy7b5
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122928-5nj3ffll
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run honest-flower-38
+wandb: Syncing run sweet-dew-56
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/bpvpy7b5
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/5nj3ffll
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.320 MB of 0.324 MB uploadedwandb: \ 0.326 MB of 0.326 MB uploadedwandb: | 0.326 MB of 0.326 MB uploadedwandb: / 0.326 MB of 0.326 MB uploadedwandb: - 0.326 MB of 0.326 MB uploadedwandb: \ 0.326 MB of 0.326 MB uploadedwandb:                                                                                
+wandb: 🚀 View run sweet-dew-56 at: https://wandb.ai/cavaokcava/autoadvex/runs/5nj3ffll
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241108_122928-5nj3ffll/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_122951-r4bbuw38
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run smart-violet-57
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/r4bbuw38
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.324 MB of 0.324 MB uploadedwandb: / 0.324 MB of 0.324 MB uploadedwandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb:                                                                                
+wandb: 🚀 View run smart-violet-57 at: https://wandb.ai/cavaokcava/autoadvex/runs/r4bbuw38
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241108_122951-r4bbuw38/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_123013-krlkeo0o
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run polished-rain-58
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/krlkeo0o
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.325 MB of 0.325 MB uploadedwandb: / 0.325 MB of 0.325 MB uploadedwandb: - 0.325 MB of 0.325 MB uploadedwandb:                                                                                
+wandb: 🚀 View run polished-rain-58 at: https://wandb.ai/cavaokcava/autoadvex/runs/krlkeo0o
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241108_123013-krlkeo0o/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_123036-dtx4zudn
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run gentle-durian-59
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/dtx4zudn
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.329 MB of 0.329 MB uploadedwandb: \ 0.330 MB of 0.330 MB uploadedwandb: | 0.330 MB of 0.330 MB uploadedwandb: / 0.330 MB of 0.330 MB uploadedwandb: - 0.330 MB of 0.330 MB uploadedwandb:                                                                                
+wandb: 🚀 View run gentle-durian-59 at: https://wandb.ai/cavaokcava/autoadvex/runs/dtx4zudn
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241108_123036-dtx4zudn/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_123058-mt2ymg89
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run rural-monkey-60
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/mt2ymg89
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
 wandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.324 MB of 0.324 MB uploadedwandb: / 0.324 MB of 0.324 MB uploadedwandb: - 0.324 MB of 0.324 MB uploadedwandb:                                                                                
-wandb: 🚀 View run honest-flower-38 at: https://wandb.ai/cavaokcava/autoadvex/runs/bpvpy7b5
+wandb: 🚀 View run rural-monkey-60 at: https://wandb.ai/cavaokcava/autoadvex/runs/mt2ymg89
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130858-bpvpy7b5/logs
+wandb: Find logs at: ./wandb/run-20241108_123058-mt2ymg89/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130920-7tbenu0m
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241108_123119-rjjjy0h0
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run splendid-river-39
+wandb: Syncing run deft-vortex-61
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/7tbenu0m
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/rjjjy0h0
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-wandb: - 0.325 MB of 0.325 MB uploadedwandb: \ 0.327 MB of 0.327 MB uploadedwandb: | 0.327 MB of 0.327 MB uploadedwandb: / 0.327 MB of 0.327 MB uploadedwandb: - 0.327 MB of 0.327 MB uploadedwandb: \ 0.327 MB of 0.327 MB uploadedwandb:                                                                                
-wandb: 🚀 View run splendid-river-39 at: https://wandb.ai/cavaokcava/autoadvex/runs/7tbenu0m
+wandb: - 0.318 MB of 0.322 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.324 MB of 0.324 MB uploadedwandb: / 0.324 MB of 0.324 MB uploadedwandb: - 0.324 MB of 0.324 MB uploadedwandb:                                                                                
+wandb: 🚀 View run deft-vortex-61 at: https://wandb.ai/cavaokcava/autoadvex/runs/rjjjy0h0
 wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
 wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130920-7tbenu0m/logs
-wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
-wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130943-chm1ngud
-wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run jumping-wave-40
-wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/chm1ngud
-/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
-  warnings.warn(
-/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
-  plt.tight_layout()
-wandb: - 0.249 MB of 0.315 MB uploadedwandb: \ 0.316 MB of 0.316 MB uploadedwandb: | 0.317 MB of 0.317 MB uploadedwandb: / 0.317 MB of 0.317 MB uploadedwandb: - 0.317 MB of 0.317 MB uploadedwandb: \ 0.317 MB of 0.317 MB uploadedwandb:                                                                                
-wandb: 🚀 View run jumping-wave-40 at: https://wandb.ai/cavaokcava/autoadvex/runs/chm1ngud
-wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
-wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_130943-chm1ngud/logs
-wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
-wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_131009-ui35u77l
-wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run twilight-waterfall-41
-wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ui35u77l
-/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
-  warnings.warn(
-/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
-  plt.tight_layout()
-wandb: - 0.300 MB of 0.319 MB uploadedwandb: \ 0.321 MB of 0.321 MB uploadedwandb: | 0.322 MB of 0.322 MB uploadedwandb: / 0.322 MB of 0.322 MB uploadedwandb: - 0.322 MB of 0.322 MB uploadedwandb:                                                                                
-wandb: 🚀 View run twilight-waterfall-41 at: https://wandb.ai/cavaokcava/autoadvex/runs/ui35u77l
-wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
-wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_131009-ui35u77l/logs
-wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
-wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_131031-xsaj5rxt
-wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run wobbly-water-42
-wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/xsaj5rxt
-/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
-  warnings.warn(
-/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
-  plt.tight_layout()
-wandb: - 0.269 MB of 0.319 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.321 MB of 0.321 MB uploadedwandb: / 0.321 MB of 0.321 MB uploadedwandb: - 0.321 MB of 0.321 MB uploadedwandb: \ 0.321 MB of 0.321 MB uploadedwandb:                                                                                
-wandb: 🚀 View run wobbly-water-42 at: https://wandb.ai/cavaokcava/autoadvex/runs/xsaj5rxt
-wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
-wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_131031-xsaj5rxt/logs
-wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
-wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_131055-aq8shiup
-wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run worldly-sun-43
-wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/aq8shiup
-/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
-  warnings.warn(
-/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
-  plt.tight_layout()
-wandb: - 0.316 MB of 0.316 MB uploadedwandb: \ 0.316 MB of 0.316 MB uploadedwandb: | 0.316 MB of 0.316 MB uploadedwandb: / 0.316 MB of 0.316 MB uploadedwandb: - 0.316 MB of 0.316 MB uploadedwandb:                                                                                
-wandb: 🚀 View run worldly-sun-43 at: https://wandb.ai/cavaokcava/autoadvex/runs/aq8shiup
-wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
-wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
-wandb: Find logs at: ./wandb/run-20241107_131055-aq8shiup/logs
+wandb: Find logs at: ./wandb/run-20241108_123119-rjjjy0h0/logs

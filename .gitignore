@@ -12,3 +12,11 @@ myenv/
 # SLURM scripts
 gpu_slurm.sh
 cpu_slurm.sh
+
+# txt files
+adversarial_err.txt
+adversarial_out.txt
+
+# weights and biases outputs
+wandb/
+
