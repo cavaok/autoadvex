@@ -283,6 +283,5 @@ for i in range(args.num_adversarial_examples):
     )
     fig_name = f"confused_{args.num_confused}_{'with' if includes_true else 'without'}_true_example_{i}"
     wandb.log({fig_name: wandb.Image(fig)})
-    plt.pyplot.close(fig)
 
 wandb.finish()

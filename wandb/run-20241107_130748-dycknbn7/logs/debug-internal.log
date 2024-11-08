@@ -1,0 +1,17 @@
+{"time":"2024-11-07T13:07:48.318610664-05:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T13:07:48.318623689-05:00","level":"INFO","msg":"created symlink","path":"/home/okcava/projects/autoadvex/wandb/run-20241107_130748-dycknbn7/logs/debug-core.log"}
+{"time":"2024-11-07T13:07:48.442253269-05:00","level":"INFO","msg":"created new stream","id":"dycknbn7"}
+{"time":"2024-11-07T13:07:48.442309294-05:00","level":"INFO","msg":"stream: started","id":"dycknbn7"}
+{"time":"2024-11-07T13:07:48.444200471-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"dycknbn7"}}
+{"time":"2024-11-07T13:07:48.44427991-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"dycknbn7"}}
+{"time":"2024-11-07T13:07:48.444438488-05:00","level":"INFO","msg":"sender: started","stream_id":"dycknbn7"}
+{"time":"2024-11-07T13:07:48.989789649-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T13:07:55.692608662-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T13:07:55.694552168-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T13:07:56.693221638-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.857466456,"subtasks":[{"desc":"wandb-job.json","runtime_seconds":0.424783925,"progress":"1.3KB/1.3KB"}]},{"desc":"uploading config.yaml","runtime_seconds":0.761759563,"progress":"481B/481B"},{"desc":"uploading output.log","runtime_seconds":0.761751086,"progress":"195.2KB/195.2KB"}],"total_operations":3}}
+{"time":"2024-11-07T13:07:58.303539948-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T13:08:02.397988524-05:00","level":"INFO","msg":"stream: closing","id":"dycknbn7"}
+{"time":"2024-11-07T13:08:02.398001047-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"dycknbn7"}}
+{"time":"2024-11-07T13:08:02.398016286-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"dycknbn7"}}
+{"time":"2024-11-07T13:08:02.398217293-05:00","level":"INFO","msg":"sender: closed","stream_id":"dycknbn7"}
+{"time":"2024-11-07T13:08:02.4040004-05:00","level":"INFO","msg":"stream: closed","id":"dycknbn7"}

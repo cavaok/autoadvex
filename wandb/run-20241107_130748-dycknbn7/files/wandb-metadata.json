@@ -1,0 +1,72 @@
+{
+  "os": "Linux-5.15.0-122-generic-x86_64-with-glibc2.2.5",
+  "python": "3.8.13",
+  "startedAt": "2024-11-07T18:07:48.303100Z",
+  "args": [
+    "--num_confused=1",
+    "--includes_true=False",
+    "--num_adversarial_examples=3"
+  ],
+  "program": "main.py",
+  "codePath": "main.py",
+  "git": {
+    "remote": "git@github.com:cavaok/autoadvex.git",
+    "commit": "6073fef283c4cdb6a1466ec40d289eb805570d95"
+  },
+  "email": "cavaokcava@gmail.com",
+  "root": "/home/okcava/projects/autoadvex",
+  "host": "compute-2-01",
+  "username": "okcava",
+  "executable": "/home/okcava/projects/autoadvex/.venv/bin/python",
+  "codePathLocal": "main.py",
+  "cpu_count": 64,
+  "cpu_count_logical": 64,
+  "disk": {
+    "/": {
+      "total": "486551896064",
+      "used": "25313280000"
+    }
+  },
+  "memory": {
+    "total": "540613214208"
+  },
+  "cpu": {
+    "count": 64,
+    "countLogical": 64
+  },
+  "slurm": {
+    "cluster_name": "slurm",
+    "conf": "/cm/shared/apps/slurm/var/etc/slurm/slurm.conf",
+    "cpus_on_node": "1",
+    "gtids": "0",
+    "job_account": "rcpaffenroth",
+    "job_cpus_per_node": "1",
+    "job_gid": "182811357",
+    "job_id": "855444",
+    "job_name": "adversarial_job",
+    "job_nodelist": "compute-2-01",
+    "job_num_nodes": "1",
+    "job_partition": "short",
+    "job_qos": "short",
+    "job_uid": "182811357",
+    "job_user": "okcava",
+    "jobid": "855444",
+    "localid": "0",
+    "mem_per_node": "16384",
+    "nnodes": "1",
+    "node_aliases": "(null)",
+    "nodeid": "0",
+    "nodelist": "compute-2-01",
+    "nprocs": "1",
+    "ntasks": "1",
+    "prio_process": "0",
+    "procid": "0",
+    "submit_dir": "/home/okcava/projects/autoadvex",
+    "submit_host": "login-01",
+    "task_pid": "1609881",
+    "tasks_per_node": "1",
+    "topology_addr": "compute-2-01",
+    "topology_addr_pattern": "node",
+    "working_cluster": "slurm:turing-head:6817:9472:109"
+  }
+}

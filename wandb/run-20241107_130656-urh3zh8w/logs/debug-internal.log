@@ -1,0 +1,17 @@
+{"time":"2024-11-07T13:06:56.930305011-05:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T13:06:56.930318026-05:00","level":"INFO","msg":"created symlink","path":"/home/okcava/projects/autoadvex/wandb/run-20241107_130656-urh3zh8w/logs/debug-core.log"}
+{"time":"2024-11-07T13:06:57.093991761-05:00","level":"INFO","msg":"created new stream","id":"urh3zh8w"}
+{"time":"2024-11-07T13:06:57.094015094-05:00","level":"INFO","msg":"stream: started","id":"urh3zh8w"}
+{"time":"2024-11-07T13:06:57.095534705-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"urh3zh8w"}}
+{"time":"2024-11-07T13:06:57.095598094-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"urh3zh8w"}}
+{"time":"2024-11-07T13:06:57.095753515-05:00","level":"INFO","msg":"sender: started","stream_id":"urh3zh8w"}
+{"time":"2024-11-07T13:06:57.656716284-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T13:07:04.472378144-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T13:07:04.474038789-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T13:07:05.473138392-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.876661136,"progress":"893B/893B"},{"desc":"saving job artifact","runtime_seconds":0.77228488,"subtasks":[{"desc":"wandb-job.json","runtime_seconds":0.292676365}]},{"desc":"uploading config.yaml","runtime_seconds":0.627302146},{"desc":"uploading output.log","runtime_seconds":0.627295453,"progress":"128.0KB/195.9KB"}],"total_operations":4}}
+{"time":"2024-11-07T13:07:07.326540171-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T13:07:11.300693985-05:00","level":"INFO","msg":"stream: closing","id":"urh3zh8w"}
+{"time":"2024-11-07T13:07:11.300713291-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"urh3zh8w"}}
+{"time":"2024-11-07T13:07:11.300737517-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"urh3zh8w"}}
+{"time":"2024-11-07T13:07:11.30092041-05:00","level":"INFO","msg":"sender: closed","stream_id":"urh3zh8w"}
+{"time":"2024-11-07T13:07:11.306152203-05:00","level":"INFO","msg":"stream: closed","id":"urh3zh8w"}

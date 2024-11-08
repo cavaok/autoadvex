@@ -1,0 +1,17 @@
+{"time":"2024-11-07T13:10:32.033293235-05:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T13:10:32.03331729-05:00","level":"INFO","msg":"created symlink","path":"/home/okcava/projects/autoadvex/wandb/run-20241107_131031-xsaj5rxt/logs/debug-core.log"}
+{"time":"2024-11-07T13:10:32.16382486-05:00","level":"INFO","msg":"created new stream","id":"xsaj5rxt"}
+{"time":"2024-11-07T13:10:32.16390459-05:00","level":"INFO","msg":"stream: started","id":"xsaj5rxt"}
+{"time":"2024-11-07T13:10:32.165594319-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"xsaj5rxt"}}
+{"time":"2024-11-07T13:10:32.165673658-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"xsaj5rxt"}}
+{"time":"2024-11-07T13:10:32.16578142-05:00","level":"INFO","msg":"sender: started","stream_id":"xsaj5rxt"}
+{"time":"2024-11-07T13:10:32.708536133-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T13:10:39.344642685-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T13:10:39.345453777-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T13:10:40.347849591-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.25296571},{"desc":"uploading config.yaml","runtime_seconds":0.113919004},{"desc":"uploading output.log","runtime_seconds":0.11391172,"progress":"144.0KB/195.3KB"}],"total_operations":3}}
+{"time":"2024-11-07T13:10:42.563230603-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T13:10:46.880571095-05:00","level":"INFO","msg":"stream: closing","id":"xsaj5rxt"}
+{"time":"2024-11-07T13:10:46.880583278-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"xsaj5rxt"}}
+{"time":"2024-11-07T13:10:46.880597725-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"xsaj5rxt"}}
+{"time":"2024-11-07T13:10:46.880860398-05:00","level":"INFO","msg":"sender: closed","stream_id":"xsaj5rxt"}
+{"time":"2024-11-07T13:10:46.888233588-05:00","level":"INFO","msg":"stream: closed","id":"xsaj5rxt"}

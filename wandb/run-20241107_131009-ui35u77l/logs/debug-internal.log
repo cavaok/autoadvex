@@ -1,0 +1,17 @@
+{"time":"2024-11-07T13:10:09.456938931-05:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T13:10:09.456951275-05:00","level":"INFO","msg":"created symlink","path":"/home/okcava/projects/autoadvex/wandb/run-20241107_131009-ui35u77l/logs/debug-core.log"}
+{"time":"2024-11-07T13:10:09.601017076-05:00","level":"INFO","msg":"created new stream","id":"ui35u77l"}
+{"time":"2024-11-07T13:10:09.601090624-05:00","level":"INFO","msg":"stream: started","id":"ui35u77l"}
+{"time":"2024-11-07T13:10:09.602492955-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ui35u77l"}}
+{"time":"2024-11-07T13:10:09.602568326-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ui35u77l"}}
+{"time":"2024-11-07T13:10:09.60272493-05:00","level":"INFO","msg":"sender: started","stream_id":"ui35u77l"}
+{"time":"2024-11-07T13:10:10.13359458-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T13:10:16.902470768-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T13:10:16.903275157-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T13:10:17.905355431-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.885625244,"progress":"919B/919B"},{"desc":"saving job artifact","runtime_seconds":0.847455316,"subtasks":[{"desc":"wandb-job.json","runtime_seconds":0.394192688}]},{"desc":"uploading config.yaml","runtime_seconds":0.697397715},{"desc":"uploading output.log","runtime_seconds":0.697390963,"progress":"176.0KB/195.7KB"}],"total_operations":4}}
+{"time":"2024-11-07T13:10:19.797580196-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T13:10:23.905255977-05:00","level":"INFO","msg":"stream: closing","id":"ui35u77l"}
+{"time":"2024-11-07T13:10:23.905269452-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ui35u77l"}}
+{"time":"2024-11-07T13:10:23.905286624-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ui35u77l"}}
+{"time":"2024-11-07T13:10:23.905423251-05:00","level":"INFO","msg":"sender: closed","stream_id":"ui35u77l"}
+{"time":"2024-11-07T13:10:23.910047034-05:00","level":"INFO","msg":"stream: closed","id":"ui35u77l"}

@@ -1,0 +1,17 @@
+{"time":"2024-11-07T13:04:53.442438363-05:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T13:04:53.442460585-05:00","level":"INFO","msg":"created symlink","path":"/home/okcava/projects/autoadvex/wandb/run-20241107_130453-ybwq9gad/logs/debug-core.log"}
+{"time":"2024-11-07T13:04:53.578115295-05:00","level":"INFO","msg":"created new stream","id":"ybwq9gad"}
+{"time":"2024-11-07T13:04:53.578136324-05:00","level":"INFO","msg":"stream: started","id":"ybwq9gad"}
+{"time":"2024-11-07T13:04:53.580241673-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"ybwq9gad"}}
+{"time":"2024-11-07T13:04:53.580322455-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"ybwq9gad"}}
+{"time":"2024-11-07T13:04:53.580504566-05:00","level":"INFO","msg":"sender: started","stream_id":"ybwq9gad"}
+{"time":"2024-11-07T13:04:55.367555859-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T13:05:02.209733444-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T13:05:02.210727158-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T13:05:03.213616155-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading media/images/confused_4_with_true_example_2_2_fa29f27656754663cc41.png","runtime_seconds":0.886258835,"progress":"44.3KB/44.3KB"},{"desc":"saving job artifact","runtime_seconds":0.849310888,"subtasks":[{"desc":"wandb-job.json","runtime_seconds":0.423966781}]},{"desc":"uploading config.yaml","runtime_seconds":0.747191153},{"desc":"uploading output.log","runtime_seconds":0.747183519,"progress":"195.9KB/195.9KB"}],"total_operations":4}}
+{"time":"2024-11-07T13:05:05.181689084-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T13:05:09.957225838-05:00","level":"INFO","msg":"stream: closing","id":"ybwq9gad"}
+{"time":"2024-11-07T13:05:09.957246707-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"ybwq9gad"}}
+{"time":"2024-11-07T13:05:09.957273377-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"ybwq9gad"}}
+{"time":"2024-11-07T13:05:09.957410655-05:00","level":"INFO","msg":"sender: closed","stream_id":"ybwq9gad"}
+{"time":"2024-11-07T13:05:09.960903968-05:00","level":"INFO","msg":"stream: closed","id":"ybwq9gad"}

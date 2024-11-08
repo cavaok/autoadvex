@@ -1,0 +1,17 @@
+{"time":"2024-11-07T13:10:55.512224616-05:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T13:10:55.51224847-05:00","level":"INFO","msg":"created symlink","path":"/home/okcava/projects/autoadvex/wandb/run-20241107_131055-aq8shiup/logs/debug-core.log"}
+{"time":"2024-11-07T13:10:55.642788691-05:00","level":"INFO","msg":"created new stream","id":"aq8shiup"}
+{"time":"2024-11-07T13:10:55.642807957-05:00","level":"INFO","msg":"stream: started","id":"aq8shiup"}
+{"time":"2024-11-07T13:10:55.643819946-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"aq8shiup"}}
+{"time":"2024-11-07T13:10:55.643873306-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"aq8shiup"}}
+{"time":"2024-11-07T13:10:55.643977932-05:00","level":"INFO","msg":"sender: started","stream_id":"aq8shiup"}
+{"time":"2024-11-07T13:10:56.1536237-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T13:11:02.878992754-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T13:11:02.880746453-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T13:11:03.879644986-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.850488362,"subtasks":[{"desc":"wandb-job.json","runtime_seconds":0.38810626,"progress":"1.3KB/1.3KB"}]},{"desc":"uploading config.yaml","runtime_seconds":0.746260257,"progress":"481B/481B"},{"desc":"uploading output.log","runtime_seconds":0.74625661,"progress":"195.5KB/195.5KB"}],"total_operations":3}}
+{"time":"2024-11-07T13:11:05.166506214-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T13:11:09.511844064-05:00","level":"INFO","msg":"stream: closing","id":"aq8shiup"}
+{"time":"2024-11-07T13:11:09.51185776-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"aq8shiup"}}
+{"time":"2024-11-07T13:11:09.511876485-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"aq8shiup"}}
+{"time":"2024-11-07T13:11:09.512003383-05:00","level":"INFO","msg":"sender: closed","stream_id":"aq8shiup"}
+{"time":"2024-11-07T13:11:09.514604903-05:00","level":"INFO","msg":"stream: closed","id":"aq8shiup"}

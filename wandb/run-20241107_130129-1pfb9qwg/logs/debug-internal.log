@@ -1,0 +1,16 @@
+{"time":"2024-11-07T13:01:30.182925331-05:00","level":"INFO","msg":"using version","core version":"0.18.6"}
+{"time":"2024-11-07T13:01:30.182938085-05:00","level":"INFO","msg":"created symlink","path":"/home/okcava/projects/autoadvex/wandb/run-20241107_130129-1pfb9qwg/logs/debug-core.log"}
+{"time":"2024-11-07T13:01:30.313853634-05:00","level":"INFO","msg":"created new stream","id":"1pfb9qwg"}
+{"time":"2024-11-07T13:01:30.313872539-05:00","level":"INFO","msg":"stream: started","id":"1pfb9qwg"}
+{"time":"2024-11-07T13:01:30.314079399-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"1pfb9qwg"}}
+{"time":"2024-11-07T13:01:30.314164699-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"1pfb9qwg"}}
+{"time":"2024-11-07T13:01:30.314337615-05:00","level":"INFO","msg":"sender: started","stream_id":"1pfb9qwg"}
+{"time":"2024-11-07T13:01:31.077379136-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-07T13:01:34.681216587-05:00","level":"INFO","msg":"stream: closing","id":"1pfb9qwg"}
+{"time":"2024-11-07T13:01:34.681232116-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-07T13:01:34.682017555-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-07T13:01:36.278385238-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-07T13:01:37.830885285-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"1pfb9qwg"}}
+{"time":"2024-11-07T13:01:37.830919729-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"1pfb9qwg"}}
+{"time":"2024-11-07T13:01:37.831112442-05:00","level":"INFO","msg":"sender: closed","stream_id":"1pfb9qwg"}
+{"time":"2024-11-07T13:01:37.839946854-05:00","level":"INFO","msg":"stream: closed","id":"1pfb9qwg"}

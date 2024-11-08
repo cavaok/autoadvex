@@ -9,324 +9,306 @@ Loading python/3.8.13/slu6jvw
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121305-zf1318h5
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130405-pplkizbf
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run eternal-monkey-1
+wandb: Syncing run royal-wind-26
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/zf1318h5
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/pplkizbf
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.315 MB of 0.318 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.320 MB of 0.320 MB uploadedwandb: / 0.320 MB of 0.320 MB uploadedwandb: - 0.320 MB of 0.320 MB uploadedwandb:                                                                                
+wandb: 🚀 View run royal-wind-26 at: https://wandb.ai/cavaokcava/autoadvex/runs/pplkizbf
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130405-pplkizbf/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121323-j3ojphax
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130429-c2dd2oyd
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run cerulean-monkey-2
+wandb: Syncing run hardy-star-27
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/j3ojphax
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/c2dd2oyd
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.328 MB of 0.328 MB uploadedwandb: \ 0.328 MB of 0.328 MB uploadedwandb: | 0.329 MB of 0.329 MB uploadedwandb: / 0.329 MB of 0.329 MB uploadedwandb: - 0.329 MB of 0.329 MB uploadedwandb: \ 0.329 MB of 0.329 MB uploadedwandb:                                                                                
+wandb: 🚀 View run hardy-star-27 at: https://wandb.ai/cavaokcava/autoadvex/runs/c2dd2oyd
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130429-c2dd2oyd/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130453-ybwq9gad
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run polished-armadillo-28
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ybwq9gad
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.322 MB of 0.322 MB uploadedwandb: \ 0.323 MB of 0.323 MB uploadedwandb: | 0.324 MB of 0.324 MB uploadedwandb: / 0.324 MB of 0.324 MB uploadedwandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb:                                                                                
+wandb: 🚀 View run polished-armadillo-28 at: https://wandb.ai/cavaokcava/autoadvex/runs/ybwq9gad
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130453-ybwq9gad/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121340-szqfc85q
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130521-k0ef4l1m
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run ruby-violet-3
+wandb: Syncing run honest-frost-29
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/szqfc85q
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/k0ef4l1m
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.324 MB of 0.324 MB uploadedwandb: / 0.324 MB of 0.324 MB uploadedwandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb:                                                                                
+wandb: 🚀 View run honest-frost-29 at: https://wandb.ai/cavaokcava/autoadvex/runs/k0ef4l1m
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130521-k0ef4l1m/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121357-nzpdgrh8
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130544-dbybuv59
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run decent-terrain-4
+wandb: Syncing run fine-shadow-30
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/nzpdgrh8
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/dbybuv59
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.319 MB of 0.319 MB uploadedwandb: \ 0.319 MB of 0.319 MB uploadedwandb: | 0.319 MB of 0.319 MB uploadedwandb: / 0.319 MB of 0.319 MB uploadedwandb: - 0.319 MB of 0.319 MB uploadedwandb:                                                                                
+wandb: 🚀 View run fine-shadow-30 at: https://wandb.ai/cavaokcava/autoadvex/runs/dbybuv59
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130544-dbybuv59/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121417-ciimnas4
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130607-2g8gd3s2
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run jumping-salad-5
+wandb: Syncing run silvery-snow-31
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ciimnas4
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/2g8gd3s2
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.268 MB of 0.319 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.321 MB of 0.321 MB uploadedwandb: / 0.321 MB of 0.321 MB uploadedwandb: - 0.321 MB of 0.321 MB uploadedwandb: \ 0.321 MB of 0.321 MB uploadedwandb:                                                                                
+wandb: 🚀 View run silvery-snow-31 at: https://wandb.ai/cavaokcava/autoadvex/runs/2g8gd3s2
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130607-2g8gd3s2/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121433-b3ww24h3
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130633-hzy2v6cj
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run dutiful-valley-6
+wandb: Syncing run dazzling-oath-32
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/b3ww24h3
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/hzy2v6cj
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.252 MB of 0.318 MB uploadedwandb: \ 0.319 MB of 0.319 MB uploadedwandb: | 0.320 MB of 0.320 MB uploadedwandb: / 0.320 MB of 0.320 MB uploadedwandb: - 0.320 MB of 0.320 MB uploadedwandb:                                                                                
+wandb: 🚀 View run dazzling-oath-32 at: https://wandb.ai/cavaokcava/autoadvex/runs/hzy2v6cj
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130633-hzy2v6cj/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121450-5jjf0zeg
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130656-urh3zh8w
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run eternal-aardvark-7
+wandb: Syncing run visionary-sun-33
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/5jjf0zeg
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/urh3zh8w
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.256 MB of 0.323 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.325 MB of 0.325 MB uploadedwandb: / 0.325 MB of 0.325 MB uploadedwandb: - 0.325 MB of 0.325 MB uploadedwandb:                                                                                
+wandb: 🚀 View run visionary-sun-33 at: https://wandb.ai/cavaokcava/autoadvex/runs/urh3zh8w
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130656-urh3zh8w/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121506-t0g79ftj
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130719-hwwu6b7o
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run usual-snowball-8
+wandb: Syncing run rare-bee-34
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/t0g79ftj
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/hwwu6b7o
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.298 MB of 0.317 MB uploadedwandb: \ 0.319 MB of 0.319 MB uploadedwandb: | 0.319 MB of 0.319 MB uploadedwandb: / 0.319 MB of 0.319 MB uploadedwandb: - 0.319 MB of 0.319 MB uploadedwandb:                                                                                
+wandb: 🚀 View run rare-bee-34 at: https://wandb.ai/cavaokcava/autoadvex/runs/hwwu6b7o
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130719-hwwu6b7o/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121524-df0c6mle
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130748-dycknbn7
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run sunny-lake-9
+wandb: Syncing run denim-deluge-35
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/df0c6mle
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/dycknbn7
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.320 MB of 0.320 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.321 MB of 0.321 MB uploadedwandb: / 0.321 MB of 0.321 MB uploadedwandb: - 0.321 MB of 0.321 MB uploadedwandb:                                                                                
+wandb: 🚀 View run denim-deluge-35 at: https://wandb.ai/cavaokcava/autoadvex/runs/dycknbn7
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130748-dycknbn7/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121542-7rhfcyuy
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130810-1mfnv4qg
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run devoted-energy-10
+wandb: Syncing run clear-night-36
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/7rhfcyuy
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/1mfnv4qg
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.318 MB of 0.318 MB uploadedwandb: \ 0.318 MB of 0.318 MB uploadedwandb: | 0.318 MB of 0.318 MB uploadedwandb: / 0.318 MB of 0.318 MB uploadedwandb: - 0.318 MB of 0.318 MB uploadedwandb:                                                                                
+wandb: 🚀 View run clear-night-36 at: https://wandb.ai/cavaokcava/autoadvex/runs/1mfnv4qg
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130810-1mfnv4qg/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121559-1eg8xhha
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130833-ckdu44n0
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run true-deluge-11
+wandb: Syncing run glamorous-salad-37
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/1eg8xhha
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ckdu44n0
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.260 MB of 0.326 MB uploadedwandb: \ 0.328 MB of 0.328 MB uploadedwandb: | 0.328 MB of 0.328 MB uploadedwandb: / 0.328 MB of 0.328 MB uploadedwandb: - 0.328 MB of 0.328 MB uploadedwandb:                                                                                
+wandb: 🚀 View run glamorous-salad-37 at: https://wandb.ai/cavaokcava/autoadvex/runs/ckdu44n0
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130833-ckdu44n0/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121616-igjc572y
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130858-bpvpy7b5
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run eternal-snowball-12
+wandb: Syncing run honest-flower-38
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/igjc572y
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/bpvpy7b5
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.324 MB of 0.324 MB uploadedwandb: / 0.324 MB of 0.324 MB uploadedwandb: - 0.324 MB of 0.324 MB uploadedwandb:                                                                                
+wandb: 🚀 View run honest-flower-38 at: https://wandb.ai/cavaokcava/autoadvex/runs/bpvpy7b5
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130858-bpvpy7b5/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121635-7y72ja3w
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130920-7tbenu0m
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run dark-pyramid-13
+wandb: Syncing run splendid-river-39
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/7y72ja3w
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/7tbenu0m
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.325 MB of 0.325 MB uploadedwandb: \ 0.327 MB of 0.327 MB uploadedwandb: | 0.327 MB of 0.327 MB uploadedwandb: / 0.327 MB of 0.327 MB uploadedwandb: - 0.327 MB of 0.327 MB uploadedwandb: \ 0.327 MB of 0.327 MB uploadedwandb:                                                                                
+wandb: 🚀 View run splendid-river-39 at: https://wandb.ai/cavaokcava/autoadvex/runs/7tbenu0m
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130920-7tbenu0m/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121652-kq6e3otm
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_130943-chm1ngud
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run rural-lion-14
+wandb: Syncing run jumping-wave-40
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/kq6e3otm
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/chm1ngud
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.249 MB of 0.315 MB uploadedwandb: \ 0.316 MB of 0.316 MB uploadedwandb: | 0.317 MB of 0.317 MB uploadedwandb: / 0.317 MB of 0.317 MB uploadedwandb: - 0.317 MB of 0.317 MB uploadedwandb: \ 0.317 MB of 0.317 MB uploadedwandb:                                                                                
+wandb: 🚀 View run jumping-wave-40 at: https://wandb.ai/cavaokcava/autoadvex/runs/chm1ngud
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_130943-chm1ngud/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121707-x1ykh7sd
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_131009-ui35u77l
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run lilac-sunset-15
+wandb: Syncing run twilight-waterfall-41
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/x1ykh7sd
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ui35u77l
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.300 MB of 0.319 MB uploadedwandb: \ 0.321 MB of 0.321 MB uploadedwandb: | 0.322 MB of 0.322 MB uploadedwandb: / 0.322 MB of 0.322 MB uploadedwandb: - 0.322 MB of 0.322 MB uploadedwandb:                                                                                
+wandb: 🚀 View run twilight-waterfall-41 at: https://wandb.ai/cavaokcava/autoadvex/runs/ui35u77l
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_131009-ui35u77l/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121725-3mchis51
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_131031-xsaj5rxt
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run ruby-totem-16
+wandb: Syncing run wobbly-water-42
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/3mchis51
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/xsaj5rxt
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.269 MB of 0.319 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.321 MB of 0.321 MB uploadedwandb: / 0.321 MB of 0.321 MB uploadedwandb: - 0.321 MB of 0.321 MB uploadedwandb: \ 0.321 MB of 0.321 MB uploadedwandb:                                                                                
+wandb: 🚀 View run wobbly-water-42 at: https://wandb.ai/cavaokcava/autoadvex/runs/xsaj5rxt
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_131031-xsaj5rxt/logs
 wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
 wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
 wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121746-scgo9rzg
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_131055-aq8shiup
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run electric-feather-17
+wandb: Syncing run worldly-sun-43
 wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/scgo9rzg
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/aq8shiup
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
 /home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
   plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
-wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
-wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
-wandb: Tracking run with wandb version 0.18.6
-wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241107_121803-wmweo6w8
-wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run peachy-planet-18
-wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
-wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/wmweo6w8
-/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
-  warnings.warn(
-/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
-  plt.tight_layout()
-Traceback (most recent call last):
-  File "main.py", line 286, in <module>
-    plt.close(fig)
-  File "/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/matplotlib/_api/__init__.py", line 226, in __getattr__
-    raise AttributeError(
-AttributeError: module 'matplotlib' has no attribute 'close'
+wandb: - 0.316 MB of 0.316 MB uploadedwandb: \ 0.316 MB of 0.316 MB uploadedwandb: | 0.316 MB of 0.316 MB uploadedwandb: / 0.316 MB of 0.316 MB uploadedwandb: - 0.316 MB of 0.316 MB uploadedwandb:                                                                                
+wandb: 🚀 View run worldly-sun-43 at: https://wandb.ai/cavaokcava/autoadvex/runs/aq8shiup
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241107_131055-aq8shiup/logs
