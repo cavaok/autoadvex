@@ -202,7 +202,7 @@ for i in range(args.num_adversarial_examples):
         output = mlp(mlp_image)
         probs = F.softmax(output, dim=1)
 
-        mlp_label_loss = F.kl_div(probs.log(), mlp_target_label, reduction='batchmean')
+        mlp_label_loss = F.kl_div(probs.log(), mlp_target_label)
         mlp_image_loss = F.mse_loss(mlp_image, image_part)
         mlp_loss = mlp_image_loss + lambda_ * mlp_label_loss
 
