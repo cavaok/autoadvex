@@ -4,19 +4,25 @@ from torch import nn
 import torch.nn.functional as F
 import os
 from helper import create_diffuse_one_hot
-from data import get_mnist_loaders
+from data import get_mnist_loaders, get_fashion_mnist_loaders
 import argparse
 
 print('running train_auto.py')
 
 parser = argparse.ArgumentParser(description='Process some arguments')
 parser.add_argument('--num_iters', type=int, default=2, help='Number of iterations of the autoencoder')
-parser.add_argument('--sum_losses', type=str, default="True", help='If True sum losses if False take last ')
+parser.add_argument('--sum_losses', type=str, default="True", help='If True sum losses if False take last')
+parser.add_argument('--dataset', type=str, default="digit", help='Is dataset or fashion')
+
 args = parser.parse_args()
 sum_losses = args.sum_losses == "True"
 
 # Get data loaders
-train_loader, test_loader, _ = get_mnist_loaders()
+if args.dataset == "digit":
+    train_loader, test_loader, _ = get_mnist_loaders()
+else:
+    train_loader, test_loader, _ = get_fashion_mnist_loaders()
+
 
 # Constants
 image_dim = 28 * 28
@@ -150,7 +156,7 @@ print(f'Test Loss: {test_loss / len(test_loader):.4f}, Accuracy: {100. * correct
 os.makedirs('models', exist_ok=True)
 
 # Save the trained models
-torch.save(encoder.state_dict(), f'models/encoder_{args.num_iters}_{args.sum_losses}.pth')
-torch.save(decoder.state_dict(), f'models/decoder_{args.num_iters}_{args.sum_losses}.pth')
-print(f"Models saved to models/encoder_{args.num_iters}_{args.sum_losses}.pth and models/decoder_{args.num_iters}_{args.sum_losses}.pth")
+torch.save(encoder.state_dict(), f'models/encoder_{args.num_iters}_{args.sum_losses}_{args.dataset}.pth')
+torch.save(decoder.state_dict(), f'models/decoder_{args.num_iters}_{args.sum_losses}_{args.dataset}.pth')
+print(f"Models saved to models/encoder_{args.num_iters}_{args.sum_losses}_{args.dataset}.pth and models/decoder_{args.num_iters}_{args.sum_losses}_{args.dataset}.pth")
 

@@ -3,12 +3,24 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 import os
-from data import get_mnist_loaders
+from data import get_mnist_loaders, get_fashion_mnist_loaders
+import argparse
+
 print('running train_mlp.py')
 
 # Setup device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-train_loader, test_loader, _ = get_mnist_loaders()
+
+parser = argparse.ArgumentParser(description='Process some arguments')
+parser.add_argument('--dataset', type=str, default="digit", help='Is dataset or fashion')
+
+args = parser.parse_args()
+
+if args.dataset == "digit":
+    train_loader, test_loader, _ = get_mnist_loaders()
+else:
+    train_loader, test_loader, _ = get_fashion_mnist_loaders()
+
 
 image_dim = 28 * 28
 train_epochs = 15
@@ -86,5 +98,5 @@ test()
 os.makedirs('models', exist_ok=True)
 
 # Save the trained model
-torch.save(model.state_dict(), 'models/mlp.pth')
-print("Model saved to models/mlp.pth")
+torch.save(model.state_dict(), f'models/mlp_{args.dataset}.pth')
+print(f"Model saved to models/mlp_{args.dataset}.pth")
