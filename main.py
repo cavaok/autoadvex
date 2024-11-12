@@ -20,13 +20,11 @@ parser.add_argument('--wandb_project', type=str, default='autoadvex', help='Wand
 parser.add_argument('--wandb_entity', type=str, default='cavaokcava', help='WandB entity/username')
 parser.add_argument('--notes', type=str, default='', help='Notes about the experimental condition')
 
-# Parse args immediately so available throughout script
+# Parse args
 args = parser.parse_args()
 includes_true = args.includes_true == "True"
 
-wandb.init(project=args.wandb_project, entity=args.wandb_entity)
-
-run_name = f"{args.notes}_{args.num_confused}_confused"
+run_name = f"{args.notes}_{args.num_confused}_confused_{args.includes_true}"
 wandb.init(
     project=args.wandb_project,
     entity=args.wandb_entity,
