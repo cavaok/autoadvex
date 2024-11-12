@@ -26,13 +26,18 @@ includes_true = args.includes_true == "True"
 
 wandb.init(project=args.wandb_project, entity=args.wandb_entity)
 
-try:
-    artifact = wandb.use_artifact('cavaokcava/autoadvex/adversarial_results:latest')
-    table = artifact.get('adversarial_examples')
-except Exception as e:
-    print("Error: Make sure to run artifact_setup.py first")
-    raise e
-
+run_name = f"{args.notes}_{args.num_confused}_confused"
+wandb.init(
+    project=args.wandb_project,
+    entity=args.wandb_entity,
+    name=run_name,
+    config={
+        "num_confused": args.num_confused,
+        "includes_true": includes_true,
+        "notes": args.notes,
+        "num_examples": args.num_adversarial_examples
+    }
+)
 
 # Get the adversarial loader
 _, _, adversarial_loader = get_mnist_loaders()
@@ -290,15 +295,15 @@ for i in range(args.num_adversarial_examples):
         return_fig=True
     )
 
-    # Add data to the existing table
-    table.add_data(
-        args.num_confused,
-        "yes" if includes_true else "no",
-        i,
-        args.notes,
-        wandb.Image(fig)
-    )
+    wandb.log({
+        f"example_{i}/comparison": wandb.Image(
+            fig,
+            caption=f"Confused {args.num_confused} classes {'with' if includes_true else 'without'} true class - {args.notes}"
+        ),
+        f"example_{i}/auto_euclidean": visualization_data['distances']['auto']['Euclidean'],
+        f"example_{i}/auto_mse": visualization_data['distances']['auto']['MSE'],
+        f"example_{i}/mlp_euclidean": visualization_data['distances']['mlp']['Euclidean'],
+        f"example_{i}/mlp_mse": visualization_data['distances']['mlp']['MSE']
+    })
 
-artifact.wait()
-wandb.log_artifact(artifact)
 wandb.finish()
