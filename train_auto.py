@@ -5,7 +5,14 @@ import torch.nn.functional as F
 import os
 from helper import create_diffuse_one_hot
 from data import get_mnist_loaders
+import argparse
+
 print('running train_auto.py')
+
+parser = argparse.ArgumentParser(description='Process some arguments')
+parser.add_argument('--num_iters', type=int, default=2, help='Number of iterations of the autoencoder')
+args = parser.parse_args()
+
 # Get data loaders
 train_loader, test_loader, _ = get_mnist_loaders()
 
@@ -56,7 +63,7 @@ optimizer = optim.Adam(list(encoder.parameters()) + list(decoder.parameters()), 
 # Constants
 lambda_ = 0.5
 num_epochs = 30
-num_iterations = 4
+num_iterations = args.num_iters
 
 # Training loop
 for epoch in range(num_epochs):
@@ -133,6 +140,7 @@ print(f'Test Loss: {test_loss / len(test_loader):.4f}, Accuracy: {100. * correct
 os.makedirs('models', exist_ok=True)
 
 # Save the trained models
-torch.save(encoder.state_dict(), 'models/encoder.pth')
-torch.save(decoder.state_dict(), 'models/decoder.pth')
+torch.save(encoder.state_dict(), f'models/encoder_{args.num_iters}.pth')
+torch.save(decoder.state_dict(), f'models/decoder_{args.num_iters}.pth')
 print("Models saved to models/encoder.pth and models/decoder.pth")
+

@@ -11,6 +11,9 @@ import wandb
 
 print('running main.py')
 
+encoder_path = 'models/encoder.pth'
+decoder_path = 'models/decoder.pth'
+
 # Set up argument parsing at the top of the script
 parser = argparse.ArgumentParser(description='Process some arguments')
 parser.add_argument('--num_confused', type=int, default=2, help='Number of classes with equal confusion')
@@ -100,8 +103,8 @@ class MLP(nn.Module):
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Load the trained autoencoder
-encoder.load_state_dict(torch.load('models/encoder.pth'))
-decoder.load_state_dict(torch.load('models/decoder.pth'))
+encoder.load_state_dict(torch.load(encoder_path))
+decoder.load_state_dict(torch.load(decoder_path))
 
 # Load the trained MLP
 mlp = MLP().to(device)
@@ -151,8 +154,6 @@ for i in range(args.num_adversarial_examples):
     auto_IMAGE_A_label_a = autoencoder(auto_concat_input)
     auto_label_a_probs = F.softmax(auto_IMAGE_A_label_a[:, image_dim:], dim=1)
     first_image = image_part.clone().detach().view(28, 28).cpu().numpy()  # NEED (IMAGE A)
-    # first_label = label_part.clone().detach().cpu().numpy()
-    # reconstructed_image_part = auto_IMAGE_A_label_a[:, :image_dim].detach().view(28, 28).cpu().numpy()
     auto_label_a = auto_label_a_probs.detach().cpu().numpy()  # NEED (BAR CHART a)
 
     # AUTOENCODER: save a clone of output for training loop later
@@ -196,12 +197,9 @@ for i in range(args.num_adversarial_examples):
 
     # Grab final image & label for visualization
     final_image = image_part.clone().detach().view(28, 28).cpu().numpy()  # NEED (IMAGE C)
-    # final_label = label_part.clone().detach().cpu().numpy()
-    # Grab final label by passing through autoencoder
     concat_final = torch.cat((image_part.view(1, -1), label_part), dim=1)  # Add view(1, -1) here
     final_output = autoencoder(concat_final)
     final_label_probs = F.softmax(final_output[:, image_dim:], dim=1)
-    # final_output_image = final_output[:, :image_dim].detach().view(28, 28).cpu().numpy()
     final_output_label = final_label_probs.detach().cpu().numpy()  # NEED (BAR CHART c)
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -242,13 +240,6 @@ for i in range(args.num_adversarial_examples):
         # original_mlp_probs = F.softmax(original_mlp_output, dim=1)
         mlp_label_f_probs = F.softmax(mlp_label_f, dim=1)
         mlp_label_f = mlp_label_f_probs.detach().cpu().numpy()  # NEED (BAR CHART F)
-
-        '''
-        print("\nFinal MLP Results:")
-        print(f"Original predictions: {original_mlp_probs.cpu().numpy().round(3)}")
-        print(f"Target distribution: {mlp_target_label.cpu().numpy().round(3)}")
-        print(f"Adversarial predictions: {adversarial_mlp_probs.cpu().numpy().round(3)}")
-        '''
 
     # Calculate distances for autoencoder (between A and C)
     auto_orig = torch.tensor(first_image).flatten()  # A
