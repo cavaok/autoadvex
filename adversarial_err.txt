@@ -6,5 +6,787 @@ Loading python/3.8.13/slu6jvw
     zstd/1.5.2/jvujieu tar/1.34/4cnckqw gettext/0.21/hgt6t5w
     libffi/3.4.2/svyohlf openssl/1.1.1o/bowp5gw sqlite/3.38.5/ulzkiln
     util-linux-uuid/2.37.4/nlecwm6
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_175932-qmxn5wji
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_2_confused_True
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/qmxn5wji
 /home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
   warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.325 MB of 0.325 MB uploadedwandb: / 0.325 MB of 0.325 MB uploadedwandb: - 0.325 MB of 0.325 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb:  example_1/mlp_euclidean ▁
+wandb:        example_1/mlp_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 5.46893
+wandb:       example_0/auto_mse 0.03815
+wandb:  example_0/mlp_euclidean 3.89581
+wandb:        example_0/mlp_mse 0.01936
+wandb: example_1/auto_euclidean 3.91995
+wandb:       example_1/auto_mse 0.0196
+wandb:  example_1/mlp_euclidean 3.08897
+wandb:        example_1/mlp_mse 0.01217
+wandb: example_2/auto_euclidean 6.11809
+wandb:       example_2/auto_mse 0.04774
+wandb:  example_2/mlp_euclidean nan
+wandb:        example_2/mlp_mse nan
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_2_confused_True at: https://wandb.ai/cavaokcava/autoadvex/runs/qmxn5wji
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 2 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_175932-qmxn5wji/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_175950-rfzp0tko
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_3_confused_True
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/rfzp0tko
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.252 MB of 0.318 MB uploadedwandb: \ 0.319 MB of 0.319 MB uploadedwandb: | 0.319 MB of 0.319 MB uploadedwandb: / 0.319 MB of 0.319 MB uploadedwandb: - 0.319 MB of 0.319 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 4.99829
+wandb:       example_0/auto_mse 0.03187
+wandb:  example_0/mlp_euclidean 4.37302
+wandb:        example_0/mlp_mse 0.02439
+wandb: example_1/auto_euclidean 5.82117
+wandb:       example_1/auto_mse 0.04322
+wandb:  example_1/mlp_euclidean nan
+wandb:        example_1/mlp_mse nan
+wandb: example_2/auto_euclidean 3.69208
+wandb:       example_2/auto_mse 0.01739
+wandb:  example_2/mlp_euclidean nan
+wandb:        example_2/mlp_mse nan
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_3_confused_True at: https://wandb.ai/cavaokcava/autoadvex/runs/rfzp0tko
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_175950-rfzp0tko/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180008-vy3w9don
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_4_confused_True
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/vy3w9don
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.324 MB of 0.324 MB uploadedwandb: \ 0.324 MB of 0.324 MB uploadedwandb: | 0.324 MB of 0.324 MB uploadedwandb: / 0.324 MB of 0.324 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb:  example_1/mlp_euclidean ▁
+wandb:        example_1/mlp_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 6.93687
+wandb:       example_0/auto_mse 0.06138
+wandb:  example_0/mlp_euclidean 5.50329
+wandb:        example_0/mlp_mse 0.03863
+wandb: example_1/auto_euclidean 5.20909
+wandb:       example_1/auto_mse 0.03461
+wandb:  example_1/mlp_euclidean 3.53572
+wandb:        example_1/mlp_mse 0.01595
+wandb: example_2/auto_euclidean 5.93965
+wandb:       example_2/auto_mse 0.045
+wandb:  example_2/mlp_euclidean nan
+wandb:        example_2/mlp_mse nan
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_4_confused_True at: https://wandb.ai/cavaokcava/autoadvex/runs/vy3w9don
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180008-vy3w9don/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180025-op1dwtop
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_5_confused_True
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/op1dwtop
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.319 MB of 0.323 MB uploadedwandb: \ 0.323 MB of 0.323 MB uploadedwandb: | 0.323 MB of 0.323 MB uploadedwandb: / 0.323 MB of 0.323 MB uploadedwandb: - 0.323 MB of 0.323 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb:  example_2/mlp_euclidean ▁
+wandb:        example_2/mlp_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 4.23686
+wandb:       example_0/auto_mse 0.0229
+wandb:  example_0/mlp_euclidean 2.68348
+wandb:        example_0/mlp_mse 0.00919
+wandb: example_1/auto_euclidean 4.94427
+wandb:       example_1/auto_mse 0.03118
+wandb:  example_1/mlp_euclidean nan
+wandb:        example_1/mlp_mse nan
+wandb: example_2/auto_euclidean 4.62738
+wandb:       example_2/auto_mse 0.02731
+wandb:  example_2/mlp_euclidean 3.59601
+wandb:        example_2/mlp_mse 0.01649
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_5_confused_True at: https://wandb.ai/cavaokcava/autoadvex/runs/op1dwtop
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180025-op1dwtop/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180044-7iqomnf5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_6_confused_True
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/7iqomnf5
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.258 MB of 0.324 MB uploadedwandb: \ 0.325 MB of 0.325 MB uploadedwandb: | 0.325 MB of 0.325 MB uploadedwandb: / 0.325 MB of 0.325 MB uploadedwandb: - 0.325 MB of 0.325 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb:  example_1/mlp_euclidean ▁
+wandb:        example_1/mlp_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 6.19135
+wandb:       example_0/auto_mse 0.04889
+wandb:  example_0/mlp_euclidean 4.69201
+wandb:        example_0/mlp_mse 0.02808
+wandb: example_1/auto_euclidean 5.43784
+wandb:       example_1/auto_mse 0.03772
+wandb:  example_1/mlp_euclidean 5.01993
+wandb:        example_1/mlp_mse 0.03214
+wandb: example_2/auto_euclidean 6.24592
+wandb:       example_2/auto_mse 0.04976
+wandb:  example_2/mlp_euclidean nan
+wandb:        example_2/mlp_mse nan
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_6_confused_True at: https://wandb.ai/cavaokcava/autoadvex/runs/7iqomnf5
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180044-7iqomnf5/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180102-tpsd1401
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_7_confused_True
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/tpsd1401
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.299 MB of 0.318 MB uploadedwandb: \ 0.319 MB of 0.319 MB uploadedwandb: | 0.319 MB of 0.319 MB uploadedwandb: / 0.319 MB of 0.319 MB uploadedwandb: - 0.319 MB of 0.319 MB uploadedwandb: \ 0.319 MB of 0.319 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 4.04398
+wandb:       example_0/auto_mse 0.02086
+wandb:  example_0/mlp_euclidean 2.92182
+wandb:        example_0/mlp_mse 0.01089
+wandb: example_1/auto_euclidean 5.97254
+wandb:       example_1/auto_mse 0.0455
+wandb:  example_1/mlp_euclidean nan
+wandb:        example_1/mlp_mse nan
+wandb: example_2/auto_euclidean 5.04039
+wandb:       example_2/auto_mse 0.0324
+wandb:  example_2/mlp_euclidean nan
+wandb:        example_2/mlp_mse nan
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_7_confused_True at: https://wandb.ai/cavaokcava/autoadvex/runs/tpsd1401
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180102-tpsd1401/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180122-pnsu9n6h
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_8_confused_True
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/pnsu9n6h
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.323 MB of 0.323 MB uploadedwandb: \ 0.323 MB of 0.323 MB uploadedwandb: | 0.323 MB of 0.323 MB uploadedwandb: / 0.323 MB of 0.323 MB uploadedwandb: - 0.323 MB of 0.323 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb:  example_2/mlp_euclidean ▁
+wandb:        example_2/mlp_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 4.23823
+wandb:       example_0/auto_mse 0.02291
+wandb:  example_0/mlp_euclidean 2.9399
+wandb:        example_0/mlp_mse 0.01102
+wandb: example_1/auto_euclidean 4.87819
+wandb:       example_1/auto_mse 0.03035
+wandb:  example_1/mlp_euclidean nan
+wandb:        example_1/mlp_mse nan
+wandb: example_2/auto_euclidean 4.42962
+wandb:       example_2/auto_mse 0.02503
+wandb:  example_2/mlp_euclidean 3.74924
+wandb:        example_2/mlp_mse 0.01793
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_8_confused_True at: https://wandb.ai/cavaokcava/autoadvex/runs/pnsu9n6h
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180122-pnsu9n6h/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180140-4v2nxlt2
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_9_confused_True
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/4v2nxlt2
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.254 MB of 0.320 MB uploadedwandb: \ 0.321 MB of 0.321 MB uploadedwandb: | 0.321 MB of 0.321 MB uploadedwandb: / 0.321 MB of 0.321 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb:  example_2/mlp_euclidean ▁
+wandb:        example_2/mlp_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 7.59621
+wandb:       example_0/auto_mse 0.0736
+wandb:  example_0/mlp_euclidean nan
+wandb:        example_0/mlp_mse nan
+wandb: example_1/auto_euclidean 4.96047
+wandb:       example_1/auto_mse 0.03139
+wandb:  example_1/mlp_euclidean nan
+wandb:        example_1/mlp_mse nan
+wandb: example_2/auto_euclidean 6.38548
+wandb:       example_2/auto_mse 0.05201
+wandb:  example_2/mlp_euclidean 4.80624
+wandb:        example_2/mlp_mse 0.02946
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_9_confused_True at: https://wandb.ai/cavaokcava/autoadvex/runs/4v2nxlt2
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180140-4v2nxlt2/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180158-ic7mxajk
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_10_confused_True
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ic7mxajk
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.270 MB of 0.321 MB uploadedwandb: \ 0.321 MB of 0.321 MB uploadedwandb: | 0.321 MB of 0.321 MB uploadedwandb: / 0.321 MB of 0.321 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb:  example_2/mlp_euclidean ▁
+wandb:        example_2/mlp_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 3.04919
+wandb:       example_0/auto_mse 0.01186
+wandb:  example_0/mlp_euclidean 2.56313
+wandb:        example_0/mlp_mse 0.00838
+wandb: example_1/auto_euclidean 5.67971
+wandb:       example_1/auto_mse 0.04115
+wandb:  example_1/mlp_euclidean nan
+wandb:        example_1/mlp_mse nan
+wandb: example_2/auto_euclidean 3.83898
+wandb:       example_2/auto_mse 0.0188
+wandb:  example_2/mlp_euclidean 2.73649
+wandb:        example_2/mlp_mse 0.00955
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_10_confused_True at: https://wandb.ai/cavaokcava/autoadvex/runs/ic7mxajk
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180158-ic7mxajk/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180216-ghy3hfs9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_1_confused_False
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ghy3hfs9
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.326 MB of 0.326 MB uploadedwandb: \ 0.326 MB of 0.326 MB uploadedwandb: | 0.326 MB of 0.326 MB uploadedwandb: / 0.326 MB of 0.326 MB uploadedwandb: - 0.326 MB of 0.326 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb:  example_1/mlp_euclidean ▁
+wandb:        example_1/mlp_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb:  example_2/mlp_euclidean ▁
+wandb:        example_2/mlp_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 4.02168
+wandb:       example_0/auto_mse 0.02063
+wandb:  example_0/mlp_euclidean 3.8448
+wandb:        example_0/mlp_mse 0.01886
+wandb: example_1/auto_euclidean 5.53082
+wandb:       example_1/auto_mse 0.03902
+wandb:  example_1/mlp_euclidean 4.1814
+wandb:        example_1/mlp_mse 0.0223
+wandb: example_2/auto_euclidean 4.52039
+wandb:       example_2/auto_mse 0.02606
+wandb:  example_2/mlp_euclidean 3.93604
+wandb:        example_2/mlp_mse 0.01976
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_1_confused_False at: https://wandb.ai/cavaokcava/autoadvex/runs/ghy3hfs9
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180216-ghy3hfs9/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180234-ricqscc7
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_2_confused_False
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/ricqscc7
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.319 MB of 0.322 MB uploadedwandb: \ 0.323 MB of 0.323 MB uploadedwandb: | 0.323 MB of 0.323 MB uploadedwandb: / 0.323 MB of 0.323 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb:  example_2/mlp_euclidean ▁
+wandb:        example_2/mlp_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 4.4585
+wandb:       example_0/auto_mse 0.02535
+wandb:  example_0/mlp_euclidean 2.98306
+wandb:        example_0/mlp_mse 0.01135
+wandb: example_1/auto_euclidean 6.44689
+wandb:       example_1/auto_mse 0.05301
+wandb:  example_1/mlp_euclidean nan
+wandb:        example_1/mlp_mse nan
+wandb: example_2/auto_euclidean 6.07551
+wandb:       example_2/auto_mse 0.04708
+wandb:  example_2/mlp_euclidean 4.77768
+wandb:        example_2/mlp_mse 0.02912
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_2_confused_False at: https://wandb.ai/cavaokcava/autoadvex/runs/ricqscc7
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180234-ricqscc7/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180251-cmbszpav
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_3_confused_False
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/cmbszpav
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.320 MB of 0.320 MB uploadedwandb: \ 0.320 MB of 0.320 MB uploadedwandb: | 0.320 MB of 0.320 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb:  example_2/mlp_euclidean ▁
+wandb:        example_2/mlp_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 4.04069
+wandb:       example_0/auto_mse 0.02083
+wandb:  example_0/mlp_euclidean 3.44014
+wandb:        example_0/mlp_mse 0.0151
+wandb: example_1/auto_euclidean 5.27768
+wandb:       example_1/auto_mse 0.03553
+wandb:  example_1/mlp_euclidean nan
+wandb:        example_1/mlp_mse nan
+wandb: example_2/auto_euclidean 3.98195
+wandb:       example_2/auto_mse 0.02022
+wandb:  example_2/mlp_euclidean 3.63514
+wandb:        example_2/mlp_mse 0.01685
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_3_confused_False at: https://wandb.ai/cavaokcava/autoadvex/runs/cmbszpav
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180251-cmbszpav/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180309-smnf7x06
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_4_confused_False
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/smnf7x06
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.252 MB of 0.318 MB uploadedwandb: \ 0.318 MB of 0.318 MB uploadedwandb: | 0.318 MB of 0.318 MB uploadedwandb: / 0.318 MB of 0.318 MB uploadedwandb: - 0.318 MB of 0.318 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb:  example_1/mlp_euclidean ▁
+wandb:        example_1/mlp_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 4.26236
+wandb:       example_0/auto_mse 0.02317
+wandb:  example_0/mlp_euclidean nan
+wandb:        example_0/mlp_mse nan
+wandb: example_1/auto_euclidean 5.67726
+wandb:       example_1/auto_mse 0.04111
+wandb:  example_1/mlp_euclidean 4.8244
+wandb:        example_1/mlp_mse 0.02969
+wandb: example_2/auto_euclidean 4.37642
+wandb:       example_2/auto_mse 0.02443
+wandb:  example_2/mlp_euclidean nan
+wandb:        example_2/mlp_mse nan
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_4_confused_False at: https://wandb.ai/cavaokcava/autoadvex/runs/smnf7x06
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180309-smnf7x06/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180327-9r4cj2yx
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_5_confused_False
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/9r4cj2yx
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.326 MB of 0.326 MB uploadedwandb: \ 0.326 MB of 0.326 MB uploadedwandb: | 0.326 MB of 0.326 MB uploadedwandb: / 0.326 MB of 0.326 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb:  example_1/mlp_euclidean ▁
+wandb:        example_1/mlp_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb:  example_2/mlp_euclidean ▁
+wandb:        example_2/mlp_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 3.16128
+wandb:       example_0/auto_mse 0.01275
+wandb:  example_0/mlp_euclidean 3.31046
+wandb:        example_0/mlp_mse 0.01398
+wandb: example_1/auto_euclidean 4.00948
+wandb:       example_1/auto_mse 0.02051
+wandb:  example_1/mlp_euclidean 2.9825
+wandb:        example_1/mlp_mse 0.01135
+wandb: example_2/auto_euclidean 7.07769
+wandb:       example_2/auto_mse 0.0639
+wandb:  example_2/mlp_euclidean 5.79117
+wandb:        example_2/mlp_mse 0.04278
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_5_confused_False at: https://wandb.ai/cavaokcava/autoadvex/runs/9r4cj2yx
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180327-9r4cj2yx/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180345-2hlato27
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_6_confused_False
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/2hlato27
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.268 MB of 0.318 MB uploadedwandb: \ 0.319 MB of 0.319 MB uploadedwandb: | 0.319 MB of 0.319 MB uploadedwandb: / 0.319 MB of 0.319 MB uploadedwandb: - 0.319 MB of 0.319 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb:  example_1/mlp_euclidean ▁
+wandb:        example_1/mlp_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 4.91313
+wandb:       example_0/auto_mse 0.03079
+wandb:  example_0/mlp_euclidean nan
+wandb:        example_0/mlp_mse nan
+wandb: example_1/auto_euclidean 4.63029
+wandb:       example_1/auto_mse 0.02735
+wandb:  example_1/mlp_euclidean 3.45887
+wandb:        example_1/mlp_mse 0.01526
+wandb: example_2/auto_euclidean 4.8525
+wandb:       example_2/auto_mse 0.03003
+wandb:  example_2/mlp_euclidean nan
+wandb:        example_2/mlp_mse nan
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_6_confused_False at: https://wandb.ai/cavaokcava/autoadvex/runs/2hlato27
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180345-2hlato27/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180404-l8qpir7k
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_7_confused_False
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/l8qpir7k
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.317 MB of 0.321 MB uploadedwandb: \ 0.321 MB of 0.321 MB uploadedwandb: | 0.321 MB of 0.321 MB uploadedwandb: / 0.321 MB of 0.321 MB uploadedwandb: - 0.321 MB of 0.321 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb:  example_2/mlp_euclidean ▁
+wandb:        example_2/mlp_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 5.43295
+wandb:       example_0/auto_mse 0.03765
+wandb:  example_0/mlp_euclidean 4.9503
+wandb:        example_0/mlp_mse 0.03126
+wandb: example_1/auto_euclidean 6.28291
+wandb:       example_1/auto_mse 0.05035
+wandb:  example_1/mlp_euclidean nan
+wandb:        example_1/mlp_mse nan
+wandb: example_2/auto_euclidean 4.11124
+wandb:       example_2/auto_mse 0.02156
+wandb:  example_2/mlp_euclidean 3.17503
+wandb:        example_2/mlp_mse 0.01286
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_7_confused_False at: https://wandb.ai/cavaokcava/autoadvex/runs/l8qpir7k
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180404-l8qpir7k/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180423-7y34goj5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_8_confused_False
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/7y34goj5
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.261 MB of 0.328 MB uploadedwandb: \ 0.328 MB of 0.328 MB uploadedwandb: | 0.328 MB of 0.328 MB uploadedwandb: / 0.328 MB of 0.328 MB uploadedwandb: - 0.328 MB of 0.328 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb:  example_0/mlp_euclidean ▁
+wandb:        example_0/mlp_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb:  example_1/mlp_euclidean ▁
+wandb:        example_1/mlp_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb:  example_2/mlp_euclidean ▁
+wandb:        example_2/mlp_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 5.45386
+wandb:       example_0/auto_mse 0.03794
+wandb:  example_0/mlp_euclidean 3.48989
+wandb:        example_0/mlp_mse 0.01553
+wandb: example_1/auto_euclidean 7.04885
+wandb:       example_1/auto_mse 0.06338
+wandb:  example_1/mlp_euclidean 5.52409
+wandb:        example_1/mlp_mse 0.03892
+wandb: example_2/auto_euclidean 5.92688
+wandb:       example_2/auto_mse 0.04481
+wandb:  example_2/mlp_euclidean 3.93204
+wandb:        example_2/mlp_mse 0.01972
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_8_confused_False at: https://wandb.ai/cavaokcava/autoadvex/runs/7y34goj5
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180423-7y34goj5/logs
+wandb: Using wandb-core as the SDK backend.  Please refer to https://wandb.me/wandb-core for more information.
+wandb: Currently logged in as: cavaokcava. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.18.6
+wandb: Run data is saved locally in /home/okcava/projects/autoadvex/wandb/run-20241112_180442-s1xaz3oz
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run 4_iters_lastloss_9_confused_False
+wandb: ⭐️ View project at https://wandb.ai/cavaokcava/autoadvex
+wandb: 🚀 View run at https://wandb.ai/cavaokcava/autoadvex/runs/s1xaz3oz
+/home/okcava/projects/autoadvex/.venv/lib/python3.8/site-packages/torch/nn/functional.py:2949: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+/home/okcava/projects/autoadvex/helper.py:128: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+wandb: - 0.314 MB of 0.314 MB uploadedwandb: \ 0.314 MB of 0.314 MB uploadedwandb: | 0.314 MB of 0.314 MB uploadedwandb: / 0.314 MB of 0.314 MB uploadedwandb: - 0.314 MB of 0.314 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb: example_0/auto_euclidean ▁
+wandb:       example_0/auto_mse ▁
+wandb: example_1/auto_euclidean ▁
+wandb:       example_1/auto_mse ▁
+wandb: example_2/auto_euclidean ▁
+wandb:       example_2/auto_mse ▁
+wandb: 
+wandb: Run summary:
+wandb: example_0/auto_euclidean 4.17287
+wandb:       example_0/auto_mse 0.02221
+wandb:  example_0/mlp_euclidean nan
+wandb:        example_0/mlp_mse nan
+wandb: example_1/auto_euclidean 4.52731
+wandb:       example_1/auto_mse 0.02614
+wandb:  example_1/mlp_euclidean nan
+wandb:        example_1/mlp_mse nan
+wandb: example_2/auto_euclidean 6.0053
+wandb:       example_2/auto_mse 0.046
+wandb:  example_2/mlp_euclidean nan
+wandb:        example_2/mlp_mse nan
+wandb: 
+wandb: 🚀 View run 4_iters_lastloss_9_confused_False at: https://wandb.ai/cavaokcava/autoadvex/runs/s1xaz3oz
+wandb: ⭐️ View project at: https://wandb.ai/cavaokcava/autoadvex
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 3 other file(s)
+wandb: Find logs at: ./wandb/run-20241112_180442-s1xaz3oz/logs
