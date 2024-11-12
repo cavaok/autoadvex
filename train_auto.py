@@ -11,7 +11,9 @@ print('running train_auto.py')
 
 parser = argparse.ArgumentParser(description='Process some arguments')
 parser.add_argument('--num_iters', type=int, default=2, help='Number of iterations of the autoencoder')
+parser.add_argument('--sum_losses', type=str, default="True", help='If True sum losses if False take last ')
 args = parser.parse_args()
+sum_losses = args.sum_losses == "True"
 
 # Get data loaders
 train_loader, test_loader, _ = get_mnist_loaders()
@@ -79,7 +81,7 @@ for epoch in range(num_epochs):
         current_state = initial_state
         targets = torch.cat((images, torch.eye(num_classes)[labels].to(device)), dim=1)
 
-        total_batch_loss = 0
+        iteration_losses = []
 
         # Iterations loop
         for iteration in range(num_iterations):
@@ -91,9 +93,17 @@ for epoch in range(num_epochs):
             image_loss = nn.functional.mse_loss(current_state[:, :image_dim], targets[:, :image_dim])
             label_loss = nn.functional.kl_div(outputs_label_probs.log(), targets[:, image_dim:])
 
-            # Add loss from this iteration to total
+            # Store loss from this iteration
             iteration_loss = image_loss + lambda_ * label_loss
-            total_batch_loss += iteration_loss
+            iteration_losses.append(iteration_loss)
+
+        # Choose final loss based on sum_losses flag
+        if sum_losses:
+            # Sum all losses
+            total_batch_loss = sum(iteration_losses)
+        else:
+            # Take only the final loss
+            total_batch_loss = iteration_losses[-1]
 
         # Backprop & optimization step
         optimizer.zero_grad()
@@ -140,7 +150,7 @@ print(f'Test Loss: {test_loss / len(test_loader):.4f}, Accuracy: {100. * correct
 os.makedirs('models', exist_ok=True)
 
 # Save the trained models
-torch.save(encoder.state_dict(), f'models/encoder_{args.num_iters}_iterations.pth')
-torch.save(decoder.state_dict(), f'models/decoder_{args.num_iters}_iterations.pth')
-print("Models saved to models/encoder.pth and models/decoder.pth")
+torch.save(encoder.state_dict(), f'models/encoder_{args.num_iters}_{args.sum_losses}.pth')
+torch.save(decoder.state_dict(), f'models/decoder_{args.num_iters}_{args.sum_losses}.pth')
+print(f"Models saved to models/encoder_{args.num_iters}_{args.sum_losses}.pth and models/decoder_{args.num_iters}_{args.sum_losses}.pth")
 
