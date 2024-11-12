@@ -11,8 +11,9 @@ import wandb
 
 print('running main.py')
 
-encoder_path = 'models/encoder.pth'
-decoder_path = 'models/decoder.pth'
+# make sure to call whichever ones you want
+encoder_path = 'models/encoder_1_iterations.pth'
+decoder_path = 'models/decoder_1_iterations.pth'
 
 # Set up argument parsing at the top of the script
 parser = argparse.ArgumentParser(description='Process some arguments')

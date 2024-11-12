@@ -140,7 +140,7 @@ print(f'Test Loss: {test_loss / len(test_loader):.4f}, Accuracy: {100. * correct
 os.makedirs('models', exist_ok=True)
 
 # Save the trained models
-torch.save(encoder.state_dict(), f'models/encoder_{args.num_iters}.pth')
-torch.save(decoder.state_dict(), f'models/decoder_{args.num_iters}.pth')
+torch.save(encoder.state_dict(), f'models/encoder_{args.num_iters}_iterations.pth')
+torch.save(decoder.state_dict(), f'models/decoder_{args.num_iters}_iterations.pth')
 print("Models saved to models/encoder.pth and models/decoder.pth")
 
