@@ -18,13 +18,21 @@ parser.add_argument('--includes_true', type=str, default='True', help='Whether o
 parser.add_argument('--num_adversarial_examples', type=int, default=1, help='How many adv exs it will save')
 parser.add_argument('--wandb_project', type=str, default='autoadvex', help='WandB project name')
 parser.add_argument('--wandb_entity', type=str, default='cavaokcava', help='WandB entity/username')
-
+parser.add_argument('--notes', type=str, default='', help='Notes about the experimental condition')
 
 # Parse args immediately so available throughout script
 args = parser.parse_args()
 includes_true = args.includes_true == "True"
 
 wandb.init(project=args.wandb_project, entity=args.wandb_entity)
+
+try:
+    artifact = wandb.use_artifact('cavaokcava/autoadvex/adversarial_results:latest')
+    table = artifact.get('adversarial_examples')
+except Exception as e:
+    print("Error: Make sure to run artifact_setup.py first")
+    raise e
+
 
 # Get the adversarial loader
 _, _, adversarial_loader = get_mnist_loaders()
@@ -281,7 +289,16 @@ for i in range(args.num_adversarial_examples):
         distances=visualization_data['distances'],
         return_fig=True
     )
-    fig_name = f"confused_{args.num_confused}_{'with' if includes_true else 'without'}_true_example_{i}"
-    wandb.log({fig_name: wandb.Image(fig)})
 
+    # Add data to the existing table
+    table.add_data(
+        args.num_confused,
+        "yes" if includes_true else "no",
+        i,
+        args.notes,
+        wandb.Image(fig)
+    )
+
+artifact.wait()
+wandb.log_artifact(artifact)
 wandb.finish()
