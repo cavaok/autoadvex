@@ -2,10 +2,8 @@ import torch
 from torch import optim
 from torch import nn
 import torch.nn.functional as F
-import matplotlib.pyplot as plt
-import os
 from helper import create_diffuse_one_hot, visualize_adversarial_comparison, set_equal_confusion
-from data import get_mnist_loaders
+from data import get_mnist_loaders, get_fashion_mnist_loaders
 import argparse
 import wandb
 
@@ -23,6 +21,7 @@ parser.add_argument('--num_adversarial_examples', type=int, default=1, help='How
 parser.add_argument('--wandb_project', type=str, default='autoadvex', help='WandB project name')
 parser.add_argument('--wandb_entity', type=str, default='cavaokcava', help='WandB entity/username')
 parser.add_argument('--notes', type=str, default='', help='Notes about the experimental condition')
+parser.add_argument('--dataset', type=str, default="digit", help='Is dataset or fashion')
 
 # Parse args
 args = parser.parse_args()
@@ -42,7 +41,10 @@ wandb.init(
 )
 
 # Get the adversarial loader
-_, _, adversarial_loader = get_mnist_loaders()
+if args.dataset == "digit":
+    _, _, adversarial_loader = get_mnist_loaders()
+else:
+    _, _, adversarial_loader = get_fashion_mnist_loaders()
 
 # Constants (must match training exactly)
 image_dim = 28 * 28
