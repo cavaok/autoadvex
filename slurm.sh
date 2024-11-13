@@ -16,9 +16,9 @@ module load python/3.8.13/slu6jvw
 source /home/okcava/projects/autoadvex/.venv/bin/activate
 
 # Define variables
-NOTES="4_iters_sumloss_fashion"
+NOTES="4_iters_sumloss"
 NUM_ADV=3
-DATASET="fashion"
+DATASET="digit"
 
 # First set: With true class included
 python main.py --num_confused=2 --includes_true=True --num_adversarial_examples=${NUM_ADV} --notes="${NOTES}" --dataset="${DATASET}"
