@@ -20,9 +20,7 @@ def get_mnist_loaders():
 
 def get_fashion_mnist_loaders():
     """
-    Returns:
-        tuple: (train_loader, test_loader, adversarial_loader)
-        Each loader contains fashion items labeled 0-9:
+    Key:
         0: T-shirt/top
         1: Trouser
         2: Pullover
@@ -34,7 +32,6 @@ def get_fashion_mnist_loaders():
         8: Bag
         9: Ankle boot
     """
-    # Loading in Fashion-MNIST data preparing datasets and loaders
     transform = transforms.Compose([
         transforms.ToTensor()
     ])
