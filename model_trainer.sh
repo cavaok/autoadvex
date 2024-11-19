@@ -15,6 +15,9 @@ module load python/3.8.13/slu6jvw
 # activate environment
 source /home/okcava/projects/autoadvex/.venv/bin/activate
 
-python train_auto.py --num_iters=4 --sum_losses=True --dataset=fashion
-python train_mlp.py --dataset=fashion
+python train_auto.py --num_iters=2 --sum_losses=True --dataset=digit
+python train_auto.py --num_iters=3 --sum_losses=True --dataset=digit
+python train_auto.py --num_iters=5 --sum_losses=True --dataset=digit
+python train_auto.py --num_iters=6 --sum_losses=True --dataset=digit
+
 
