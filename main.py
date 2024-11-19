@@ -2,57 +2,43 @@ import torch
 from torch import optim
 from torch import nn
 import torch.nn.functional as F
-from helper import create_diffuse_one_hot, visualize_adversarial_comparison, set_equal_confusion
+from helper import create_diffuse_one_hot, set_equal_confusion
 from data import get_mnist_loaders, get_fashion_mnist_loaders
+from supabase_logger import log_experiment_result
+
 import argparse
-import wandb
 
 print('running main.py')
-
-# make sure to call whichever ones you want
-encoder_path = 'models/encoder_4_True_digit.pth'
-decoder_path = 'models/decoder_4_True_digit.pth'
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Set up argument parsing at the top of the script
 parser = argparse.ArgumentParser(description='Process some arguments')
+parser.add_argument('--encoder_path', type=str, default='models/encoder_1_True_digit.pth', help='Model path')
+parser.add_argument('--decoder_path', type=str, default='models/decoder_1_True_digit.pth', help='Model path')
+parser.add_argument('--mlp_path', type=str, default='models/mlp.pth', help='Model path')
 parser.add_argument('--num_confused', type=int, default=2, help='Number of classes with equal confusion')
 parser.add_argument('--includes_true', type=str, default='True', help='Whether or not classes includes true class')
 parser.add_argument('--num_adversarial_examples', type=int, default=1, help='How many adv exs it will save')
-parser.add_argument('--wandb_project', type=str, default='autoadvex', help='WandB project name')
-parser.add_argument('--wandb_entity', type=str, default='cavaokcava', help='WandB entity/username')
-parser.add_argument('--notes', type=str, default='', help='Notes about the experimental condition')
+parser.add_argument('--digit_number', type=int, default=0, help='Which number do you want to train advex for')
+parser.add_argument('--notes', type=str, default='None', help='Notes about the experimental condition')
 parser.add_argument('--dataset', type=str, default="digit", help='Is dataset or fashion')
 
 # Parse args
 args = parser.parse_args()
 includes_true = args.includes_true == "True"
 
-run_name = f"{args.notes}_{args.num_confused}_confused_{args.includes_true}"
-wandb.init(
-    project=args.wandb_project,
-    entity=args.wandb_entity,
-    name=run_name,
-    config={
-        "num_confused": args.num_confused,
-        "includes_true": includes_true,
-        "notes": args.notes,
-        "num_examples": args.num_adversarial_examples
-    }
-)
-
-# Get the adversarial loader
 if args.dataset == "digit":
     _, _, adversarial_loader = get_mnist_loaders()
 else:
     _, _, adversarial_loader = get_fashion_mnist_loaders()
 
-# Constants (must match training exactly)
+# Constants (MUST MATCH TRAINING)
 image_dim = 28 * 28
 num_classes = 10
 input_dim = image_dim + num_classes
 lambda_ = 0.5
 
-# Autoencoder Model definitions (must match training exactly)
+# Autoencoder Model (MUST MATCH TRAINING)
 encoder = nn.Sequential(
     nn.Linear(input_dim, 512),
     nn.ELU(),
@@ -84,7 +70,7 @@ def autoencoder(x):
     return decoded
 
 
-# MLP Model definition (must match training exactly)
+# MLP Model (MUST MATCH TRAINING )
 class MLP(nn.Module):
     def __init__(self):
         super(MLP, self).__init__()
@@ -102,22 +88,15 @@ class MLP(nn.Module):
         return self.layers(x)
 
 
-# Device setup
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-# Load the trained autoencoder
-encoder.load_state_dict(torch.load(encoder_path))
-decoder.load_state_dict(torch.load(decoder_path))
-
-# Load the trained MLP
+# Load pre-trained Autoencoder & MLP
+encoder.load_state_dict(torch.load(args.encoder_path))
+decoder.load_state_dict(torch.load(args.ecoder_path))
 mlp = MLP().to(device)
-mlp.load_state_dict(torch.load('models/mlp.pth'))
+mlp.load_state_dict(torch.load(args.mlp_path))
 
-# Move models to device
+# Move models to device & set to eval mode
 encoder = encoder.to(device)
 decoder = decoder.to(device)
-
-# Set all models to eval mode
 encoder.eval()
 decoder.eval()
 mlp.eval()
@@ -130,44 +109,84 @@ for param in decoder.parameters():
 for param in mlp.parameters():
     param.requires_grad = False
 
-
+# Get all data from adversarial loader
 all_data = list(adversarial_loader)
 
+# Separate into number groupings
+if args.digit_number == 0:
+    all_data = [data for data in all_data if data[1] == 0]
+elif args.digit_number == 1:
+    all_data = [data for data in all_data if data[1] == 1]
+elif args.digit_number == 2:
+    all_data = [data for data in all_data if data[1] == 2]
+elif args.digit_number == 3:
+    all_data = [data for data in all_data if data[1] == 3]
+elif args.digit_number == 4:
+    all_data = [data for data in all_data if data[1] == 4]
+elif args.digit_number == 5:
+    all_data = [data for data in all_data if data[1] == 5]
+elif args.digit_number == 6:
+    all_data = [data for data in all_data if data[1] == 6]
+elif args.digit_number == 7:
+    all_data = [data for data in all_data if data[1] == 7]
+elif args.digit_number == 8:
+    all_data = [data for data in all_data if data[1] == 8]
+elif args.digit_number == 9:
+    all_data = [data for data in all_data if data[1] == 9]
+else:
+    print("Using a mix of all digits")
 
-# ADVERSARIAL TRAINING =================================================================================
+
+# ADVERSARIAL TRAINING -----------------------------------------------------------------------------------
 for i in range(args.num_adversarial_examples):
-    # MUTUAL SET UP FOR AUTOENCODER AND MLP - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    image_batch, label_batch = all_data[i % len(all_data)]  # get ith image
-
-    # AUTOENCODER: image & label set up
+    # Mutual setup
+    image_batch, label_batch = all_data[i % len(all_data)]  # get ith image & label pair
+    single_label = label_batch[0].item()
     image_part = image_batch[0].view(1, -1).to(device).clone().detach()
+    target_label = set_equal_confusion(single_label, num_classes, args.num_confused, device, includes_true)
+    #   WANT TO LOG: image_part as original_x and target label as target_distribution
+    original_y = torch.zeros(1, num_classes, device=device)  # have to do this to log it
+    original_y[0, single_label] = 1
+    #   WANT TO LOG: turn single_label into one-hot tensor to log original_y as original_y
+
+    logging_values = {
+        "dataset": args.dataset,
+        "autoencoder_notes": args.notes,
+        "original_x": image_part.clone().detach(),
+        "original_y": original_y,
+        "digit_number": args.digit_number,
+        "target_distribution": target_label.clone().detach(),
+        "num_confused": args.num_confused,
+        "includes_true": includes_true,
+    }
+
+    # Autoencoder specific setup
     image_part.requires_grad_(True)
     label_part = create_diffuse_one_hot(label_batch[0:1]).to(device)
-    single_label = label_batch[0].item()
 
-    # MLP: image set up & grab label prediction for visualization later
+    # MLP specific setup
     mlp_image = image_part.clone().detach().requires_grad_(True)
-    mlp_IMAGE_D = image_part.clone().detach().view(28, 28).cpu().numpy()  # NEED (IMAGE D)
-    mlp_label_d = mlp(mlp_image)
-    mlp_label_d_probs = F.softmax(mlp_label_d, dim=1)
-    mlp_label_d = mlp_label_d_probs.detach().cpu().numpy()  # NEED (BAR CHART d)
 
-    # AUTOENCODER: grab label prediction for visualization later
-    auto_concat_input = torch.cat((image_part, label_part), dim=1)
-    auto_IMAGE_A_label_a = autoencoder(auto_concat_input)
-    auto_label_a_probs = F.softmax(auto_IMAGE_A_label_a[:, image_dim:], dim=1)
-    first_image = image_part.clone().detach().view(28, 28).cpu().numpy()  # NEED (IMAGE A)
-    auto_label_a = auto_label_a_probs.detach().cpu().numpy()  # NEED (BAR CHART a)
+    # MLP prediction on original image (for logging)
+    mlp_prediction = mlp(mlp_image)
+    mlp_prediction_label = F.softmax(mlp_prediction, dim=1)
+    logging_values["mlp_prediction_label"] = mlp_prediction_label.clone().detach()
+    #   WANT TO LOG: mlp_prediction_label as mlp_prediction_label
 
-    # AUTOENCODER: save a clone of output for training loop later
-    original = auto_IMAGE_A_label_a.clone().detach()
+    # Autoencoder prediction on original image (for logging)
+    auto_concat_input = torch.cat((image_part, label_part), dim=1)  # necessary for pass through
+    auto_prediction = autoencoder(auto_concat_input)
+    auto_prediction_label = F.softmax(auto_prediction[:, image_dim:], dim=1)
+    logging_values["auto_prediction_label"] = auto_prediction_label.clone().detach()
+    #   WANT TO LOG: auto_prediction_label as auto_prediction_label
+
+    # Save clone of autoencoder output for training loop later
+    original = auto_prediction.clone().detach()
     original_image = original[:, :image_dim]
 
-    # MLP & AUTOENCODER: set up same target label
-    target_label = set_equal_confusion(single_label, num_classes, args.num_confused, device, includes_true)
+    # Save MLP target distribution (don't think this is necessary anymore)
     mlp_target_label = target_label
 
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     # AUTOENCODER ADVERSARIAL TRAINING LOOP - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     optimizer = optim.Adam([image_part], lr=0.01)
     train_loops = 300
@@ -198,18 +217,34 @@ for i in range(args.num_adversarial_examples):
         with torch.no_grad():
             image_part.data.clamp_(0, 1)
 
-    # Grab final image & label for visualization
-    final_image = image_part.clone().detach().view(28, 28).cpu().numpy()  # NEED (IMAGE C)
-    concat_final = torch.cat((image_part.view(1, -1), label_part), dim=1)  # Add view(1, -1) here
-    final_output = autoencoder(concat_final)
-    final_label_probs = F.softmax(final_output[:, image_dim:], dim=1)
-    final_output_label = final_label_probs.detach().cpu().numpy()  # NEED (BAR CHART c)
+    # Save adversarial example and prediction (for logging)
+    autoadvex_concat = torch.cat((image_part.view(1, -1), label_part), dim=1)
+    autoadvex_prediction = autoencoder(autoadvex_concat)
+    autoadvex_prediction_label = F.softmax(autoadvex_prediction[:, image_dim:], dim=1)
+    #   WANT TO LOG: image_part as autoadvex_x_hat and autoadvex_prediction_label as autoadvex_y_hat
 
-    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    # Seeing if the label converged to the target distribution
+    autoadvex_label_divergence = F.kl_div(autoadvex_prediction_label.log(), target_label, reduction='sum')
+    autoadvex_converged = (autoadvex_label_divergence < 0.2)
+    #   WANT TO LOG: autoadvex_converged as autoadvex_converged
+
+    # Calculating MSE and Frobenius norm distances (for logging)
+    autoadvex_mse = F.mse_loss(image_part.view(1, -1), original_image.view(1, -1))
+    autoadvex_frob = torch.norm(image_part.view(1, -1) - original_image.view(1, -1), p='fro')
+    #   WANT TO LOG: autoadvex_mse as autoadvex_mse and autoadvex_frob as autoadvex_frob
+
+    logging_values.update({
+        "autoadvex_x_hat": image_part.clone().detach(),
+        "autoadvex_y_hat": autoadvex_prediction_label.clone().detach(),
+        "autoadvex_converged": autoadvex_converged,
+        "autoadvex_mse": autoadvex_mse.item(),
+        "autoadvex_frob": autoadvex_frob.item(),
+    })
+
     # MLP ADVERSARIAL TRAINING LOOP - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     mlp_optimizer = optim.Adam([mlp_image], lr=0.01)
-
     train_loops = 300
+
     for loop in range(train_loops):
         output = mlp(mlp_image)
         probs = F.softmax(output, dim=1)
@@ -235,67 +270,40 @@ for i in range(args.num_adversarial_examples):
         with torch.no_grad():
             mlp_image.data.clamp_(0, 1)
 
-    # Get final MLP predictions
+    # Save adversarial example and prediction (for logging)
     with torch.no_grad():
-        # original_mlp_output = mlp(image_part)
-        mlp_label_f = mlp(mlp_image)
-        mlp_IMAGE_F = mlp_image.clone().detach().view(28, 28).cpu().numpy()  # NEED (IMAGE F)
-        # original_mlp_probs = F.softmax(original_mlp_output, dim=1)
-        mlp_label_f_probs = F.softmax(mlp_label_f, dim=1)
-        mlp_label_f = mlp_label_f_probs.detach().cpu().numpy()  # NEED (BAR CHART F)
+        mlpadvex_prediction = mlp(mlp_image)
+        mlpadvex_prediction_label = F.softmax(mlpadvex_prediction, dim=1)
+        #   WANT TO LOG: mlp_image as mlpadvex_x_hat and mlpadvex_prediction_label as mlpadvex_y_hat
 
-    # Calculate distances for autoencoder (between A and C)
-    auto_orig = torch.tensor(first_image).flatten()  # A
-    auto_pert = torch.tensor(final_image).flatten()  # C
-    auto_distances = {
-        'Euclidean': float(torch.norm(auto_orig - auto_pert).cpu()),
-        'MSE': float(F.mse_loss(auto_orig, auto_pert).cpu()),
-    }
+    # Seeing if the label converged to the target distribution
+    mlpadvex_label_divergence = F.kl_div(mlpadvex_prediction_label.log(), target_label, reduction='sum')
+    mlpadvex_converged = (mlpadvex_label_divergence < 0.2)
+    #   WANT TO LOG: mlpadvex_converged as mlpadvex_converged
 
-    # Calculate distances for MLP (between D and F)
-    mlp_orig = torch.tensor(mlp_IMAGE_D).flatten()  # D
-    mlp_pert = torch.tensor(mlp_IMAGE_F).flatten()  # F
-    mlp_distances = {
-        'Euclidean': float(torch.norm(mlp_orig - mlp_pert).cpu()),
-        'MSE': float(F.mse_loss(mlp_orig, mlp_pert).cpu()),
-    }
+    # Calculating MSE and Frobenius norm distances (for logging)
+    mlpadvex_mse = F.mse_loss(mlp_image.view(1, -1), original_image.view(1, -1))
+    mlpadvex_frob = torch.norm(mlp_image.view(1, -1) - original_image.view(1, -1), p='fro')
+    #   WANT TO LOG: mlpadvex_mse as mlpadvex_mse and mlpadvex_frob as mlpadvex_frob
 
-    # Collect data after adversarial training
-    visualization_data = {
-        'images': {
-            'A': first_image,
-            'C': final_image,
-            'D': mlp_IMAGE_D,
-            'F': mlp_IMAGE_F
-        },
-        'probabilities': {
-            'a': auto_label_a,
-            'c': final_output_label,
-            'd': mlp_label_d,
-            'f': mlp_label_f
-        },
-        'distances': {
-            'auto': auto_distances,
-            'mlp': mlp_distances
-        }
-    }
-
-    fig = visualize_adversarial_comparison(
-        images=visualization_data['images'],
-        probabilities=visualization_data['probabilities'],
-        distances=visualization_data['distances'],
-        return_fig=True
-    )
-
-    wandb.log({
-        f"example_{i}/comparison": wandb.Image(
-            fig,
-            caption=f"Confused {args.num_confused} classes {'with' if includes_true else 'without'} true class - {args.notes}"
-        ),
-        f"example_{i}/auto_euclidean": visualization_data['distances']['auto']['Euclidean'],
-        f"example_{i}/auto_mse": visualization_data['distances']['auto']['MSE'],
-        f"example_{i}/mlp_euclidean": visualization_data['distances']['mlp']['Euclidean'],
-        f"example_{i}/mlp_mse": visualization_data['distances']['mlp']['MSE']
+    logging_values.update({
+        "mlpadvex_x_hat": mlp_image.clone().detach(),
+        "mlpadvex_y_hat": mlpadvex_prediction_label.clone().detach(),
+        "mlpadvex_converged": mlpadvex_converged,
+        "mlpadvex_mse": mlpadvex_mse.item(),
+        "mlpadvex_frob": mlpadvex_frob.item(),
     })
 
-wandb.finish()
+    # Final logging
+    try:
+        success = log_experiment_result(**logging_values)
+        if success:
+            print(f"Successfully logged results for iteration {i}")
+        else:
+            print(f"Failed to log results for iteration {i}")
+    except Exception as e:
+        print(f"Error logging results for iteration {i}: {str(e)}")
+
+
+
+
