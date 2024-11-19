@@ -225,7 +225,7 @@ for i in range(args.num_adversarial_examples):
 
     # Seeing if the label converged to the target distribution
     autoadvex_label_divergence = F.kl_div(autoadvex_prediction_label.log(), target_label, reduction='sum')
-    autoadvex_converged = (autoadvex_label_divergence < 0.2)
+    # autoadvex_converged = (autoadvex_label_divergence < 0.2)
     #   WANT TO LOG: autoadvex_converged as autoadvex_converged
 
     # Calculating MSE and Frobenius norm distances (for logging)
@@ -236,7 +236,7 @@ for i in range(args.num_adversarial_examples):
     logging_values.update({
         "autoadvex_x_hat": image_part.clone().detach(),
         "autoadvex_y_hat": autoadvex_prediction_label.clone().detach(),
-        "autoadvex_converged": autoadvex_converged,
+        "autoadvex_label_kld": autoadvex_label_divergence,
         "autoadvex_mse": autoadvex_mse.item(),
         "autoadvex_frob": autoadvex_frob.item(),
     })
@@ -278,7 +278,7 @@ for i in range(args.num_adversarial_examples):
 
     # Seeing if the label converged to the target distribution
     mlpadvex_label_divergence = F.kl_div(mlpadvex_prediction_label.log(), target_label, reduction='sum')
-    mlpadvex_converged = (mlpadvex_label_divergence < 0.2)
+    # mlpadvex_converged = (mlpadvex_label_divergence < 0.2)
     #   WANT TO LOG: mlpadvex_converged as mlpadvex_converged
 
     # Calculating MSE and Frobenius norm distances (for logging)
@@ -289,7 +289,7 @@ for i in range(args.num_adversarial_examples):
     logging_values.update({
         "mlpadvex_x_hat": mlp_image.clone().detach(),
         "mlpadvex_y_hat": mlpadvex_prediction_label.clone().detach(),
-        "mlpadvex_converged": mlpadvex_converged,
+        "mlpadvex_label_kld": mlpadvex_label_divergence,
         "mlpadvex_mse": mlpadvex_mse.item(),
         "mlpadvex_frob": mlpadvex_frob.item(),
     })

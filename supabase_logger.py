@@ -27,12 +27,12 @@ def log_experiment_result(
         target_distribution,
         autoadvex_x_hat,
         autoadvex_y_hat,
-        autoadvex_converged,
+        autoadvex_label_kld,
         autoadvex_mse,
         autoadvex_frob,
         mlpadvex_x_hat,
         mlpadvex_y_hat,
-        mlpadvex_converged,
+        mlpadvex_label_kld,
         mlpadvex_mse,
         mlpadvex_frob
 ):
@@ -50,12 +50,12 @@ def log_experiment_result(
         "includes_true": bool(includes_true),
         "autoadvex_x_hat": tensor_to_list(autoadvex_x_hat),
         "autoadvex_y_hat": tensor_to_list(autoadvex_y_hat),
-        "autoadvex_converged": bool(autoadvex_converged),
+        "autoadvex_label_kld": float(autoadvex_label_kld),
         "autoadvex_mse": float(autoadvex_mse),
         "autoadvex_frob": float(autoadvex_frob),
         "mlpadvex_x_hat": tensor_to_list(mlpadvex_x_hat),
         "mlpadvex_y_hat": tensor_to_list(mlpadvex_y_hat),
-        "mlpadvex_converged": bool(mlpadvex_converged),
+        "mlpadvex_label_kld": float(mlpadvex_label_kld),
         "mlpadvex_mse": float(mlpadvex_mse),
         "mlpadvex_frob": float(mlpadvex_frob)
     }
