@@ -2,16 +2,18 @@ import torch
 from torch import optim
 from torch import nn
 import torch.nn.functional as F
-from helper import create_diffuse_one_hot, visualize_adversarial_comparison, set_equal_confusion
+from helper import create_diffuse_one_hot, set_equal_confusion
 from data import get_mnist_loaders, get_fashion_mnist_loaders
+from supabase_logger import log_experiment_result
+
 import argparse
 
 print('running logger.py')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # make sure to call whichever ones you want
-encoder_path = 'models/encoder_4_True.pth'
-decoder_path = 'models/decoder_4_True.pth'
+encoder_path = 'models/encoder_4_True_digit.pth'
+decoder_path = 'models/decoder_4_True_digit.pth'
 mlp_path = 'models/mlp.pth'
 
 # Set up argument parsing at the top of the script
@@ -144,9 +146,18 @@ for i in range(args.num_adversarial_examples):
     single_label = label_batch[0].item()
     image_part = image_batch[0].view(1, -1).to(device).clone().detach()
     target_label = set_equal_confusion(single_label, num_classes, args.num_confused, device, includes_true)
+    #   WANT TO LOG: image_part as original_x and target label as target_distribution
+    original_y = torch.zeros(1, num_classes, device=device)  # have to do this to log it
+    original_y[0, single_label] = 1
+    #   WANT TO LOG: turn single_label into one-hot tensor to log original_y as original_y
 
-    #   WANT TO LOG: image_part and single_label as original_x and original_y
-    #   WANT TO LOG: target_label as target distribution
+    logging_values = {
+        "dataset": args.dataset,
+        "autoencoder_notes": args.notes,
+        "original_x": image_part.clone().detach(),
+        "original_y": original_y,
+        "target_distribution": target_label.clone().detach(),
+    }
 
     # Autoencoder specific setup
     image_part.requires_grad_(True)
@@ -158,12 +169,14 @@ for i in range(args.num_adversarial_examples):
     # MLP prediction on original image (for logging)
     mlp_prediction = mlp(mlp_image)
     mlp_prediction_label = F.softmax(mlp_prediction, dim=1)
+    logging_values["mlp_prediction_label"] = mlp_prediction_label.clone().detach()
     #   WANT TO LOG: mlp_prediction_label as mlp_prediction_label
 
     # Autoencoder prediction on original image (for logging)
     auto_concat_input = torch.cat((image_part, label_part), dim=1)  # necessary for pass through
     auto_prediction = autoencoder(auto_concat_input)
     auto_prediction_label = F.softmax(auto_prediction[:, image_dim:], dim=1)
+    logging_values["auto_prediction_label"] = auto_prediction_label.clone().detach()
     #   WANT TO LOG: auto_prediction_label as auto_prediction_label
 
     # Save clone of autoencoder output for training loop later
@@ -219,6 +232,14 @@ for i in range(args.num_adversarial_examples):
     autoadvex_frob = torch.norm(image_part.view(1, -1) - original_image.view(1, -1), p='fro')
     #   WANT TO LOG: autoadvex_mse as autoadvex_mse and autoadvex_frob as autoadvex_frob
 
+    logging_values.update({
+        "autoadvex_x_hat": image_part.clone().detach(),
+        "autoadvex_y_hat": autoadvex_prediction_label.clone().detach(),
+        "autoadvex_converged": autoadvex_converged,
+        "autoadvex_mse": autoadvex_mse.item(),
+        "autoadvex_frob": autoadvex_frob.item(),
+    })
+
     # MLP ADVERSARIAL TRAINING LOOP - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     mlp_optimizer = optim.Adam([mlp_image], lr=0.01)
     train_loops = 300
@@ -263,6 +284,24 @@ for i in range(args.num_adversarial_examples):
     mlpadvex_mse = F.mse_loss(mlp_image.view(1, -1), original_image.view(1, -1))
     mlpadvex_frob = torch.norm(mlp_image.view(1, -1) - original_image.view(1, -1), p='fro')
     #   WANT TO LOG: mlpadvex_mse as mlpadvex_mse and mlpadvex_frob as mlpadvex_frob
+
+    logging_values.update({
+        "mlpadvex_x_hat": mlp_image.clone().detach(),
+        "mlpadvex_y_hat": mlpadvex_prediction_label.clone().detach(),
+        "mlpadvex_converged": mlpadvex_converged,
+        "mlpadvex_mse": mlpadvex_mse.item(),
+        "mlpadvex_frob": mlpadvex_frob.item(),
+    })
+
+    # Final logging
+    try:
+        success = log_experiment_result(**logging_values)
+        if success:
+            print(f"Successfully logged results for iteration {i}")
+        else:
+            print(f"Failed to log results for iteration {i}")
+    except Exception as e:
+        print(f"Error logging results for iteration {i}: {str(e)}")
 
 
 
