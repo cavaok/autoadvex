@@ -1,8 +1,0 @@
-{"time":"2024-11-07T13:02:35.070234288-05:00","level":"INFO","msg":"using version","core version":"0.18.6"}
-{"time":"2024-11-07T13:02:35.070248725-05:00","level":"INFO","msg":"created symlink","path":"/home/okcava/projects/autoadvex/wandb/run-20241107_130234-dtr2mdzc/logs/debug-core.log"}
-{"time":"2024-11-07T13:02:35.197145447-05:00","level":"INFO","msg":"created new stream","id":"dtr2mdzc"}
-{"time":"2024-11-07T13:02:35.197159513-05:00","level":"INFO","msg":"stream: started","id":"dtr2mdzc"}
-{"time":"2024-11-07T13:02:35.199708392-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"dtr2mdzc"}}
-{"time":"2024-11-07T13:02:35.199766872-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"dtr2mdzc"}}
-{"time":"2024-11-07T13:02:35.199924248-05:00","level":"INFO","msg":"sender: started","stream_id":"dtr2mdzc"}
-{"time":"2024-11-07T13:02:35.702039916-05:00","level":"INFO","msg":"Starting system monitor"}

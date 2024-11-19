@@ -6,17 +6,27 @@ __pycache__/
 .venv/
 myenv/
 
-# Debian package files
-*.deb
+# Data files
+data/
+data/MNIST/
+data/FashionMNIST/
+*.ubyte
+*.gz
+*.txt
 
-# SLURM scripts
-gpu_slurm.sh
-cpu_slurm.sh
+# Model files
+models/
+*.pth
 
-# txt files
-adversarial_err.txt
+# Output files
 adversarial_out.txt
+adversarial_err.txt
+*_out.txt
+*_err.txt
 
-# weights and biases outputs
+# wandb
 wandb/
 
+# IDE
+.idea/
+.vscode/
