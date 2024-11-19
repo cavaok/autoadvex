@@ -90,7 +90,7 @@ class MLP(nn.Module):
 
 # Load pre-trained Autoencoder & MLP
 encoder.load_state_dict(torch.load(args.encoder_path))
-decoder.load_state_dict(torch.load(args.ecoder_path))
+decoder.load_state_dict(torch.load(args.decoder_path))
 mlp = MLP().to(device)
 mlp.load_state_dict(torch.load(args.mlp_path))
 
