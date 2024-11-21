@@ -29,27 +29,7 @@ def set_equal_confusion(single_label, num_classes, num_confused, device, include
 
 
 def visualize_adversarial_comparison(images, probabilities, distances, save_path=None, return_fig=False):
-    """
-    Create a visualization comparing original and adversarial MNIST images.
-
-    Parameters:
-    -----------
-    images : dict
-        Dictionary containing numpy arrays for images:
-        {'A': array, 'C': array, 'D': array, 'F': array}
-    probabilities : dict
-        Dictionary containing numpy arrays for probability distributions:
-        {'a': array, 'c': array, 'd': array, 'f': array}
-    distances : dict
-        Dictionary containing distance metrics:
-        {
-            'auto': {'Euclidean': float, 'MSE': float},
-            'mlp': {'Euclidean': float, 'MSE': float}
-        }
-    save_path : str, optional
-        Path to save the figure
-    """
-    # Create figure with portrait orientation (3:4 ratio)
+    # Create figure w/ portrait orient
     fig = plt.figure(figsize=(10, 13.33))
 
     # Create grid layout

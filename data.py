@@ -3,7 +3,6 @@ from torchvision import datasets, transforms
 
 
 def get_mnist_loaders():
-    # Loading in MNIST data preparing datasets and loaders
     transform = transforms.Compose([
         transforms.ToTensor()
     ])
@@ -20,17 +19,17 @@ def get_mnist_loaders():
 
 def get_fashion_mnist_loaders():
     """
-    Key:
-        0: T-shirt/top
-        1: Trouser
-        2: Pullover
-        3: Dress
-        4: Coat
-        5: Sandal
-        6: Shirt
-        7: Sneaker
-        8: Bag
-        9: Ankle boot
+    Fashion Items Key:
+        0 --> T-shirt/top
+        1 --> Trouser
+        2 --> Pullover
+        3 --> Dress
+        4 --> Coat
+        5 --> Sandal
+        6 --> Shirt
+        7 --> Sneaker
+        8 --> Bag
+        9 --> Ankle boot
     """
     transform = transforms.Compose([
         transforms.ToTensor()

@@ -5,13 +5,12 @@ import torch.nn.functional as F
 from helper import create_diffuse_one_hot, set_equal_confusion
 from data import get_mnist_loaders, get_fashion_mnist_loaders
 from supabase_logger import log_experiment_result
-
 import argparse
 
 print('running main.py')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-# Set up argument parsing at the top of the script
+# Argparse setup
 parser = argparse.ArgumentParser(description='Process some arguments')
 parser.add_argument('--encoder_path', type=str, default='models/encoder_1_True_digit.pth', help='Model path')
 parser.add_argument('--decoder_path', type=str, default='models/decoder_1_True_digit.pth', help='Model path')
@@ -32,13 +31,13 @@ if args.dataset == "digit":
 else:
     _, _, adversarial_loader = get_fashion_mnist_loaders()
 
-# Constants (MUST MATCH TRAINING)
+# Constants (MUST MATCH TRAINING!!!!)
 image_dim = 28 * 28
 num_classes = 10
 input_dim = image_dim + num_classes
 lambda_ = 0.5
 
-# Autoencoder Model (MUST MATCH TRAINING)
+# Autoencoder Model (MUST MATCH TRAINING!!!!!)
 encoder = nn.Sequential(
     nn.Linear(input_dim, 512),
     nn.ELU(),
@@ -70,7 +69,7 @@ def autoencoder(x):
     return decoded
 
 
-# MLP Model (MUST MATCH TRAINING )
+# MLP Model (MUST MATCH TRAINING !!!!!)
 class MLP(nn.Module):
     def __init__(self):
         super(MLP, self).__init__()
@@ -144,10 +143,8 @@ for i in range(args.num_adversarial_examples):
     single_label = label_batch[0].item()
     image_part = image_batch[0].view(1, -1).to(device).clone().detach()
     target_label = set_equal_confusion(single_label, num_classes, args.num_confused, device, includes_true)
-    #   WANT TO LOG: image_part as original_x and target label as target_distribution
     original_y = torch.zeros(1, num_classes, device=device)  # have to do this to log it
     original_y[0, single_label] = 1
-    #   WANT TO LOG: turn single_label into one-hot tensor to log original_y as original_y
 
     logging_values = {
         "dataset": args.dataset,
@@ -178,13 +175,12 @@ for i in range(args.num_adversarial_examples):
     auto_prediction = autoencoder(auto_concat_input)
     auto_prediction_label = F.softmax(auto_prediction[:, image_dim:], dim=1)
     logging_values["auto_prediction_label"] = auto_prediction_label.clone().detach()
-    #   WANT TO LOG: auto_prediction_label as auto_prediction_label
 
     # Save clone of autoencoder output for training loop later
     original = auto_prediction.clone().detach()
     original_image = original[:, :image_dim]
 
-    # Save MLP target distribution (don't think this is necessary anymore)
+    # Save MLP target distribution (don't think this is necessary anymore but leaving for now)
     mlp_target_label = target_label
 
     # AUTOENCODER ADVERSARIAL TRAINING LOOP - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -221,17 +217,13 @@ for i in range(args.num_adversarial_examples):
     autoadvex_concat = torch.cat((image_part.view(1, -1), label_part), dim=1)
     autoadvex_prediction = autoencoder(autoadvex_concat)
     autoadvex_prediction_label = F.softmax(autoadvex_prediction[:, image_dim:], dim=1)
-    #   WANT TO LOG: image_part as autoadvex_x_hat and autoadvex_prediction_label as autoadvex_y_hat
 
-    # Seeing if the label converged to the target distribution
+    # Calculate label divergence from target distribution (for logging)
     autoadvex_label_divergence = F.kl_div(autoadvex_prediction_label.log(), target_label, reduction='sum')
-    # autoadvex_converged = (autoadvex_label_divergence < 0.2)
-    #   WANT TO LOG: autoadvex_converged as autoadvex_converged
 
     # Calculating MSE and Frobenius norm distances (for logging)
     autoadvex_mse = F.mse_loss(image_part.view(1, -1), original_image.view(1, -1))
     autoadvex_frob = torch.norm(image_part.view(1, -1) - original_image.view(1, -1), p='fro')
-    #   WANT TO LOG: autoadvex_mse as autoadvex_mse and autoadvex_frob as autoadvex_frob
 
     logging_values.update({
         "autoadvex_x_hat": image_part.clone().detach(),
@@ -274,17 +266,13 @@ for i in range(args.num_adversarial_examples):
     with torch.no_grad():
         mlpadvex_prediction = mlp(mlp_image)
         mlpadvex_prediction_label = F.softmax(mlpadvex_prediction, dim=1)
-        #   WANT TO LOG: mlp_image as mlpadvex_x_hat and mlpadvex_prediction_label as mlpadvex_y_hat
 
-    # Seeing if the label converged to the target distribution
+    # Calculating label divergence from target label (for logging)
     mlpadvex_label_divergence = F.kl_div(mlpadvex_prediction_label.log(), target_label, reduction='sum')
-    # mlpadvex_converged = (mlpadvex_label_divergence < 0.2)
-    #   WANT TO LOG: mlpadvex_converged as mlpadvex_converged
 
     # Calculating MSE and Frobenius norm distances (for logging)
     mlpadvex_mse = F.mse_loss(mlp_image.view(1, -1), original_image.view(1, -1))
     mlpadvex_frob = torch.norm(mlp_image.view(1, -1) - original_image.view(1, -1), p='fro')
-    #   WANT TO LOG: mlpadvex_mse as mlpadvex_mse and mlpadvex_frob as mlpadvex_frob
 
     logging_values.update({
         "mlpadvex_x_hat": mlp_image.clone().detach(),

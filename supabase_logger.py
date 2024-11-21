@@ -10,7 +10,7 @@ supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 
 def tensor_to_list(tensor):
-    """Convert a PyTorch tensor to a Python list."""
+    # Convert a PyTorch tensor to a Python list.
     return tensor.detach().cpu().numpy().tolist()
 
 
@@ -36,7 +36,7 @@ def log_experiment_result(
         mlpadvex_mse,
         mlpadvex_frob
 ):
-    """Log a single experiment result to Supabase."""
+    # Log single experiment result to Supabase
     data = {
         "dataset": dataset,
         "autoencoder_notes": autoencoder_notes,
