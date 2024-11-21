@@ -10,8 +10,8 @@ import wandb
 print('running deprecated_main.py')
 
 # make sure to call whichever ones you want
-encoder_path = '../models/encoder_4_True_digit.pth'
-decoder_path = '../models/decoder_4_True_digit.pth'
+encoder_path = 'models/encoder_4_True_digit.pth'
+decoder_path = 'models/decoder_4_True_digit.pth'
 
 # Set up argument parsing at the top of the script
 parser = argparse.ArgumentParser(description='Process some arguments')
@@ -111,7 +111,7 @@ decoder.load_state_dict(torch.load(decoder_path))
 
 # Load the trained MLP
 mlp = MLP().to(device)
-mlp.load_state_dict(torch.load('../models/mlp.pth'))
+mlp.load_state_dict(torch.load('models/mlp.pth'))
 
 # Move models to device
 encoder = encoder.to(device)
